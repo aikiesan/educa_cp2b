@@ -814,7 +814,7 @@
       for (let k = 0; k < 3; k++) { const ph = ((tq - tIn) * 0.5 + k / 3) % 1; X.bubble(ctx, fb[0] + 95 + ph * 60, fb[1] - 150 - ph * 220, 22 + ph * 30, { alpha: 1 - ph, tint: '#ffffff' }); }
       for (const wx of [60, 115, 165, 220]) { const gx = fb[0] + (wx - 142), gy = fb[1] + (190 - 151); ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = 'rgba(255,225,120,0.7)'; ctx.fillRect(gx - 14, gy - 10, 28, 20); ctx.restore(); }
     }
-    if (tq > tCs - 0.05) X.tag(ctx, 'casas', -160, -20, { size: 50, seed: 31, rot: -0.05, s: pop(tq, tCs - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.coral });
+    if (tq > tCs - 0.05) X.tag(ctx, 'casas', -110, 45, { size: 50, seed: 31, rot: -0.05, s: pop(tq, tCs - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.coral });
     if (tq > tIn - 0.05) X.tag(ctx, 'indústrias', 360, -30, { size: 50, seed: 32, rot: 0.05, s: pop(tq, tIn - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
     // posto + caminhão + ônibus
     place(ctx, 'bomba', 640, 250, Z({ s: 1.0 }));
