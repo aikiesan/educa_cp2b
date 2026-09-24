@@ -1,0 +1,10 @@
+# ferramentas de áudio e imagem (mixagem, efeitos, recortes, legendas)
+numpy
+scipy
+soundfile
+pyloudnorm
+pedalboard
+pillow
+matplotlib
+# alinhamento forçado da narração (opcional; GPU recomendada)
+# torch==2.6.0 torchaudio==2.6.0  (--index-url https://download.pytorch.org/whl/cu124)

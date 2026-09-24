@@ -1,0 +1,1 @@
+Coloque aqui arquivos gerados externamente (narração WAV, música). O pipeline os detecta.

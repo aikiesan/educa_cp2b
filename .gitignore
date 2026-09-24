@@ -1,0 +1,10 @@
+# Fontes com licença comercial (Neulis) — não redistribuir
+assets/fonts/licenciadas/
+# saídas temporárias e pesadas (vídeos vão como assets de Release no GitHub)
+tmp/
+dist/
+node_modules/
+*.log
+videos/**/audio/*.wav
+videos/**/audio/_*
+__pycache__/

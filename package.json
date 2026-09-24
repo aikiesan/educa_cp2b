@@ -1,0 +1,14 @@
+{
+  "name": "educa-cp2b",
+  "private": true,
+  "description": "Animações educativas do CP2B — colagem de papel em JavaScript, renderizada quadro a quadro.",
+  "scripts": {
+    "servir": "node tools/servir.mjs",
+    "sfx": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --sfx-out videos/01-o-que-e-biogas/audio/sfx_cues.json",
+    "quadros": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --stills 2.2,7.5,16.9,21.8,27.9,33.5,41.9,45.2,51.5,55 --out tmp/quadros",
+    "render": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --video dist/o-que-e-biogas.mp4 --audio videos/01-o-que-e-biogas/audio/mix.wav --fps 24 --crf 16 --workers 3"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

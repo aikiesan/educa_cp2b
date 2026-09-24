@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Colagem — folha de teste</title>
+<style>html,body{margin:0;background:#111}canvas{display:block;width:100vw;height:auto}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>window.COLAGEM_ROOT = '../..';</script>
+<script src="core.js"></script><script src="paper.js"></script><script src="shapes.js"></script><script src="ink.js"></script>
+<script src="sprite.js"></script><script src="text.js"></script><script src="stage.js"></script><script src="fonts.js"></script>
+<script>
+(async () => {
+  const C = Colagem, { shapes: S, sprite: SP, ink: I, text: T, paper: P, core } = C;
+  await C.stage.loadFonts(C.FONTS);
+  const stage = new C.stage.Stage(document.getElementById('c'));
+  const scene = {
+    duration: 2,
+    camera: () => ({ x: 960, y: 540, zoom: 1 }),
+    draw(rc) {
+      const { ctx } = rc;
+      ctx.fillStyle = P.pattern(ctx, '#d9c3a0', 'kraft'); ctx.fillRect(-100, -100, 2200, 1300);
+      // amostras de papel
+      const cols = ['#1e3e4c', '#00573a', '#5ca032', '#b6e03b', '#d37402', '#f2c14e', '#e4572e', '#8ec5d6', '#fbf8f0', '#8b5a3c'];
+      cols.forEach((c, i) => {
+        ctx.save(); ctx.translate(90 + i * 180, 110);
+        SP.piece(ctx, S.cut([[-70, -60], [70, -55], [66, 62], [-72, 58]], { seed: i }), { color: c, seed: i, torn: i % 3 === 1, border: i % 3 === 2 ? { w: 8 } : null, shadow: { zoom: 1 } });
+        ctx.restore();
+      });
+      // blobs com contorno de nanquim
+      ctx.save(); ctx.translate(220, 380);
+      SP.piece(ctx, S.blob(0, 0, 120, 90, { seed: 3, wobble: 0.1 }), { color: '#b6e03b', seed: 3, ink: { w: 4 }, shadow: { zoom: 1, lift: 0 } });
+      SP.googly(ctx, -40, -20, 26, 0.3, 0.6); SP.googly(ctx, 30, -26, 30, -0.4, 0.7);
+      I.stroke(ctx, [[-40, 30], [0, 48], [40, 28]], { w: 5, seed: 4 });
+      ctx.restore();
+      ctx.save(); ctx.translate(560, 380);
+      SP.piece(ctx, S.blob(0, 0, 150, 70, { seed: 9, wobble: 0.08 }), { color: '#d37402', seed: 9, torn: 4, shadow: { zoom: 1, lift: 0.6 } });
+      ctx.restore();
+      // tinta: setas, círculos, cheiro, brilhos, tracejado
+      I.arrow(ctx, [760, 300], [1000, 420], { w: 6, seed: 2, bend: 0.25 });
+      I.circle(ctx, 1120, 380, 90, 60, { w: 5, seed: 7, color: '#c8372d' });
+      for (let k = 0; k < 3; k++) I.wavy(ctx, 1300 + k * 34, 460, 120, { w: 4, seed: k, phase: k, color: '#5ca032' });
+      I.sparkle(ctx, 1500, 360, 30, { w: 6, color: '#f2c14e' }); I.sparkle(ctx, 1560, 420, 18, { w: 4, color: '#f2c14e' });
+      I.dashed(ctx, [[1640, 300], [1740, 360], [1800, 460], [1760, 520]], { w: 4, seed: 3 });
+      // texto manuscrito
+      T.hand(ctx, 'restos de comida', 330, 600, { size: 64, font: 'Caveat', color: SP.INK });
+      T.hand(ctx, 'sem oxigênio!', 820, 600, { size: 64, font: 'Gochi Hand', color: '#c8372d', rot: -0.05 });
+      T.hand(ctx, 'biofertilizante', 1330, 600, { size: 60, font: 'Kalam', color: '#00573a' });
+      // letras recortadas
+      const word = T.ransom('BIOGÁS?', { size: 130, seed: 5 });
+      word.forEach((l) => SP.place(ctx, l.spr, 960 + l.x, 820 + l.y, { rot: l.rot }));
+      // carimbo e fórmula
+      const st = T.stamp('semo2', 'SEM O₂!', { size: 60 });
+      SP.place(ctx, st, 1560, 800, { rot: -0.12, shadow: false });
+      T.formula(ctx, 'CH4', 260, 800, { size: 90, color: SP.INK });
+      T.formula(ctx, 'CO2', 420, 800, { size: 90, color: '#c8372d' });
+      SP.tape(ctx, 960, 690, 180, 44, -0.08, { seed: 3 });
+    },
+  };
+  stage.render(0, scene);
+  window.__colagem = { ready: true, duration: 2, width: 1920, height: 1080, frame: (t) => { stage.render(t, scene); return stage.canvas.toDataURL('image/png').split(',')[1]; } };
+})().catch((e) => { console.error(e.stack || e); });
+</script></body></html>

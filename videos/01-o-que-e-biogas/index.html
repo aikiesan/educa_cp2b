@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que é biogás? E biometano? · CP2B educa</title>
+<meta name="description" content="Animação em colagem (57 s) explicando biogás e biometano — CP2B, Centro Paulista de Estudos em Biogás e Bioprodutos.">
+<style>
+  :root { --bg: #1b2a33; --fg: #fbf8f0; --accent: #b6e03b; --muted: #9fb3bd; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: system-ui, "Segoe UI", sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 16px; }
+  .frame { position: relative; width: min(100%, calc((100vh - 110px) * 16 / 9)); aspect-ratio: 16 / 9; background: #000; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+  canvas { display: block; width: 100%; height: 100%; }
+  .play { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(27,42,51,.35); border: 0; cursor: pointer; color: var(--fg); font-size: 20px; transition: opacity .2s; }
+  .play span { background: var(--accent); color: #1b2a33; font-weight: 700; padding: 16px 28px; border-radius: 999px; }
+  .play[hidden] { display: none; }
+  .cc { position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); max-width: 80%; text-align: center; background: rgba(15,22,27,.78); padding: 6px 14px; border-radius: 8px; font-size: clamp(12px, 1.7vw, 22px); line-height: 1.3; pointer-events: none; }
+  .cc:empty { display: none; }
+  .bar { display: flex; align-items: center; gap: 10px; width: min(100%, calc((100vh - 110px) * 16 / 9)); }
+  .bar button { background: transparent; border: 1px solid #3b5563; color: var(--fg); border-radius: 8px; padding: 6px 12px; cursor: pointer; font: inherit; font-size: 14px; }
+  .bar button[aria-pressed="true"] { background: #2e4a57; }
+  .bar input[type=range] { flex: 1; accent-color: var(--accent); }
+  .bar .t { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; min-width: 88px; text-align: right; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <canvas id="stage" width="1920" height="1080" aria-label="Animação: O que é biogás? E biometano?"></canvas>
+  <button class="play" id="play" aria-label="Assistir"><span>▶ Assistir</span></button>
+  <div class="cc" id="cc" aria-live="polite"></div>
+</div>
+<div class="bar">
+  <button id="pp" aria-label="Reproduzir ou pausar">▶</button>
+  <input id="seek" type="range" min="0" max="57" step="0.01" value="0" aria-label="Posição">
+  <span class="t" id="time">0:00 / 0:57</span>
+  <button id="ccb" aria-pressed="false" title="Legendas">CC</button>
+</div>
+<audio id="audio" src="audio/mix.m4a" preload="auto"></audio>
+
+<script>window.COLAGEM_ROOT = '../..';</script>
+<script src="../../lib/colagem/core.js"></script>
+<script src="../../lib/colagem/paper.js"></script>
+<script src="../../lib/colagem/shapes.js"></script>
+<script src="../../lib/colagem/ink.js"></script>
+<script src="../../lib/colagem/sprite.js"></script>
+<script src="../../lib/colagem/text.js"></script>
+<script src="../../lib/colagem/extras.js"></script>
+<script src="../../lib/colagem/stage.js"></script>
+<script src="../../lib/colagem/fonts.js"></script>
+<script src="cena.js"></script>
+<script>
+(async () => {
+  const C = Colagem, scene = CENA;
+  const exportMode = new URLSearchParams(location.search).has('export');
+  const canvas = document.getElementById('stage');
+  await C.stage.loadFonts(C.FONTS);
+  const QS = new URLSearchParams(location.search);
+  const ccParam = QS.get('cc');
+  await scene.init('', QS.get('tl') || 'timeline.json', ccParam ? (ccParam === '1' ? 'legendas.pt-BR.vtt' : ccParam) : null);
+  if (QS.get('audio')) document.getElementById('audio').src = QS.get('audio');
+  const stage = new C.stage.Stage(canvas, { fps: 24, stepFps: 12 });
+
+  // desfoque de movimento (só na exportação): média de sub-quadros para frente no tempo (obturador de 180°)
+  const acc = document.createElement('canvas'); acc.width = 1920; acc.height = 1080;
+  const accCtx = acc.getContext('2d');
+  function frameAt(t, blur) {
+    const speed = blur ? scene.camSpeed(t) : 0;
+    const n = speed > 2600 ? 16 : speed > 1400 ? 12 : speed > 500 ? 6 : 1;
+    if (n === 1) { stage.render(t, scene); return; }
+    const post = stage.post; stage.post = { ...post, grain: 0, flicker: 0, vignette: 0 };
+    for (let k = 0; k < n; k++) {
+      stage.render(t + (k / (n - 1)) * (0.5 / 24), scene);
+      accCtx.globalAlpha = 1 / (k + 1);
+      accCtx.drawImage(canvas, 0, 0);
+    }
+    stage.post = post;
+    const ctx = stage.ctx; ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
+    ctx.drawImage(acc, 0, 0);
+    stage.postFX({ ctx, W: 1920, H: 1080, pose: Math.floor(t * 12 + 1e-6) });
+  }
+  window.__colagem = {
+    ready: true, duration: scene.duration, width: 1920, height: 1080,
+    frame: (t) => { frameAt(t, true); return canvas.toDataURL('image/png').split(',')[1]; },
+    sfx: () => scene.sfx(),
+    timeline: () => scene.timeline(),
+  };
+  if (exportMode) { stage.render(0, scene); return; }
+
+  // ----- reprodução em tempo real -----
+  const audio = document.getElementById('audio'), btn = document.getElementById('play'), pp = document.getElementById('pp');
+  const seek = document.getElementById('seek'), time = document.getElementById('time'), cc = document.getElementById('cc'), ccb = document.getElementById('ccb');
+  seek.max = scene.duration;
+  const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+  const TL = scene.timeline();
+  let ccOn = false;
+  const player = C.stage.player(stage, scene, audio, {
+    onTime: (t) => {
+      seek.value = t; time.textContent = `${fmt(t)} / ${fmt(scene.duration)}`;
+      if (ccOn) { const f = TL.falas.find((f) => t >= f.inicio - 0.1 && t <= f.fim + 0.25); cc.textContent = f ? f.texto : ''; } else cc.textContent = '';
+    },
+    onEnd: () => { pp.textContent = '▶'; btn.hidden = false; },
+  });
+  const toggle = () => { if (player.playing) { player.pause(); pp.textContent = '▶'; } else { if (player.time >= scene.duration - 0.05) player.seek(0); player.play(); pp.textContent = '❚❚'; btn.hidden = true; } };
+  btn.onclick = toggle; pp.onclick = toggle;
+  seek.oninput = () => player.seek(+seek.value);
+  ccb.onclick = () => { ccOn = !ccOn; ccb.setAttribute('aria-pressed', ccOn); if (!player.playing) player.seek(player.time); };
+  document.addEventListener('keydown', (e) => { if (e.code === 'Space') { e.preventDefault(); toggle(); } });
+  stage.render(1.9, scene);
+})().catch((e) => { console.error(e); document.body.insertAdjacentHTML('beforeend', `<pre style="color:#f88">${e.stack || e}</pre>`); });
+</script>
+</body>
+</html>

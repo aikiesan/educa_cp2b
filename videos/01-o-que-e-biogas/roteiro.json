@@ -1,0 +1,23 @@
+{
+  "titulo": "O que é biogás? E biometano?",
+  "idioma": "pt-BR",
+  "versao": "1.1",
+  "narracao": {
+    "modelo": "Gemini 3.8 Flash TTS (modo conversacional, 2 locutores)",
+    "vozes": { "Sulafat": "calorosa, curiosa e alegre", "Puck": "enérgico, brincalhão e bem-humorado" },
+    "arquivo_original": "entrada/biogas_multispeaker.wav"
+  },
+  "falas": [
+    { "id": "L01", "voz": "Sulafat", "cena": "titulo",      "texto": "O que é biogás? E biometano?" },
+    { "id": "L02", "voz": "Puck",    "cena": "sobras",      "texto": "Tudo começa com o que ninguém quer: restos de comida, esterco, resíduos da lavoura..." },
+    { "id": "L03", "voz": "Sulafat", "cena": "biodigestor", "texto": "No biodigestor — um tanque fechado, sem oxigênio — micróbios fazem a festa..." },
+    { "id": "L04", "voz": "Puck",    "cena": "biodigestor", "texto": "...e liberam um gás: o biogás!" },
+    { "id": "L05", "voz": "Sulafat", "cena": "composicao",  "texto": "Ele é principalmente metano e gás carbônico, com uma pitadinha de outros gases..." },
+    { "id": "L06", "voz": "Puck",    "cena": "composicao",  "texto": "...alguns bem fedidos!" },
+    { "id": "L07", "voz": "Sulafat", "cena": "queima",      "texto": "Mas queimando o biogás, dá pra gerar calor e eletricidade." },
+    { "id": "L08", "voz": "Puck",    "cena": "purificacao", "texto": "E tem mais: tirando o gás carbônico e as impurezas, nasce o biometano — metano quase puro!" },
+    { "id": "L09", "voz": "Sulafat", "cena": "usos",        "texto": "É como o gás natural, só que renovável: pode ir pelo gasoduto até casas e indústrias, ou abastecer caminhões e ônibus." },
+    { "id": "L10", "voz": "Puck",    "cena": "lavoura",     "texto": "E o que sobra no biodigestor vira biofertilizante pra lavoura... fechando o ciclo!" },
+    { "id": "L11", "voz": "Sulafat", "cena": "final",       "texto": "Biogás e biometano: o resíduo de hoje é a energia de amanhã!" }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+ "folha_ativos_v2": [
+  {
+   "arquivo": "folha_ativos_v2_1.png",
+   "w": 763,
+   "h": 385,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    54,
+    33,
+    817,
+    418
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_2.png",
+   "w": 314,
+   "h": 263,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1375,
+    81,
+    1689,
+    344
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_3.png",
+   "w": 563,
+   "h": 308,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1453,
+    349,
+    2016,
+    657
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_4.png",
+   "w": 176,
+   "h": 260,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1691,
+    80,
+    1867,
+    340
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_5.png",
+   "w": 249,
+   "h": 240,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1876,
+    81,
+    2125,
+    321
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_6.png",
+   "w": 185,
+   "h": 253,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2125,
+    77,
+    2310,
+    330
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_7.png",
+   "w": 401,
+   "h": 228,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2029,
+    401,
+    2430,
+    629
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_8.png",
+   "w": 214,
+   "h": 262,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2320,
+    79,
+    2534,
+    341
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_9.png",
+   "w": 257,
+   "h": 242,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2456,
+    382,
+    2713,
+    624
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_10.png",
+   "w": 213,
+   "h": 256,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2544,
+    82,
+    2757,
+    338
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_11.png",
+   "w": 772,
+   "h": 604,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    46,
+    430,
+    818,
+    1034
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_12.png",
+   "w": 553,
+   "h": 612,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    834,
+    430,
+    1387,
+    1042
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_13.png",
+   "w": 475,
+   "h": 278,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1399,
+    675,
+    1874,
+    953
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_14.png",
+   "w": 485,
+   "h": 264,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1887,
+    685,
+    2372,
+    949
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_15.png",
+   "w": 371,
+   "h": 297,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2386,
+    664,
+    2757,
+    961
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_16.png",
+   "w": 635,
+   "h": 423,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    53,
+    1065,
+    688,
+    1488
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_17.png",
+   "w": 169,
+   "h": 296,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1179,
+    1186,
+    1348,
+    1482
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_18.png",
+   "w": 192,
+   "h": 359,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1341,
+    1124,
+    1533,
+    1483
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_19.png",
+   "w": 407,
+   "h": 302,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1515,
+    1181,
+    1922,
+    1483
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_20.png",
+   "w": 334,
+   "h": 229,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1956,
+    965,
+    2290,
+    1194
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_21.png",
+   "w": 147,
+   "h": 220,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2315,
+    969,
+    2462,
+    1189
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_22.png",
+   "w": 393,
+   "h": 262,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2360,
+    1210,
+    2753,
+    1472
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_23.png",
+   "w": 259,
+   "h": 199,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2488,
+    986,
+    2747,
+    1185
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_24.png",
+   "w": 286,
+   "h": 286,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    572,
+    1201,
+    858,
+    1487
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_25.png",
+   "w": 178,
+   "h": 200,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    989,
+    1284,
+    1167,
+    1484
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_26.png",
+   "w": 237,
+   "h": 274,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    1958,
+    1214,
+    2195,
+    1488
+   ]
+  },
+  {
+   "arquivo": "folha_ativos_v2_27.png",
+   "w": 172,
+   "h": 169,
+   "origem": "folha_ativos_v2.jpg",
+   "bbox": [
+    2192,
+    1314,
+    2364,
+    1483
+   ]
+  }
+ ]
+}
