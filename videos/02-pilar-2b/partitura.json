@@ -1,0 +1,20 @@
+{
+  "_sobre": "Parâmetros da partitura do ep. 02. Tempos da trilha em segundos no arquivo ORIGINAL (análise: tools/audio/analisar_musica.py).",
+  "roteiro": "roteiro.json",
+  "vo": "entrada/pilar2b_sulafat_take2.wav",
+  "_vo_nota": "tomada 2: melhor alinhamento nas falas com a marca (L03 0,83 · L09 0,90 vs 0,77 · 0,59) e 1,3 s mais curta",
+  "tempo_narracao": 1.0,
+  "musica": {
+    "arquivo": "entrada/Sunlight_on_the_Workbench.mp3",
+    "titulo": "Sunlight on the Workbench",
+    "bpm": 103.116,
+    "downbeat0": 1.816,
+    "cortes": [],
+    "logo_musica": 54.71,
+    "_logo_nota": "o 'ta-da' final: golpes em 54,13 e 54,71 s; a cauda some até ~56 s",
+    "logo_compasso": 22,
+    "cauda": 3.2
+  },
+  "inicio": { "compasso": 0, "offset": 0.05 },
+  "pausas": { "L02": 0.60, "L03": 0.80, "L04": 0.60, "L05": 0.30, "L06": 0.70, "L07": 0.70, "L08": 0.70, "L09": 0.80 }
+}

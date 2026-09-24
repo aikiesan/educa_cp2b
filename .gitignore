@@ -8,3 +8,5 @@ node_modules/
 videos/**/audio/*.wav
 videos/**/audio/_*
 __pycache__/
+# recortes intermediários das folhas (refeitos por tools/preparar_ativos.py <ep> <folha>)
+assets/recortes/*/_folha/

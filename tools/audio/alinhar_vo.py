@@ -1,9 +1,10 @@
 """Alinhamento forçado palavra a palavra (torchaudio MMS_FA, multilíngue) da narração com o roteiro.
 
-uso: python alinhar_vo.py <narracao.wav> [--saida vo_alinhamento.json]
+uso: python alinhar_vo.py <narracao.wav> [--video 02-pilar-2b] [--saida vo_alinhamento.json]
 
 Saída: para cada fala Lxx → inicio/fim (s, no áudio original) e palavras [{p, i, f, score}].
 O texto é romanizado (sem acentos/pontuação) só para o alinhador; as palavras exibidas mantêm a grafia.
+Se a fala tem o campo "fala" (forma pronunciada: siglas soletradas, números por extenso), é ele que se alinha.
 """
 try:
     import truststore; truststore.inject_into_ssl()
@@ -16,7 +17,7 @@ import soundfile as sf
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-ROTEIRO = HERE.parents[1] / 'videos' / '01-o-que-e-biogas' / 'roteiro.json'
+VIDEOS = HERE.parents[1] / 'videos'
 
 
 def roman(w):
@@ -28,9 +29,11 @@ def roman(w):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('wav')
-    ap.add_argument('--saida', default=str(HERE.parents[1] / 'videos' / '01-o-que-e-biogas' / 'audio' / 'vo_alinhamento.json'))
+    ap.add_argument('--video', default='01-o-que-e-biogas')
+    ap.add_argument('--saida', default=None)
     a = ap.parse_args()
-    rot = json.loads(ROTEIRO.read_text(encoding='utf-8'))
+    a.saida = a.saida or str(VIDEOS / a.video / 'audio' / 'vo_alinhamento.json')
+    rot = json.loads((VIDEOS / a.video / 'roteiro.json').read_text(encoding='utf-8'))
     y, sr = sf.read(a.wav, dtype='float32')
     if y.ndim > 1: y = y.mean(1)
     wav = torch.tensor(y)[None]
@@ -41,7 +44,7 @@ def main():
     tok, aligner = bundle.get_tokenizer(), bundle.get_aligner()
     words, owner = [], []
     for f in rot['falas']:
-        for w in re.findall(r"[\wÀ-ÿ']+", f['texto']):
+        for w in re.findall(r"[\wÀ-ÿ']+", f.get('fala', f['texto'])):
             r = roman(w)
             if r: words.append((w, r)); owner.append(f['id'])
     with torch.inference_mode():

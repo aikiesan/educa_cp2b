@@ -142,7 +142,7 @@ async function main() {
       console.log(`quadros prontos em ${((Date.now() - t0) / 1000).toFixed(0)} s; codificando…`);
       const args = ['-y', '-framerate', String(a.fps), '-i', path.join(dir, 'q%05d.png')];
       if (a.audio) args.push('-ss', String(from), '-t', String(to - from), '-i', a.audio);
-      const vf = a.scale ? ['-vf', `scale=${Math.round(1920 * a.scale)}:-2:flags=lanczos`] : [];
+      const vf = a.scale ? ['-vf', `scale=${Math.round(meta.w * a.scale / 2) * 2}:-2:flags=lanczos`] : [];
       args.push(...vf, '-c:v', 'libx264', '-preset', 'slow', '-crf', String(a.crf), '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-tune', 'film', '-x264-params', 'aq-mode=3:deblock=-1,-1', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-movflags', '+faststart');
       if (a.audio) args.push('-c:a', 'aac', '-b:a', '256k', '-ar', '48000');
       args.push(a.video);

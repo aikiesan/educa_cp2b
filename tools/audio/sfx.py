@@ -461,6 +461,71 @@ def trator(dur=3.0, p=1.0, **_):
     return st(norm(y, 0.5), 0, 0.3)
 
 
+# ---------------- ep. 02: mouse, alfinete, papelada, notebook, preenchimento ----------------
+def clique(p=1.0, **_):
+    """Clique de mouse de papel: dois estalos curtos (aperta / solta)."""
+    n = int(0.16 * SR)
+    y = np.zeros(n)
+    for k0, f, a in [(0.0, 3400, 1.0), (0.055, 2600, 0.6)]:
+        k = int(k0 * SR); m = int(0.03 * SR)
+        tk = hp(noise(0.03), 1800) * env(m, 0.0002, 0.004, 7) + np.sin(2 * np.pi * f * p * t_(0.03)) * env(m, 0.0003, 0.006, 6) * 0.4
+        y[k:k + m] += tk * a
+    return st(norm(y, 0.6))
+
+def alfinete(p=1.0, **_):
+    """Alfinete espetado no mapa: 'tic' agudo + corpinho de papel batendo."""
+    d = 0.22
+    t = t_(d)
+    tic = np.sin(2 * np.pi * 2400 * p * t) * np.exp(-t * 60) * 0.6 + hp(noise(d), 5000) * env(len(t), 0.0002, 0.003, 7) * 0.5
+    body = papel_pousa(1.4 * p)[:, 0]
+    y = np.zeros(len(t) + len(body))
+    y[:len(t)] += tic
+    k = int(0.012 * SR); y[k:k + len(body)] += body * 0.7
+    return st(norm(y, 0.55))
+
+def papelada(dur=1.5, p=1.0, **_):
+    """Chuva de pedacinhos de papel pousando (muitos toques curtos, densidade em arco)."""
+    d = max(0.3, dur)
+    n = int(d * SR)
+    y = np.zeros(n + int(0.2 * SR))
+    rs = np.random.default_rng(int(d * 1000) + int(p * 97))
+    tt = 0.0
+    while tt < d:
+        dens = 0.25 + 0.75 * np.sin(np.pi * tt / d)
+        k = int(tt * SR)
+        m = int(0.02 * SR)
+        f0 = rs.uniform(1600, 5200) * p
+        tap = bp(rs.standard_normal(m), f0 * 0.5, min(f0 * 1.8, SR / 2 - 200)) * env(m, 0.0003, 0.006, 6) * rs.uniform(0.3, 1.0)
+        y[k:k + m] += tap
+        tt += rs.exponential(1 / (70 * dens))
+    y[:n] *= adsr(n, 0.05, 1, 0.3)
+    return st(norm(y, 0.4), 0, 0.6)
+
+def abre(p=1.0, **_):
+    """Tampa do notebook abrindo: dobradiça de papelão + 'tóin' suave de ligar."""
+    d = 0.9
+    t = t_(d)
+    hinge = bp(noise(d), 600, 2400) * (0.5 + 0.5 * np.abs(np.sin(2 * np.pi * 18 * t))) * adsr(len(t), 0.05, 1, 0.3) * np.exp(-t * 3) * 0.5
+    y = hinge.copy()
+    ch = fm_bell(0.8, 784 * p, 2.0, 0.6, 0.9) * 0.35 + fm_bell(0.8, 1175 * p, 2.0, 0.4, 0.9) * 0.25
+    k = int(0.35 * SR); m = min(len(ch), len(y) - k)
+    y[k:k + m] += ch[:m]
+    return st(norm(y, 0.5), 0, 0.3)
+
+def preenche(dur=2.0, p=1.0, **_):
+    """Brilho ascendente sob o mapa se pintando (arpejo suave em escala maior)."""
+    d = max(0.5, dur)
+    n = int(d * SR)
+    y = np.zeros((n + int(0.9 * SR), 2), np.float32)
+    notas = [523.25, 587.33, 659.25, 783.99, 880.0, 1046.5, 1174.66, 1318.5, 1567.98]
+    for i, f in enumerate(notas):
+        k = int(i / len(notas) * d * SR)
+        b = fm_bell(0.8, f * p, 1.0, 0.5, 0.7) * (0.35 + 0.04 * i)
+        m = min(len(b), len(y) - k)
+        y[k:k + m] += st(b[:m], -0.6 + i * 0.15)
+    return norm(y, 0.4)
+
+
 LIB = {k: v for k, v in globals().items() if callable(v) and not k.startswith('_') and k not in {
     't_', 'noise', 'pink', 'bp', 'lp', 'hp', 'env', 'adsr', 'sine_sweep', 'osc', 'fm_bell', 'st', 'pad', 'norm', 'bloop'} and v.__module__ == __name__}
 

@@ -1,9 +1,10 @@
 """Mixagem final: trilha editada + narração posicionada + efeitos sintetizados → mix.wav / mix.m4a.
 
-uso: python tools/audio/mixar.py [--vo entrada/biogas_multispeaker.wav] [--alinhamento .../vo_alinhamento.json]
+uso: python tools/audio/mixar.py [--video 02-pilar-2b] [--vo entrada/x.wav] [--musica entrada/y.mp3]
+     (padrões de voz e trilha vêm de videos/<episódio>/partitura.json)
 
 Etapas
- 1. trilha: corte "invisível" de 4 compassos (preserva a frase), refinado no ataque do tempo forte,
+ 1. trilha: cortes "invisíveis" em compassos inteiros (preservam a frase), refinados no ataque do tempo forte,
     com crossfade de potência constante; fade no fim.
  2. narração: 24 kHz → 48 kHz (swr, filtro longo), tempo ×1,035 com Rubber Band (sem mudar o tom),
     cada fala recortada e colocada no seu instante do timeline.json, nivelada fala a fala.
@@ -25,6 +26,11 @@ import sfx as SFXLIB
 ROOT = Path(__file__).resolve().parents[2]
 VID = ROOT / 'videos' / '01-o-que-e-biogas'
 AUD = VID / 'audio'
+def set_video(name):
+    global VID, AUD
+    VID = ROOT / 'videos' / name
+    AUD = VID / 'audio'
+    AUD.mkdir(parents=True, exist_ok=True)
 SR = 48000
 FFMPEG = 'ffmpeg'
 meter = pyln.Meter(SR)
@@ -67,19 +73,25 @@ def build_music(tl, src):
     tmp = AUD / '_musica48.wav'
     run('-i', src, '-af', 'aresample=48000:filter_size=64:phase_shift=10:cutoff=0.975', '-c:a', 'pcm_f32le', tmp)
     y = load(tmp)
-    c = tl['musica']['corte']
-    a = onset_near(y, c['de']) - 0.004
-    b = onset_near(y, c['para']) - 0.004
+    m = tl['musica']
+    cortes = m.get('cortes') or ([m['corte']] if m.get('corte') else [])
     xf = int(0.012 * SR)
-    ia, ib = int(a * SR), int(b * SR)
     w = np.linspace(0, np.pi / 2, xf)[:, None]
-    head = y[:ia + xf].copy()
-    tail = y[ib:].copy()
-    head[-xf:] = head[-xf:] * np.cos(w) + tail[:xf] * np.sin(w)
-    out = np.concatenate([head, tail[xf:]])
-    # a edição desloca tudo depois do corte por (b − a); ajusta a expectativa da grade
-    shift = (b - a) - (c['para'] - c['de'])
-    print(f'  trilha: corte {a:.3f}s → {b:.3f}s (desvio da grade {shift * 1000:+.1f} ms)')
+    # trechos da trilha original que ficam: [0, a1) [b1, a2) … [bn, fim); emendas com crossfade de potência constante
+    starts, ends, shift = [0], [], 0.0
+    for c in sorted(cortes, key=lambda c: c['de']):
+        a = onset_near(y, c['de']) - 0.004
+        b = onset_near(y, c['para']) - 0.004
+        ends.append(int(a * SR)); starts.append(int(b * SR))
+        d = (b - a) - (c['para'] - c['de'])
+        shift += d
+        print(f'  trilha: corte {a:.3f}s → {b:.3f}s (desvio da grade {d * 1000:+.1f} ms)')
+    ends.append(len(y))
+    out = y[starts[0]:ends[0] + (xf if len(ends) > 1 else 0)].copy()
+    for k in range(1, len(starts)):
+        s0, e0 = starts[k], ends[k]
+        out[-xf:] = out[-xf:] * np.cos(w) + y[s0:s0 + xf] * np.sin(w)
+        out = np.concatenate([out, y[s0 + xf:e0 + (xf if k < len(starts) - 1 else 0)]])
     dur = tl['duracao']
     n = int(dur * SR)
     out = out[:n] if len(out) >= n else np.pad(out, ((0, n - len(out)), (0, 0)))
@@ -160,13 +172,21 @@ def duck_env(vo, depth_db=-7.0, att=0.06, rel=0.38):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--vo', default=str(ROOT / 'entrada' / 'biogas_multispeaker.wav'))
-    ap.add_argument('--musica', default=str(ROOT / 'entrada' / 'musica_The_Papercut_Invention.mp3'))
-    ap.add_argument('--timeline', default=str(VID / 'timeline.json'))
-    ap.add_argument('--cues', default=str(AUD / 'sfx_cues.json'))
-    ap.add_argument('--saida', default=str(AUD / 'mix'))
+    ap.add_argument('--video', default='01-o-que-e-biogas')
+    ap.add_argument('--vo', default=None)
+    ap.add_argument('--musica', default=None)
+    ap.add_argument('--timeline', default=None)
+    ap.add_argument('--cues', default=None)
+    ap.add_argument('--saida', default=None)
     ap.add_argument('--alvo', type=float, default=-15.0)
     a = ap.parse_args()
+    set_video(a.video)
+    cfg = json.loads((VID / 'partitura.json').read_text(encoding='utf-8'))
+    a.vo = a.vo or str(ROOT / cfg['vo'])
+    a.musica = a.musica or str(ROOT / cfg['musica']['arquivo'])
+    a.timeline = a.timeline or str(VID / 'timeline.json')
+    a.cues = a.cues or str(AUD / 'sfx_cues.json')
+    a.saida = a.saida or str(AUD / 'mix')
     tl = json.loads(Path(a.timeline).read_text(encoding='utf-8'))
     cues = json.loads(Path(a.cues).read_text(encoding='utf-8'))
     n = int(tl['duracao'] * SR)

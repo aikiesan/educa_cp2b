@@ -1,0 +1,17 @@
+{
+  "_sobre": "Parâmetros da partitura (montar_timeline.py / mixar.py / alinhar_vo.py). Tempos da trilha em segundos no arquivo ORIGINAL.",
+  "roteiro": "roteiro.json",
+  "vo": "entrada/biogas_multispeaker.wav",
+  "tempo_narracao": 1.035,
+  "musica": {
+    "arquivo": "entrada/musica_The_Papercut_Invention.mp3",
+    "titulo": "The Papercut Invention",
+    "bpm": 105.013,
+    "downbeat0": 1.080,
+    "cortes": [{ "de": 5.651, "para": 14.794, "_nota": "c02→c06 = −4 compassos, preserva a frase musical" }],
+    "logo_compasso": 23,
+    "cauda": 3.35
+  },
+  "inicio": { "compasso": 0, "offset": 0.02 },
+  "pausas": { "L02": 0.55, "L03": 0.55, "L04": 0.30, "L05": 0.55, "L06": 0.20, "L07": 0.50, "L08": 0.50, "L09": 0.50, "L10": 0.50, "L11": 0.55 }
+}

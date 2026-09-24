@@ -57,7 +57,9 @@ def process(path, outdir, min_frac=0.0015):
     for k, sl in enumerate(ndi.find_objects(lab0), start=1):
         if sl is None: continue
         comp = lab0[sl] == k
-        ring = comp & ~ndi.binary_erosion(comp, iterations=3)
+        # só a borda de FORA conta (uma tela/janela vazada tem moldura escura por dentro, mas não é legenda)
+        filled = ndi.binary_fill_holes(comp)
+        ring = filled & ~ndi.binary_erosion(filled, iterations=3)
         light = (luma[sl][ring] > 185).mean() if ring.any() else 0
         if light < 0.35:
             alpha[sl][comp] = 0

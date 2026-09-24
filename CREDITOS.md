@@ -12,6 +12,12 @@ do briefing da equipe CP2B.
 - **Narração** (vozes *Sulafat* e *Puck*): gerada com **Gemini 3.8 Flash TTS** — `entrada/biogas_multispeaker.wav`
   (versão alternativa com uma voz: `entrada/biogas_single_sulafat.wav`). Script: `entrada/generate_biogas_tts.py`.
 - **Trilha** "The Papercut Invention": gerada com **Lyria 3 Pro** — `entrada/musica_The_Papercut_Invention.mp3`.
+- **Episódio 02** — recortes (notebook, personagens, mão, cursor, livros, artigos, alfinetes, lupa, caminhão de lixo,
+  vaca, saco de restos, ramos, nuvem): **Nano Banana 2** (`entrada/imagens/ep02/GERACAO_FINAL_MELHOR.jpg`);
+  narração *Sulafat*: **Gemini 3.8 Flash TTS** (`entrada/pilar2b_sulafat_take2.wav`, script `entrada/generate_pilar2b_tts.py`);
+  trilha "Sunlight on the Workbench": **Lyria 3 Pro** (`entrada/Sunlight_on_the_Workbench.mp3`).
+- **Dados do mapa (ep. 02)**: malha municipal do **IBGE** e potencial de biogás por município do **PILAR-2b**
+  (`analysis/data/02_municipality_summary_SP_2023.csv`, repositório aikiesan/Pilar-2b) — usados só como classes de cor.
 - **Marca CP2B**: logotipo e slogan conforme o *Manual de Identidade Visual CP2B* (jul. 2025).
 
 ## Fontes tipográficas (arquivos em `assets/fonts/`)

@@ -6,7 +6,12 @@
     "servir": "node tools/servir.mjs",
     "sfx": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --sfx-out videos/01-o-que-e-biogas/audio/sfx_cues.json",
     "quadros": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --stills 2.2,7.5,16.9,21.8,27.9,33.5,41.9,45.2,51.5,55 --out tmp/quadros",
-    "render": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --video dist/o-que-e-biogas.mp4 --audio videos/01-o-que-e-biogas/audio/mix.wav --fps 24 --crf 16 --workers 3"
+    "render": "node tools/render.mjs videos/01-o-que-e-biogas/index.html --video dist/o-que-e-biogas.mp4 --audio videos/01-o-que-e-biogas/audio/mix.wav --fps 24 --crf 16 --workers 3",
+    "sfx:02": "node tools/render.mjs videos/02-pilar-2b/index.html --sfx-out videos/02-pilar-2b/audio/sfx_cues.json",
+    "quadros:02": "node tools/render.mjs videos/02-pilar-2b/index.html --stills 1.8,4.4,9.9,15.9,17.4,21,26,30,33.6,38.2,44.9,48.5,52,54.5 --out tmp/quadros-02",
+    "render:02": "node tools/render.mjs videos/02-pilar-2b/index.html --video dist/pilar-2b_master.mp4 --audio videos/02-pilar-2b/audio/mix.wav --fps 24 --crf 16 --workers 3 --keep",
+    "render:02:vertical": "node tools/render.mjs videos/02-pilar-2b/index.html --query formato=vertical --video dist/pilar-2b_vertical_master.mp4 --audio videos/02-pilar-2b/audio/mix.wav --fps 24 --crf 16 --workers 3 --keep",
+    "quadros:02:vertical": "node tools/render.mjs videos/02-pilar-2b/index.html --query formato=vertical --stills 3.4,6.2,11.8,17.9,27.5,30.2,33.5,37.8,42.5,51.5,56 --out tmp/quadros-02v"
   },
   "devDependencies": {
     "playwright": "1.62.1"

@@ -38,17 +38,46 @@ npm run servir
 Abra <http://127.0.0.1:8080/videos/01-o-que-e-biogas/> (espaço = play/pausa; botão CC = legendas).
 A página desenha a animação em tempo real no `<canvas>`, sincronizada ao áudio.
 
+## 02 · PILAR-2b: o mapa do biogás de São Paulo
+
+<p align="center"><img src="docs/pilar-2b_capa.jpg" width="720" alt="Quadro final do vídeo: título PILAR-2b em letras recortadas sobre o notebook de papel com o mapa de São Paulo, personagens e o endereço cp2b.unicamp.br/pilar2b"></p>
+
+**58 s · 24 qps · pt-BR · uma voz (Sulafat)** · 16:9 (1920×1080) e **9:16 para Stories/Reels (1080×1920)** ·
+baixar na [Release v2.0](https://github.com/aikiesan/educa_cp2b/releases/tag/v2.0):
+
+| versão | arquivo |
+|---|---|
+| principal 16:9 | [`pilar-2b.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v2.0/pilar-2b.mp4) · H.264 9 Mb/s + AAC 256 kb/s |
+| com legendas embutidas 16:9 | [`pilar-2b_legendado.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v2.0/pilar-2b_legendado.mp4) |
+| vertical 9:16 (Stories/Reels) | [`pilar-2b_vertical.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v2.0/pilar-2b_vertical.mp4) |
+| vertical 9:16 com legendas | [`pilar-2b_vertical_legendado.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v2.0/pilar-2b_vertical_legendado.mp4) |
+| master 16:9 (CRF 16, para edição/arquivo) | [`pilar-2b_master.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v2.0/pilar-2b_master.mp4) |
+
+Legendas [`.vtt`](videos/02-pilar-2b/legendas.pt-BR.vtt) / [`.srt`](videos/02-pilar-2b/legendas.pt-BR.srt) ·
+roteiro, storyboard e checagem de conteúdo em [`videos/02-pilar-2b/roteiro.md`](videos/02-pilar-2b/roteiro.md)
+
+<p align="center"><img src="docs/pilar-2b_campinas.jpg" width="720" alt="Quadro do vídeo: a tela de papel do PILAR-2b com o filtro Urbano selecionado e o cartão de resultado de Campinas"></p>
+
+Um único **mapa de papel de São Paulo** — os 645 municípios recortados da malha do IBGE, desenhados em código —
+começa na mesa, voa para a tela de um notebook de papel e vira a plataforma: pastas de dados (Agrícola,
+Pecuária, Urbano) entram no painel **Filtros**, o mapa se pinta de oeste para leste com o potencial de cada
+município, a mãozinha clica em *Urbano* e em *Campinas* e sobe o cartão de resultado. As cores vêm dos dados
+reais do PILAR-2b (`02_municipality_summary_SP_2023.csv`, classes por quintil) e **nenhum número aparece na tela**.
+
+Assistir no navegador: <http://127.0.0.1:8080/videos/02-pilar-2b/> — versão vertical com `?formato=vertical`.
+
 ## Como é feito
 
 | etapa | ferramenta | arquivo |
 |---|---|---|
 | ilustrações recortadas (vaca, biodigestor, máquina, veículos, plantas…) | Nano Banana 2 (Gemini), fundo magenta | `entrada/imagens/` → `tools/preparar_ativos.py` (recorte por chroma key, "defringe", separação de itens) → `assets/recortes/` |
 | papel, bordas rasgadas, sombras, traço à mão, letras recortadas, carimbos, micróbios, moléculas | motor próprio `lib/colagem/` (canvas 2D determinístico) | `core.js`, `paper.js`, `shapes.js`, `ink.js`, `sprite.js`, `text.js`, `extras.js`, `stage.js` |
-| narração (2 vozes: Sulafat e Puck) | Gemini 3.8 Flash TTS | `entrada/biogas_multispeaker.wav` (roteiro em `videos/01-o-que-e-biogas/roteiro.json`) |
+| narração (ep. 01: Sulafat e Puck · ep. 02: Sulafat) | Gemini 3.8 Flash TTS | `entrada/biogas_multispeaker.wav`, `entrada/pilar2b_sulafat_take2.wav` (roteiros em `videos/*/roteiro.json`) |
 | alinhamento palavra a palavra | torchaudio MMS forced aligner | `tools/audio/alinhar_vo.py` → `audio/vo_alinhamento.json` |
-| partitura (tempos de cada palavra, grade de compassos, logo na batida final) | — | `tools/audio/montar_timeline.py` → `videos/01-o-que-e-biogas/timeline.json` |
-| trilha "The Papercut Invention" | Lyria 3 Pro | editada em compasso (corte de 4 compassos que preserva a frase musical) |
-| efeitos sonoros (papel, pops, bolhas, mola, carimbo, fogo, sinos, máquina, trator…) | sintetizados do zero | `tools/audio/sfx.py` (146 eventos exportados pela própria cena) |
+| partitura (tempos de cada palavra, grade de compassos, logo na batida final) | — | `videos/*/partitura.json` → `tools/audio/montar_timeline.py` → `videos/*/timeline.json` |
+| trilhas "The Papercut Invention" (ep. 01) e "Sunlight on the Workbench" (ep. 02) | Lyria 3 Pro | editadas em compasso inteiro (ep. 01: corte de 4 compassos; ep. 02: sem corte, logo no golpe final) |
+| mapa de SP (645 municípios, classes de potencial) | malha IBGE + dados do PILAR-2b | `tools/dados/mapa_sp.py` → `videos/02-pilar-2b/dados/sp_mapa.json` |
+| efeitos sonoros (papel, pops, bolhas, mola, carimbo, fogo, sinos, máquina, trator, clique, alfinete…) | sintetizados do zero | `tools/audio/sfx.py` (eventos exportados pela própria cena: 146 no ep. 01, 114 no ep. 02) |
 | mixagem (ducking sob a voz, EQ, compressão, −15 LUFS, pico real ≤ −1 dBTP) | pedalboard + pyloudnorm + Rubber Band | `tools/audio/mixar.py` → `audio/mix.wav`, `audio/mix.m4a` |
 | render quadro a quadro (com desfoque de movimento nas viradas de câmera) | Playwright + Chromium (GPU) + ffmpeg (x264) | `tools/render.mjs` |
 
@@ -56,7 +85,21 @@ A animação é **função pura do tempo**: o mesmo instante gera sempre o mesmo
 visuais e sonoras são ancoradas em palavras da narração (`at('L03', 'micróbios')`), então trocar a
 narração e rodar o pipeline de novo re-sincroniza tudo.
 
-### Refazer o vídeo
+### Refazer um vídeo
+
+Os scripts recebem o episódio (`--video 02-pilar-2b`; sem ele, o ep. 01). Exemplo do ep. 02:
+
+```bash
+python tools/dados/mapa_sp.py                                         # mapa de SP (precisa do repositório Pilar-2b)
+python tools/preparar_ativos.py ep02 GERACAO_FINAL_MELHOR && python tools/nomear_ep02.py && python tools/meta_recortes.py ep02
+python tools/audio/alinhar_vo.py entrada/pilar2b_sulafat_take2.wav --video 02-pilar-2b
+python tools/audio/montar_timeline.py --video 02-pilar-2b
+python tools/legendas.py videos/02-pilar-2b/timeline.json --balancear
+npm run sfx:02 && python tools/audio/mixar.py --video 02-pilar-2b && python tools/audio/grafico_mix.py --video 02-pilar-2b
+npm run render:02                                                     # master 16:9; vertical: --query formato=vertical
+```
+
+Ep. 01:
 
 ```bash
 # 1. ambiente Python (ferramentas de áudio/imagem)

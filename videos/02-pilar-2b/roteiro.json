@@ -1,0 +1,87 @@
+{
+  "titulo": "PILAR-2b: o mapa do biogás de São Paulo",
+  "idioma": "pt-BR",
+  "versao": "1.0",
+  "narracao": {
+    "modelo": "Gemini 3.8 Flash TTS (locutora única)",
+    "vozes": {
+      "Sulafat": "calorosa, clara e confiante; ritmo tranquilo"
+    },
+    "arquivo_original": "entrada/pilar2b_sulafat_take1.wav",
+    "script": "entrada/generate_pilar2b_tts.py"
+  },
+  "_campos": "texto = legenda/tela; fala = forma pronunciada (usada no TTS e no alinhador)",
+  "legenda_subst": [
+    [
+      "seiscentos e quarenta e cinco",
+      "645"
+    ],
+    [
+      "cê pê dois bê",
+      "CP2B"
+    ],
+    [
+      "Pilar dois bê",
+      "PILAR-2b"
+    ]
+  ],
+  "falas": [
+    {
+      "id": "L01",
+      "voz": "Sulafat",
+      "cena": "titulo",
+      "texto": "Onde está o biogás de São Paulo?"
+    },
+    {
+      "id": "L02",
+      "voz": "Sulafat",
+      "cena": "residuos",
+      "texto": "Ele está escondido nos resíduos: na cana, no esterco, no lixo das cidades... espalhados por 645 municípios.",
+      "fala": "Ele está escondido nos resíduos: na cana, no esterco, no lixo das cidades... espalhados por seiscentos e quarenta e cinco municípios."
+    },
+    {
+      "id": "L03",
+      "voz": "Sulafat",
+      "cena": "notebook",
+      "texto": "Pra encontrar esse potencial, o CP2B criou o PILAR-2b.",
+      "fala": "Pra encontrar esse potencial, o cê pê dois bê criou o Pilar dois bê."
+    },
+    {
+      "id": "L04",
+      "voz": "Sulafat",
+      "cena": "pastas",
+      "texto": "Uma plataforma online que reúne dados da agricultura, da pecuária e das cidades..."
+    },
+    {
+      "id": "L05",
+      "voz": "Sulafat",
+      "cena": "preenche",
+      "texto": "...e calcula quanto biogás cada município pode gerar."
+    },
+    {
+      "id": "L06",
+      "voz": "Sulafat",
+      "cena": "clique",
+      "texto": "É só escolher o tipo de resíduo, clicar na sua cidade... e ver o resultado na hora."
+    },
+    {
+      "id": "L07",
+      "voz": "Sulafat",
+      "cena": "ciencia",
+      "texto": "Tudo com base científica: as fontes e os métodos ficam à vista."
+    },
+    {
+      "id": "L08",
+      "voz": "Sulafat",
+      "cena": "pessoas",
+      "texto": "Assim, gestores, empresas e pesquisadores descobrem onde vale a pena investir em energia renovável."
+    },
+    {
+      "id": "L09",
+      "voz": "Sulafat",
+      "cena": "final",
+      "texto": "PILAR-2b: o mapa do biogás de São Paulo. Acesse e explore!",
+      "fala": "Pilar dois bê: o mapa do biogás de São Paulo. Acesse e explore!"
+    }
+  ]
+}
