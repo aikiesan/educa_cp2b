@@ -6,7 +6,7 @@
   'use strict';
   const C = G.Colagem;
   const { core, shapes: S, sprite: SP, ink: I, text: T, paper: P, extras: X } = C;
-  const { tw, E, clamp, lerp, settle, pulse, hrand, R: RNG, snoise1, TAU, mixHex, shade, smooth } = core;
+  const { tw, E, clamp, lerp, settle, pulse, hrand, R: RNG, snoise1, TAU, mixHex, shade, smooth, keys } = core;
   const INK = SP.INK;
 
   const PAL = {
@@ -57,6 +57,9 @@
   const jit = (seed, pose, a = 0.7) => [snoise1(pose * 1.3, seed) * a, snoise1(pose * 1.7, seed + 9) * a];
   function place(ctx, name, x, y, o) { return X.img(ctx, name, x, y, o); }
   const ZOOM = { v: 1 };
+  // formato: 'h' = 16:9 (original) · 'v' = 9:16 (Stories/Reels). No vertical a câmera usa o mesmo percurso,
+  // com zoom menor e um deslocamento horizontal que acompanha a ação dentro de cada estação (VCAM).
+  let FMT = 'h', MARCA = true, VCAM = null;
   const Z = (o = {}) => ({ zoom: ZOOM.v, ...o });
 
   // ---------- câmera ----------
@@ -97,6 +100,36 @@
     k.push(mv(m7 + 2.3, TL.duracao + 1, { x: 0, y: 0, z: 0.205 }, { x: 0, y: 0, z: 0.222 }, false));
     CAM = k;
     FINALE = m7;
+    if (FMT === 'v') buildVCam(m1, m2, m3, m4, m5, m6, m7);
+  }
+  /** Trilha do vertical: [t, dx (mundo), multiplicador de zoom]. dx soma-se à câmera 16:9 (que já tem seus próprios
+   *  deslocamentos em algumas estações); cada mudança leva ~0,6 s e acontece pouco antes da palavra. */
+  function buildVCam(m1, m2, m3, m4, m5, m6, m7) {
+    const kf = [{ t: 0, v: [0, 0.61] }];
+    let cur = [0, 0.61];
+    const go = (t, dx, m = 0.85, d = 0.6) => { t = Math.max(t, kf[kf.length - 1].t); kf.push({ t, v: cur }); cur = [dx, m]; kf.push({ t: t + d, v: cur, e: E.inOutCubic }); };
+    go(3.3, -330, 0.85, 0.9);                                 // título → sobras (vaca, "o que ninguém quer")
+    go(at('L02', 'restos') - 0.3, -40);                      // pilha de restos + esterco
+    go(at('L02', 'resíduos') - 0.3, 470);                    // resíduos da lavoura
+    go(m1, -270, 0.85, 0.95);                                 // → biodigestor
+    go(at('L03', 'micróbios') - 0.1, 90, 0.85, 0.7);          // lupa da festa dos micróbios
+    go(at('L04', 'gás') - 0.35, -210);                       // bolhas + BIOGÁS!
+    go(m2, -420, 0.85, 0.95);                                 // → balão de biogás
+    go(at('L05', 'metano') - 0.35, 380);                     // pizza + rótulos
+    go(at('L06', 'alguns') - 0.25, 60);                      // H₂S fedido
+    go(m3, -300, 0.85, 0.9);                                  // → fogão (calor)
+    go(at('L07', 'eletricidade') - 0.4, 360);                // gerador + lâmpada
+    go(m4, -130, 0.85, 0.9);                                  // → máquina de purificação
+    go(at('L08', 'nasce') - 0.35, 380);                      // BIOMETANO + estrela
+    go(m5, -70, 0.85, 0.95);                                  // → biometano = gás natural (a câmera 16:9 já está em −330)
+    go(at('L09', 'gasoduto') - 0.3, 50);
+    go(at('L09', 'indústrias') - 0.3, 110);
+    go(at('L09', 'caminhões') - 0.3, 300);
+    go(at('L09', 'ônibus') - 0.3, 380);
+    go(m6, -270, 0.85, 0.9);                                  // → lavoura (trator, biofertilizante)
+    go(at('L10', 'lavoura') - 0.3, 50);
+    go(m7, 0, 0.8, 2.3);                                     // câmera se afasta: o anel inteiro
+    VCAM = kf;
   }
   let FINALE = 46.5;
   function camera(t) {
@@ -117,6 +150,7 @@
     if (moving && seg.t1 - seg.t0 < 1.2) z *= 1 - 0.16 * Math.sin(Math.PI * p);
     // leve respiração de câmera na mão
     x += snoise1(t * 0.35, 11) * 4; y += snoise1(t * 0.31, 17) * 3;
+    if (VCAM) { const [dx, m] = keys(t, VCAM); x += dx; z *= m; }
     let rot = 0;
     if (t > FINALE) rot = -0.075 * E.inOutSine(clamp((t - FINALE - 0.8) / 9));
     return { x, y, zoom: z, rot };
@@ -131,7 +165,11 @@
   let BG_ST = -1;
   function torn(key, pts, color, kind = 'paper', o = {}) { BG.push({ key, st: BG_ST, pts: S.tear(pts, { amp: o.amp ?? 5, seed: o.seed ?? key.length }), color, kind, o }); }
   function buildBackdrops() {
-    const R0 = (sx, sy, w, h, rot = 0, seed = 1) => S.xform(S.cut([[-w / 2, -h / 2], [w / 2, -h / 2], [w / 2, h / 2], [-w / 2, h / 2]], { seed, jitter: 3, ds: 40, bow: 0.01 }), { x: sx, y: sy, rot });
+    const R0 = (sx, sy, w, h, rot = 0, seed = 1) => {
+      if (FMT === 'v') { const ex = 440; if (sy - ST[Math.max(0, BG_ST)].p[1] < -60) { sy -= ex / 2; h += ex; } else if (sy - ST[Math.max(0, BG_ST)].p[1] > 60) { sy += ex / 2; h += ex; } else h += ex * 2; }
+      return R0h(sx, sy, w, h, rot, seed);
+    };
+    const R0h = (sx, sy, w, h, rot = 0, seed = 1) => S.xform(S.cut([[-w / 2, -h / 2], [w / 2, -h / 2], [w / 2, h / 2], [-w / 2, h / 2]], { seed, jitter: 3, ds: 40, bow: 0.01 }), { x: sx, y: sy, rot });
     const at_ = (i, dx, dy) => [ST[i].p[0] + dx, ST[i].p[1] + dy];
     // centro: grande círculo de papel creme (o "laboratório" no coração do ciclo)
     torn('centro', S.blob(0, 40, 1320, 1180, { seed: 3, wobble: 0.035, n: 120 }), PAL.creme, 'paper', { amp: 7 });
@@ -915,11 +953,12 @@
     const k = Math.min(1, (t - c.a) / 0.12, (c.b - t) / 0.12);
     ctx.save();
     ctx.globalAlpha = Math.max(0, k);
-    ctx.font = `500 44px "Neulis Sans", "Kalam", sans-serif`;
+    const cs = FMT === 'v' ? 42 : 44;
+    ctx.font = `500 ${cs}px "Neulis Sans", "Kalam", sans-serif`;
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     const lines = c.txt.split('\n');
-    const w = Math.max(...lines.map((l) => ctx.measureText(l).width)) + 56, lh = 56, h = lines.length * lh + 26;
-    const y = H - 74 - h / 2;
+    const w = Math.max(...lines.map((l) => ctx.measureText(l).width)) + 56, lh = cs * 1.27, h = lines.length * lh + 26;
+    const y = H - (FMT === 'v' ? 420 : 74) - h / 2;
     ctx.fillStyle = 'rgba(20,32,39,0.84)';
     ctx.beginPath(); ctx.roundRect(Wd / 2 - w / 2, y - h / 2, w, h, 14); ctx.fill();
     ctx.fillStyle = '#fbf8f0';
@@ -927,35 +966,41 @@
     ctx.restore();
   }
   function overlay(rc) {
-    drawCaptions(rc);
     const { ctx, t, tq, W: Wd, H } = rc;
+    drawCaptions(rc);
     if (t < FINALE + 1.2) return;
+    const V = FMT === 'v', fs = V ? 0.72 : 1;
     const tB = at('L11', 'Biogás'), tBm = at('L11', 'biometano'), tO = at('L11', 'o'), tLogo = TL.musica.logo;
     const dim = clamp((t - tLogo + 0.1) / 0.5);
     // título
     const cxs = Wd / 2, cys = H / 2 - 40;
-    FTITLE1.forEach((l, i) => { const p = pop(tq, tB - 0.1 + i * 0.06, 0.3, 2.6); if (p > 0) SP.place(ctx, l.spr, cxs + l.x, cys - 150 + l.y, { rot: l.rot, s: p, lift: (1 - p) * 0.9 }); });
-    FTITLE2.forEach((l, i) => { const p = pop(tq, tBm - 0.1 + i * 0.05, 0.3, 2.6); if (p > 0) SP.place(ctx, l.spr, cxs + l.x, cys + 20 + l.y, { rot: l.rot, s: p, lift: (1 - p) * 0.9 }); });
+    FTITLE1.forEach((l, i) => { const p = pop(tq, tB - 0.1 + i * 0.06, 0.3, 2.6); if (p > 0) SP.place(ctx, l.spr, cxs + l.x * fs, cys - 150 * fs + l.y * fs, { rot: l.rot, s: p * fs, lift: (1 - p) * 0.9 }); });
+    FTITLE2.forEach((l, i) => { const p = pop(tq, tBm - 0.1 + i * 0.05, 0.3, 2.6); if (p > 0) SP.place(ctx, l.spr, cxs + l.x * fs, cys + 20 * fs + l.y * fs, { rot: l.rot, s: p * fs, lift: (1 - p) * 0.9 }); });
     // frase escrita à mão numa tira de papel
     const wp = clamp((t - tO + 0.05) / (endOf('L11', 'amanhã') - tO + 0.1));
     if (wp > 0) {
       const sIn = pop(tq, tO - 0.2, 0.35);
-      ctx.save(); ctx.translate(cxs, cys + 225); ctx.rotate(-0.012); ctx.scale(sIn, sIn);
-      SP.piece(ctx, S.tear(S.cut([[-640, -52], [640, -48], [636, 52], [-644, 50]], { seed: 3 }), { amp: 3, seed: 4 }), { color: PAL.papel, kind: 'smooth', seed: 5, shadow: { zoom: 1 }, edge: 0.15 });
-      T.hand(ctx, 'o resíduo de hoje é a energia de amanhã!', 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
+      ctx.save(); ctx.translate(cxs, cys + (V ? 215 : 225)); ctx.rotate(-0.012); ctx.scale(sIn, sIn);
+      if (V) {   // 9:16: a frase quebra em duas linhas numa tira mais alta
+        SP.piece(ctx, S.tear(S.cut([[-440, -92], [440, -88], [436, 92], [-444, 90]], { seed: 3 }), { amp: 3, seed: 4 }), { color: PAL.papel, kind: 'smooth', seed: 5, shadow: { zoom: 1 }, edge: 0.15 });
+        T.hand(ctx, 'o resíduo de hoje é\na energia de amanhã!', 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
+      } else {
+        SP.piece(ctx, S.tear(S.cut([[-640, -52], [640, -48], [636, 52], [-644, 50]], { seed: 3 }), { amp: 3, seed: 4 }), { color: PAL.papel, kind: 'smooth', seed: 5, shadow: { zoom: 1 }, edge: 0.15 });
+        T.hand(ctx, 'o resíduo de hoje é a energia de amanhã!', 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
+      }
       ctx.restore();
     }
     // cartão do logo na batida final
     if (dim > 0) {
       ctx.save(); ctx.globalAlpha = 0.55 * dim; ctx.fillStyle = '#1b2a33'; ctx.fillRect(0, 0, Wd, H); ctx.restore();
       const p = pop(tq, tLogo - 0.04, 0.45, 1.5);
-      const cw = 1100, ch = 520;
+      const [cw, ch, lwMax] = V ? [900, 470, 700] : [1100, 520, 860];
       ctx.save(); ctx.translate(Wd / 2, H / 2 + (1 - p) * 700);
       SP.setShadow(ctx, 1, 0.6, 1.2);
       ctx.fillStyle = '#ffffff'; ctx.beginPath(); ctx.roundRect(-cw / 2, -ch / 2, cw, ch, 22); ctx.fill();
       SP.clearShadow(ctx);
       const logo = X.images.get('logo');
-      if (logo) { const lw = 860, lh = lw * logo.height / logo.width; ctx.drawImage(logo, -lw / 2, -ch / 2 + 50, lw, lh); }
+      if (logo) { const lw = lwMax, lh = lw * logo.height / logo.width; ctx.drawImage(logo, -lw / 2, -ch / 2 + 50, lw, lh); }
       ctx.fillStyle = PAL.petrol; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `700 46px "Neulis Sans", "Kalam", sans-serif`;
       ctx.fillText('Energia viva, ciência que transforma.', 0, ch / 2 - 88);
@@ -988,7 +1033,9 @@
   const scene = {
     duration: 57,
     boilFps: 8,
-    async init(base = '', tlName = 'timeline.json', captions = null) {
+    async init(base = '', tlName = 'timeline.json', captions = null, opts = {}) {
+      FMT = opts.formato === 'vertical' || opts.formato === 'v' ? 'v' : 'h';
+      MARCA = opts.marca !== false;
       TL = await (await fetch(base + tlName, { cache: 'no-store' })).json();
       if (captions) {
         const vtt = await (await fetch(base + captions, { cache: 'no-store' })).text();
@@ -1039,6 +1086,11 @@
       drawFlyers(rc);
     },
     overlay,
+    // marca-d'água CP2B no canto, por cima do grão (sai antes do título final)
+    hud(rc) {
+      if (!MARCA) return;
+      X.watermark(rc.ctx, rc.W, rc.H, rc.t, FMT === 'v' ? { w: 170, y: 250, margin: 40, t1: at('L11', 'Biogás') - 0.45 } : { w: 190, t1: at('L11', 'Biogás') - 0.45 });
+    },
     sfx: () => SFX,
     timeline: () => TL,
   };

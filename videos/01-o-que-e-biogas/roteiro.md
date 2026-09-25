@@ -34,6 +34,15 @@ fita crepe, carimbos, letras recortadas (estilo "bilhete de resgate"), traço de
 Fechamento: logotipo CP2B (sem rotação, sombra ou textura sobre o logo, conforme o manual) +
 slogan **"Energia viva, ciência que transforma."**
 
+## Formato vertical (Stories/Reels) — adicionado com o ep. 02
+
+`index.html?formato=vertical` (1080×1920) usa o mesmo percurso de câmera com zoom menor e uma **trilha de
+deslocamento ancorada nas palavras** (`buildVCam` em `cena.js`): dentro de cada estação a câmera desliza até a
+ação narrada (vaca → restos → lavoura; biodigestor → lupa → BIOGÁS!; balão → pizza → H₂S; fogão → gerador;
+máquina → BIOMETANO; gás natural → casas → indústrias → caminhões e ônibus; trator → lavoura). Os fundos de
+papel crescem para cima e para baixo; o título final encolhe e a frase quebra em duas linhas; o cartão do logo
+tem 900 px. Narração, tempos e mixagem são os mesmos da versão 16:9.
+
 ## Checagem de conteúdo
 
 - **Biodigestão anaeróbia**: consórcios de microrganismos (bactérias e arqueias metanogênicas) degradam

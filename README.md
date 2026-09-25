@@ -8,13 +8,15 @@ e traço à mão quadro a quadro, sincronizada palavra a palavra com a narraçã
 
 <p align="center"><img src="docs/previa-ciclo.gif" width="560" alt="Prévia: a câmera se afasta e revela o anel de estações de papel — o ciclo do biogás"></p>
 
-**57 s · 1920×1080 · 24 qps · pt-BR** · baixar na [Release v1.0](https://github.com/aikiesan/educa_cp2b/releases/tag/v1.0):
+**57 s · 24 qps · pt-BR** · 16:9 (1920×1080) e **9:16 para Stories/Reels (1080×1920)** · baixar na [Release v1.0](https://github.com/aikiesan/educa_cp2b/releases/tag/v1.0):
 
 | versão | arquivo |
 |---|---|
 | principal (duas vozes) | [`o-que-e-biogas.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v1.0/o-que-e-biogas.mp4) · H.264 9 Mb/s + AAC 256 kb/s |
 | com legendas embutidas (redes sociais) | [`o-que-e-biogas_legendado.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v1.0/o-que-e-biogas_legendado.mp4) |
 | narração com uma voz (Sulafat) | [`o-que-e-biogas_voz-unica.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v1.0/o-que-e-biogas_voz-unica.mp4) |
+| vertical 9:16 (Stories/Reels) | [`o-que-e-biogas_vertical.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v1.0/o-que-e-biogas_vertical.mp4) |
+| vertical 9:16 com legendas | [`o-que-e-biogas_vertical_legendado.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v1.0/o-que-e-biogas_vertical_legendado.mp4) |
 | master (CRF 16, para edição/arquivo) | [`o-que-e-biogas_master.mp4`](https://github.com/aikiesan/educa_cp2b/releases/download/v1.0/o-que-e-biogas_master.mp4) |
 
 Legendas [`.vtt`](videos/01-o-que-e-biogas/legendas.pt-BR.vtt) / [`.srt`](videos/01-o-que-e-biogas/legendas.pt-BR.srt) ·
@@ -68,6 +70,10 @@ Assistir no navegador: <http://127.0.0.1:8080/videos/02-pilar-2b/> — versão v
 
 ## Como é feito
 
+> **Manual de produção:** [`docs/METODO.md`](docs/METODO.md) — passo a passo de um episódio (roteiro, pedidos de
+> imagem/voz/música, recortes, alinhamento, partitura, cena, formato vertical, marca, mixagem, render, QA, Release),
+> convenções e armadilhas conhecidas.
+
 | etapa | ferramenta | arquivo |
 |---|---|---|
 | ilustrações recortadas (vaca, biodigestor, máquina, veículos, plantas…) | Nano Banana 2 (Gemini), fundo magenta | `entrada/imagens/` → `tools/preparar_ativos.py` (recorte por chroma key, "defringe", separação de itens) → `assets/recortes/` |
@@ -80,6 +86,9 @@ Assistir no navegador: <http://127.0.0.1:8080/videos/02-pilar-2b/> — versão v
 | efeitos sonoros (papel, pops, bolhas, mola, carimbo, fogo, sinos, máquina, trator, clique, alfinete…) | sintetizados do zero | `tools/audio/sfx.py` (eventos exportados pela própria cena: 146 no ep. 01, 114 no ep. 02) |
 | mixagem (ducking sob a voz, EQ, compressão, −15 LUFS, pico real ≤ −1 dBTP) | pedalboard + pyloudnorm + Rubber Band | `tools/audio/mixar.py` → `audio/mix.wav`, `audio/mix.m4a` |
 | render quadro a quadro (com desfoque de movimento nas viradas de câmera) | Playwright + Chromium (GPU) + ffmpeg (x264) | `tools/render.mjs` |
+
+As versões de distribuição levam o **logo CP2B no canto** (cartão branco limpo, desenhado depois do grão e da luz,
+conforme o manual da marca); ele sai antes do título final. Os masters ficam sem marca, para edição.
 
 A animação é **função pura do tempo**: o mesmo instante gera sempre o mesmo quadro. Todas as deixas
 visuais e sonoras são ancoradas em palavras da narração (`at('L03', 'micróbios')`), então trocar a
@@ -117,7 +126,8 @@ python tools/audio/mixar.py
 npm run render
 ```
 
-Variações pela URL da página: `?cc=1` (legendas desenhadas no quadro), `?tl=timeline_single.json&audio=audio/mix_single.m4a`
+Variações pela URL da página (nos dois episódios): `?formato=vertical` (9:16, 1080×1920), `?marca=0` (sem a
+marca-d'água do CP2B no canto — usada nos masters), `?cc=1` (legendas desenhadas no quadro), `?tl=timeline_single.json&audio=audio/mix_single.m4a`
 (versão com uma voz). Para a versão de uma voz: `montar_timeline.py --alinhamento audio/vo_alinhamento_single.json --tempo 1.05 --pausas 0.8 --saida .../timeline_single.json`.
 A codificação de distribuição (2 passagens, ~9 Mb/s) está em `tools/codificar.sh` (use `--keep` no render para manter os quadros PNG).
 

@@ -112,7 +112,7 @@
     { id: 'urb', nome: 'Urbano', cor: PAL.petrol, img: 'casa', imgS: 0.3 },
   ];
   // ---------- layout por formato (h = 16:9 · v = 9:16 Stories) ----------
-  let FMT = 'h';
+  let FMT = 'h', MARCA = true;
   const LAYOUTS = {
     h: {
       books: { x: -1560, y: 420 },
@@ -1101,6 +1101,7 @@
     boilFps: 8,
     async init(base = '', tlName = 'timeline.json', captions = null, opts = {}) {
       FMT = opts.formato === 'vertical' || opts.formato === 'v' ? 'v' : 'h';
+      MARCA = opts.marca !== false;
       LAY = LAYOUTS[FMT];
       Object.assign(BOOKS, LAY.books);
       PEOPLE.forEach((p, k) => { p.x = LAY.people[k][0]; p.y = LAY.people[k][1]; });
@@ -1172,6 +1173,11 @@
       drawCursor(rc);
     },
     overlay,
+    // marca-d'água CP2B no canto, por cima do grão (sai antes do título final no vertical e antes do cartão do logo no 16:9)
+    hud(rc) {
+      if (!MARCA) return;
+      X.watermark(rc.ctx, rc.W, rc.H, rc.t, FMT === 'v' ? { w: 170, y: 250, margin: 40, t1: Lin('L09').inicio - 0.4 } : { w: 190, t1: TL.musica.logo - 0.45 });
+    },
     sfx: () => SFX,
     timeline: () => TL,
   };

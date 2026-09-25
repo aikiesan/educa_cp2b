@@ -72,6 +72,10 @@ câmeras, posição do título, livros e personagens, textos da tela — respeit
 **Filtros** para o mapa depois do clique em *Urbano*; livros e personagens ficam **embaixo** do notebook; o cartão
 final usa 900 px de largura. Tempos, deixas de som e mixagem são os mesmos das versões 16:9.
 
+Marca-d'água: logo CP2B colorido num cartão branco no canto superior direito (no vertical, abaixo da faixa do
+perfil do Instagram), desenhado por cima do grão/luz para ficar limpo; entra em 0,6 s e sai antes do título
+final (vertical) ou do cartão do logo (16:9). `?marca=0` desliga (masters).
+
 ## Trilha, ritmo e som
 
 - Trilha "Sunlight on the Workbench" (Lyria 3 Pro), 103,1 bpm, 58,9 s — cabe inteira, **sem cortes**; o "ta-da"

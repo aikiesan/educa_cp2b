@@ -65,7 +65,7 @@
   canvas.width = W; canvas.height = H;
   if (VERT) document.documentElement.classList.add('vertical');
   const ccParam = QS.get('cc');
-  await scene.init('', QS.get('tl') || 'timeline.json', ccParam ? (ccParam === '1' ? 'legendas.pt-BR.vtt' : ccParam) : null, { formato: VERT ? 'vertical' : 'horizontal' });
+  await scene.init('', QS.get('tl') || 'timeline.json', ccParam ? (ccParam === '1' ? 'legendas.pt-BR.vtt' : ccParam) : null, { formato: VERT ? 'vertical' : 'horizontal', marca: QS.get('marca') !== '0' });
   if (QS.get('audio')) document.getElementById('audio').src = QS.get('audio');
   const stage = new C.stage.Stage(canvas, { fps: 24, stepFps: 12 });
 
@@ -86,6 +86,7 @@
     const ctx = stage.ctx; ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
     ctx.drawImage(acc, 0, 0);
     stage.postFX({ ctx, W, H, pose: Math.floor(t * 12 + 1e-6) });
+    if (scene.hud) scene.hud({ ctx, t, W, H });
   }
   window.__colagem = {
     ready: true, duration: scene.duration, width: W, height: H,

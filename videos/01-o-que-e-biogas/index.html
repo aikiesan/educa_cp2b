@@ -10,6 +10,8 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: system-ui, "Segoe UI", sans-serif; }
   body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 16px; }
+  .vertical .frame, .vertical .bar { width: min(100%, calc((100vh - 110px) * 9 / 16)); }
+  .vertical .frame { aspect-ratio: 9 / 16; }
   .frame { position: relative; width: min(100%, calc((100vh - 110px) * 16 / 9)); aspect-ratio: 16 / 9; background: #000; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
   canvas { display: block; width: 100%; height: 100%; }
   .play { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(27,42,51,.35); border: 0; cursor: pointer; color: var(--fg); font-size: 20px; transition: opacity .2s; }
@@ -57,13 +59,18 @@
   const canvas = document.getElementById('stage');
   await C.stage.loadFonts(C.FONTS);
   const QS = new URLSearchParams(location.search);
+  // ?formato=vertical → 1080×1920 (Stories/Reels); ?marca=0 → sem a marca-d'água
+  const VERT = /^v/.test(QS.get('formato') || '');
+  const W = VERT ? 1080 : 1920, H = VERT ? 1920 : 1080;
+  canvas.width = W; canvas.height = H;
+  if (VERT) document.documentElement.classList.add('vertical');
   const ccParam = QS.get('cc');
-  await scene.init('', QS.get('tl') || 'timeline.json', ccParam ? (ccParam === '1' ? 'legendas.pt-BR.vtt' : ccParam) : null);
+  await scene.init('', QS.get('tl') || 'timeline.json', ccParam ? (ccParam === '1' ? 'legendas.pt-BR.vtt' : ccParam) : null, { formato: VERT ? 'vertical' : 'horizontal', marca: QS.get('marca') !== '0' });
   if (QS.get('audio')) document.getElementById('audio').src = QS.get('audio');
   const stage = new C.stage.Stage(canvas, { fps: 24, stepFps: 12 });
 
   // desfoque de movimento (só na exportação): média de sub-quadros para frente no tempo (obturador de 180°)
-  const acc = document.createElement('canvas'); acc.width = 1920; acc.height = 1080;
+  const acc = document.createElement('canvas'); acc.width = W; acc.height = H;
   const accCtx = acc.getContext('2d');
   function frameAt(t, blur) {
     const speed = blur ? scene.camSpeed(t) : 0;
@@ -78,10 +85,11 @@
     stage.post = post;
     const ctx = stage.ctx; ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
     ctx.drawImage(acc, 0, 0);
-    stage.postFX({ ctx, W: 1920, H: 1080, pose: Math.floor(t * 12 + 1e-6) });
+    stage.postFX({ ctx, W, H, pose: Math.floor(t * 12 + 1e-6) });
+    if (scene.hud) scene.hud({ ctx, t, W, H });
   }
   window.__colagem = {
-    ready: true, duration: scene.duration, width: 1920, height: 1080,
+    ready: true, duration: scene.duration, width: W, height: H,
     frame: (t) => { frameAt(t, true); return canvas.toDataURL('image/png').split(',')[1]; },
     sfx: () => scene.sfx(),
     timeline: () => scene.timeline(),
