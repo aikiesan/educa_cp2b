@@ -9,6 +9,21 @@ separada da legenda e partitura com o logo no golpe final da trilha.
 a partir de prompts prontos; todo o resto — mapa, animação, efeitos sonoros, mixagem, render — é código deste
 repositório. Não usamos modelos locais de TTS ou de imagem na versão final.
 
+> **Do ep. 03 em diante** os episódios usam o **modelo genérico**: em vez de um `cena.js` escrito à mão, cada episódio
+> é um `cena.json` (peças, textos e efeitos por fala) animado por `lib/colagem/episodio.js` + `efeitos.js`, e a produção
+> inteira (alinhamento da voz, plano da trilha com cortes/repetições de compasso, legendas, efeitos, mixagem, 16:9 e 9:16)
+> roda por `python tools/episodio/produzir.py NN`. Referência completa: [EPISODIO_GENERICO.md](EPISODIO_GENERICO.md).
+> As versões em inglês dos eps. 01 e 02 (90 e 91) reaproveitam as cenas originais: `python tools/episodio/derivado_en.py 90`.
+> Conferências: `python tools/episodio/checa_voz.py videos/NN-*` depois da mixagem (nenhuma fala cortada no começo nem
+> "vazando" na pausa) e `python tools/episodio/movimento.py <mp4> <segundo> <nome>` (tremor num momento parado ≈ 0 %).
+> Ajustes por script no cena.json sem bagunçar o formato: `tools/episodio/cena_io.py`.
+> Recortes: `python tools/olhos.py` põe pupilas nos personagens de olhos brancos (pesquisadores, equipe, heroínas; o original
+> fica em `assets/recortes/_sem_pupila/`) e `python tools/marca_adesivo.py` transforma logos (NIPE, FAPESP, Unicamp…) em
+> adesivos em `assets/recortes/marcas/` (nas cenas: `"pecas": { "nipe": "marcas/nipe" }`).
+> Os outros derivados do ep. 90 (vinheta de 5 s e as 7 pílulas dos eps. 01/02, com a assinatura CP2B, em 16:9 e 9:16):
+> `python tools/episodio/derivados.py vinheta` e `python tools/episodio/derivados.py pilulas` → `dist/ep90/`.
+> As seções abaixo continuam valendo para cenas escritas à mão (eps. 01 e 02) e para os princípios gerais.
+
 ---
 
 ## 1. Visão geral
@@ -43,7 +58,7 @@ partitura.json ─► montar_timeline ─► timeline.json ─► legendas (.vtt
 | `videos/NN-slug/` | um episódio: `roteiro.md` (storyboard e checagem), `roteiro.json`, `partitura.json`, `timeline.json`, `cena.js`, `index.html`, legendas, `audio/` (alinhamento, deixas de efeitos, `mix.m4a`), `dados/` |
 | `assets/recortes/` | recortes PNG (ep. 01 na raiz e `v3/`; episódios novos em `epNN/` + `meta.json`) |
 | `assets/fonts/` | fontes livres (OFL/Apache); `licenciadas/` (Neulis) é **gitignored** |
-| `entrada/` | material gerado pela equipe (imagens, WAVs, MP3) — **não vai para o git**; só os pedidos e os scripts de TTS |
+| `entrada/` | material gerado pela equipe — **não vai para o git**: `imagens/epNN/`, `musica/musica_epNN.mp3`, `narracao/<idioma>/epNN_<idioma>_<voz>_takeN.wav` (+ `brutos/`, `testes/`, `alternativas/`), `_historico/` (pedidos antigos). Índice por episódio em `entrada/LEIA-ME.md` (`python tools/inventario_entrada.py`) |
 | `tools/` | pipeline (ver seções abaixo) |
 | `dist/`, `tmp/` | saídas (gitignored); os vídeos vão como assets de **GitHub Release** |
 
@@ -56,8 +71,19 @@ partitura.json ─► montar_timeline ─► timeline.json ─► legendas (.vtt
   relações (cores, barras proporcionais, "menos ↔ mais") em vez de valores.
 - Nomes de seções e botões seguem a interface real (ex.: "Base Científica", "Filtros").
 
-### 3.1 Roteiro e storyboard
-- 45–58 s, uma ideia por cena, pouco texto na tela. Tabela `# | fala | s | cena` no `roteiro.md`.
+### 3.1 A ficha do vídeo (fonte única) — `roteiros/NN-slug.md`
+A partir do ep. 03, **cada vídeo nasce de uma ficha padrão com quatro partes**
+(modelo: [`roteiros/_MODELO.md`](../roteiros/_MODELO.md); catálogo e regras: [`roteiros/README.md`](../roteiros/README.md)):
+ficha técnica → **1. Roteiro do vídeo** (ideia, estilo & twist, storyboard, assinatura CP2B, checagem) →
+**2. Imagens** (tabela arquivo → prompt) → **3. Música** (bloco ` ```musica `) → **4. Narração** (blocos ` ```direcao ` e
+` ```narracao `). Cada vídeo combina um **estilo visual** e um **twist de formato** diferentes do anterior
+([`roteiros/ESTILOS.md`](../roteiros/ESTILOS.md)) e termina sempre com a assinatura CP2B.
+`python tools/prompts_producao.py` gera, a partir das fichas, os prompts completos de imagem (`PROMPTS_PRONTOS.md`),
+os de música (`PROMPTS_MUSICA.md`) e o texto de leitura (`NARRACAO_COMPLETA.md`); `tools/tts/gerar_narracao.py NN` gera a
+voz direto da ficha (com a direção do episódio). Na produção, a ficha vira `videos/NN-slug/roteiro.json` + `cena.js`.
+
+### 3.1b Roteiro e storyboard (detalhes)
+- 45–58 s, uma ideia por cena, pouco texto na tela. Tabela `# | cena` fala a fala.
 - `roteiro.json` — uma entrada por fala:
   ```json
   { "id": "L03", "voz": "Sulafat", "texto": "…o CP2B criou o PILAR-2b.",
@@ -66,8 +92,8 @@ partitura.json ─► montar_timeline ─► timeline.json ─► legendas (.vtt
   `texto` = legenda e tela; `fala` = o que a narradora **realmente diz** (siglas soletradas, números por extenso),
   usado pelo alinhador. `legenda_subst` devolve a grafia da tela (`["cê pê dois bê", "CP2B"]`).
 
-### 3.2 Pedidos para a equipe (arquivo `entrada/PEDIDO_EPNN.md`)
-**Imagens (Nano Banana):** sempre o mesmo estilo-mestre (ver `entrada/PEDIDO_EP02.md`): papel recortado com
+### 3.2 Pedidos para a equipe (partes 2–4 de cada `roteiros/NN-*.md`; pedidos antigos em `entrada/_historico/`)
+**Imagens (Nano Banana):** sempre o mesmo estilo-mestre (ver `roteiros/PROMPT_IMAGENS.md`): papel recortado com
 fibras, borda branca de adesivo, tinta azul-petróleo, paleta da marca, **fundo magenta puro #FF00FF**, sem
 texto, sem sombra. Regras que funcionaram:
 - partes que o código vai preencher (tela de notebook, lente de lupa, escotilha) em **magenta puro** — viram buraco;
@@ -75,7 +101,7 @@ texto, sem sombra. Regras que funcionaram:
 - uma folha com vários itens bem separados funciona bem; para o protagonista, peça também uma imagem só dele
   em resolução máxima (o notebook do ep. 02 veio numa folha e fica levemente macio nos closes).
 
-**Voz (Gemini TTS):** script em `entrada/generate_<ep>_tts.py` (modelo `generate_pilar2b_tts.py`), uma chamada
+**Voz (Gemini TTS):** `tools/tts/gerar_narracao.py NN` (lê a parte 4 da ficha; scripts antigos em `tools/tts/antigos/`), uma chamada
 por fala com `speech_metadata.style`, **2 tomadas**. Direção em inglês funciona melhor; `<short pause>` nas reticências.
 
 **Música (Lyria 3 Pro):** instrumental, andamento fixo (~100 bpm), 60 s, estrutura descrita por compassos
@@ -95,8 +121,8 @@ python tools/meta_recortes.py ep02                          # buracos (tela/lent
 
 ### 3.4 Voz
 ```bash
-python tools/audio/transcrever.py entrada/<voz>_take1.wav            # faster-whisper (modelo em cache): o que foi dito?
-python tools/audio/alinhar_vo.py entrada/<voz>_take1.wav --video NN-slug --saida tmp/ali_take1.json
+python tools/audio/transcrever.py entrada/narracao/pt-BR/<voz>_take1.wav            # faster-whisper (modelo em cache): o que foi dito?
+python tools/audio/alinhar_vo.py entrada/narracao/pt-BR/<voz>_take1.wav --video NN-slug --saida tmp/ali_take1.json
 python tools/audio/testar_pronuncia.py <wav> 9.8 12.4 "hipótese 1" "hipótese 2"   # desempate de pronúncia
 ```
 - **A equipe pode ajustar o texto no script de TTS antes de gerar**: transcreva as tomadas e sincronize
@@ -108,12 +134,12 @@ python tools/audio/testar_pronuncia.py <wav> 9.8 12.4 "hipótese 1" "hipótese 2
 
 ### 3.5 Música e partitura
 ```bash
-python tools/audio/analisar_musica.py entrada/<trilha>.mp3 --json tmp/musica.json   # bpm, 1º tempo forte, energia por compasso, cortes
+python tools/audio/analisar_musica.py entrada/musica/<trilha>.mp3 --json tmp/musica.json   # bpm, 1º tempo forte, energia por compasso, cortes
 ```
 `videos/NN-slug/partitura.json`:
 ```json
-{ "roteiro": "roteiro.json", "vo": "entrada/<voz>.wav", "tempo_narracao": 1.0,
-  "musica": { "arquivo": "entrada/<trilha>.mp3", "bpm": 103.116, "downbeat0": 1.816,
+{ "roteiro": "roteiro.json", "vo": "entrada/narracao/pt-BR/<voz>.wav", "tempo_narracao": 1.0,
+  "musica": { "arquivo": "entrada/musica/<trilha>.mp3", "bpm": 103.116, "downbeat0": 1.816,
               "cortes": [], "logo_musica": 54.71, "cauda": 3.2 },
   "inicio": { "compasso": 0, "offset": 0.05 },
   "pausas": { "L02": 0.6, "L03": 0.8 } }
@@ -234,6 +260,6 @@ legendas, trilha editada e um quadro renderizado com o original — diferença m
    auxiliares, `LAYOUTS`, câmera, `overlay`, `hud`, `scene`);
 2. escrever `roteiro.md` + `roteiro.json`; `partitura.json` provisório (100 bpm, sem cortes) e
    `montar_timeline.py --estimativa` para animar antes da voz;
-3. `entrada/PEDIDO_EPNN.md` com os três blocos (imagens, voz, música) e o script de TTS;
+3. partes 2–4 da ficha `roteiros/NN-*.md` (imagens, música, narração) → `python tools/prompts_producao.py`;
 4. animar com desenhos provisórios; trocar pelos recortes quando chegarem;
 5. voz → alinhamento → timeline → legendas → efeitos → mixagem → render → QA → Release.

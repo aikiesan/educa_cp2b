@@ -130,9 +130,11 @@ def bolhas(dur=2.0, p=1.0, **_):
     while t < dur:
         k = int(t * SR)
         b = bloop(p * r.uniform(0.7, 1.6), r.uniform(0.04, 0.09)) * r.uniform(0.3, 1.0)
-        y[k:k + len(b)] += b
+        m = min(len(b), len(y) - k)
+        y[k:k + m] += b[:m]
         t += r.exponential(1 / 11)
     amb = lp(noise(len(y) / SR), 500) * 0.05
+    amb = np.pad(amb, (0, max(0, len(y) - len(amb))))[:len(y)]   # arredondamento de len/SR*SR
     y = (y + amb) * np.pad(adsr(n, 0.1, 1, 0.5), (0, len(y) - n))
     return st(norm(y, 0.5), 0, 0.4)
 
@@ -483,6 +485,23 @@ def alfinete(p=1.0, **_):
     k = int(0.012 * SR); y[k:k + len(body)] += body * 0.7
     return st(norm(y, 0.55))
 
+def costura(dur=0.8, p=1.0, **_):
+    """Agulha costurando feltro: a cada ponto, um 'tic' da agulha e a linha sendo puxada (fsss curtinho)."""
+    d = max(0.3, dur)
+    n = int(d * SR)
+    y = np.zeros(n + int(0.25 * SR))
+    npts = max(2, int(round(d / 0.16)))
+    for i in range(npts):
+        k = int(i / npts * d * SR)
+        m = int(0.02 * SR)
+        tic = hp(noise(0.02), 4000) * env(m, 0.0002, 0.003, 7) * 0.5
+        y[k:k + m] += tic
+        m2 = int(0.11 * SR)
+        pull = bp(noise(0.11), 2200 * p, 7000 * p) * np.sin(np.pi * np.linspace(0, 1, m2)) ** 2 * 0.55
+        k2 = k + int(0.025 * SR)
+        y[k2:k2 + m2] += pull[:len(y) - k2]
+    return st(norm(y, 0.4), 0, 0.3)
+
 def papelada(dur=1.5, p=1.0, **_):
     """Chuva de pedacinhos de papel pousando (muitos toques curtos, densidade em arco)."""
     d = max(0.3, dur)
@@ -511,6 +530,19 @@ def abre(p=1.0, **_):
     k = int(0.35 * SR); m = min(len(ch), len(y) - k)
     y[k:k + m] += ch[:m]
     return st(norm(y, 0.5), 0, 0.3)
+
+def pagina(p=1.0, dur=None, **_):
+    """Virar a página de um livro: a folha grossa se ergue farfalhando e pousa com um tapinha."""
+    d = dur or 0.62
+    n = int(d * SR); t = np.arange(n) / SR
+    x = pink(d) * 0.7 + noise(d) * 0.3
+    crink = np.convolve(np.abs(noise(d)) ** 3, np.ones(90) / 90, 'same')
+    x = x * (0.45 + crink / (crink.max() + 1e-9))
+    y = bp(x, 700 * p, 4800 * p) * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 1.4
+    k = int(max(0.0, d - 0.14) * SR); m = n - k
+    thump = np.sin(2 * np.pi * np.cumsum(np.linspace(150 * p, 80 * p, m)) / SR) * env(m, 0.002, 0.06, 5)
+    y[k:] += thump * 0.5 + bp(noise(d), 1200, 6000)[:m] * env(m, 0.001, 0.04, 5) * 0.3
+    return st(norm(y, 0.55), 0, 0.35)
 
 def preenche(dur=2.0, p=1.0, **_):
     """Brilho ascendente sob o mapa se pintando (arpejo suave em escala maior)."""

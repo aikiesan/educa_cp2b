@@ -80,9 +80,9 @@ def build_music(tl, src):
     # trechos da trilha original que ficam: [0, a1) [b1, a2) … [bn, fim); emendas com crossfade de potência constante
     starts, ends, shift = [0], [], 0.0
     for c in sorted(cortes, key=lambda c: c['de']):
-        a = onset_near(y, c['de']) - 0.004
+        a = 0.0 if c['de'] <= 1e-3 else onset_near(y, c['de']) - 0.004   # corte em 0 s = aparar o silêncio do começo
         b = onset_near(y, c['para']) - 0.004
-        ends.append(int(a * SR)); starts.append(int(b * SR))
+        ends.append(max(0, int(a * SR))); starts.append(max(0, int(b * SR)))
         d = (b - a) - (c['para'] - c['de'])
         shift += d
         print(f'  trilha: corte {a:.3f}s → {b:.3f}s (desvio da grade {d * 1000:+.1f} ms)')
@@ -102,6 +102,32 @@ def build_music(tl, src):
 
 
 # ---------------- 2. narração ----------------
+def _db10(y):   # energia em janelas de 10 ms (dB)
+    h = int(0.01 * SR); m = len(y) // h
+    return 20 * np.log10(np.sqrt((y[:m * h].reshape(m, h) ** 2).mean(1)) + 1e-9)
+
+
+def ruido_de_fundo(y):
+    d = _db10(y)
+    return float(np.percentile(d, 10))
+
+
+def voz_em_volta(y, o0, o1, lo, hi, piso, gap=0.15, lim=0.45):
+    """Onde a voz realmente começa/termina em volta de [o0, o1]: anda para trás (e para frente) enquanto houver voz,
+    tolerando pausinhas de até `gap` s (a de "Cê · pê"), no máximo `lim` s e sem passar dos limites lo/hi."""
+    d = _db10(y); thr = max(piso + 18, -48)
+    def anda(t, passo):
+        k, ult, sil = int(t * 100), t, 0
+        kmin, kmax = int(max(lo, t - lim) * 100), int(min(hi, t + lim) * 100)
+        while kmin <= k + passo <= kmax and k + passo < len(d) and k + passo >= 0:
+            k += passo
+            if d[k] > thr: ult, sil = k / 100, 0
+            else:
+                sil += 1
+                if sil > gap * 100: break
+        return ult
+    return anda(o0, -1), anda(o1, +1)
+
 def build_vo(tl, src, ali, tempo):
     t48 = AUD / '_vo48.wav'
     tst = AUD / '_vo48_tempo.wav'
@@ -112,13 +138,16 @@ def build_vo(tl, src, ali, tempo):
     out = np.zeros(n, np.float32)
     PRE, POST = 0.07, 0.22
     falas = tl['falas']
+    piso = ruido_de_fundo(y)
     for i, f in enumerate(falas):
         o0, o1 = f['origem']['inicio'] / tempo, f['origem']['fim'] / tempo
         # não invade a fala vizinha no áudio original
         prev_end = falas[i - 1]['origem']['fim'] / tempo if i else 0
         next_start = falas[i + 1]['origem']['inicio'] / tempo if i + 1 < len(falas) else len(y) / SR
-        s0 = max(o0 - PRE, (prev_end + o0) / 2)
-        s1 = min(o1 + POST, (o1 + next_start) / 2)
+        lo, hi = (prev_end + o0) / 2, (o1 + next_start) / 2
+        v0, v1 = voz_em_volta(y, o0, o1, lo, hi, piso)
+        s0 = max(min(o0 - PRE, v0 - 0.04), lo)   # o alinhamento às vezes marca o início tarde (o "Cê" de CP2B sumia)
+        s1 = min(max(o1 + POST, v1 + 0.08), hi)
         seg = y[int(s0 * SR):int(s1 * SR)].copy()
         fi, fo = int(0.012 * SR), int(0.05 * SR)
         seg[:fi] *= np.linspace(0, 1, fi); seg[-fo:] *= np.linspace(1, 0, fo)
@@ -137,6 +166,8 @@ def build_vo(tl, src, ali, tempo):
 def build_sfx(cues, n):
     bus = np.zeros((n, 2), np.float32)
     for c in cues:
+        if c['nome'] not in SFXLIB.LIB:   # nome desconhecido: avisa e segue (não derruba a mixagem)
+            print('  aviso: efeito desconhecido', c['nome']); continue
         y = SFXLIB.render(c['nome'], p=c.get('p') or 1.0, dur=c.get('dur'))
         pan = c.get('pan', 0) or 0
         if pan:  # balanço estéreo

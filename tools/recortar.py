@@ -6,6 +6,7 @@ uso: python tools/recortar.py [entrada/imagens] [assets/recortes]
 - remove o "vazamento" de magenta nas bordas (des-premultiplica pela cor-chave)
 - o fundo é o magenta conectado às bordas + qualquer região magenta pura (ex.: a janela do biodigestor)
 - itens separados viram PNGs separados (componentes conexos após dilatação), ordenados ←→ e ↑↓
+- se o gerador errar o tom do fundo (ex.: rosa escuro em vez de magenta), a chave passa a ser a cor mediana da borda
 """
 import sys, json
 from pathlib import Path
@@ -17,7 +18,16 @@ ROOT = Path(__file__).resolve().parents[1]
 KEY = np.array([255.0, 0.0, 255.0])
 
 
-def key_alpha(rgb):
+def border_key(rgb):
+    """cor do fundo: mediana da moldura de 4 px; None quando já é (quase) magenta puro"""
+    ring = np.concatenate([rgb[:4].reshape(-1, 3), rgb[-4:].reshape(-1, 3), rgb[:, :4].reshape(-1, 3), rgb[:, -4:].reshape(-1, 3)])
+    k = np.median(ring, 0)
+    return None if np.sqrt(((k - KEY) ** 2).sum()) < 45 else k
+
+
+def key_alpha(rgb, k=None):
+    if k is not None:   # fundo fora do magenta: chave só pela distância à cor da borda
+        return np.clip((np.sqrt(((rgb - k) ** 2).sum(-1)) - 38) / 80, 0, 1)
     r, g, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
     d = (r + b) / 2 - g
     # distância total à cor-chave (evita pegar vermelhos puros)
@@ -31,7 +41,10 @@ def process(path, outdir, min_frac=0.0015):
     im = Image.open(path).convert('RGB')
     rgb = np.asarray(im).astype(np.float32)
     H, W = rgb.shape[:2]
-    a = key_alpha(rgb)
+    kc = border_key(rgb)
+    if kc is not None: print(f'  fundo fora do magenta: chave = {kc.round().astype(int).tolist()}')
+    K = KEY if kc is None else kc
+    a = key_alpha(rgb, kc)
     # fundo = magenta ligado à borda OU magenta muito puro
     bg = a < 0.5
     lab, n = ndi.label(bg)
@@ -45,7 +58,7 @@ def process(path, outdir, min_frac=0.0015):
     alpha = np.clip(alpha, 0, 1)
     # despill: F = (C - (1-α)K) / α
     al = np.clip(alpha, 1e-3, 1)[..., None]
-    fg = (rgb - (1 - al) * KEY) / al
+    fg = (rgb - (1 - al) * K) / al
     fg = np.clip(fg, 0, 255)
     # restos de magenta em pixels opacos → neutraliza puxando o verde
     spill = np.clip(((fg[..., 0] + fg[..., 2]) / 2 - fg[..., 1] - 90) / 100, 0, 1)[..., None]

@@ -4,13 +4,14 @@ Falas longas são quebradas em blocos de até ~42 caracteres por linha (máx. 2 
 preferindo pontuação; cada bloco começa na 1ª palavra e termina na última.
 Quando a fala tem forma pronunciada ("fala": siglas soletradas, números por extenso), os tempos vêm dela e
 "legenda_subst" do timeline devolve a grafia da tela ("seiscentos e quarenta e cinco" → "645").
-uso: python tools/legendas.py [videos/01-o-que-e-biogas/timeline.json] [--balancear]
+uso: python tools/legendas.py [videos/01-o-que-e-biogas/timeline.json] [--balancear] [--idioma en-GB]
 """
 import json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ARGS = [x for x in sys.argv[1:] if not x.startswith('--')]
+LANG = sys.argv[sys.argv.index('--idioma') + 1] if '--idioma' in sys.argv else 'pt-BR'   # --idioma en-GB → legendas.en-GB.*
+ARGS = [x for i, x in enumerate(sys.argv[1:], 1) if not x.startswith('--') and sys.argv[i - 1] != '--idioma']
 BAL = '--balancear' in sys.argv   # blocos de tamanho parecido (ep. 02 em diante)
 TL = Path(ARGS[0]) if ARGS else ROOT / 'videos' / '01-o-que-e-biogas' / 'timeline.json'
 MAXC = 42
@@ -23,11 +24,15 @@ def ts(t, sep='.'):
 
 def tokens(texto, palavras):
     """Casa as palavras do alinhamento com o texto original (mantém pontuação e acentos)."""
-    toks = re.findall(r"[\wÀ-ÿ']+[^\s\wÀ-ÿ']*|[—…]+|\.\.\.", texto)
+    toks = re.findall(r"[\"“‘«(]*[\wÀ-ÿ']+[^\s\wÀ-ÿ']*|[—…]+|\.\.\.", texto)   # aspas/parênteses de abertura ficam com a palavra
     out, k = [], 0
     for tk in toks:
-        if re.match(r"[\wÀ-ÿ']", tk) and k < len(palavras):
-            out.append((tk, palavras[k]['i'], palavras[k]['f'])); k += 1
+        if re.search(r"[\wÀ-ÿ']", tk) and k < len(palavras):
+            if out and out[-1][0].endswith('-'):   # palavra com hífen ("tim-tim", "ar-quei-a") fica inteira
+                out[-1] = (out[-1][0] + tk, out[-1][1], palavras[k]['f'])
+            else:
+                out.append((tk, palavras[k]['i'], palavras[k]['f']))
+            k += 1
         elif out:
             out[-1] = (out[-1][0] + ' ' + tk if tk in '—' else out[-1][0] + tk.strip(), out[-1][1], out[-1][2])
     return out
@@ -108,20 +113,20 @@ def main():
     for f in tl['falas']:
         for b in (blocks_bal if BAL else blocks)(tokens(f.get('fala', f['texto']), f['palavras'])):
             txt = ' '.join(t[0] for t in b).replace(' — ', ' – ').replace('...', '…')
-            for de, para in subst: txt = re.sub(re.escape(de), para, txt, flags=re.I)
+            for de, para in subst: txt = re.sub(re.escape(de.replace('- ', '-')), para, re.sub(re.escape(de), para, txt, flags=re.I), flags=re.I)
             cues.append((b[0][1] - 0.05, b[-1][2] + 0.25, (wrap_bal if BAL else wrap)(txt.strip())))
     # sem sobreposição
     for i in range(len(cues) - 1):
         if cues[i][1] > cues[i + 1][0] - 0.04: cues[i] = (cues[i][0], cues[i + 1][0] - 0.04, cues[i][2])
     out = TL.parent
-    vtt = ['WEBVTT', 'Language: pt-BR', '']
+    vtt = ['WEBVTT', f'Language: {LANG}', '']
     srt = []
     for i, (a, b, txt) in enumerate(cues, 1):
         vtt += [f'{ts(a)} --> {ts(b)} line:84%', txt, '']
         srt += [str(i), f'{ts(a, ",")} --> {ts(b, ",")}', txt, '']
-    (out / 'legendas.pt-BR.vtt').write_text('\n'.join(vtt), encoding='utf-8')
-    (out / 'legendas.pt-BR.srt').write_text('\n'.join(srt), encoding='utf-8')
-    print(len(cues), 'legendas →', out / 'legendas.pt-BR.vtt')
+    (out / f'legendas.{LANG}.vtt').write_text('\n'.join(vtt), encoding='utf-8')
+    (out / f'legendas.{LANG}.srt').write_text('\n'.join(srt), encoding='utf-8')
+    print(len(cues), 'legendas →', out / f'legendas.{LANG}.vtt')
     for a, b, txt in cues: print(f'  {a:6.2f}–{b:6.2f}  {txt!r}')
 
 

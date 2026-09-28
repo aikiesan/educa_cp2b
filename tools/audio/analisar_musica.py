@@ -30,6 +30,8 @@ def main():
     freqs = librosa.fft_frequencies(sr=sr, n_fft=2048)
     low = S[(freqs > 30) & (freqs < 150)].sum(0)
     chroma = librosa.feature.chroma_cqt(y=y, sr=sr, hop_length=hop)
+    if t0 < 0:  # trilha que começa já no 1º beat: a regressão pode cair alguns ms antes de 0
+        t0 += period * np.ceil(-t0 / period)
     ideal = t0 + period * np.arange(int((dur - t0) / period) + 1)
     fr = librosa.time_to_frames(ideal, sr=sr, hop_length=hop)
     fr = fr[fr < S.shape[1] - 2]

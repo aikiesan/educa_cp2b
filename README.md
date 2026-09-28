@@ -78,7 +78,7 @@ Assistir no navegador: <http://127.0.0.1:8080/videos/02-pilar-2b/> — versão v
 |---|---|---|
 | ilustrações recortadas (vaca, biodigestor, máquina, veículos, plantas…) | Nano Banana 2 (Gemini), fundo magenta | `entrada/imagens/` → `tools/preparar_ativos.py` (recorte por chroma key, "defringe", separação de itens) → `assets/recortes/` |
 | papel, bordas rasgadas, sombras, traço à mão, letras recortadas, carimbos, micróbios, moléculas | motor próprio `lib/colagem/` (canvas 2D determinístico) | `core.js`, `paper.js`, `shapes.js`, `ink.js`, `sprite.js`, `text.js`, `extras.js`, `stage.js` |
-| narração (ep. 01: Sulafat e Puck · ep. 02: Sulafat) | Gemini 3.8 Flash TTS | `entrada/biogas_multispeaker.wav`, `entrada/pilar2b_sulafat_take2.wav` (roteiros em `videos/*/roteiro.json`) |
+| narração (ep. 01: Sulafat e Puck · ep. 02: Sulafat) | Gemini 3.8 Flash TTS | `entrada/narracao/pt-BR/ep01_pt-BR_SulafatPuck_take1.wav`, `entrada/narracao/pt-BR/ep02_pt-BR_Sulafat_take2.wav` (roteiros em `videos/*/roteiro.json`) |
 | alinhamento palavra a palavra | torchaudio MMS forced aligner | `tools/audio/alinhar_vo.py` → `audio/vo_alinhamento.json` |
 | partitura (tempos de cada palavra, grade de compassos, logo na batida final) | — | `videos/*/partitura.json` → `tools/audio/montar_timeline.py` → `videos/*/timeline.json` |
 | trilhas "The Papercut Invention" (ep. 01) e "Sunlight on the Workbench" (ep. 02) | Lyria 3 Pro | editadas em compasso inteiro (ep. 01: corte de 4 compassos; ep. 02: sem corte, logo no golpe final) |
@@ -101,7 +101,7 @@ Os scripts recebem o episódio (`--video 02-pilar-2b`; sem ele, o ep. 01). Exemp
 ```bash
 python tools/dados/mapa_sp.py                                         # mapa de SP (precisa do repositório Pilar-2b)
 python tools/preparar_ativos.py ep02 GERACAO_FINAL_MELHOR && python tools/nomear_ep02.py && python tools/meta_recortes.py ep02
-python tools/audio/alinhar_vo.py entrada/pilar2b_sulafat_take2.wav --video 02-pilar-2b
+python tools/audio/alinhar_vo.py entrada/narracao/pt-BR/ep02_pt-BR_Sulafat_take2.wav --video 02-pilar-2b
 python tools/audio/montar_timeline.py --video 02-pilar-2b
 python tools/legendas.py videos/02-pilar-2b/timeline.json --balancear
 npm run sfx:02 && python tools/audio/mixar.py --video 02-pilar-2b && python tools/audio/grafico_mix.py --video 02-pilar-2b
@@ -116,7 +116,7 @@ python -m venv .venv && .venv/Scripts/pip install -r tools/requirements.txt
 # 2. (se trocar as ilustrações) recortar os PNGs
 python tools/preparar_ativos.py
 # 3. (se trocar a narração) alinhar e montar a partitura
-python tools/audio/alinhar_vo.py entrada/biogas_multispeaker.wav      # requer torch + torchaudio
+python tools/audio/alinhar_vo.py entrada/narracao/pt-BR/ep01_pt-BR_SulafatPuck_take1.wav      # requer torch + torchaudio
 python tools/audio/montar_timeline.py
 python tools/legendas.py
 # 4. exportar as deixas de efeitos e mixar

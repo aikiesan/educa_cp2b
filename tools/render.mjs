@@ -79,6 +79,7 @@ async function main() {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   const errs = [];
   page.on('pageerror', (e) => errs.push('pageerror: ' + e.message));
+  page.on('response', (r) => { if (r.status() >= 400) errs.push('http ' + r.status() + ': ' + r.url()); });
   page.on('console', (m) => { if (['error', 'warning'].includes(m.type())) errs.push(m.type() + ': ' + m.text()); else if (m.type() === 'log') console.log('[page]', m.text()); });
   const url = `http://127.0.0.1:${server.address().port}/${a.page.replace(/\\/g, '/')}?export=1${a.query ? '&' + a.query : ''}`;
   await page.goto(url, { waitUntil: 'load' });
