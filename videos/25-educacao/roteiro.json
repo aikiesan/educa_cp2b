@@ -1,0 +1,67 @@
+{
+ "titulo": "Aprender biogás: cursos e escolas",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep25_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Triiim! Aula relâmpago: como se aprende biogás?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "No CP2B, aprender faz parte da missão.",
+   "fala": "No cê-pê-dois-bê, aprender faz parte da missão.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Tem curso pra profissionais e estudantes: biogás, biometano e bioprodutos pra transição energética.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Presencial, online ou híbrido — e até turmas feitas sob medida pra empresas.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Nas escolas, a criançada aprende que resto de comida vira adubo e energia.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Tem também visitas aos laboratórios, palestras e educação ambiental com as comunidades.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "E quem é pesquisador pode propor um curso novo pro centro!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Triiim! Fim da aula — e começo de muitas ideias!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

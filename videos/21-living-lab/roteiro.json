@@ -1,0 +1,67 @@
+{
+ "titulo": "Living-Lab: comida que vira combustível no campus",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep21_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Meio-dia no campus: o restaurante universitário tá cheio!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "E, depois do almoço, sempre sobra comida no prato.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "No CP2B, essas sobras não vão pro lixo: elas viram pesquisa!",
+   "fala": "No cê-pê-dois-bê, essas sobras não vão pro lixo: elas viram pesquisa!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Primeiro, os restos são separados e levados pra uma planta piloto, ali mesmo na universidade.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Lá dentro, os micróbios transformam a comida em hidrogênio e metano — o biohitano!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "E a ideia é usar esse combustível pra rodar os ônibus do campus.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Isso é um laboratório vivo: ciência testada no mundo real, no dia a dia de quem estuda e trabalha ali.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Do prato pro ônibus: a universidade dando o exemplo!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

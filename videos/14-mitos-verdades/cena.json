@@ -1,0 +1,58 @@
+{
+  "_sobre": "Ep. 14 · Mitos e verdades do biogás — estilo C (colagem), programa de auditório: palco com holofotes e plateia, cientista apresentador, carimbos MITO / VERDADE. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "C",
+  "seed": 14,
+  "mascote": "papel",
+  "pecas": {
+    "ovo": "ep14/_folha/pecas_ep14_1", "sitio": "ep14/_folha/pecas_ep14_4", "fazenda": "ep14/_folha/pecas_ep14_5",
+    "predio": "ep14/_folha/pecas_ep14_6", "despertador": "ep14/_folha/pecas_ep14_7", "adubo": "ep14/_folha/pecas_ep14_8"
+  },
+  "molduras": [{ "tipo": "palco", "de": "L01:inicio", "ate": "L07:fim" }],
+  "assinatura": { "cientista": true },
+  "cenas": [
+    { "fala": "L01", "arranjo": "palco", "itens": [
+      { "txt": "MITO OU\nVERDADE?", "tipo": "letras", "em": "mito" },
+      { "p": "despertador", "em": "testar", "anima": "treme", "s": 0.8 },
+      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.4 }
+    ]},
+    { "fala": "L02", "arranjo": "dupla", "itens": [
+      { "p": "ovo", "em": "ovo", "entra": "cai" },
+      { "fx": "cheiro", "de": "ovo", "sobre": "ovo", "rel": [0, -0.3], "tam": 0.9, "em": "cheiro" },
+      { "p": "maquina", "em": "limpeza-0.8" },
+      { "txt": "EM PARTE", "tipo": "carimbo", "lugar": "titulo", "em": "parte", "cor": "ambar" },
+      { "fx": "check", "sobre": "maquina", "rel": [0.4, -0.45], "tam": 0.4, "em": "limpeza" }
+    ]},
+    { "fala": "L03", "arranjo": "fila", "itens": [
+      { "p": "fazenda", "em": "fazenda" },
+      { "p": "sitio", "em": "sítio" },
+      { "p": "predio", "em": "cidade" },
+      { "txt": "MITO!", "tipo": "carimbo", "lugar": "titulo", "em": "Mito", "cor": "coral" }
+    ]},
+    { "fala": "L04", "arranjo": "grade", "colunas": 4, "itens": [
+      { "p": "fogao", "em": "cozinhar" },
+      { "p": "gerador", "em": "calor" },
+      { "p": "lampada", "em": "eletricidade", "brilha": "eletricidade+0.2" },
+      { "p": "caminhao", "em": "caminhão-0.6" },
+      { "txt": "MITO!", "tipo": "carimbo", "lugar": "titulo", "em": "Mito", "cor": "coral" }
+    ]},
+    { "fala": "L05", "arranjo": "palco", "itens": [
+      { "p": "adubo", "em": "biofertilizante-0.6", "entra": "gira" },
+      { "p": "saco_restos", "id": "lixo", "em": "sobra" },
+      { "fx": "seta", "de": "lixo", "para": "adubo", "em": "Vira" },
+      { "txt": "MITO!", "tipo": "carimbo", "lugar": "titulo", "em": "Mito", "cor": "coral" }
+    ]},
+    { "fala": "L06", "arranjo": "fila", "itens": [
+      { "p": "saco_restos", "id": "r", "em": "resíduo-0.8" },
+      { "p": "biodigestor", "id": "b", "em": "renovável" },
+      { "p": "lampada", "id": "l", "em": "biogás", "brilha": "biogás+0.2" },
+      { "fx": "ciclo", "itens": ["r", "b", "l"], "em": "Enquanto", "passo": 0.4 },
+      { "txt": "VERDADE!", "tipo": "carimbo", "lugar": "titulo", "em": "Verdade", "cor": "verdeEsc" }
+    ]},
+    { "fala": "L07", "arranjo": "palco", "itens": [
+      { "p": "mao", "em": "acertou", "entra": "desliza_esq", "s": 1.1 },
+      { "txt": "compartilhe!", "tipo": "letras", "lugar": "titulo", "em": "Manda" },
+      { "fx": "confete", "lugar": "centro", "em": "acertou" },
+      { "p": "cientista:pula", "lugar": "narrador", "em": 0.3 }
+    ]}
+  ]
+}

@@ -1,0 +1,306 @@
+{
+ "_sobre": "Ep. 19 · Quem faz o CP2B — estilo C (colagem), foto de turma: o cartaz enche de gente, fila por fila; no fim, o cientista e o mascote entram na foto. Formato: docs/EPISODIO_GENERICO.md",
+ "estilo": "C",
+ "seed": 19,
+ "mascote": "papel",
+ "pecas": {
+  "e1": "ep19/_folha/equipe_1",
+  "e2": "ep19/_folha/equipe_2",
+  "e3": "ep19/_folha/equipe_3",
+  "e4": "ep19/_folha/equipe_4",
+  "e5": "ep19/_folha/equipe_5",
+  "e6": "ep19/_folha/equipe_6",
+  "e7": "ep19/_folha/equipe_7",
+  "e8": "ep19/_folha/equipe_8",
+  "p5": "ep03/_folha/pesquisadores_5",
+  "camera": "ep19/_folha/pecas_ep19_1",
+  "cavalete": "ep19/_folha/pecas_ep19_2",
+  "engrenagem": "ep19/_folha/pecas_ep19_3",
+  "folha_i": "ep19/_folha/pecas_ep19_4",
+  "frasco": "ep19/_folha/pecas_ep19_5",
+  "grafico": "ep19/_folha/pecas_ep19_6",
+  "balanca": "ep19/_folha/pecas_ep19_7",
+  "mapa": "ep19/_folha/pecas_ep19_8",
+  "megafone": "ep19/_folha/pecas_ep19_9",
+  "oculos": "ep19/_folha/pecas_ep19_10",
+  "oculos2": "ep19/_folha/pecas_ep19_11"
+ },
+ "assinatura": {
+  "cientista": true
+ },
+ "cenas": [
+  {
+   "fala": "L01",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "cavalete",
+     "em": 0.2
+    },
+    {
+     "p": "cientista:pensa",
+     "em": "transforma"
+    },
+    {
+     "p": "mascote:surpreso",
+     "sobre": "cavalete",
+     "rel": [
+      0.42,
+      0.2
+     ],
+     "tam": 0.4,
+     "em": "Gente",
+     "entra": "desliza_dir"
+    },
+    {
+     "txt": "foto de turma",
+     "tipo": "etiqueta",
+     "sobre": "cavalete",
+     "rel": [
+      0,
+      -0.2
+     ],
+     "tam": 0.6,
+     "em": "Quem"
+    },
+    {
+     "txt": "Gente!",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "Gente"
+    }
+   ]
+  },
+  {
+   "fala": "L02",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "e1",
+     "em": "estudante",
+     "entra": "cai"
+    },
+    {
+     "p": "p5",
+     "em": "mestrado",
+     "entra": "cai"
+    },
+    {
+     "p": "e7",
+     "em": "doutorado-0.3",
+     "entra": "cai"
+    },
+    {
+     "txt": "estudantes",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "iniciação"
+    }
+   ]
+  },
+  {
+   "fala": "L03",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "e4",
+     "em": "pesquisadoras",
+     "entra": "cai"
+    },
+    {
+     "p": "e5",
+     "em": "professoras",
+     "entra": "cai"
+    },
+    {
+     "p": "e6",
+     "em": "professores-0.3",
+     "entra": "cai"
+    },
+    {
+     "txt": "pós-docs e professores",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "pós"
+    }
+   ]
+  },
+  {
+   "fala": "L04",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "e2",
+     "em": "técnica",
+     "entra": "cai"
+    },
+    {
+     "p": "e3",
+     "em": "administrativa",
+     "entra": "cai"
+    },
+    {
+     "p": "e8",
+     "em": "funcionar-0.4",
+     "entra": "cai"
+    },
+    {
+     "txt": "equipe técnica e administrativa",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "equipe"
+    }
+   ]
+  },
+  {
+   "fala": "L05",
+   "arranjo": "grade",
+   "colunas": 4,
+   "itens": [
+    {
+     "p": "engrenagem",
+     "em": "engenharia",
+     "entra": "voa"
+    },
+    {
+     "p": "folha_i",
+     "em": "biologia",
+     "entra": "voa"
+    },
+    {
+     "p": "frasco",
+     "em": "química",
+     "entra": "voa"
+    },
+    {
+     "p": "grafico",
+     "em": "economia",
+     "entra": "voa"
+    },
+    {
+     "p": "balanca",
+     "em": "direito",
+     "entra": "voa"
+    },
+    {
+     "p": "mapa",
+     "em": "geografia",
+     "entra": "voa"
+    },
+    {
+     "p": "megafone",
+     "em": "comunicação",
+     "entra": "voa"
+    }
+   ]
+  },
+  {
+   "fala": "L06",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "txt": "universidades",
+     "tipo": "etiqueta",
+     "em": "universidades"
+    },
+    {
+     "txt": "institutos",
+     "tipo": "etiqueta",
+     "em": "institutos",
+     "papel": "amarelo"
+    },
+    {
+     "txt": "empresas parceiras",
+     "tipo": "etiqueta",
+     "em": "empresas",
+     "papel": "lima"
+    }
+   ]
+  },
+  {
+   "fala": "L07",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "oculos",
+     "em": "enxerga"
+    },
+    {
+     "p": "oculos2",
+     "em": "jeito"
+    },
+    {
+     "p": "lampada",
+     "em": "soluções-0.6",
+     "brilha": "soluções"
+    },
+    {
+     "txt": "juntando olhares",
+     "tipo": "mao",
+     "lugar": "titulo",
+     "em": "juntando",
+     "cor": "verdeEsc"
+    }
+   ]
+  },
+  {
+   "fala": "L08",
+   "arranjo": "grade",
+   "colunas": 5,
+   "itens": [
+    {
+     "p": "e1",
+     "em": 0.1
+    },
+    {
+     "p": "e2",
+     "em": 0.2
+    },
+    {
+     "p": "e3",
+     "em": 0.3
+    },
+    {
+     "p": "e4",
+     "em": 0.4
+    },
+    {
+     "p": "e5",
+     "em": 0.5
+    },
+    {
+     "p": "e6",
+     "em": 0.6
+    },
+    {
+     "p": "cientista:acena",
+     "em": "gente"
+    },
+    {
+     "p": "mascote:pula",
+     "em": "gente+0.2"
+    },
+    {
+     "p": "e7",
+     "em": 0.7
+    },
+    {
+     "p": "e8",
+     "em": 0.8
+    },
+    {
+     "fx": "brilho",
+     "lugar": "tudo",
+     "em": "Quem",
+     "n": 8
+    },
+    {
+     "p": "camera",
+     "lugar": "titulo",
+     "em": "Quem-0.3",
+     "s": 0.55
+    }
+   ]
+  }
+ ]
+}

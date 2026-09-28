@@ -5,7 +5,7 @@
   "narracao": {
     "modelo": "Gemini 3.8 Flash TTS (modo conversacional, 2 locutores)",
     "vozes": { "Sulafat": "calorosa, curiosa e alegre", "Puck": "enérgico, brincalhão e bem-humorado" },
-    "arquivo_original": "entrada/biogas_multispeaker.wav"
+    "arquivo_original": "entrada/narracao/pt-BR/ep01_pt-BR_SulafatPuck_take1.wav"
   },
   "falas": [
     { "id": "L01", "voz": "Sulafat", "cena": "titulo",      "texto": "O que é biogás? E biometano?" },

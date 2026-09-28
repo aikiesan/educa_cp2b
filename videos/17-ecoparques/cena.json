@@ -1,0 +1,69 @@
+{
+  "_sobre": "Ep. 17 · Ecoparques: a sobra de um é a matéria-prima do outro — estilo D (maquete de papelão), jogo de tabuleiro; o mascote é o peão. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "D",
+  "seed": 17,
+  "pecas": {
+    "usina": "ep17/_folha/pecas_ep17_1", "granja": "ep17/_folha/pecas_ep17_2", "bairro": "ep17/_folha/pecas_ep17_3",
+    "estufa": "ep17/_folha/pecas_ep17_4", "lavoura": "ep17/_folha/pecas_ep17_5", "bio": "ep17/_folha/pecas_ep17_6",
+    "tabuleiro": "ep17/_folha/tabuleiro", "bagaco": "ep16/_folha/pecas_ep16_4", "vinhaca": "ep04/_folha/pecas_ep04_2", "porquinho": "ep05/_folha/animais_2"
+  },
+  "cenas": [
+    { "fala": "L01", "itens": [
+      { "p": "tabuleiro", "lugar": "tudo", "em": 0.1 },
+      { "p": "mascote:pula", "sobre": "tabuleiro", "rel": [0, -0.05], "tam": 0.3, "em": "bairro", "entra": "cai", "anima": "quica" },
+      { "txt": "a sobra de um = o ingrediente do outro", "tipo": "etiqueta", "lugar": "rodape", "em": "sobra" }
+    ]},
+    { "fala": "L02", "arranjo": "palco", "itens": [
+      { "p": "usina", "em": "usina", "entra": "cai" },
+      { "p": "vinhaca", "em": "vinhaça" },
+      { "p": "bagaco", "em": "bagaço-0.3" }
+    ]},
+    { "fala": "L03", "arranjo": "palco", "itens": [
+      { "p": "granja", "em": "granja", "entra": "cai" },
+      { "p": "porquinho", "em": "granja+0.3", "anima": "quica" },
+      { "p": "esterco", "em": "esterco-0.2", "entra": "cai" }
+    ]},
+    { "fala": "L04", "arranjo": "dupla", "itens": [
+      { "p": "bairro", "em": "cidade", "entra": "cai" },
+      { "p": "saco_restos", "em": "restos-0.3", "entra": "cai" }
+    ]},
+    { "fala": "L05", "arranjo": "palco", "itens": [
+      { "p": "bio", "id": "bio", "em": "biodigestor-0.4", "entra": "cai" },
+      { "p": "usina", "id": "u", "em": 0.1, "s": 0.8 },
+      { "p": "granja", "id": "g", "em": 0.2, "s": 0.8 },
+      { "p": "bairro", "id": "b", "em": 0.3, "s": 0.8 },
+      { "fx": "seta", "de": "u", "para": "bio", "em": "transforma" },
+      { "fx": "seta", "de": "g", "para": "bio", "em": "transforma+0.2" },
+      { "fx": "seta", "de": "b", "para": "bio", "em": "transforma+0.4" },
+      { "fx": "bolhas", "sobre": "bio", "rel": [0, -0.6], "tam": 0.7, "em": "biogás", "n": 8 }
+    ]},
+    { "fala": "L06", "arranjo": "palco", "itens": [
+      { "p": "bio", "id": "bio", "em": 0.05 },
+      { "p": "lampada", "id": "luz", "em": "energia", "brilha": "energia+0.3" },
+      { "p": "caminhao", "id": "cam", "em": "caminhões-0.5", "entra": "desliza_dir" },
+      { "fx": "seta", "de": "bio", "para": "luz", "em": "volta" },
+      { "fx": "seta", "de": "bio", "para": "cam", "em": "abastece" }
+    ]},
+    { "fala": "L07", "arranjo": "palco", "itens": [
+      { "p": "bio", "id": "bio", "em": 0.05 },
+      { "p": "lavoura", "id": "lav", "em": "lavouras" },
+      { "p": "estufa", "id": "est", "em": "estufa-0.4" },
+      { "fx": "seta", "de": "bio", "para": "lav", "em": "biofertilizante", "cor": "verde" },
+      { "fx": "seta", "de": "bio", "para": "est", "em": "estufa", "cor": "verde" }
+    ]},
+    { "fala": "L08", "itens": [
+      { "p": "tabuleiro", "lugar": "tudo", "em": 0.05 },
+      { "fx": "ciclo", "sobre": "tabuleiro", "rel": [0, 0], "tam": 0.62, "em": "ciclo-0.6" },
+      { "txt": "ECOPARQUE", "tipo": "letras", "lugar": "titulo", "em": "ecoparque" },
+      { "p": "mascote:acena", "sobre": "tabuleiro", "rel": [0, -0.02], "tam": 0.26, "em": "juntas", "anima": "acena" }
+    ]},
+    { "fala": "L09", "arranjo": "fila", "itens": [
+      { "p": "usina", "em": 0.1, "anima": "quica" },
+      { "p": "granja", "em": 0.25, "anima": "quica" },
+      { "p": "bairro", "em": 0.4, "anima": "quica" },
+      { "p": "estufa", "em": 0.55, "anima": "quica" },
+      { "txt": "TODO MUNDO GANHA!", "tipo": "letras", "lugar": "titulo", "em": "todo" },
+      { "fx": "confete", "lugar": "centro", "em": "ganha" }
+    ]}
+  ]
+}

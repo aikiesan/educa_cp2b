@@ -1,0 +1,802 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 71.149,
+ "musica": {
+  "bpm": 94.9870714898048,
+  "periodo": 0.6316649103814086,
+  "downbeat0": 2.105,
+  "compasso": 2.5266596415256344,
+  "logo": 65.909,
+  "cortes": [
+   {
+    "de": 50.112,
+    "para": 42.532
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 2.155,
+   "fim": 4.765,
+   "origem": {
+    "inicio": 0.54,
+    "fim": 3.15
+   },
+   "palavras": [
+    {
+     "p": "Resíduo",
+     "i": 2.155,
+     "f": 3.235
+    },
+    {
+     "p": "ou",
+     "i": 3.235,
+     "f": 3.815
+    },
+    {
+     "p": "recurso",
+     "i": 3.815,
+     "f": 4.765
+    }
+   ],
+   "texto": "Resíduo… ou recurso?"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 5.815,
+   "fim": 13.675,
+   "origem": {
+    "inicio": 4.03,
+    "fim": 11.89
+   },
+   "palavras": [
+    {
+     "p": "São",
+     "i": 5.815,
+     "f": 6.025
+    },
+    {
+     "p": "Paulo",
+     "i": 6.025,
+     "f": 6.525
+    },
+    {
+     "p": "gera",
+     "i": 6.525,
+     "f": 6.825
+    },
+    {
+     "p": "muitos",
+     "i": 6.825,
+     "f": 7.385
+    },
+    {
+     "p": "resíduos",
+     "i": 7.385,
+     "f": 7.945
+    },
+    {
+     "p": "orgânicos",
+     "i": 7.945,
+     "f": 8.545
+    },
+    {
+     "p": "no",
+     "i": 8.545,
+     "f": 9.125
+    },
+    {
+     "p": "campo",
+     "i": 9.125,
+     "f": 9.565
+    },
+    {
+     "p": "e",
+     "i": 9.565,
+     "f": 9.905
+    },
+    {
+     "p": "nas",
+     "i": 9.905,
+     "f": 10.065
+    },
+    {
+     "p": "cidades",
+     "i": 10.065,
+     "f": 10.485
+    },
+    {
+     "p": "mas",
+     "i": 10.765,
+     "f": 11.285
+    },
+    {
+     "p": "só",
+     "i": 11.285,
+     "f": 11.445
+    },
+    {
+     "p": "uma",
+     "i": 11.445,
+     "f": 11.605
+    },
+    {
+     "p": "pequena",
+     "i": 11.605,
+     "f": 12.105
+    },
+    {
+     "p": "parte",
+     "i": 12.105,
+     "f": 12.605
+    },
+    {
+     "p": "vira",
+     "i": 12.605,
+     "f": 12.985
+    },
+    {
+     "p": "energia",
+     "i": 12.985,
+     "f": 13.675
+    }
+   ],
+   "texto": "São Paulo gera muitos resíduos orgânicos, no campo e nas cidades — mas só uma pequena parte vira energia."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 14.725,
+   "fim": 21.845,
+   "origem": {
+    "inicio": 12.36,
+    "fim": 19.48
+   },
+   "palavras": [
+    {
+     "p": "Pra",
+     "i": 14.725,
+     "f": 14.805
+    },
+    {
+     "p": "mudar",
+     "i": 14.805,
+     "f": 15.105
+    },
+    {
+     "p": "isso",
+     "i": 15.105,
+     "f": 15.585
+    },
+    {
+     "p": "nasceu",
+     "i": 15.945,
+     "f": 16.325
+    },
+    {
+     "p": "o",
+     "i": 16.325,
+     "f": 16.545
+    },
+    {
+     "p": "cê",
+     "i": 16.545,
+     "f": 16.713
+    },
+    {
+     "p": "pê",
+     "i": 16.713,
+     "f": 16.881
+    },
+    {
+     "p": "dois",
+     "i": 16.881,
+     "f": 17.217
+    },
+    {
+     "p": "bê",
+     "i": 17.217,
+     "f": 17.385
+    },
+    {
+     "p": "o",
+     "i": 17.725,
+     "f": 18.025
+    },
+    {
+     "p": "Centro",
+     "i": 18.025,
+     "f": 18.525
+    },
+    {
+     "p": "Paulista",
+     "i": 18.525,
+     "f": 19.085
+    },
+    {
+     "p": "de",
+     "i": 19.085,
+     "f": 19.305
+    },
+    {
+     "p": "Estudos",
+     "i": 19.305,
+     "f": 19.685
+    },
+    {
+     "p": "em",
+     "i": 19.685,
+     "f": 19.885
+    },
+    {
+     "p": "Biogás",
+     "i": 19.885,
+     "f": 20.525
+    },
+    {
+     "p": "e",
+     "i": 20.525,
+     "f": 20.805
+    },
+    {
+     "p": "Bioprodutos",
+     "i": 20.805,
+     "f": 21.845
+    }
+   ],
+   "texto": "Pra mudar isso, nasceu o CP2B: o Centro Paulista de Estudos em Biogás e Bioprodutos!",
+   "fala": "Pra mudar isso, nasceu o cê-pê-dois-bê: o Centro Paulista de Estudos em Biogás e Bioprodutos!"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 22.895,
+   "fim": 26.155,
+   "origem": {
+    "inicio": 20.38,
+    "fim": 23.64
+   },
+   "palavras": [
+    {
+     "p": "Com",
+     "i": 22.895,
+     "f": 23.055
+    },
+    {
+     "p": "sede",
+     "i": 23.055,
+     "f": 23.375
+    },
+    {
+     "p": "no",
+     "i": 23.375,
+     "f": 23.535
+    },
+    {
+     "p": "NIPE",
+     "i": 23.535,
+     "f": 23.815
+    },
+    {
+     "p": "na",
+     "i": 24.035,
+     "f": 24.155
+    },
+    {
+     "p": "Unicamp",
+     "i": 24.155,
+     "f": 24.675
+    },
+    {
+     "p": "e",
+     "i": 24.675,
+     "f": 25.015
+    },
+    {
+     "p": "apoio",
+     "i": 25.015,
+     "f": 25.435
+    },
+    {
+     "p": "da",
+     "i": 25.435,
+     "f": 25.555
+    },
+    {
+     "p": "FAPESP",
+     "i": 25.555,
+     "f": 26.155
+    }
+   ],
+   "texto": "Com sede no NIPE, na Unicamp, e apoio da FAPESP."
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 27.205,
+   "fim": 36.575,
+   "origem": {
+    "inicio": 24.45,
+    "fim": 33.82
+   },
+   "palavras": [
+    {
+     "p": "Nossa",
+     "i": 27.205,
+     "f": 27.475
+    },
+    {
+     "p": "missão",
+     "i": 27.475,
+     "f": 27.855
+    },
+    {
+     "p": "transformar",
+     "i": 28.335,
+     "f": 29.175
+    },
+    {
+     "p": "resíduos",
+     "i": 29.175,
+     "f": 29.755
+    },
+    {
+     "p": "em",
+     "i": 29.755,
+     "f": 29.935
+    },
+    {
+     "p": "biogás",
+     "i": 29.935,
+     "f": 30.615
+    },
+    {
+     "p": "biometano",
+     "i": 31.055,
+     "f": 31.695
+    },
+    {
+     "p": "e",
+     "i": 31.695,
+     "f": 32.015
+    },
+    {
+     "p": "bioprodutos",
+     "i": 32.015,
+     "f": 32.955
+    },
+    {
+     "p": "com",
+     "i": 33.135,
+     "f": 33.655
+    },
+    {
+     "p": "ciência",
+     "i": 33.655,
+     "f": 34.155
+    },
+    {
+     "p": "tecnologia",
+     "i": 34.435,
+     "f": 35.015
+    },
+    {
+     "p": "e",
+     "i": 35.015,
+     "f": 35.675
+    },
+    {
+     "p": "impacto",
+     "i": 35.675,
+     "f": 36.115
+    },
+    {
+     "p": "social",
+     "i": 36.115,
+     "f": 36.575
+    }
+   ],
+   "texto": "Nossa missão: transformar resíduos em biogás, biometano e bioprodutos — com ciência, tecnologia e impacto social."
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 37.625,
+   "fim": 45.045,
+   "origem": {
+    "inicio": 34.67,
+    "fim": 42.09
+   },
+   "palavras": [
+    {
+     "p": "Funcionamos",
+     "i": 37.625,
+     "f": 38.335
+    },
+    {
+     "p": "como",
+     "i": 38.335,
+     "f": 38.555
+    },
+    {
+     "p": "um",
+     "i": 38.555,
+     "f": 38.675
+    },
+    {
+     "p": "laboratório",
+     "i": 38.675,
+     "f": 39.215
+    },
+    {
+     "p": "vivo",
+     "i": 39.215,
+     "f": 39.575
+    },
+    {
+     "p": "testando",
+     "i": 39.815,
+     "f": 40.415
+    },
+    {
+     "p": "soluções",
+     "i": 40.415,
+     "f": 40.975
+    },
+    {
+     "p": "no",
+     "i": 40.975,
+     "f": 41.175
+    },
+    {
+     "p": "campo",
+     "i": 41.175,
+     "f": 41.535
+    },
+    {
+     "p": "do",
+     "i": 41.935,
+     "f": 42.115
+    },
+    {
+     "p": "inventário",
+     "i": 42.115,
+     "f": 42.695
+    },
+    {
+     "p": "de",
+     "i": 42.695,
+     "f": 42.835
+    },
+    {
+     "p": "resíduos",
+     "i": 42.835,
+     "f": 43.395
+    },
+    {
+     "p": "às",
+     "i": 43.395,
+     "f": 43.695
+    },
+    {
+     "p": "políticas",
+     "i": 43.695,
+     "f": 44.235
+    },
+    {
+     "p": "públicas",
+     "i": 44.235,
+     "f": 45.045
+    }
+   ],
+   "texto": "Funcionamos como um laboratório vivo, testando soluções no campo — do inventário de resíduos às políticas públicas."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 46.095,
+   "fim": 51.505,
+   "origem": {
+    "inicio": 42.86,
+    "fim": 48.27
+   },
+   "palavras": [
+    {
+     "p": "Somos",
+     "i": 46.095,
+     "f": 46.395
+    },
+    {
+     "p": "uma",
+     "i": 46.395,
+     "f": 46.555
+    },
+    {
+     "p": "rede",
+     "i": 46.555,
+     "f": 46.875
+    },
+    {
+     "p": "de",
+     "i": 46.875,
+     "f": 47.015
+    },
+    {
+     "p": "pesquisadores",
+     "i": 47.015,
+     "f": 47.715
+    },
+    {
+     "p": "universidades",
+     "i": 48.055,
+     "f": 48.855
+    },
+    {
+     "p": "e",
+     "i": 48.855,
+     "f": 49.055
+    },
+    {
+     "p": "empresas",
+     "i": 49.055,
+     "f": 49.515
+    },
+    {
+     "p": "no",
+     "i": 49.515,
+     "f": 50.095
+    },
+    {
+     "p": "Brasil",
+     "i": 50.095,
+     "f": 50.475
+    },
+    {
+     "p": "e",
+     "i": 50.475,
+     "f": 50.835
+    },
+    {
+     "p": "no",
+     "i": 50.835,
+     "f": 50.995
+    },
+    {
+     "p": "exterior",
+     "i": 50.995,
+     "f": 51.505
+    }
+   ],
+   "texto": "Somos uma rede de pesquisadores, universidades e empresas, no Brasil e no exterior."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 52.555,
+   "fim": 57.585,
+   "origem": {
+    "inicio": 48.85,
+    "fim": 53.88
+   },
+   "palavras": [
+    {
+     "p": "Com",
+     "i": 52.555,
+     "f": 52.705
+    },
+    {
+     "p": "excelência",
+     "i": 52.705,
+     "f": 53.365
+    },
+    {
+     "p": "ética",
+     "i": 53.825,
+     "f": 54.205
+    },
+    {
+     "p": "diversidade",
+     "i": 54.545,
+     "f": 55.325
+    },
+    {
+     "p": "e",
+     "i": 55.325,
+     "f": 55.865
+    },
+    {
+     "p": "compromisso",
+     "i": 55.865,
+     "f": 56.645
+    },
+    {
+     "p": "com",
+     "i": 56.645,
+     "f": 56.825
+    },
+    {
+     "p": "a",
+     "i": 56.825,
+     "f": 56.905
+    },
+    {
+     "p": "sociedade",
+     "i": 56.905,
+     "f": 57.585
+    }
+   ],
+   "texto": "Com excelência, ética, diversidade e compromisso com a sociedade."
+  },
+  {
+   "id": "L09",
+   "voz": "Sulafat",
+   "inicio": 58.635,
+   "fim": 64.805,
+   "origem": {
+    "inicio": 54.41,
+    "fim": 60.58
+   },
+   "palavras": [
+    {
+     "p": "Queremos",
+     "i": 58.635,
+     "f": 59.065
+    },
+    {
+     "p": "fazer",
+     "i": 59.065,
+     "f": 59.325
+    },
+    {
+     "p": "de",
+     "i": 59.325,
+     "f": 59.465
+    },
+    {
+     "p": "São",
+     "i": 59.465,
+     "f": 59.625
+    },
+    {
+     "p": "Paulo",
+     "i": 59.625,
+     "f": 59.965
+    },
+    {
+     "p": "uma",
+     "i": 59.965,
+     "f": 60.465
+    },
+    {
+     "p": "vitrine",
+     "i": 60.465,
+     "f": 61.125
+    },
+    {
+     "p": "de",
+     "i": 61.125,
+     "f": 61.285
+    },
+    {
+     "p": "soluções",
+     "i": 61.285,
+     "f": 61.825
+    },
+    {
+     "p": "em",
+     "i": 61.825,
+     "f": 61.965
+    },
+    {
+     "p": "biogás",
+     "i": 61.965,
+     "f": 62.445
+    },
+    {
+     "p": "e",
+     "i": 62.445,
+     "f": 62.925
+    },
+    {
+     "p": "uma",
+     "i": 62.925,
+     "f": 63.065
+    },
+    {
+     "p": "referência",
+     "i": 63.065,
+     "f": 63.705
+    },
+    {
+     "p": "na",
+     "i": 63.705,
+     "f": 63.865
+    },
+    {
+     "p": "América",
+     "i": 63.865,
+     "f": 64.225
+    },
+    {
+     "p": "Latina",
+     "i": 64.225,
+     "f": 64.805
+    }
+   ],
+   "texto": "Queremos fazer de São Paulo uma vitrine de soluções em biogás — e uma referência na América Latina!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 66.059,
+   "fim": 70.149,
+   "origem": {
+    "inicio": 61.52,
+    "fim": 65.61
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 66.059,
+     "f": 66.263
+    },
+    {
+     "p": "pê",
+     "i": 66.263,
+     "f": 66.447
+    },
+    {
+     "p": "dois",
+     "i": 66.447,
+     "f": 66.815
+    },
+    {
+     "p": "bê",
+     "i": 66.815,
+     "f": 66.999
+    },
+    {
+     "p": "energia",
+     "i": 67.199,
+     "f": 68.059
+    },
+    {
+     "p": "viva",
+     "i": 68.059,
+     "f": 68.439
+    },
+    {
+     "p": "ciência",
+     "i": 68.859,
+     "f": 69.359
+    },
+    {
+     "p": "que",
+     "i": 69.359,
+     "f": 69.539
+    },
+    {
+     "p": "transforma",
+     "i": 69.539,
+     "f": 70.149
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

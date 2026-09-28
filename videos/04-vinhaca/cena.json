@@ -1,0 +1,84 @@
+{
+  "_sobre": "Ep. 04 · Vinhaça: o tesouro líquido da cana — estilo D, maquete de papelão + mistério de detetive: uma única maquete em cobrinha (3×3); o cientista-detetive segue a trilha de gotas escuras de área em área (a câmera passa no tempo da música); no fim a câmera recua e mostra a maquete inteira: caso resolvido. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "D",
+  "seed": 4,
+  "maquete": true,
+  "pecas": {
+    "cana": "ep04/_folha/pecas_ep04_6", "usina": "ep04/_folha/usina_etanol", "caminhao_tanque": "ep04/_folha/caminhao_tanque",
+    "garrafa": "ep04/_folha/pecas_ep04_1", "gotas": "ep04/_folha/pecas_ep04_2", "gota": "ep04/_folha/pecas_ep04_3",
+    "pare": "ep04/_folha/pecas_ep04_4", "balanca": "ep04/_folha/pecas_ep04_5", "lagoa": "ep12/_folha/lagoa_coberta",
+    "bio_corte": "ep12/_folha/biodigestor_corte", "cadeado": "ep12/_folha/pecas_ep12_5", "moeda": "ep23/_folha/pecas_ep23_6"
+  },
+  "assinatura": {"cientista": true},
+  "cenas": [
+    {"fala": "L01", "arranjo": "palco", "itens": [
+      {"txt": "O SEGREDO DA CANA", "tipo": "letras", "lugar": "titulo", "em": "segredo"},
+      {"p": "cana", "id": "cana", "em": "cana-0.3", "s": 1.05},
+      {"p": "cadeado", "sobre": "cana", "rel": [0.02, 0.06], "tam": 0.3, "em": "segredo+0.3", "entra": "pop"},
+      {"p": "gota", "sobre": "cana", "rel": [0.34, 0.24], "tam": 0.22, "em": "líquido", "entra": "cai"},
+      {"p": "cientista:lupa", "lugar": "narrador", "em": "sabia", "entra": "desliza_dir"},
+      {"txt": "?", "tipo": "balao", "sobre": "cientista:lupa", "rel": [-0.42, -0.56], "tam": 0.36, "em": "líquido+0.2"}
+    ]},
+    {"fala": "L02", "arranjo": "palco", "itens": [
+      {"p": "usina", "id": "usina", "em": "usina-0.2", "s": 1.1},
+      {"p": "garrafa", "em": "etanol"},
+      {"p": "gotas", "em": "vinhaça"},
+      {"txt": "pista 1 · a vinhaça", "tipo": "etiqueta", "lugar": "titulo", "em": "vinhaça"},
+      {"txt": "caldo escuro, cheio de matéria orgânica", "tipo": "mao", "lugar": "rodape", "em": "caldo", "cor": "marrom"}
+    ]},
+    {"fala": "L03", "arranjo": "fila", "itens": [
+      {"txt": "por muito tempo…", "tipo": "mao", "lugar": "titulo", "em": "Por", "cor": "petrol"},
+      {"p": "caminhao_tanque", "id": "cam", "em": "direto-0.4", "entra": "desliza_esq"},
+      {"p": "cana", "em": "canavial", "entra": "cresce"},
+      {"p": "cana", "id": "cana2", "em": "canavial+0.25", "entra": "cresce"},
+      {"fx": "gotas", "de": "cam", "saida": [-0.3, 0.3], "n": 6, "cor": "marrom", "em": "adubar"},
+      {"txt": "direto pro canavial", "tipo": "etiqueta", "lugar": "rodape", "em": "canavial"}
+    ]},
+    {"fala": "L04", "arranjo": "fila", "itens": [
+      {"p": "gotas", "id": "g", "em": "vinhaça"},
+      {"p": "pare", "em": "paradinha-0.2", "entra": "sobe"},
+      {"p": "lagoa", "id": "lg", "em": "biodigestor-0.3"},
+      {"fx": "cano", "de": "g", "para": "lg", "em": "pode", "fundo": true},
+      {"txt": "biodigestor", "tipo": "etiqueta", "lugar": "rodape", "em": "biodigestor", "papel": "lima"},
+      {"txt": "pista 2 · uma paradinha", "tipo": "etiqueta", "lugar": "titulo", "em": "paradinha"}
+    ]},
+    {"fala": "L05", "arranjo": "palco", "itens": [
+      {"p": "bio_corte", "id": "bc", "em": 0.05, "s": 1.05},
+      {"fx": "lente", "sobre": "bc", "rel": [0.08, 0.12], "tam": 0.58, "n": 5, "humor": "comendo", "em": "micróbios"},
+      {"fx": "bolhas", "sobre": "bc", "rel": [-0.08, -0.38], "tam": 0.55, "n": 9, "em": "transformam"},
+      {"txt": "BIOGÁS!", "tipo": "letras", "lugar": "titulo", "em": "biogás"},
+      {"p": "cientista:lupa", "lugar": "narrador", "em": 0.1}
+    ]},
+    {"fala": "L06", "arranjo": "fila", "itens": [
+      {"p": "lagoa", "id": "lg", "em": 0.05},
+      {"p": "cana", "id": "c1", "em": "adubo-0.3", "entra": "cresce"},
+      {"p": "cana", "id": "c2", "em": "adubo", "entra": "cresce"},
+      {"fx": "seta", "de": "lg", "para": "c1", "em": "sai"},
+      {"txt": "ótimo adubo!", "tipo": "etiqueta", "lugar": "titulo", "em": "ótimo", "papel": "lima"},
+      {"txt": "pra lavoura", "tipo": "mao", "lugar": "rodape", "em": "ótimo", "cor": "verdeEsc"}
+    ]},
+    {"fala": "L07", "arranjo": "palco", "itens": [
+      {"p": "balanca", "id": "bal", "em": "mesma", "anima": "balanca", "s": 1.05},
+      {"fx": "chama", "sobre": "bal", "rel": [-0.36, -0.2], "tam": 0.28, "em": "energia"},
+      {"p": "cana", "sobre": "bal", "rel": [0.36, -0.3], "tam": 0.32, "em": "cana-0.3", "entra": "cresce"},
+      {"txt": "energia", "tipo": "mao", "sobre": "bal", "rel": [-0.36, 0.42], "tam": 0.42, "em": "energia+0.2", "cor": "petrol"},
+      {"txt": "adubo", "tipo": "mao", "sobre": "bal", "rel": [0.36, 0.42], "tam": 0.42, "em": "alimenta", "cor": "verdeEsc"},
+      {"p": "cientista:pensa", "lugar": "narrador", "em": "Ou"}
+    ]},
+    {"fala": "L08", "itens": [
+      {"fx": "mapa_sp", "id": "mapa", "em": "São", "dur": 2.4, "s": 1.12},
+      {"txt": "São Paulo", "tipo": "etiqueta", "lugar": "titulo", "em": "São"},
+      {"txt": "o estado que mais produz cana no Brasil", "tipo": "mao", "lugar": "rodape", "em": "estado", "cor": "verdeEsc"},
+      {"txt": "TESOURO!", "tipo": "carimbo", "sobre": "mapa", "rel": [0.18, 0.22], "tam": 0.5, "em": "tesouro", "cor": "ambar"},
+      {"p": "moeda", "sobre": "mapa", "rel": [-0.3, -0.05], "tam": 0.13, "em": "Imagina", "entra": "cai"},
+      {"p": "moeda", "sobre": "mapa", "rel": [-0.08, -0.18], "tam": 0.13, "em": "tamanho", "entra": "cai"},
+      {"p": "moeda", "sobre": "mapa", "rel": [0.1, -0.02], "tam": 0.13, "em": "desse", "entra": "cai"}
+    ]},
+    {"fala": "L09", "recua": "usina", "itens": [
+      {"txt": "CASO RESOLVIDO!", "tipo": "carimbo", "lugar": "centro", "em": "Vinhaça", "cor": "verdeEsc", "s": 1.2},
+      {"txt": "da usina pro biodigestor, do biodigestor pra energia", "tipo": "mao", "lugar": "rodape", "em": "usina", "cor": "petrol"},
+      {"fx": "raios", "lugar": "canto", "em": "energia"},
+      {"p": "cientista:pula", "lugar": "narrador", "em": "biodigestor#2", "anima": "quica"}
+    ]}
+  ]
+}

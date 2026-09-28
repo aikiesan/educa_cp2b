@@ -1,0 +1,67 @@
+{
+ "titulo": "O lixo que dá gás",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep06_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Pra onde vai o lixo da sua casa?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Muita coisa vai parar no aterro sanitário — inclusive restos de comida.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Enterrados, esses restos apodrecem sem oxigênio… e soltam biogás.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Alguns aterros capturam esse gás por tubos e usam pra gerar energia.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Mas tem um jeito ainda melhor: separar o lixo orgânico logo na fonte…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "…e levar direto pro biodigestor, onde tudo acontece num tanque fechado e controlado.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Assim sobra menos lixo pro aterro — e ainda sai adubo de qualidade.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "E o primeiro passo é bem simples: separar o orgânico aí na sua cozinha!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "O lixo que dá gás: cada casquinha conta!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

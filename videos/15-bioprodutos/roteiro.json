@@ -1,0 +1,67 @@
+{
+ "titulo": "Bioprodutos: muito além da energia",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep15_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Biogás é energia, né? Mas ele pode ser muito mais!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Da mesma cadeia saem vários bioprodutos — produtos feitos a partir da biomassa e dos resíduos.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "O biometano, que substitui o gás natural e o diesel…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "…o biofertilizante, que volta pro campo…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…e até o gás carbônico, que pode ser recuperado e usado pela indústria.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Os pesquisadores também tiram da vinhaça ácidos orgânicos de alto valor…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "…e testam novos combustíveis, como o biohitano: hidrogênio e metano juntos!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Tem pesquisa até pra transformar o lodo em matéria-prima de novos materiais.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Bioprodutos: o resíduo de hoje é a prateleira de amanhã!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

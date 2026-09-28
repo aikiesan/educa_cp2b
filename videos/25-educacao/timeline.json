@@ -1,0 +1,633 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 51.584,
+ "musica": {
+  "bpm": 102.98941048867613,
+  "periodo": 0.5825841677829305,
+  "downbeat0": 2.467,
+  "compasso": 2.330336671131722,
+  "logo": 46.774,
+  "cortes": [
+   {
+    "de": 0.0,
+    "para": 2.969
+   },
+   {
+    "de": 42.721,
+    "para": 47.382
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 2.517,
+   "fim": 6.897,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 4.38
+   },
+   "palavras": [
+    {
+     "p": "Triiim",
+     "i": 2.517,
+     "f": 3.497
+    },
+    {
+     "p": "Aula",
+     "i": 3.717,
+     "f": 4.217
+    },
+    {
+     "p": "relâmpago",
+     "i": 4.217,
+     "f": 4.877
+    },
+    {
+     "p": "como",
+     "i": 5.057,
+     "f": 5.657
+    },
+    {
+     "p": "se",
+     "i": 5.657,
+     "f": 5.857
+    },
+    {
+     "p": "aprende",
+     "i": 5.857,
+     "f": 6.317
+    },
+    {
+     "p": "biogás",
+     "i": 6.317,
+     "f": 6.897
+    }
+   ],
+   "texto": "Triiim! Aula relâmpago: como se aprende biogás?"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 7.571,
+   "fim": 11.351,
+   "origem": {
+    "inicio": 4.78,
+    "fim": 8.56
+   },
+   "palavras": [
+    {
+     "p": "No",
+     "i": 7.571,
+     "f": 8.371
+    },
+    {
+     "p": "cê",
+     "i": 8.371,
+     "f": 8.555
+    },
+    {
+     "p": "pê",
+     "i": 8.555,
+     "f": 8.739
+    },
+    {
+     "p": "dois",
+     "i": 8.739,
+     "f": 9.107
+    },
+    {
+     "p": "bê",
+     "i": 9.107,
+     "f": 9.291
+    },
+    {
+     "p": "aprender",
+     "i": 9.631,
+     "f": 10.071
+    },
+    {
+     "p": "faz",
+     "i": 10.071,
+     "f": 10.491
+    },
+    {
+     "p": "parte",
+     "i": 10.491,
+     "f": 10.851
+    },
+    {
+     "p": "da",
+     "i": 10.851,
+     "f": 11.011
+    },
+    {
+     "p": "missão",
+     "i": 11.011,
+     "f": 11.351
+    }
+   ],
+   "texto": "No CP2B, aprender faz parte da missão.",
+   "fala": "No cê-pê-dois-bê, aprender faz parte da missão."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 12.025,
+   "fim": 18.725,
+   "origem": {
+    "inicio": 9.12,
+    "fim": 15.82
+   },
+   "palavras": [
+    {
+     "p": "Tem",
+     "i": 12.025,
+     "f": 12.385
+    },
+    {
+     "p": "curso",
+     "i": 12.385,
+     "f": 12.765
+    },
+    {
+     "p": "pra",
+     "i": 12.765,
+     "f": 12.945
+    },
+    {
+     "p": "profissionais",
+     "i": 12.945,
+     "f": 13.645
+    },
+    {
+     "p": "e",
+     "i": 13.645,
+     "f": 13.805
+    },
+    {
+     "p": "estudantes",
+     "i": 13.805,
+     "f": 14.365
+    },
+    {
+     "p": "biogás",
+     "i": 14.665,
+     "f": 15.485
+    },
+    {
+     "p": "biometano",
+     "i": 15.665,
+     "f": 16.345
+    },
+    {
+     "p": "e",
+     "i": 16.345,
+     "f": 16.625
+    },
+    {
+     "p": "bioprodutos",
+     "i": 16.625,
+     "f": 17.425
+    },
+    {
+     "p": "pra",
+     "i": 17.425,
+     "f": 17.765
+    },
+    {
+     "p": "transição",
+     "i": 17.765,
+     "f": 18.105
+    },
+    {
+     "p": "energética",
+     "i": 18.105,
+     "f": 18.725
+    }
+   ],
+   "texto": "Tem curso pra profissionais e estudantes: biogás, biometano e bioprodutos pra transição energética."
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 19.399,
+   "fim": 24.879,
+   "origem": {
+    "inicio": 16.42,
+    "fim": 21.9
+   },
+   "palavras": [
+    {
+     "p": "Presencial",
+     "i": 19.399,
+     "f": 20.199
+    },
+    {
+     "p": "online",
+     "i": 20.439,
+     "f": 20.899
+    },
+    {
+     "p": "ou",
+     "i": 20.899,
+     "f": 21.359
+    },
+    {
+     "p": "híbrido",
+     "i": 21.359,
+     "f": 21.819
+    },
+    {
+     "p": "e",
+     "i": 22.099,
+     "f": 22.419
+    },
+    {
+     "p": "até",
+     "i": 22.419,
+     "f": 22.619
+    },
+    {
+     "p": "turmas",
+     "i": 22.619,
+     "f": 23.159
+    },
+    {
+     "p": "feitas",
+     "i": 23.159,
+     "f": 23.559
+    },
+    {
+     "p": "sob",
+     "i": 23.559,
+     "f": 23.839
+    },
+    {
+     "p": "medida",
+     "i": 23.839,
+     "f": 24.239
+    },
+    {
+     "p": "pra",
+     "i": 24.239,
+     "f": 24.459
+    },
+    {
+     "p": "empresas",
+     "i": 24.459,
+     "f": 24.879
+    }
+   ],
+   "texto": "Presencial, online ou híbrido — e até turmas feitas sob medida pra empresas."
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 25.553,
+   "fim": 30.133,
+   "origem": {
+    "inicio": 22.6,
+    "fim": 27.18
+   },
+   "palavras": [
+    {
+     "p": "Nas",
+     "i": 25.553,
+     "f": 25.993
+    },
+    {
+     "p": "escolas",
+     "i": 25.993,
+     "f": 26.493
+    },
+    {
+     "p": "a",
+     "i": 26.593,
+     "f": 26.673
+    },
+    {
+     "p": "criançada",
+     "i": 26.673,
+     "f": 27.113
+    },
+    {
+     "p": "aprende",
+     "i": 27.113,
+     "f": 27.593
+    },
+    {
+     "p": "que",
+     "i": 27.593,
+     "f": 27.753
+    },
+    {
+     "p": "resto",
+     "i": 27.753,
+     "f": 28.113
+    },
+    {
+     "p": "de",
+     "i": 28.113,
+     "f": 28.253
+    },
+    {
+     "p": "comida",
+     "i": 28.253,
+     "f": 28.653
+    },
+    {
+     "p": "vira",
+     "i": 28.653,
+     "f": 29.053
+    },
+    {
+     "p": "adubo",
+     "i": 29.053,
+     "f": 29.553
+    },
+    {
+     "p": "e",
+     "i": 29.553,
+     "f": 29.673
+    },
+    {
+     "p": "energia",
+     "i": 29.673,
+     "f": 30.133
+    }
+   ],
+   "texto": "Nas escolas, a criançada aprende que resto de comida vira adubo e energia."
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 30.807,
+   "fim": 36.847,
+   "origem": {
+    "inicio": 27.18,
+    "fim": 33.22
+   },
+   "palavras": [
+    {
+     "p": "Tem",
+     "i": 30.807,
+     "f": 31.987
+    },
+    {
+     "p": "também",
+     "i": 31.987,
+     "f": 32.327
+    },
+    {
+     "p": "visitas",
+     "i": 32.327,
+     "f": 33.007
+    },
+    {
+     "p": "aos",
+     "i": 33.007,
+     "f": 33.127
+    },
+    {
+     "p": "laboratórios",
+     "i": 33.127,
+     "f": 33.947
+    },
+    {
+     "p": "palestras",
+     "i": 34.187,
+     "f": 34.847
+    },
+    {
+     "p": "e",
+     "i": 34.847,
+     "f": 35.027
+    },
+    {
+     "p": "educação",
+     "i": 35.027,
+     "f": 35.527
+    },
+    {
+     "p": "ambiental",
+     "i": 35.527,
+     "f": 36.047
+    },
+    {
+     "p": "com",
+     "i": 36.047,
+     "f": 36.167
+    },
+    {
+     "p": "as",
+     "i": 36.167,
+     "f": 36.267
+    },
+    {
+     "p": "comunidades",
+     "i": 36.267,
+     "f": 36.847
+    }
+   ],
+   "texto": "Tem também visitas aos laboratórios, palestras e educação ambiental com as comunidades."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 37.521,
+   "fim": 41.121,
+   "origem": {
+    "inicio": 33.66,
+    "fim": 37.26
+   },
+   "palavras": [
+    {
+     "p": "E",
+     "i": 37.521,
+     "f": 38.161
+    },
+    {
+     "p": "quem",
+     "i": 38.161,
+     "f": 38.381
+    },
+    {
+     "p": "é",
+     "i": 38.381,
+     "f": 38.501
+    },
+    {
+     "p": "pesquisador",
+     "i": 38.501,
+     "f": 39.101
+    },
+    {
+     "p": "pode",
+     "i": 39.101,
+     "f": 39.461
+    },
+    {
+     "p": "propor",
+     "i": 39.461,
+     "f": 39.761
+    },
+    {
+     "p": "um",
+     "i": 39.761,
+     "f": 39.921
+    },
+    {
+     "p": "curso",
+     "i": 39.921,
+     "f": 40.201
+    },
+    {
+     "p": "novo",
+     "i": 40.201,
+     "f": 40.601
+    },
+    {
+     "p": "pro",
+     "i": 40.601,
+     "f": 40.881
+    },
+    {
+     "p": "centro",
+     "i": 40.881,
+     "f": 41.121
+    }
+   ],
+   "texto": "E quem é pesquisador pode propor um curso novo pro centro!"
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 41.795,
+   "fim": 45.775,
+   "origem": {
+    "inicio": 38.1,
+    "fim": 42.08
+   },
+   "palavras": [
+    {
+     "p": "Triiim",
+     "i": 41.795,
+     "f": 42.555
+    },
+    {
+     "p": "Fim",
+     "i": 42.835,
+     "f": 43.235
+    },
+    {
+     "p": "da",
+     "i": 43.235,
+     "f": 43.355
+    },
+    {
+     "p": "aula",
+     "i": 43.355,
+     "f": 43.635
+    },
+    {
+     "p": "e",
+     "i": 43.635,
+     "f": 44.095
+    },
+    {
+     "p": "começo",
+     "i": 44.095,
+     "f": 44.535
+    },
+    {
+     "p": "de",
+     "i": 44.535,
+     "f": 44.715
+    },
+    {
+     "p": "muitas",
+     "i": 44.715,
+     "f": 45.215
+    },
+    {
+     "p": "ideias",
+     "i": 45.215,
+     "f": 45.775
+    }
+   ],
+   "texto": "Triiim! Fim da aula — e começo de muitas ideias!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 46.924,
+   "fim": 50.584,
+   "origem": {
+    "inicio": 43.1,
+    "fim": 46.76
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 46.924,
+     "f": 47.076
+    },
+    {
+     "p": "pê",
+     "i": 47.076,
+     "f": 47.228
+    },
+    {
+     "p": "dois",
+     "i": 47.228,
+     "f": 47.532
+    },
+    {
+     "p": "bê",
+     "i": 47.532,
+     "f": 47.684
+    },
+    {
+     "p": "energia",
+     "i": 47.904,
+     "f": 48.664
+    },
+    {
+     "p": "viva",
+     "i": 48.664,
+     "f": 49.084
+    },
+    {
+     "p": "ciência",
+     "i": 49.404,
+     "f": 49.784
+    },
+    {
+     "p": "que",
+     "i": 49.784,
+     "f": 49.944
+    },
+    {
+     "p": "transforma",
+     "i": 49.944,
+     "f": 50.584
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

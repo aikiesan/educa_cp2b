@@ -1,0 +1,67 @@
+{
+ "titulo": "Ciência, coisa de menina",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep24_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Toda heroína tem um superpoder. O dela é a curiosidade!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Ela olha pra um resto de comida e pergunta: \"e se isso virasse energia?\"",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Na ciência do biogás tem lugar pra todo mundo: nos micróbios, nas máquinas, nos mapas, nas leis…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "…e muitas dessas cientistas são mulheres — inclusive quem dirige o CP2B!",
+   "fala": "…e muitas dessas cientistas são mulheres — inclusive quem dirige o cê-pê-dois-bê!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Com projetos como o \"Ciência, coisa de menina\", estudantes do ensino médio conhecem os laboratórios por dentro…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "…fazem experimentos, conversam com pesquisadoras e descobrem novos caminhos.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Porque diversidade e equidade de gênero também são valores da boa ciência.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Ciência? Coisa de menina — e de todo mundo que tem curiosidade!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "titulo": "PILAR-2b: the biogas map of São Paulo (en-GB)",
+ "idioma": "en-GB",
+ "narracao": {
+  "arquivo": "entrada/narracao/en-GB/ep91_en-GB_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "six hundred and forty- five",
+   "645"
+  ],
+  [
+   "C- P- two- B",
+   "CP2B"
+  ],
+  [
+   "two- B",
+   "2b"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Where is São Paulo's biogas?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "It's hidden in waste: in sugarcane, in manure, in city rubbish… spread across 645 municipalities.",
+   "fala": "It's hidden in waste: in sugarcane, in manure, in city rubbish… spread across six hundred and forty-five municipalities.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "To find that potential, CP2B created PILAR-2b.",
+   "fala": "To find that potential, C-P-two-B created Pilar two-B.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "An online platform that brings together data from farming, livestock and cities…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…and calculates how much biogas each municipality could produce.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Just choose the type of waste, click on your city… and see the result straight away.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "All based on science: the sources and methods are there for everyone to see.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "So public managers, companies and researchers can find where it's worth investing in renewable energy.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "PILAR-2b: the biogas map of São Paulo. Take a look and explore!",
+   "fala": "Pilar two-B: the biogas map of São Paulo. Take a look and explore!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: living energy, science that transforms!",
+   "fala": "C-P-two-B: living energy, science that transforms!",
+   "voz": "Sulafat"
+  }
+ ]
+}

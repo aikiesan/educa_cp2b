@@ -1,0 +1,67 @@
+{
+ "titulo": "Ecoparques: a sobra de um é a matéria-prima do outro",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep17_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Imagina um bairro onde a sobra de um vizinho é o ingrediente do outro.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "A usina de cana tem vinhaça e bagaço…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "…a granja tem esterco…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "…e a cidade tem restos de comida.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "No meio de todo mundo, um biodigestor transforma tudo isso em biogás.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "A energia volta pra usina e pra cidade, o biometano abastece os caminhões…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "…e o biofertilizante vai pras lavouras e pra estufa.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Isso é um ecoparque: empresas e cidades trabalhando juntas, em ciclo.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Ecoparques: quando todo mundo ganha com o resíduo!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

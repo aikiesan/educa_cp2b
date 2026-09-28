@@ -1,0 +1,629 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 50.543,
+ "musica": {
+  "bpm": 102.5955257147672,
+  "periodo": 0.5848208250992356,
+  "downbeat0": 1.724,
+  "compasso": 2.3392833003969424,
+  "logo": 45.453,
+  "cortes": [
+   {
+    "de": 22.777,
+    "para": 27.456
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 1.774,
+   "fim": 6.134,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 4.36
+   },
+   "palavras": [
+    {
+     "p": "Imagina",
+     "i": 1.774,
+     "f": 2.754
+    },
+    {
+     "p": "uma",
+     "i": 2.754,
+     "f": 2.894
+    },
+    {
+     "p": "cooperativa",
+     "i": 2.894,
+     "f": 3.554
+    },
+    {
+     "p": "que",
+     "i": 3.554,
+     "f": 3.794
+    },
+    {
+     "p": "produz",
+     "i": 3.794,
+     "f": 4.134
+    },
+    {
+     "p": "energia",
+     "i": 4.134,
+     "f": 4.634
+    },
+    {
+     "p": "com",
+     "i": 4.634,
+     "f": 4.894
+    },
+    {
+     "p": "as",
+     "i": 4.894,
+     "f": 5.134
+    },
+    {
+     "p": "próprias",
+     "i": 5.134,
+     "f": 5.614
+    },
+    {
+     "p": "sobras",
+     "i": 5.614,
+     "f": 6.134
+    }
+   ],
+   "texto": "Imagina uma cooperativa que produz energia com as próprias sobras."
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 6.798,
+   "fim": 10.578,
+   "origem": {
+    "inicio": 4.78,
+    "fim": 8.56
+   },
+   "palavras": [
+    {
+     "p": "Antes",
+     "i": 6.798,
+     "f": 7.458
+    },
+    {
+     "p": "resíduo",
+     "i": 7.738,
+     "f": 8.298
+    },
+    {
+     "p": "acumulado",
+     "i": 8.298,
+     "f": 9.038
+    },
+    {
+     "p": "e",
+     "i": 9.038,
+     "f": 9.198
+    },
+    {
+     "p": "caminhões",
+     "i": 9.198,
+     "f": 9.758
+    },
+    {
+     "p": "rodando",
+     "i": 9.758,
+     "f": 10.178
+    },
+    {
+     "p": "a",
+     "i": 10.178,
+     "f": 10.318
+    },
+    {
+     "p": "diesel",
+     "i": 10.318,
+     "f": 10.578
+    }
+   ],
+   "texto": "Antes: resíduo acumulado, e caminhões rodando a diesel."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 11.242,
+   "fim": 16.402,
+   "origem": {
+    "inicio": 8.96,
+    "fim": 14.12
+   },
+   "palavras": [
+    {
+     "p": "Depois",
+     "i": 11.242,
+     "f": 11.862
+    },
+    {
+     "p": "as",
+     "i": 12.202,
+     "f": 12.562
+    },
+    {
+     "p": "sobras",
+     "i": 12.562,
+     "f": 12.982
+    },
+    {
+     "p": "entram",
+     "i": 12.982,
+     "f": 13.482
+    },
+    {
+     "p": "num",
+     "i": 13.482,
+     "f": 13.722
+    },
+    {
+     "p": "biodigestor",
+     "i": 13.722,
+     "f": 14.722
+    },
+    {
+     "p": "ali",
+     "i": 14.842,
+     "f": 15.242
+    },
+    {
+     "p": "mesmo",
+     "i": 15.242,
+     "f": 15.582
+    },
+    {
+     "p": "na",
+     "i": 15.582,
+     "f": 15.722
+    },
+    {
+     "p": "cooperativa",
+     "i": 15.722,
+     "f": 16.402
+    }
+   ],
+   "texto": "Depois: as sobras entram num biodigestor, ali mesmo na cooperativa…"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 17.066,
+   "fim": 20.826,
+   "origem": {
+    "inicio": 14.3,
+    "fim": 18.06
+   },
+   "palavras": [
+    {
+     "p": "e",
+     "i": 17.066,
+     "f": 17.666
+    },
+    {
+     "p": "viram",
+     "i": 17.666,
+     "f": 18.026
+    },
+    {
+     "p": "biogás",
+     "i": 18.026,
+     "f": 18.726
+    },
+    {
+     "p": "que",
+     "i": 18.946,
+     "f": 19.386
+    },
+    {
+     "p": "pode",
+     "i": 19.386,
+     "f": 19.626
+    },
+    {
+     "p": "gerar",
+     "i": 19.626,
+     "f": 19.926
+    },
+    {
+     "p": "eletricidade",
+     "i": 19.926,
+     "f": 20.826
+    }
+   ],
+   "texto": "…e viram biogás, que pode gerar eletricidade…"
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 21.49,
+   "fim": 26.89,
+   "origem": {
+    "inicio": 18.06,
+    "fim": 23.46
+   },
+   "palavras": [
+    {
+     "p": "ou",
+     "i": 21.49,
+     "f": 22.31
+    },
+    {
+     "p": "ser",
+     "i": 22.31,
+     "f": 22.57
+    },
+    {
+     "p": "purificado",
+     "i": 22.57,
+     "f": 23.27
+    },
+    {
+     "p": "em",
+     "i": 23.27,
+     "f": 23.43
+    },
+    {
+     "p": "biometano",
+     "i": 23.43,
+     "f": 24.33
+    },
+    {
+     "p": "pra",
+     "i": 24.33,
+     "f": 24.75
+    },
+    {
+     "p": "abastecer",
+     "i": 24.75,
+     "f": 25.33
+    },
+    {
+     "p": "a",
+     "i": 25.33,
+     "f": 25.51
+    },
+    {
+     "p": "frota",
+     "i": 25.51,
+     "f": 25.87
+    },
+    {
+     "p": "no",
+     "i": 25.87,
+     "f": 26.05
+    },
+    {
+     "p": "lugar",
+     "i": 26.05,
+     "f": 26.39
+    },
+    {
+     "p": "do",
+     "i": 26.39,
+     "f": 26.57
+    },
+    {
+     "p": "diesel",
+     "i": 26.57,
+     "f": 26.89
+    }
+   ],
+   "texto": "…ou ser purificado em biometano, pra abastecer a frota no lugar do diesel!"
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 27.554,
+   "fim": 32.494,
+   "origem": {
+    "inicio": 23.94,
+    "fim": 28.88
+   },
+   "palavras": [
+    {
+     "p": "E",
+     "i": 27.554,
+     "f": 28.174
+    },
+    {
+     "p": "o",
+     "i": 28.174,
+     "f": 28.254
+    },
+    {
+     "p": "que",
+     "i": 28.254,
+     "f": 28.354
+    },
+    {
+     "p": "sai",
+     "i": 28.354,
+     "f": 28.574
+    },
+    {
+     "p": "do",
+     "i": 28.574,
+     "f": 28.694
+    },
+    {
+     "p": "biodigestor",
+     "i": 28.694,
+     "f": 29.494
+    },
+    {
+     "p": "ainda",
+     "i": 29.494,
+     "f": 29.914
+    },
+    {
+     "p": "volta",
+     "i": 29.914,
+     "f": 30.414
+    },
+    {
+     "p": "pro",
+     "i": 30.414,
+     "f": 30.614
+    },
+    {
+     "p": "campo",
+     "i": 30.614,
+     "f": 30.954
+    },
+    {
+     "p": "como",
+     "i": 30.954,
+     "f": 31.294
+    },
+    {
+     "p": "biofertilizante",
+     "i": 31.294,
+     "f": 32.494
+    }
+   ],
+   "texto": "E o que sai do biodigestor ainda volta pro campo como biofertilizante."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 33.158,
+   "fim": 39.408,
+   "origem": {
+    "inicio": 29.61,
+    "fim": 35.86
+   },
+   "palavras": [
+    {
+     "p": "Essa",
+     "i": 33.158,
+     "f": 33.548
+    },
+    {
+     "p": "é",
+     "i": 33.548,
+     "f": 33.648
+    },
+    {
+     "p": "a",
+     "i": 33.648,
+     "f": 33.748
+    },
+    {
+     "p": "ideia",
+     "i": 33.748,
+     "f": 34.028
+    },
+    {
+     "p": "de",
+     "i": 34.028,
+     "f": 34.248
+    },
+    {
+     "p": "uma",
+     "i": 34.248,
+     "f": 34.388
+    },
+    {
+     "p": "unidade",
+     "i": 34.388,
+     "f": 34.828
+    },
+    {
+     "p": "demonstrativa",
+     "i": 34.828,
+     "f": 35.668
+    },
+    {
+     "p": "do",
+     "i": 35.668,
+     "f": 35.868
+    },
+    {
+     "p": "cê",
+     "i": 35.868,
+     "f": 36.104
+    },
+    {
+     "p": "pê",
+     "i": 36.104,
+     "f": 36.34
+    },
+    {
+     "p": "dois",
+     "i": 36.34,
+     "f": 36.812
+    },
+    {
+     "p": "bê",
+     "i": 36.812,
+     "f": 37.048
+    },
+    {
+     "p": "mostrar",
+     "i": 37.248,
+     "f": 37.928
+    },
+    {
+     "p": "na",
+     "i": 37.928,
+     "f": 38.208
+    },
+    {
+     "p": "prática",
+     "i": 38.208,
+     "f": 38.668
+    },
+    {
+     "p": "que",
+     "i": 38.668,
+     "f": 38.888
+    },
+    {
+     "p": "funciona",
+     "i": 38.888,
+     "f": 39.408
+    }
+   ],
+   "texto": "Essa é a ideia de uma unidade demonstrativa do CP2B: mostrar, na prática, que funciona.",
+   "fala": "Essa é a ideia de uma unidade demonstrativa do cê-pê-dois-bê: mostrar, na prática, que funciona."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 40.072,
+   "fim": 44.452,
+   "origem": {
+    "inicio": 36.24,
+    "fim": 40.62
+   },
+   "palavras": [
+    {
+     "p": "Do",
+     "i": 40.072,
+     "f": 40.532
+    },
+    {
+     "p": "resíduo",
+     "i": 40.532,
+     "f": 41.212
+    },
+    {
+     "p": "pro",
+     "i": 41.212,
+     "f": 41.372
+    },
+    {
+     "p": "tanque",
+     "i": 41.372,
+     "f": 41.772
+    },
+    {
+     "p": "a",
+     "i": 41.972,
+     "f": 42.252
+    },
+    {
+     "p": "cooperativa",
+     "i": 42.252,
+     "f": 42.932
+    },
+    {
+     "p": "movida",
+     "i": 42.932,
+     "f": 43.532
+    },
+    {
+     "p": "a",
+     "i": 43.532,
+     "f": 43.812
+    },
+    {
+     "p": "biogás",
+     "i": 43.812,
+     "f": 44.452
+    }
+   ],
+   "texto": "Do resíduo pro tanque: a cooperativa movida a biogás!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 45.603,
+   "fim": 49.543,
+   "origem": {
+    "inicio": 41.7,
+    "fim": 45.64
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 45.603,
+     "f": 45.759
+    },
+    {
+     "p": "pê",
+     "i": 45.759,
+     "f": 45.915
+    },
+    {
+     "p": "dois",
+     "i": 45.915,
+     "f": 46.227
+    },
+    {
+     "p": "bê",
+     "i": 46.227,
+     "f": 46.383
+    },
+    {
+     "p": "energia",
+     "i": 46.563,
+     "f": 47.283
+    },
+    {
+     "p": "viva",
+     "i": 47.283,
+     "f": 47.743
+    },
+    {
+     "p": "ciência",
+     "i": 48.083,
+     "f": 48.603
+    },
+    {
+     "p": "que",
+     "i": 48.603,
+     "f": 48.843
+    },
+    {
+     "p": "transforma",
+     "i": 48.843,
+     "f": 49.543
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

@@ -1,0 +1,98 @@
+{
+  "_sobre": "Ep. 27 · Conheça a Arqueia: quem faz o metano — estilo N (caderno de campo), diário de descoberta: o cientista acha uma 'nova espécie' no microscópio e monta a carta colecionável dela, página por página; no fim, a foto da dupla Arqueia + Metaninho. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "N",
+  "seed": 27,
+  "percurso": "zigue",
+  "pecas": {
+    "carta": "ep27/_folha/carta", "microscopio": "ep27/_folha/microscopio", "lamina": "ep27/_folha/pecas_ep27_1",
+    "vaca27": "ep27/_folha/pecas_ep27_2", "arrozal": "ep27/_folha/pecas_ep27_3", "pantano": "ep27/_folha/pecas_ep27_4",
+    "bio27": "ep27/_folha/pecas_ep27_6", "mapa": "ep27/_folha/pecas_ep27_7", "marmita": "ep27/_folha/pecas_ep27_8",
+    "folha_prensada": "ep27/_folha/pecas_ep27_9", "washi": "ep27/_folha/pecas_ep27_10", "foto": "ep27/_folha/pecas_ep27_11",
+    "balanca_ph": "ep20/_folha/pecas_ep20_3"
+  },
+  "assinatura": {"parceiro": "arqueia:feliz"},
+  "cenas": [
+    {"fala": "L01", "arranjo": "dupla", "itens": [
+      {"p": "microscopio", "id": "mic", "em": 0.1},
+      {"p": "cientista:lupa", "em": "cientista"},
+      {"txt": "?!", "tipo": "balao", "sobre": "cientista:lupa", "rel": [-0.5, -0.38], "tam": 0.38, "em": "encontrou"},
+      {"fx": "brilho", "sobre": "mic", "rel": [-0.12, 0.02], "tam": 0.5, "em": "microscópio", "n": 4},
+      {"txt": "diário de campo · dia 1", "tipo": "mao", "lugar": "titulo", "em": "Olha", "cor": "petrol"}
+    ]},
+    {"fala": "L02", "arranjo": "dupla", "itens": [
+      {"p": "arqueia_eng:acena", "id": "arq", "em": "Arqueia-0.3"},
+      {"p": "carta", "id": "carta", "em": "amarelinha", "entra": "gira"},
+      {"p": "arqueia_rosto:feliz", "sobre": "carta", "rel": [0, -0.19], "tam": 0.48, "em": "amarelinha+0.25"},
+      {"txt": "ARQUEIA", "tipo": "mao", "sobre": "carta", "rel": [0, 0.19], "tam": 0.62, "em": "muito", "cor": "petrol", "contorno": false},
+      {"txt": "pequenininha, amarelinha…\ne poderosa!", "tipo": "mao", "lugar": "rodape", "em": "pequenininha", "cor": "coral"}
+    ]},
+    {"fala": "L03", "arranjo": "fila", "itens": [
+      {"fx": "microbio", "id": "bac", "tipo": "bastao", "n": 3, "humor": "feliz", "em": "bactérias"},
+      {"p": "arqueia_eng:nao", "id": "arq", "em": "metanogênica"},
+      {"p": "carta", "id": "carta", "em": 0.05},
+      {"p": "arqueia_rosto:feliz", "sobre": "carta", "rel": [0, -0.19], "tam": 0.48, "em": 0.1},
+      {"txt": "ARQUEIA", "tipo": "mao", "sobre": "carta", "rel": [0, 0.19], "tam": 0.62, "em": 0.15, "cor": "petrol", "contorno": false},
+      {"fx": "xis", "sobre": "bac", "rel": [0, 0], "tam": 0.7, "em": "não"},
+      {"txt": "NÃO É BACTÉRIA!", "tipo": "carimbo", "sobre": "carta", "rel": [0, 0.04], "tam": 0.9, "em": "ar", "cor": "coral"},
+      {"txt": "metanogênica", "tipo": "mao", "lugar": "titulo", "em": "metanogênica", "cor": "verdeEsc"}
+    ]},
+    {"fala": "L04", "arranjo": "palco", "itens": [
+      {"p": "arqueia_eng:ferramenta", "id": "arq", "em": "superpoder"},
+      {"txt": "acetato\nou H₂ + CO₂", "tipo": "mao", "id": "ac", "em": "acetato", "cor": "coral"},
+      {"fx": "molecula", "tipo": "CH4", "n": 3, "id": "ch4", "em": "biogás-0.6", "sobe": true},
+      {"fx": "seta", "de": "ac", "para": "arq", "em": "transforma"},
+      {"fx": "seta", "de": "arq", "para": "ch4", "em": "gás#2"},
+      {"txt": "superpoder: fazer metano", "tipo": "etiqueta", "lugar": "titulo", "em": "metano", "papel": "amarelo"}
+    ]},
+    {"fala": "L05", "arranjo": "dupla", "itens": [
+      {"p": "arqueia:feliz", "id": "arq", "em": 0.05},
+      {"fx": "molecula", "tipo": "CH4", "n": 1, "id": "m", "em": "vida-0.4", "sai": "Metaninho"},
+      {"p": "mascote:pula", "sobre": "m", "rel": [0, 0.08], "tam": 0.75, "em": "Metaninho", "entra": "gira"},
+      {"fx": "seta", "de": "arq", "para": "m", "em": "dá"},
+      {"txt": "é ela quem me faz!", "tipo": "mao", "lugar": "rodape", "em": "Arqueia", "cor": "coral"},
+      {"p": "cientista:pula", "lugar": "narrador", "em": "vida"}
+    ]},
+    {"fala": "L06", "arranjo": "fila", "itens": [
+      {"fx": "molecula", "tipo": "O2", "n": 1, "id": "o2", "em": "oxigênio", "humor": "nojo"},
+      {"fx": "termometro", "id": "ter", "em": "temperatura", "nivel": 0.5},
+      {"p": "balanca_ph", "id": "ph", "em": "ambiente", "anima": "balanca"},
+      {"fx": "xis", "sobre": "o2", "rel": [0, 0], "tam": 0.85, "em": "oxigênio+0.4"},
+      {"fx": "check", "sobre": "ter", "rel": [0.32, -0.36], "tam": 0.5, "em": "estável"},
+      {"fx": "check", "sobre": "ph", "rel": [0.32, -0.36], "tam": 0.5, "em": "básico"},
+      {"p": "arqueia:brava", "lugar": "narrador", "em": "exigente"},
+      {"txt": "exigente!", "tipo": "mao", "lugar": "titulo", "em": "exigente", "cor": "coral"}
+    ]},
+    {"fala": "L07", "arranjo": "palco", "itens": [
+      {"p": "mapa", "id": "mapa", "em": 0.05, "s": 1.05},
+      {"p": "bio27", "em": "biodigestores"},
+      {"p": "vaca27", "em": "vaca"},
+      {"p": "arrozal", "em": "arrozais"},
+      {"p": "pantano", "em": "pântanos"},
+      {"p": "pino_coral", "sobre": "mapa", "rel": [-0.3, -0.12], "tam": 0.16, "em": "biodigestores", "entra": "cai"},
+      {"p": "pino_lima", "sobre": "mapa", "rel": [0.02, -0.2], "tam": 0.16, "em": "vaca", "entra": "cai"},
+      {"p": "pino_ambar", "sobre": "mapa", "rel": [0.3, -0.1], "tam": 0.16, "em": "arrozais", "entra": "cai"},
+      {"p": "pino_petrol", "sobre": "mapa", "rel": [-0.18, 0.2], "tam": 0.16, "em": "pântanos", "entra": "cai"},
+      {"txt": "habitat", "tipo": "etiqueta", "lugar": "titulo", "em": "vive", "papel": "lima"}
+    ]},
+    {"fala": "L08", "arranjo": "fila", "itens": [
+      {"fx": "microbio", "id": "bac", "tipo": "bastao", "n": 3, "humor": "feliz", "em": "bactérias"},
+      {"p": "marmita", "id": "mar", "em": "comida", "entra": "desliza_esq"},
+      {"p": "arqueia_eng:joinha", "id": "arq", "em": "termina-0.5"},
+      {"fx": "seta", "de": "bac", "para": "mar", "em": "preparam"},
+      {"fx": "seta", "de": "mar", "para": "arq", "em": "termina"},
+      {"txt": "trabalha em equipe", "tipo": "etiqueta", "lugar": "titulo", "em": "equipe", "papel": "lima"}
+    ]},
+    {"fala": "L09", "arranjo": "palco", "itens": [
+      {"p": "foto", "id": "foto", "em": 0.05, "s": 1.05},
+      {"p": "washi", "sobre": "foto", "rel": [0, -0.5], "tam": 0.55, "em": 0.2},
+      {"p": "arqueia:pula", "sobre": "foto", "rel": [-0.21, -0.06], "tam": 0.48, "em": "Arqueia"},
+      {"p": "mascote:pula", "sobre": "foto", "rel": [0.21, -0.06], "tam": 0.48, "em": "Metaninho"},
+      {"p": "carta", "id": "carta", "em": "brilha-0.4", "brilha": "brilha"},
+      {"p": "arqueia_rosto:orgulhosa", "sobre": "carta", "rel": [0, -0.19], "tam": 0.48, "em": "brilha-0.3"},
+      {"txt": "ARQUEIA", "tipo": "mao", "sobre": "carta", "rel": [0, 0.19], "tam": 0.62, "em": "brilha-0.2", "cor": "petrol", "contorno": false},
+      {"p": "folha_prensada", "em": "resíduo"},
+      {"txt": "A DUPLA!", "tipo": "letras", "lugar": "titulo", "em": "dupla"},
+      {"fx": "confete", "lugar": "centro", "em": "energia"}
+    ]}
+  ]
+}

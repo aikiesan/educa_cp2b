@@ -1,0 +1,67 @@
+{
+ "titulo": "Um dia na vida de um micróbio",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep13_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Bom dia! Eu sou a Arqueia e moro num biodigestor. Quer ver o meu dia?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Tudo começa quando chega comida: restos, esterco, palha…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Primeiro, minhas colegas bactérias quebram os pedaços grandes em pedacinhos. É a hidrólise!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Depois, outras transformam esses pedacinhos em ácidos. É a acidogênese!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Aí vem a acetogênese: os ácidos viram acetato, hidrogênio e gás carbônico.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "E agora é a minha vez: eu transformo tudo isso em metano! É a metanogênese!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Tudo isso sem oxigênio, viu? A gente não se dá nada bem com ele.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "No fim do dia, o biodigestor tá cheio de biogás… e eu, cheia de orgulho!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Um dia na vida de um micróbio: pequenininhos, mas movendo energia!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

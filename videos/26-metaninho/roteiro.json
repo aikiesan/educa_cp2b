@@ -1,0 +1,67 @@
+{
+ "titulo": "Metaninho: de molécula a mascote",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep26_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Era uma vez… uma molécula de metano.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Uma bolinha de carbono no meio, rodeada de hidrogênios.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Ela é a estrela do biogás: é o metano que faz a chama azul e vira energia!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Um dia, essa molécula ganhou pontinhos de crochê, bochechas rosadas… e um nome: Metaninho!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Hoje ele é o mascote do CP2B: fofinho, curioso e sempre por perto quando o assunto é ciência.",
+   "fala": "Hoje ele é o mascote do cê-pê-dois-bê: fofinho, curioso e sempre por perto quando o assunto é ciência.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "E ele tem um parceiro de aventuras: o grande cientista, de óculos e jaleco, que explica tudo tim-tim por tim-tim!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Juntos, eles vão mostrar como os resíduos viram energia… episódio por episódio.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Tá pronto? A aventura do biogás tá só começando!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

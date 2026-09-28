@@ -1,0 +1,60 @@
+{
+ "_sobre": "Vinheta da série educa CP2B (ep. 90 · derivados): o Metaninho de crochê cai no quadro, a bolinha de cima vira chama azul, a câmera se aproxima e entra o cartão do logo no 'ta-da'. Gerada por tools/episodio/derivados.py.",
+ "estilo": "C",
+ "seed": 90,
+ "assinatura": {
+  "texto": "educa CP2B"
+ },
+ "cenas": [
+  {
+   "fala": "L01",
+   "arranjo": "palco",
+   "empurra": 0.02,
+   "cam": [
+    {
+     "em": 1.25,
+     "alvo": "m",
+     "z": 1.45,
+     "d": 0.9
+    }
+   ],
+   "itens": [
+    {
+     "p": "mascote:em_pe",
+     "id": "m",
+     "em": 0.2,
+     "entra": "cai",
+     "s": 0.82
+    },
+    {
+     "fx": "chama",
+     "sobre": "m",
+     "rel": [
+      0.0,
+      -0.47
+     ],
+     "tam": 0.34,
+     "em": 1.05
+    },
+    {
+     "fx": "brilho",
+     "sobre": "m",
+     "rel": [
+      0.0,
+      -0.4
+     ],
+     "tam": 0.6,
+     "em": 1.1,
+     "n": 5
+    },
+    {
+     "txt": "educa CP2B",
+     "tipo": "mao",
+     "lugar": "rodape",
+     "em": 0.5,
+     "cor": "petrol"
+    }
+   ]
+  }
+ ]
+}

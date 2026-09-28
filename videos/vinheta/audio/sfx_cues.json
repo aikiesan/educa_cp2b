@@ -1,0 +1,42 @@
+[
+ {
+  "t": 0.475,
+  "nome": "papel_pousa",
+  "ganho": 0.38,
+  "pan": 0,
+  "p": 1.1173848404316231
+ },
+ {
+  "t": 0.5,
+  "nome": "rabisco",
+  "ganho": 0.28,
+  "pan": 0,
+  "dur": 0.5
+ },
+ {
+  "t": 1.08,
+  "nome": "fogo",
+  "ganho": 0.35,
+  "pan": 0,
+  "dur": 1.2
+ },
+ {
+  "t": 1.13,
+  "nome": "brilho",
+  "ganho": 0.4,
+  "pan": 0
+ },
+ {
+  "t": 2.468,
+  "nome": "logo",
+  "ganho": 0.8,
+  "pan": 0
+ },
+ {
+  "t": 2.858,
+  "nome": "boing",
+  "ganho": 0.35,
+  "pan": 0.5,
+  "p": 1.2
+ }
+]

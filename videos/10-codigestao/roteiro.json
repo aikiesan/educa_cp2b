@@ -1,0 +1,67 @@
+{
+ "titulo": "Codigestão: a mistura certa",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep10_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Todo cozinheiro sabe: a mistura certa faz toda a diferença!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "No biodigestor é igualzinho. Os micróbios gostam de uma dieta equilibrada.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Alguns resíduos têm muito carbono, como a palha e o bagaço…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "…outros têm muito nitrogênio, como o esterco.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Sozinhos, eles podem desandar a receita. Juntos, eles se completam!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Isso se chama codigestão: misturar resíduos pra produzir mais biogás, com mais estabilidade.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Bagaço com vinhaça, palha com esterco, casca de laranja com esterco…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "…e os pesquisadores testam as proporções, como numa receita de bolo.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Codigestão: juntos, os resíduos rendem mais!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

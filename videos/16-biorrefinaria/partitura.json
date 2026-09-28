@@ -1,0 +1,37 @@
+{
+ "_sobre": "gerado por tools/episodio/produzir.py (etapa partitura); tempos da trilha em segundos no arquivo ORIGINAL",
+ "roteiro": "roteiro.json",
+ "vo": "entrada/narracao/pt-BR/ep16_pt-BR_Sulafat_take1.wav",
+ "tempo_narracao": 1.0,
+ "musica": {
+  "arquivo": "entrada/musica/_avulsas/Lessons_In_Bloom.mp3",
+  "bpm": 103.993,
+  "downbeat0": 4.734,
+  "cortes": [
+   {
+    "de": 0.0,
+    "para": 0.948
+   },
+   {
+    "de": 30.121,
+    "para": 60.123
+   },
+   {
+    "de": 62.431,
+    "para": 97.048
+   }
+  ],
+  "logo_musica": 106.928,
+  "cauda": 5.07
+ },
+ "plano": {
+  "pausa": 0.71,
+  "primeira_fala": 3.84,
+  "folga_antes_do_logo": 1.0,
+  "saltos": [
+   "-13c (30.1→60.1s)",
+   "-15c (62.4→97.0s)"
+  ],
+  "duracao_trilha": 115.51
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "_sobre": "gerado por tools/episodio/produzir.py (etapa partitura); tempos da trilha em segundos no arquivo ORIGINAL",
+ "roteiro": "roteiro.json",
+ "vo": "entrada/narracao/pt-BR/ep26_pt-BR_Sulafat_take1.wav",
+ "tempo_narracao": 1.0,
+ "musica": {
+  "arquivo": "entrada/musica/musica_ep26.mp3",
+  "bpm": 91.978,
+  "downbeat0": 2.326,
+  "cortes": [
+   {
+    "de": 44.075,
+    "para": 49.294
+   }
+  ],
+  "logo_musica": 57.121,
+  "cauda": 4.65
+ },
+ "plano": {
+  "pausa": 0.62,
+  "primeira_fala": 2.38,
+  "folga_antes_do_logo": 1.0,
+  "saltos": [
+   "-2c (44.1→49.3s)"
+  ],
+  "duracao_trilha": 60.89
+ }
+}

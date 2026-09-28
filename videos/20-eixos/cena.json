@@ -1,0 +1,74 @@
+{
+  "_sobre": "Ep. 20 · Os eixos do CP2B — estilo N (caderno de campo), fichário com abas: uma página por eixo; o cientista vira as abas. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "N",
+  "seed": 20,
+  "percurso": "desce",
+  "pecas": {
+    "caderno": "ep20/_folha/caderno", "reator": "ep20/_folha/pecas_ep20_1", "capacete": "ep20/_folha/pecas_ep20_2",
+    "balanca": "ep20/_folha/pecas_ep20_3", "lousa": "ep20/_folha/pecas_ep20_4", "filmadora": "ep20/_folha/pecas_ep20_6",
+    "governo": "ep20/_folha/pecas_ep20_7", "documento": "ep20/_folha/pecas_ep20_8", "folha_c": "ep20/_folha/pecas_ep20_9",
+    "frasco_ambar": "ep15/_folha/pecas_ep15_4", "frasco_lima": "ep15/_folha/pecas_ep15_5", "frasco_amarelo": "ep15/_folha/pecas_ep15_6",
+    "aluno": "ep19/_folha/equipe_1", "aluna": "ep19/_folha/equipe_3"
+  },
+  "assinatura": { "cientista": true },
+  "cenas": [
+    { "fala": "L01", "arranjo": "palco", "itens": [
+      { "p": "caderno", "em": 0.2, "entra": "abre", "s": 1.05 },
+      { "txt": "EIXOS DE PESQUISA", "tipo": "letras", "lugar": "titulo", "em": "eixos" },
+      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.5 }
+    ]},
+    { "fala": "L02", "arranjo": "fila", "itens": [
+      { "p": "saco_restos", "em": "resíduos-0.4" },
+      { "p": "pino_coral", "em": "mapeia", "entra": "cai" },
+      { "p": "pino_lima", "em": "mapeia+0.2", "entra": "cai" },
+      { "p": "pino_ambar", "em": "onde", "entra": "cai" },
+      { "txt": "resíduos", "tipo": "etiqueta", "lugar": "titulo", "em": "inventário", "papel": "lima" }
+    ]},
+    { "fala": "L03", "arranjo": "palco", "itens": [
+      { "fx": "lente", "n": 5, "humor": "feliz", "em": "ciência" },
+      { "fx": "engrenagem", "em": "processos", "s": 0.8 },
+      { "txt": "ciência de base", "tipo": "etiqueta", "lugar": "titulo", "em": "base", "papel": "amarelo" }
+    ]},
+    { "fala": "L04", "arranjo": "palco", "itens": [
+      { "p": "reator", "em": 0.2, "muda": [{ "em": "maior", "s": 1.35, "d": 1.0, "som": "papel_desliza" }] },
+      { "p": "capacete", "em": "empresas" },
+      { "p": "biodigestor", "em": "escala", "s": 0.8 },
+      { "txt": "processos", "tipo": "etiqueta", "lugar": "titulo", "em": "eixo", "papel": "ceu" }
+    ]},
+    { "fala": "L05", "arranjo": "palco", "itens": [
+      { "p": "balanca", "em": "avalia", "anima": "balanca" },
+      { "txt": "economia · ambiente · energia", "tipo": "mao", "lugar": "rodape", "em": "economia", "cor": "petrol" },
+      { "txt": "avaliação integrada", "tipo": "etiqueta", "lugar": "titulo", "em": "impactos", "papel": "coral" }
+    ]},
+    { "fala": "L06", "arranjo": "fila", "itens": [
+      { "p": "frasco_ambar", "em": "inventa" },
+      { "p": "frasco_lima", "em": "bioprodutos" },
+      { "p": "frasco_amarelo", "em": "biorrefinaria-0.4" },
+      { "txt": "bioprodutos", "tipo": "etiqueta", "lugar": "titulo", "em": "bioprodutos", "papel": "lima" }
+    ]},
+    { "fala": "L07", "arranjo": "palco", "itens": [
+      { "p": "lousa", "em": "educação" },
+      { "p": "aluno", "em": "formar" },
+      { "p": "aluna", "em": "gente" },
+      { "txt": "educação", "tipo": "etiqueta", "lugar": "titulo", "em": "capacitação", "papel": "amarelo" }
+    ]},
+    { "fala": "L08", "arranjo": "dupla", "itens": [
+      { "p": "filmadora", "em": "difusão" },
+      { "p": "cientista:acena", "em": "vídeos-0.4" },
+      { "txt": "vídeos\ncomo este!", "tipo": "balao", "sobre": "cientista:acena", "rel": [-0.6, -0.45], "tam": 0.72, "em": "vídeos" },
+      { "txt": "comunicação", "tipo": "etiqueta", "lugar": "titulo", "em": "científica", "papel": "ceu" }
+    ]},
+    { "fala": "L09", "arranjo": "dupla", "itens": [
+      { "p": "governo", "em": "políticas" },
+      { "p": "documento", "em": "regras", "entra": "cai" },
+      { "txt": "APROVADO", "tipo": "carimbo", "sobre": "documento", "rel": [0, 0.15], "tam": 0.9, "em": "programas", "cor": "verdeEsc" },
+      { "txt": "políticas públicas", "tipo": "etiqueta", "lugar": "titulo", "em": "públicas", "papel": "coral" }
+    ]},
+    { "fala": "L10", "arranjo": "palco", "itens": [
+      { "p": "caderno", "id": "c", "em": 0.1 },
+      { "fx": "ciclo", "sobre": "c", "rel": [0, 0], "tam": 0.75, "em": "jeitos" },
+      { "txt": "ENERGIA VIVA!", "tipo": "letras", "lugar": "titulo", "em": "objetivo" },
+      { "p": "folha_c", "sobre": "c", "rel": [0.46, 0.35], "tam": 0.25, "em": "resíduo" }
+    ]}
+  ]
+}

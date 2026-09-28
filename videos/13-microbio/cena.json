@@ -1,0 +1,367 @@
+{
+ "_sobre": "Ep. 13 · Um dia na vida de um micróbio — estilo F (feltro & crochê), vlog da Arqueia de crochê (ela narra em primeira pessoa); o mascote faz uma visita. Formato: docs/EPISODIO_GENERICO.md",
+ "estilo": "F",
+ "seed": 13,
+ "pecas": {
+  "cama": "ep13/_folha/pecas_ep13_1",
+  "trofeu": "ep13/_folha/pecas_ep13_2",
+  "esteira": "ep13/_folha/pecas_ep13_3",
+  "capacete": "ep13/_folha/pecas_ep13_4",
+  "panela": "ep13/_folha/pecas_ep13_5",
+  "janela": "ep13/_folha/pecas_ep13_6",
+  "tesoura": "ep12/_folha/pecas_ep12_1",
+  "palha_f": "ep10/_folha/ingredientes_3",
+  "esterco_f": "ep10/_folha/ingredientes_4"
+ },
+ "molduras": [
+  {
+   "tipo": "vlog",
+   "de": "L01:inicio",
+   "ate": "L09:fim"
+  }
+ ],
+ "cenas": [
+  {
+   "fala": "L01",
+   "arranjo": "dupla",
+   "itens": [
+    {
+     "p": "cama",
+     "em": 0.2
+    },
+    {
+     "p": "arqueia:feliz",
+     "em": "Arqueia-0.4",
+     "entra": "cresce",
+     "anima": "flutua"
+    },
+    {
+     "txt": "bom dia!",
+     "tipo": "balao",
+     "sobre": "arqueia:feliz",
+     "rel": [
+      -0.62,
+      -0.5
+     ],
+     "tam": 0.8,
+     "em": "Bom",
+     "cauda": [
+      0.45,
+      0.9
+     ]
+    },
+    {
+     "txt": "meu dia",
+     "tipo": "mao",
+     "lugar": "rodape",
+     "em": "dia",
+     "cor": "petrol"
+    }
+   ]
+  },
+  {
+   "fala": "L02",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "esteira",
+     "em": 0.1,
+     "s": 1.05
+    },
+    {
+     "p": "saco_restos",
+     "sobre": "esteira",
+     "rel": [
+      -0.3,
+      -0.32
+     ],
+     "tam": 0.3,
+     "em": "restos",
+     "entra": "cai",
+     "muda": [
+      {
+       "em": "palha",
+       "dx": 0.25,
+       "d": 1.2
+      }
+     ]
+    },
+    {
+     "p": "esterco_f",
+     "sobre": "esteira",
+     "rel": [
+      0.02,
+      -0.32
+     ],
+     "tam": 0.26,
+     "em": "esterco",
+     "entra": "cai",
+     "muda": [
+      {
+       "em": "palha+0.2",
+       "dx": 0.25,
+       "d": 1.0
+      }
+     ]
+    },
+    {
+     "p": "palha_f",
+     "sobre": "esteira",
+     "rel": [
+      0.32,
+      -0.32
+     ],
+     "tam": 0.26,
+     "em": "palha",
+     "entra": "cai"
+    },
+    {
+     "txt": "chegou comida!",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "comida"
+    }
+   ]
+  },
+  {
+   "fala": "L03",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "fx": "microbio",
+     "n": 3,
+     "humor": "comendo",
+     "tipo": "bastao",
+     "em": "bactérias",
+     "cores": [
+      "coral",
+      "ceu",
+      "amarelo"
+     ]
+    },
+    {
+     "p": "capacete",
+     "em": "colegas"
+    },
+    {
+     "p": "tesoura",
+     "em": "quebram",
+     "anima": "balanca"
+    },
+    {
+     "txt": "HIDRÓLISE",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "pedacinhos"
+    }
+   ]
+  },
+  {
+   "fala": "L04",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "panela",
+     "em": "Depois",
+     "anima": "treme"
+    },
+    {
+     "fx": "microbio",
+     "n": 2,
+     "humor": "feliz",
+     "em": "outras"
+    },
+    {
+     "fx": "gotas",
+     "de": "panela",
+     "saida": [
+      0,
+      -0.4
+     ],
+     "sobre": "panela",
+     "rel": [
+      0.1,
+      -0.2
+     ],
+     "tam": 0.9,
+     "n": 4,
+     "cor": "amarelo",
+     "em": "ácidos-0.5"
+    },
+    {
+     "txt": "ACIDOGÊNESE",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "ácidos"
+    }
+   ]
+  },
+  {
+   "fala": "L05",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "txt": "acetato",
+     "tipo": "etiqueta",
+     "em": "acetato"
+    },
+    {
+     "txt": "H2",
+     "tipo": "formula",
+     "em": "hidrogênio"
+    },
+    {
+     "fx": "molecula",
+     "tipo": "CO2",
+     "n": 1,
+     "em": "carbônico-0.4"
+    },
+    {
+     "txt": "ACETOGÊNESE",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "acetogênese"
+    }
+   ]
+  },
+  {
+   "fala": "L06",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "arqueia:sopra",
+     "em": "minha",
+     "anima": "flutua"
+    },
+    {
+     "fx": "molecula",
+     "tipo": "CH4",
+     "n": 2,
+     "em": "metano-0.3"
+    },
+    {
+     "p": "mascote:pula",
+     "em": "metano",
+     "anima": "quica"
+    },
+    {
+     "txt": "METANOGÊNESE!",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "metanogênese-0.3"
+    },
+    {
+     "fx": "confete",
+     "lugar": "centro",
+     "em": "metanogênese"
+    }
+   ]
+  },
+  {
+   "fala": "L07",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "janela",
+     "em": 0.1
+    },
+    {
+     "fx": "molecula",
+     "tipo": "O2",
+     "humor": "nojo",
+     "n": 1,
+     "sobre": "janela",
+     "rel": [
+      0.1,
+      -0.15
+     ],
+     "tam": 0.4,
+     "em": "oxigênio"
+    },
+    {
+     "txt": "SEM O₂!",
+     "tipo": "carimbo",
+     "sobre": "janela",
+     "rel": [
+      0,
+      0.15
+     ],
+     "tam": 0.8,
+     "em": "oxigênio+0.4",
+     "cor": "coral"
+    },
+    {
+     "p": "arqueia:brava",
+     "lugar": "narrador",
+     "em": "viu-0.3"
+    }
+   ]
+  },
+  {
+   "fala": "L08",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "cama",
+     "em": 0.1
+    },
+    {
+     "p": "arqueia:deitada",
+     "sobre": "cama",
+     "rel": [
+      0.08,
+      -0.12
+     ],
+     "tam": 0.55,
+     "em": "dia",
+     "chao": true
+    },
+    {
+     "p": "trofeu",
+     "em": "orgulho-0.6",
+     "entra": "cai",
+     "brilha": "orgulho"
+    },
+    {
+     "p": "mascote:acena",
+     "em": "biogás",
+     "anima": "acena"
+    },
+    {
+     "txt": "cheio de biogás",
+     "tipo": "etiqueta",
+     "lugar": "titulo",
+     "em": "biogás"
+    }
+   ]
+  },
+  {
+   "fala": "L09",
+   "arranjo": "dupla",
+   "itens": [
+    {
+     "p": "arqueia:pula",
+     "em": 0.1,
+     "anima": "quica"
+    },
+    {
+     "p": "mascote:pula",
+     "em": 0.3,
+     "anima": "quica"
+    },
+    {
+     "txt": "MOVENDO ENERGIA!",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "pequenininhos"
+    },
+    {
+     "fx": "brilho",
+     "lugar": "tudo",
+     "em": "energia",
+     "n": 7
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,378 @@
+{
+ "_sobre": "Ep. 15 · Bioprodutos: muito além da energia — estilo D (maquete de papelão), comercial retrô de TV: cada produto ganha seu anúncio e, no fim, a estante cheia; o mascote é o garoto-propaganda. Formato: docs/EPISODIO_GENERICO.md",
+ "estilo": "D",
+ "seed": 15,
+ "pecas": {
+  "estante": "ep15/_folha/estante",
+  "biometano": "ep15/_folha/pecas_ep15_1",
+  "cilindro_co2": "ep15/_folha/pecas_ep15_2",
+  "adubo": "ep15/_folha/pecas_ep15_3",
+  "frasco_ambar": "ep15/_folha/pecas_ep15_4",
+  "frasco_lima": "ep15/_folha/pecas_ep15_5",
+  "frasco_amarelo": "ep15/_folha/pecas_ep15_6",
+  "gel": "ep15/_folha/pecas_ep15_7",
+  "estufa": "ep15/_folha/pecas_ep15_8",
+  "refri": "ep15/_folha/pecas_ep15_9"
+ },
+ "molduras": [
+  {
+   "tipo": "tv",
+   "de": "L01:inicio",
+   "ate": "L09:fim",
+   "cor": "#24343b",
+   "cor2": "#e9d6b1"
+  }
+ ],
+ "cenas": [
+  {
+   "fala": "L01",
+   "arranjo": "dupla",
+   "itens": [
+    {
+     "fx": "chama",
+     "em": "energia",
+     "s": 0.9
+    },
+    {
+     "p": "estante",
+     "em": "muito",
+     "entra": "desliza_dir"
+    },
+    {
+     "txt": "muito mais!",
+     "tipo": "mao",
+     "lugar": "rodape",
+     "em": "mais-0.3",
+     "cor": "coral"
+    }
+   ]
+  },
+  {
+   "fala": "L02",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "estante",
+     "em": 0.05
+    },
+    {
+     "txt": "BIOPRODUTOS",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "bioprodutos"
+    },
+    {
+     "p": "mascote:acena",
+     "lugar": "narrador",
+     "em": 0.4,
+     "anima": "acena"
+    },
+    {
+     "txt": "da biomassa e dos resíduos",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "biomassa"
+    }
+   ]
+  },
+  {
+   "fala": "L03",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "biometano",
+     "em": "biometano",
+     "entra": "cai",
+     "s": 1.05
+    },
+    {
+     "p": "onibus",
+     "em": "diesel-0.6"
+    },
+    {
+     "p": "fogao",
+     "em": "natural",
+     "s": 0.9
+    },
+    {
+     "txt": "biometano",
+     "tipo": "etiqueta",
+     "lugar": "titulo",
+     "em": "biometano+0.2",
+     "papel": "lima"
+    },
+    {
+     "fx": "estrela",
+     "n": 3,
+     "lugar": "base",
+     "em": "substitui"
+    }
+   ]
+  },
+  {
+   "fala": "L04",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "adubo",
+     "em": "biofertilizante-0.4",
+     "entra": "cai",
+     "s": 1.1
+    },
+    {
+     "p": "broto",
+     "em": "campo",
+     "entra": "cresce"
+    },
+    {
+     "txt": "biofertilizante",
+     "tipo": "etiqueta",
+     "lugar": "titulo",
+     "em": "biofertilizante"
+    }
+   ]
+  },
+  {
+   "fala": "L05",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "cilindro_co2",
+     "em": "gás",
+     "entra": "cai"
+    },
+    {
+     "p": "refri",
+     "em": "recuperado"
+    },
+    {
+     "p": "estufa",
+     "em": "indústria-0.6"
+    },
+    {
+     "txt": "CO2",
+     "tipo": "formula",
+     "lugar": "titulo",
+     "em": "carbônico"
+    }
+   ]
+  },
+  {
+   "fala": "L06",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "frasco_ambar",
+     "em": "vinhaça",
+     "entra": "cai"
+    },
+    {
+     "p": "frasco_lima",
+     "em": "ácidos",
+     "entra": "cai"
+    },
+    {
+     "p": "frasco_amarelo",
+     "em": "orgânicos",
+     "entra": "cai"
+    },
+    {
+     "txt": "ácidos orgânicos",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "ácidos+0.3"
+    },
+    {
+     "txt": "alto valor!",
+     "tipo": "carimbo",
+     "lugar": "titulo",
+     "em": "valor-0.4",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "fala": "L07",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "txt": "H2",
+     "tipo": "formula",
+     "em": "hidrogênio"
+    },
+    {
+     "txt": "+",
+     "tipo": "mao",
+     "em": "hidrogênio+0.3",
+     "cor": "petrol"
+    },
+    {
+     "fx": "molecula",
+     "tipo": "CH4",
+     "n": 1,
+     "em": "metano",
+     "s": 1.2
+    },
+    {
+     "txt": "BIOHITANO",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "biohitano"
+    }
+   ]
+  },
+  {
+   "fala": "L08",
+   "arranjo": "dupla",
+   "itens": [
+    {
+     "p": "gel",
+     "em": "lodo",
+     "entra": "cai",
+     "s": 1.05
+    },
+    {
+     "p": "lupa",
+     "em": "pesquisa",
+     "anima": "balanca"
+    },
+    {
+     "txt": "do lodo",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "lodo+0.3"
+    },
+    {
+     "txt": "novos materiais",
+     "tipo": "mao",
+     "lugar": "titulo",
+     "em": "materiais-0.5",
+     "cor": "verdeEsc"
+    }
+   ]
+  },
+  {
+   "fala": "L09",
+   "itens": [
+    {
+     "p": "estante",
+     "id": "est",
+     "lugar": "tudo",
+     "em": 0.05
+    },
+    {
+     "p": "biometano",
+     "sobre": "est",
+     "rel": [
+      -0.26,
+      -0.26
+     ],
+     "tam": 0.105,
+     "chao": true,
+     "em": 0.25
+    },
+    {
+     "p": "cilindro_co2",
+     "sobre": "est",
+     "rel": [
+      0.02,
+      -0.26
+     ],
+     "tam": 0.105,
+     "chao": true,
+     "em": 0.4
+    },
+    {
+     "p": "adubo",
+     "sobre": "est",
+     "rel": [
+      0.27,
+      -0.26
+     ],
+     "tam": 0.105,
+     "chao": true,
+     "em": 0.55
+    },
+    {
+     "p": "frasco_ambar",
+     "sobre": "est",
+     "rel": [
+      -0.25,
+      -0.11
+     ],
+     "tam": 0.1,
+     "chao": true,
+     "em": 0.7
+    },
+    {
+     "p": "frasco_lima",
+     "sobre": "est",
+     "rel": [
+      0,
+      -0.11
+     ],
+     "tam": 0.1,
+     "chao": true,
+     "em": 0.85
+    },
+    {
+     "p": "frasco_amarelo",
+     "sobre": "est",
+     "rel": [
+      0.25,
+      -0.11
+     ],
+     "tam": 0.1,
+     "chao": true,
+     "em": 1.0
+    },
+    {
+     "p": "gel",
+     "sobre": "est",
+     "rel": [
+      -0.18,
+      0.05
+     ],
+     "tam": 0.1,
+     "chao": true,
+     "em": 1.15
+    },
+    {
+     "p": "refri",
+     "sobre": "est",
+     "rel": [
+      0.18,
+      0.05
+     ],
+     "tam": 0.1,
+     "chao": true,
+     "em": 1.3
+    },
+    {
+     "p": "estufa",
+     "sobre": "est",
+     "rel": [
+      0,
+      0.21
+     ],
+     "tam": 0.13,
+     "chao": true,
+     "em": 1.45
+    },
+    {
+     "fx": "brilho",
+     "de": "est",
+     "em": "prateleira",
+     "n": 8
+    },
+    {
+     "txt": "a prateleira de amanhã!",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "prateleira"
+    }
+   ],
+   "zoom": 1.3
+  }
+ ]
+}

@@ -5,6 +5,9 @@
 (function (G) {
   'use strict';
   const C = G.Colagem;
+  // ?idioma=en-GB → textos da tela em inglês (versões derivadas eps. 90/91); padrão pt-BR
+  const EN = /^en/.test(new URLSearchParams(G.location.search).get('idioma') || '');
+  const trd = (pt, en) => (EN ? en : pt);
   const { core, shapes: S, sprite: SP, ink: I, text: T, paper: P, extras: X } = C;
   const { tw, E, clamp, lerp, settle, pulse, hrand, R: RNG, snoise1, TAU, mixHex, shade, smooth, keys } = core;
   const INK = SP.INK;
@@ -304,7 +307,7 @@
     // "E biometano?" escrito à mão
     const wp = clamp((t - te + 0.05) / (endOf('L01', 'biometano') - te + 0.1));
     if (wp > 0) {
-      T.hand(ctx, 'E biometano?', -30, 112, { size: 112, font: 'Caveat Brush', color: PAL.petrol, progress: wp, boil: rc.boil, rot: -0.03, seed: 21 });
+      T.hand(ctx, trd('E biometano?', "And biomethane?"), -30, 112, { size: 112, font: 'Caveat Brush', color: PAL.petrol, progress: wp, boil: rc.boil, rot: -0.03, seed: 21 });
       if (wp >= 1) I.stroke(ctx, [[-300, 172], [-40, 180], [250, 166]], { w: 8, color: PAL.coral, progress: clamp((t - endOf('L01', 'biometano')) / 0.3), boil: rc.boil, seed: 4 });
     }
     // metaninho espiando pela borda do painel, acenando
@@ -319,10 +322,10 @@
   function buildTitle() {
     PANEL = S.tear(S.cut([[-760, -380], [760, -392], [748, 190], [-770, 205]], { seed: 21, jitter: 3, ds: 30 }), { amp: 6, seed: 22 });
     STRIP = S.cut([[-470, -64], [470, -58], [462, 62], [-476, 58]], { seed: 31, jitter: 2, ds: 30 });
-    TITLE1 = T.ransom('O QUE É', { size: 92, seed: 3, papers: ['#fbf8f0', '#f2c14e', '#b6e03b', '#f3ead8'] });
-    TITLE2 = T.ransom('BIOGÁS?', { size: 188, seed: 8, tilt: 0.1 });
-    FTITLE1 = T.ransom('BIOGÁS &', { size: 150, seed: 41, tilt: 0.09 });
-    FTITLE2 = T.ransom('BIOMETANO', { size: 150, seed: 57, tilt: 0.09 });
+    TITLE1 = T.ransom(trd('O QUE É', "WHAT IS"), { size: 92, seed: 3, papers: ['#fbf8f0', '#f2c14e', '#b6e03b', '#f3ead8'] });
+    TITLE2 = T.ransom(trd('BIOGÁS?', "BIOGAS?"), { size: 188, seed: 8, tilt: 0.1 });
+    FTITLE1 = T.ransom(trd('BIOGÁS &', "BIOGAS &"), { size: 150, seed: 41, tilt: 0.09 });
+    FTITLE2 = T.ransom(trd('BIOMETANO', "BIOMETHANE"), { size: 150, seed: 57, tilt: 0.09 });
   }
 
   // ---------- ESTAÇÃO 1: sobras ----------
@@ -339,7 +342,7 @@
     place(ctx, 'nuvem_pequena', -150, -420, Z({ s: 0.8 }));
     // faixa "o que ninguém quer..."
     const bIn = pop(tq, tL - 0.05, 0.4);
-    if (bIn > 0) X.tag(ctx, 'o que ninguém quer...', -330, -300, { size: 64, s: bIn, rot: -0.04, seed: 3, progress: clamp((t - tL) / (endOf('L02', 'quer') - tL)), boil: rc.boil, zoom: rc.zoom, paper: PAL.papel });
+    if (bIn > 0) X.tag(ctx, trd('o que ninguém quer...', "what nobody wants..."), -330, -300, { size: 64, s: bIn, rot: -0.04, seed: 3, progress: clamp((t - tL) / (endOf('L02', 'quer') - tL)), boil: rc.boil, zoom: rc.zoom, paper: PAL.papel });
     // vaca espiando pela esquerda
     const cIn = tw(tq, tL - 0.1, tL + 0.45, E.outBack);
     const cowX = lerp(-1320, -700, cIn), cowY = 300;
@@ -360,7 +363,7 @@
       ctx.save(); ctx.translate(-330, 60); ctx.scale(eca, eca); ctx.rotate(-0.1);
       SP.piece(ctx, S.blob(0, 0, 90, 56, { seed: 5, wobble: 0.06 }), { color: PAL.papel, seed: 5, ink: { w: 4, boil: rc.boil }, shadow: { zoom: rc.zoom } });
       I.stroke(ctx, [[-60, 40], [-95, 80], [-40, 48]], { w: 4, seed: 6, boil: rc.boil });
-      T.hand(ctx, 'eca!', 0, 0, { size: 62, font: 'Caveat Brush', color: PAL.coral, boil: rc.boil });
+      T.hand(ctx, trd('eca!', "yuck!"), 0, 0, { size: 62, font: 'Caveat Brush', color: PAL.coral, boil: rc.boil });
       ctx.restore();
     }
     // esterco + mosca + cheiro
@@ -371,7 +374,7 @@
       if (e1.p >= 1) {
         for (let k = 0; k < 3; k++) I.wavy(ctx, -345 + k * 42, 250, 110, { w: 5, color: '#6f8f3a', phase: tq * 6 + k, seed: 30 + k, boil: rc.boil, amp: 9 });
         X.fly(ctx, -300, 190, t, { r: 60 });
-        X.tag(ctx, 'esterco', -300, 470, { size: 50, seed: 8, rot: 0.03, s: pop(tq, tE + 0.1), boil: rc.boil, zoom: rc.zoom, tape: 'pin' });
+        X.tag(ctx, trd('esterco', "manure"), -300, 470, { size: 50, seed: 8, rot: 0.03, s: pop(tq, tE + 0.1), boil: rc.boil, zoom: rc.zoom, tape: 'pin' });
       }
     }
     // restos de comida caem numa pilha
@@ -382,7 +385,7 @@
       if (d.on) place(ctx, n, x, y + d.dy, Z({ s, rot: r + (1 - d.p) * 0.8, lift: d.lift }));
     });
     const tC = at('L02', 'comida');
-    if (tq > tC) X.tag(ctx, 'restos de comida', 200, 480, { size: 50, seed: 9, rot: -0.02, s: pop(tq, tC), boil: rc.boil, zoom: rc.zoom, tape: 'pin', pinColor: PAL.amarelo });
+    if (tq > tC) X.tag(ctx, trd('restos de comida', "food scraps"), 200, 480, { size: 50, seed: 9, rot: -0.02, s: pop(tq, tC), boil: rc.boil, zoom: rc.zoom, tape: 'pin', pinColor: PAL.amarelo });
     // resíduos da lavoura
     const tRe = at('L02', 'resíduos');
     [['cana_feixe', 620, 245, 0.05, 0.9], ['palha', 760, 380, 0, 0.85], ['milho_espiga', 860, 250, 0.25, 0.85]].forEach(([n, x, y, r, s], i) => {
@@ -390,7 +393,7 @@
       if (d.on) place(ctx, n, x, y + d.dy, Z({ s, rot: r + (1 - d.p) * 0.6, lift: d.lift }));
     });
     const tLv = at('L02', 'lavoura');
-    if (tq > tLv) X.tag(ctx, 'resíduos da lavoura', 700, 490, { size: 50, seed: 10, rot: 0.03, s: pop(tq, tLv), boil: rc.boil, zoom: rc.zoom, tape: 'pin', pinColor: PAL.lima });
+    if (tq > tLv) X.tag(ctx, trd('resíduos da lavoura', "crop leftovers"), 700, 490, { size: 50, seed: 10, rot: 0.03, s: pop(tq, tLv), boil: rc.boil, zoom: rc.zoom, tape: 'pin', pinColor: PAL.lima });
     ctx.restore();
   }
   function cuesSobras() {
@@ -452,7 +455,7 @@
     ctx.restore();
     // etiqueta "biodigestor"
     const tBd = at('L03', 'biodigestor');
-    if (tq > tBd - 0.1) X.tag(ctx, 'biodigestor', -520, -170, { size: 62, seed: 11, rot: -0.05, s: pop(tq, tBd - 0.1), boil: rc.boil, zoom: rc.zoom, font: 'Caveat Brush' });
+    if (tq > tBd - 0.1) X.tag(ctx, trd('biodigestor', "biodigester"), -520, -170, { size: 62, seed: 11, rot: -0.05, s: pop(tq, tBd - 0.1), boil: rc.boil, zoom: rc.zoom, font: 'Caveat Brush' });
     // "tanque fechado" + cadeado desenhado
     const tF = at('L03', 'fechado');
     if (tq > tF - 0.05) {
@@ -603,7 +606,7 @@
       mols.forEach((m) => { if (m.k === 'H2S' && tq > at('L06', 'alguns') - 0.1) return; X.molecule(ctx, m.k, x + m.x * rs / r, y + m.y * rs / r, m.s * (rs / r), { rot: m.rot, boil: rc.boil, zoom: rc.zoom, face: m.k === 'CH4', mood: tq > tFd ? 'nojo' : 'feliz' }); });
       ctx.restore();
       X.bubble(ctx, x, y, rs, { tint: '#e8f4f0' });
-      X.tag(ctx, 'biogás', x - 150, y + rs - 10, { size: 64, seed: 13, rot: 0.03, font: 'Caveat Brush', zoom: rc.zoom, s: bIn, tape: 'pin', pinColor: PAL.coral });
+      X.tag(ctx, trd('biogás', "biogas"), x - 150, y + rs - 10, { size: 64, seed: 13, rot: 0.03, font: 'Caveat Brush', zoom: rc.zoom, s: bIn, tape: 'pin', pinColor: PAL.coral });
     }
     // pizza: ~60% metano, ~40% gás carbônico, pitadinha de outros
     const tMe = at('L05', 'metano'), tCa = at('L05', 'gás'), tPi = at('L05', 'pitadinha');
@@ -612,11 +615,11 @@
       X.pie(ctx, 300, -100, 210, [{ frac: 0.6, color: PAL.lima }, { frac: 0.37, color: PAL.ambar }, { frac: 0.03, color: PAL.amarelo }], { progress: pp, zoom: rc.zoom, start: -Math.PI / 2 });
       // rótulos
       const l1 = pop(tq, tMe + 0.1);
-      if (l1 > 0) { tagFormula(ctx, 'CH4', 'metano', '≈ 60%', 700, -300, l1, 0.04, rc, PAL.lima); }
+      if (l1 > 0) { tagFormula(ctx, 'CH4', trd('metano', "methane"), '≈ 60%', 700, -300, l1, 0.04, rc, PAL.lima); }
       const l2 = pop(tq, at('L05', 'carbônico'));
-      if (l2 > 0) { tagFormula(ctx, 'CO2', 'gás carbônico', '≈ 40%', 740, 140, l2, -0.04, rc, PAL.ambar); }
+      if (l2 > 0) { tagFormula(ctx, 'CO2', trd('gás carbônico', "carbon dioxide"), '≈ 40%', 740, 140, l2, -0.04, rc, PAL.ambar); }
       const l3 = pop(tq, tPi + 0.2);
-      if (l3 > 0) X.tag(ctx, '+ uma pitadinha\nde outros gases', 330, 300, { size: 42, seed: 17, rot: 0.05, s: l3, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
+      if (l3 > 0) X.tag(ctx, trd('+ uma pitadinha\nde outros gases', "+ a pinch of\nother gases"), 330, 300, { size: 42, seed: 17, rot: 0.05, s: l3, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
     }
     // "...alguns bem fedidos!" — H₂S salta do balão
     const tA = at('L06', 'alguns'), tFd = at('L06', 'fedidos');
@@ -629,7 +632,7 @@
         for (let k = 0; k < 4; k++) I.wavy(ctx, x - 70 + k * 45, y - 70, 140, { w: 6, color: '#7d9a3a', phase: tq * 7 + k, seed: 60 + k, boil: rc.boil, amp: 10 });
         X.fly(ctx, x, y - 40, t * 1.3, { r: 90 });
         const q = pop(tq, tFd - 0.05, 0.3);
-        X.tag(ctx, 'H₂S & cia.: fedidos!', x - 20, y + 175, { size: 46, seed: 19, rot: -0.05, s: q, zoom: rc.zoom, boil: rc.boil, paper: '#f6f0c8', tape: 'pin', pinColor: PAL.verde });
+        X.tag(ctx, trd('H₂S & cia.: fedidos!', "H₂S & co.: smelly!"), x - 20, y + 175, { size: 46, seed: 19, rot: -0.05, s: q, zoom: rc.zoom, boil: rc.boil, paper: '#f6f0c8', tape: 'pin', pinColor: PAL.verde });
       }
     }
     ctx.restore();
@@ -684,7 +687,7 @@
       if (hp > 0) for (let k = 0; k < 3; k++) I.wavy(ctx, -520 + k * 60, -10, 150, { w: 7, color: PAL.coral, phase: tq * 6 + k, seed: 80 + k, boil: rc.boil, amp: 12, progress: hp });
     }
     const cIn = pop(tq, tCa - 0.05);
-    if (cIn > 0) { ctx.save(); ctx.translate(-480, -230); ctx.scale(cIn, cIn); ctx.rotate(-0.06); X.flame(ctx, -150, 30, 130, { pose: Math.floor(tq * 12), seed: 9, zoom: rc.zoom }); T.hand(ctx, 'CALOR', 40, 0, { size: 110, font: 'Luckiest Guy', color: PAL.coral, stroke: PAL.papel, strokeW: 14, boil: rc.boil }); ctx.restore(); }
+    if (cIn > 0) { ctx.save(); ctx.translate(-480, -230); ctx.scale(cIn, cIn); ctx.rotate(-0.06); X.flame(ctx, -150, 30, 130, { pose: Math.floor(tq * 12), seed: 9, zoom: rc.zoom }); T.hand(ctx, trd('CALOR', "HEAT"), 40, 0, { size: 110, font: 'Luckiest Guy', color: PAL.coral, stroke: PAL.papel, strokeW: 14, boil: rc.boil }); ctx.restore(); }
     // gerador + fio + lâmpada
     X.img(ctx, 'gerador', 330, 200, Z({ s: 1.35, rot: fl ? Math.sin(tq * 38) * 0.006 : 0 }));
     const wire = [[500, 170], [600, 120], [640, 0], [610, -120]];
@@ -703,7 +706,7 @@
     X.img(ctx, 'lampada', 610, -250, Z({ s: 1.25, rot: Math.sin(tq * 2) * 0.05 }));
     if (on) { ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = 'rgba(255,230,120,0.55)'; ctx.beginPath(); ctx.arc(608, -280, 72, 0, TAU); ctx.fill(); ctx.restore(); }
     const eIn = pop(tq, tEl + 0.1);
-    if (eIn > 0) { ctx.save(); ctx.translate(310, -440); ctx.scale(eIn, eIn); ctx.rotate(0.04); T.hand(ctx, 'ELETRICIDADE', 0, 0, { size: 96, font: 'Luckiest Guy', color: PAL.petrol, stroke: PAL.papel, strokeW: 14, boil: rc.boil }); ctx.restore(); }
+    if (eIn > 0) { ctx.save(); ctx.translate(310, -440); ctx.scale(eIn, eIn); ctx.rotate(0.04); T.hand(ctx, trd('ELETRICIDADE', "ELECTRICITY"), 0, 0, { size: 96, font: 'Luckiest Guy', color: PAL.petrol, stroke: PAL.papel, strokeW: 14, boil: rc.boil }); ctx.restore(); }
     ctx.restore();
   }
   function cuesQueima() {
@@ -763,8 +766,8 @@
     const t1 = pop(tq, at('L08', 'carbônico'));
     if (t1 > 0) { ctx.save(); ctx.translate(binX - 20, binY + 20); ctx.scale(t1, t1); T.formula(ctx, 'CO2', 0, -40, { size: 64, font: 'Luckiest Guy', color: PAL.papel }); ctx.restore(); }
     const t2 = pop(tq, tI);
-    if (t2 > 0) X.tag(ctx, 'impurezas', binX + 240, binY + 30, { size: 50, seed: 21, rot: 0.06, s: t2, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.coral });
-    if (t1 > 0) X.tag(ctx, 'gás carbônico', binX - 290, binY + 40, { size: 46, seed: 22, rot: -0.05, s: t1, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.ambar });
+    if (t2 > 0) X.tag(ctx, trd('impurezas', "impurities"), binX + 240, binY + 30, { size: 50, seed: 21, rot: 0.06, s: t2, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.coral });
+    if (t1 > 0) X.tag(ctx, trd('gás carbônico', "carbon dioxide"), binX - 290, binY + 40, { size: 46, seed: 22, rot: -0.05, s: t1, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.ambar });
     // biometano nasce: CH₄ brilhantes saindo pelo cano da direita
     const [ox, oy] = mqPt([525, 345]);
     const bx = 600, by = -110;
@@ -786,7 +789,7 @@
     if (tq > tBm - 0.1) BIOMETANO_WORD.forEach((l, i) => { const p = pop(tq, tBm - 0.1 + i * 0.05, 0.3, 2.6); if (p > 0) SP.place(ctx, l.spr, 470 + l.x * 0.68, -410 + l.y, { rot: l.rot, s: p * 0.66, zoom: rc.zoom, lift: (1 - p) * 0.8 }); });
     const q = pop(tq, at('L08', 'metano', 1) + 0.05);
     if (q > 0) {
-      X.tag(ctx, 'metano quase puro!', 610, 230, { size: 56, seed: 25, rot: -0.04, s: q, zoom: rc.zoom, boil: rc.boil, font: 'Caveat Brush', paper: '#fff4cc' });
+      X.tag(ctx, trd('metano quase puro!', "almost pure methane!"), 610, 230, { size: 56, seed: 25, rot: -0.04, s: q, zoom: rc.zoom, boil: rc.boil, font: 'Caveat Brush', paper: '#fff4cc' });
       const st = pop(tq, tP, 0.35);
       if (st > 0) { ctx.save(); ctx.translate(860, 150); ctx.rotate(tq * 0.8); SP.piece(ctx, S.star(0, 0, 34 * st, 80 * st, 5, { seed: 3 }), { color: PAL.amarelo, seed: 3, border: { w: 6 }, shadow: { zoom: rc.zoom, lift: 0.3 }, ink: { w: 3 } }); ctx.restore(); }
     }
@@ -820,11 +823,11 @@
       ctx.save(); ctx.translate(-700, -250); ctx.scale(e1 * 1.45, e1 * 1.45);
       X.bubble(ctx, -120, 0, 105, { tint: '#fff6d6' });
       X.molecule(ctx, 'CH4', -120, 0, 1.05, { rot: tq * 0.8, face: true, zoom: rc.zoom, boil: rc.boil });
-      T.hand(ctx, 'biometano', -120, 150, { size: 50, font: 'Caveat Brush', color: INK, boil: rc.boil });
+      T.hand(ctx, trd('biometano', "biomethane"), -120, 150, { size: 50, font: 'Caveat Brush', color: INK, boil: rc.boil });
       const eq = pop(tq, at('L09', 'como'));
       if (eq > 0) for (const dy of [-14, 14]) I.stroke(ctx, [[10, dy], [70, dy + 2]], { w: 11, color: PAL.petrol, progress: eq, seed: 40 + dy, boil: rc.boil, taper: [0.1, 0.1] });
       const gn = pop(tq, tNa - 0.1);
-      if (gn > 0) { ctx.save(); ctx.translate(230, 10); ctx.scale(gn, gn); X.flame(ctx, 0, 50, 150, { blue: true, pose: Math.floor(tq * 12), seed: 4, zoom: rc.zoom }); T.hand(ctx, 'gás natural', 0, 140, { size: 50, font: 'Caveat Brush', color: INK, boil: rc.boil }); ctx.restore(); }
+      if (gn > 0) { ctx.save(); ctx.translate(230, 10); ctx.scale(gn, gn); X.flame(ctx, 0, 50, 150, { blue: true, pose: Math.floor(tq * 12), seed: 4, zoom: rc.zoom }); T.hand(ctx, trd('gás natural', "natural gas"), 0, 140, { size: 50, font: 'Caveat Brush', color: INK, boil: rc.boil }); ctx.restore(); }
       ctx.restore();
     }
     const sR = tq > tRe ? 1 + 0.35 * (1 - E.outCubic(clamp((tq - tRe) / 0.12))) : 0;
@@ -833,8 +836,8 @@
     const pp = clamp((tq - tGd + 0.1) / 0.9);
     const pipePts = [[-1300, 420], [-800, 420], [-500, 400], [-120, 400], [250, 400], [600, 395], [700, 330]];
     if (pp > 0) X.pipe(ctx, pipePts, { w: 42, color: PAL.petrol, progress: pp, flow: pp >= 1 ? tq : null, zoom: rc.zoom, flowColor: PAL.lima, flangeEvery: 260 });
-    if (pp > 0 && pp < 1) T.hand(ctx, 'gasoduto', -620, 478, { size: 54, font: 'Caveat Brush', color: INK, progress: pp * 1.5, boil: rc.boil });
-    else if (pp >= 1) X.tag(ctx, 'gasoduto', -620, 478, { size: 50, seed: 30, s: 1, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.lima });
+    if (pp > 0 && pp < 1) T.hand(ctx, trd('gasoduto', "gas grid"), -620, 478, { size: 54, font: 'Caveat Brush', color: INK, progress: pp * 1.5, boil: rc.boil });
+    else if (pp >= 1) X.tag(ctx, trd('gasoduto', "gas grid"), -620, 478, { size: 50, seed: 30, s: 1, zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.lima });
     const houses = [['casa_amarela', -380, 250, [[85, 135], [135, 135]], 206, 289], ['casa_verde', -160, 262, [[70, 120], [145, 120]], 207, 273], ['casa_marrom', 60, 252, [[75, 150], [155, 150]], 231, 271]];
     houses.forEach(([n, x, y, wins, w, h], i) => {
       place(ctx, n, x, y, Z({ s: 0.95 }));
@@ -852,8 +855,8 @@
       for (let k = 0; k < 3; k++) { const ph = ((tq - tIn) * 0.5 + k / 3) % 1; X.bubble(ctx, fb[0] + 95 + ph * 60, fb[1] - 150 - ph * 220, 22 + ph * 30, { alpha: 1 - ph, tint: '#ffffff' }); }
       for (const wx of [60, 115, 165, 220]) { const gx = fb[0] + (wx - 142), gy = fb[1] + (190 - 151); ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = 'rgba(255,225,120,0.7)'; ctx.fillRect(gx - 14, gy - 10, 28, 20); ctx.restore(); }
     }
-    if (tq > tCs - 0.05) X.tag(ctx, 'casas', -110, 45, { size: 50, seed: 31, rot: -0.05, s: pop(tq, tCs - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.coral });
-    if (tq > tIn - 0.05) X.tag(ctx, 'indústrias', 360, -30, { size: 50, seed: 32, rot: 0.05, s: pop(tq, tIn - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
+    if (tq > tCs - 0.05) X.tag(ctx, trd('casas', "homes"), -110, 45, { size: 50, seed: 31, rot: -0.05, s: pop(tq, tCs - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.coral });
+    if (tq > tIn - 0.05) X.tag(ctx, trd('indústrias', "industries"), 360, -30, { size: 50, seed: 32, rot: 0.05, s: pop(tq, tIn - 0.05), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
     // posto + caminhão + ônibus
     place(ctx, 'bomba', 640, 250, Z({ s: 1.0 }));
     const bs = tw(tq, tOn - 0.35, tOn + 0.4, E.outCubic);
@@ -861,7 +864,7 @@
       const lv = tq > tOn + 0.9 ? E.inCubic(clamp((tq - tOn - 0.9) / 0.9)) : 0;
       const x = lerp(2250, 1165, bs) + lv * 1100, bounce = Math.abs(Math.sin(tq * 14 + 1)) * (bs < 1 || lv > 0 ? 4 : 0);
       place(ctx, 'onibus', x, 322 - bounce, Z({ s: 0.84, flip: true }));
-      T.hand(ctx, 'BIOMETANO', x + (240 - 203) * 0.84, 322 - bounce + (120 - 113) * 0.84, { size: 30, font: 'Luckiest Guy', color: PAL.verdeEsc, boil: rc.boil });
+      T.hand(ctx, trd('BIOMETANO', "BIOMETHANE"), x + (240 - 203) * 0.84, 322 - bounce + (120 - 113) * 0.84, { size: 30, font: 'Luckiest Guy', color: PAL.verdeEsc, boil: rc.boil });
     }
     const tr = tw(tq, tCm - 0.35, tCm + 0.35, E.outCubic);
     if (tr > 0) {
@@ -869,9 +872,9 @@
       const x = lerp(2100, 930, tr) + lv * 1100;
       const bounce = Math.abs(Math.sin(tq * 16)) * (tr < 1 || lv > 0 ? 4 : 0);
       place(ctx, 'v3/caminhao', x, 300 - bounce, Z({ s: 0.78, flip: true }));
-      T.hand(ctx, 'BIOMETANO', x - (405 - 302) * 0.78, 300 - bounce + (120 - 150) * 0.78, { size: 44, font: 'Luckiest Guy', color: PAL.verdeEsc, boil: rc.boil });
+      T.hand(ctx, trd('BIOMETANO', "BIOMETHANE"), x - (405 - 302) * 0.78, 300 - bounce + (120 - 150) * 0.78, { size: 44, font: 'Luckiest Guy', color: PAL.verdeEsc, boil: rc.boil });
     }
-    if (tq > tCm) X.tag(ctx, 'caminhões e ônibus', 1050, 40, { size: 50, seed: 33, rot: 0.04, s: pop(tq, tCm), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.lima });
+    if (tq > tCm) X.tag(ctx, trd('caminhões e ônibus', "lorries and buses"), 1050, 40, { size: 50, seed: 33, rot: 0.04, s: pop(tq, tCm), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.lima });
     ctx.restore();
   }
   let STAMP_REN;
@@ -912,7 +915,7 @@
     SP.piece(ctx, S.rrect(-160, -80, 320, 160, 70, { seed: 5 }), { color: '#7a5233', seed: 5, ink: { w: 4, boil: rc.boil }, shadow: { zoom: rc.zoom } });
     for (const wx of [-90, 90]) { SP.piece(ctx, S.blob(wx, 90, 42, 42, { seed: wx }), { color: '#2a2622', seed: 9, shadow: { zoom: rc.zoom } }); SP.piece(ctx, S.blob(wx, 90, 18, 18, { seed: wx + 1 }), { color: '#9aa7ab', seed: 3 }); }
     I.stroke(ctx, [[160, 10], [240, 20]], { w: 8, seed: 3, boil: rc.boil });
-    if (tq > tBf - 0.15) T.hand(ctx, 'BIOFERTILIZANTE', 0, 4, { size: 40, font: 'Luckiest Guy', color: PAL.papel, progress: clamp((tq - tBf + 0.15) / 0.5), boil: rc.boil });
+    if (tq > tBf - 0.15) T.hand(ctx, trd('BIOFERTILIZANTE', "BIOFERTILISER"), 0, 4, { size: 40, font: 'Luckiest Guy', color: PAL.papel, progress: clamp((tq - tBf + 0.15) / 0.5), boil: rc.boil });
     ctx.restore();
     place(ctx, 'trator', trX, trY - bump, Z({ s: 1.2, flip: true }));
     // gotinhas caindo atrás do tanque
@@ -929,8 +932,8 @@
       const g = pop(tq, passT + 0.3 + row * 0.05, 0.4, 2.4);
       if (g > 0) place(ctx, n, px, py, Z({ s: 0.75 * g, ay: 0.95, rot: sway(tq, j, 0.04, 0.6) }));
     });
-    if (tq > tBf) X.tag(ctx, 'biofertilizante', -600, -250, { size: 60, seed: 41, rot: -0.04, s: pop(tq, tBf), zoom: rc.zoom, boil: rc.boil, font: 'Caveat Brush', tape: 'pin', pinColor: PAL.verde });
-    if (tq > tLv) X.tag(ctx, 'pra lavoura', 20, -300, { size: 56, seed: 42, rot: 0.05, s: pop(tq, tLv), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
+    if (tq > tBf) X.tag(ctx, trd('biofertilizante', "biofertiliser"), -600, -250, { size: 60, seed: 41, rot: -0.04, s: pop(tq, tBf), zoom: rc.zoom, boil: rc.boil, font: 'Caveat Brush', tape: 'pin', pinColor: PAL.verde });
+    if (tq > tLv) X.tag(ctx, trd('pra lavoura', "for the fields"), 20, -300, { size: 56, seed: 42, rot: 0.05, s: pop(tq, tLv), zoom: rc.zoom, boil: rc.boil, tape: 'pin', pinColor: PAL.amarelo });
     ctx.restore();
   }
   let ROWS;
@@ -983,10 +986,10 @@
       ctx.save(); ctx.translate(cxs, cys + (V ? 215 : 225)); ctx.rotate(-0.012); ctx.scale(sIn, sIn);
       if (V) {   // 9:16: a frase quebra em duas linhas numa tira mais alta
         SP.piece(ctx, S.tear(S.cut([[-440, -92], [440, -88], [436, 92], [-444, 90]], { seed: 3 }), { amp: 3, seed: 4 }), { color: PAL.papel, kind: 'smooth', seed: 5, shadow: { zoom: 1 }, edge: 0.15 });
-        T.hand(ctx, 'o resíduo de hoje é\na energia de amanhã!', 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
+        T.hand(ctx, trd('o resíduo de hoje é\na energia de amanhã!', "today's waste is\ntomorrow's energy!"), 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
       } else {
         SP.piece(ctx, S.tear(S.cut([[-640, -52], [640, -48], [636, 52], [-644, 50]], { seed: 3 }), { amp: 3, seed: 4 }), { color: PAL.papel, kind: 'smooth', seed: 5, shadow: { zoom: 1 }, edge: 0.15 });
-        T.hand(ctx, 'o resíduo de hoje é a energia de amanhã!', 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
+        T.hand(ctx, trd('o resíduo de hoje é a energia de amanhã!', "today's waste is tomorrow's energy!"), 0, 0, { size: 66, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil });
       }
       ctx.restore();
     }
@@ -1003,7 +1006,7 @@
       if (logo) { const lw = lwMax, lh = lw * logo.height / logo.width; ctx.drawImage(logo, -lw / 2, -ch / 2 + 50, lw, lh); }
       ctx.fillStyle = PAL.petrol; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `700 46px "Neulis Sans", "Kalam", sans-serif`;
-      ctx.fillText('Energia viva, ciência que transforma.', 0, ch / 2 - 88);
+      ctx.fillText(trd('Energia viva, ciência que transforma.', "Living energy, science that transforms."), 0, ch / 2 - 88);
       ctx.fillStyle = PAL.verde; ctx.fillRect(-120, ch / 2 - 44, 240, 6);
       ctx.restore();
       // fita crepe segurando o cartão (fora do logo)
@@ -1058,10 +1061,10 @@
       map.logo = `${R}/assets/brand/cp2b-logo.svg`;
       await X.loadImages(map);
       buildBackdrops(); buildDecor(); buildTitle(); buildCamera();
-      STAMP_O2 = T.stamp('o2', 'SEM O₂!', { size: 70, color: '#c8372d' });
-      STAMP_REN = T.stamp('ren', 'RENOVÁVEL', { size: 64, color: '#2f7d32' });
-      BIOGAS_WORD = T.ransom('BIOGÁS!', { size: 150, seed: 19 });
-      BIOMETANO_WORD = T.ransom('BIOMETANO', { size: 150, seed: 23 });
+      STAMP_O2 = T.stamp('o2', trd('SEM O₂!', "NO O₂!"), { size: 70, color: '#c8372d' });
+      STAMP_REN = T.stamp('ren', trd('RENOVÁVEL', "RENEWABLE"), { size: 64, color: '#2f7d32' });
+      BIOGAS_WORD = T.ransom(trd('BIOGÁS!', "BIOGAS!"), { size: 150, seed: 19 });
+      BIOMETANO_WORD = T.ransom(trd('BIOMETANO', "BIOMETHANE"), { size: EN ? 124 : 150, seed: 23 });
       ROWS = [0, 1, 2].map((k) => S.cut([[-1000, 150 + k * 120], [1000, 140 + k * 120], [1000, 205 + k * 120], [-1000, 212 + k * 120]], { seed: 60 + k, jitter: 2, ds: 40 }));
       SFX.length = 0;
       cuesTitulo(); cuesSobras(); cuesDigestor(); cuesComposicao(); cuesQueima(); cuesPurificacao(); cuesUsos(); cuesLavoura(); cuesFinal();

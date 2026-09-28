@@ -1,0 +1,67 @@
+{
+ "titulo": "Conheça a Arqueia: quem faz o metano",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep27_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Olha só o que o cientista encontrou no microscópio!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Essa é a Arqueia: pequenininha, amarelinha… e muito poderosa!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Ela é uma arqueia metanogênica — um ser vivo de um grupo diferente das bactérias. Bactéria, não: ar-quei-a!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "E o superpoder dela é fazer metano: ela transforma acetato, ou hidrogênio com gás carbônico, no gás do biogás!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Ou seja: é a Arqueia quem dá vida ao Metaninho!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Mas ela é exigente: nada de oxigênio, temperatura estável, e um ambiente nem ácido demais, nem básico demais.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Ela vive nos biodigestores, na barriga da vaca, nos arrozais e nos pântanos…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "…e sempre em equipe: as bactérias preparam a comida, e ela termina o serviço.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Arqueia e Metaninho: ela faz, ele brilha — a dupla que transforma resíduo em energia!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

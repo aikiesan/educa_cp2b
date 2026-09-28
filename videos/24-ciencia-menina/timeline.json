@@ -1,0 +1,714 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 56.849,
+ "musica": {
+  "bpm": 109.99230934102789,
+  "periodo": 0.5454926836200137,
+  "downbeat0": 2.276,
+  "compasso": 2.1819707344800547,
+  "logo": 51.899,
+  "cortes": [
+   {
+    "de": 13.186,
+    "para": 19.732
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 2.326,
+   "fim": 6.946,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 4.62
+   },
+   "palavras": [
+    {
+     "p": "Toda",
+     "i": 2.326,
+     "f": 3.146
+    },
+    {
+     "p": "heroína",
+     "i": 3.146,
+     "f": 3.606
+    },
+    {
+     "p": "tem",
+     "i": 3.606,
+     "f": 3.886
+    },
+    {
+     "p": "um",
+     "i": 3.886,
+     "f": 4.086
+    },
+    {
+     "p": "superpoder",
+     "i": 4.086,
+     "f": 4.746
+    },
+    {
+     "p": "O",
+     "i": 4.946,
+     "f": 5.306
+    },
+    {
+     "p": "dela",
+     "i": 5.306,
+     "f": 5.626
+    },
+    {
+     "p": "é",
+     "i": 5.626,
+     "f": 5.886
+    },
+    {
+     "p": "a",
+     "i": 5.886,
+     "f": 6.046
+    },
+    {
+     "p": "curiosidade",
+     "i": 6.046,
+     "f": 6.946
+    }
+   ],
+   "texto": "Toda heroína tem um superpoder. O dela é a curiosidade!"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 7.679,
+   "fim": 12.879,
+   "origem": {
+    "inicio": 5.04,
+    "fim": 10.24
+   },
+   "palavras": [
+    {
+     "p": "Ela",
+     "i": 7.679,
+     "f": 8.139
+    },
+    {
+     "p": "olha",
+     "i": 8.139,
+     "f": 8.519
+    },
+    {
+     "p": "pra",
+     "i": 8.519,
+     "f": 8.659
+    },
+    {
+     "p": "um",
+     "i": 8.659,
+     "f": 8.779
+    },
+    {
+     "p": "resto",
+     "i": 8.779,
+     "f": 9.059
+    },
+    {
+     "p": "de",
+     "i": 9.059,
+     "f": 9.239
+    },
+    {
+     "p": "comida",
+     "i": 9.239,
+     "f": 9.639
+    },
+    {
+     "p": "e",
+     "i": 9.639,
+     "f": 9.779
+    },
+    {
+     "p": "pergunta",
+     "i": 9.779,
+     "f": 10.279
+    },
+    {
+     "p": "e",
+     "i": 10.479,
+     "f": 10.859
+    },
+    {
+     "p": "se",
+     "i": 10.859,
+     "f": 11.099
+    },
+    {
+     "p": "isso",
+     "i": 11.099,
+     "f": 11.439
+    },
+    {
+     "p": "virasse",
+     "i": 11.439,
+     "f": 12.059
+    },
+    {
+     "p": "energia",
+     "i": 12.059,
+     "f": 12.879
+    }
+   ],
+   "texto": "Ela olha pra um resto de comida e pergunta: \"e se isso virasse energia?\""
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 13.612,
+   "fim": 20.912,
+   "origem": {
+    "inicio": 10.84,
+    "fim": 18.14
+   },
+   "palavras": [
+    {
+     "p": "Na",
+     "i": 13.612,
+     "f": 14.092
+    },
+    {
+     "p": "ciência",
+     "i": 14.092,
+     "f": 14.512
+    },
+    {
+     "p": "do",
+     "i": 14.512,
+     "f": 14.652
+    },
+    {
+     "p": "biogás",
+     "i": 14.652,
+     "f": 15.172
+    },
+    {
+     "p": "tem",
+     "i": 15.332,
+     "f": 15.512
+    },
+    {
+     "p": "lugar",
+     "i": 15.512,
+     "f": 15.752
+    },
+    {
+     "p": "pra",
+     "i": 15.752,
+     "f": 16.012
+    },
+    {
+     "p": "todo",
+     "i": 16.012,
+     "f": 16.432
+    },
+    {
+     "p": "mundo",
+     "i": 16.432,
+     "f": 16.832
+    },
+    {
+     "p": "nos",
+     "i": 17.072,
+     "f": 17.412
+    },
+    {
+     "p": "micróbios",
+     "i": 17.412,
+     "f": 18.052
+    },
+    {
+     "p": "nas",
+     "i": 18.212,
+     "f": 18.432
+    },
+    {
+     "p": "máquinas",
+     "i": 18.432,
+     "f": 19.012
+    },
+    {
+     "p": "nos",
+     "i": 19.272,
+     "f": 19.452
+    },
+    {
+     "p": "mapas",
+     "i": 19.452,
+     "f": 20.112
+    },
+    {
+     "p": "nas",
+     "i": 20.252,
+     "f": 20.452
+    },
+    {
+     "p": "leis",
+     "i": 20.452,
+     "f": 20.912
+    }
+   ],
+   "texto": "Na ciência do biogás tem lugar pra todo mundo: nos micróbios, nas máquinas, nos mapas, nas leis…"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 21.645,
+   "fim": 27.165,
+   "origem": {
+    "inicio": 18.32,
+    "fim": 23.84
+   },
+   "palavras": [
+    {
+     "p": "e",
+     "i": 21.645,
+     "f": 22.145
+    },
+    {
+     "p": "muitas",
+     "i": 22.145,
+     "f": 22.545
+    },
+    {
+     "p": "dessas",
+     "i": 22.545,
+     "f": 22.925
+    },
+    {
+     "p": "cientistas",
+     "i": 22.925,
+     "f": 23.525
+    },
+    {
+     "p": "são",
+     "i": 23.525,
+     "f": 23.845
+    },
+    {
+     "p": "mulheres",
+     "i": 23.845,
+     "f": 24.265
+    },
+    {
+     "p": "inclusive",
+     "i": 24.605,
+     "f": 25.385
+    },
+    {
+     "p": "quem",
+     "i": 25.385,
+     "f": 25.745
+    },
+    {
+     "p": "dirige",
+     "i": 25.745,
+     "f": 26.185
+    },
+    {
+     "p": "o",
+     "i": 26.185,
+     "f": 26.305
+    },
+    {
+     "p": "cê",
+     "i": 26.305,
+     "f": 26.477
+    },
+    {
+     "p": "pê",
+     "i": 26.477,
+     "f": 26.649
+    },
+    {
+     "p": "dois",
+     "i": 26.649,
+     "f": 26.993
+    },
+    {
+     "p": "bê",
+     "i": 26.993,
+     "f": 27.165
+    }
+   ],
+   "texto": "…e muitas dessas cientistas são mulheres — inclusive quem dirige o CP2B!",
+   "fala": "…e muitas dessas cientistas são mulheres — inclusive quem dirige o cê-pê-dois-bê!"
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 27.898,
+   "fim": 34.798,
+   "origem": {
+    "inicio": 24.1,
+    "fim": 31.0
+   },
+   "palavras": [
+    {
+     "p": "Com",
+     "i": 27.898,
+     "f": 28.278
+    },
+    {
+     "p": "projetos",
+     "i": 28.278,
+     "f": 28.818
+    },
+    {
+     "p": "como",
+     "i": 28.818,
+     "f": 29.138
+    },
+    {
+     "p": "o",
+     "i": 29.138,
+     "f": 29.438
+    },
+    {
+     "p": "Ciência",
+     "i": 29.438,
+     "f": 30.018
+    },
+    {
+     "p": "coisa",
+     "i": 30.178,
+     "f": 30.478
+    },
+    {
+     "p": "de",
+     "i": 30.478,
+     "f": 30.618
+    },
+    {
+     "p": "menina",
+     "i": 30.618,
+     "f": 30.978
+    },
+    {
+     "p": "estudantes",
+     "i": 30.978,
+     "f": 31.998
+    },
+    {
+     "p": "do",
+     "i": 31.998,
+     "f": 32.158
+    },
+    {
+     "p": "ensino",
+     "i": 32.158,
+     "f": 32.498
+    },
+    {
+     "p": "médio",
+     "i": 32.498,
+     "f": 32.898
+    },
+    {
+     "p": "conhecem",
+     "i": 32.898,
+     "f": 33.478
+    },
+    {
+     "p": "os",
+     "i": 33.478,
+     "f": 33.618
+    },
+    {
+     "p": "laboratórios",
+     "i": 33.618,
+     "f": 34.218
+    },
+    {
+     "p": "por",
+     "i": 34.218,
+     "f": 34.458
+    },
+    {
+     "p": "dentro",
+     "i": 34.458,
+     "f": 34.798
+    }
+   ],
+   "texto": "Com projetos como o \"Ciência, coisa de menina\", estudantes do ensino médio conhecem os laboratórios por dentro…"
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 35.531,
+   "fim": 40.131,
+   "origem": {
+    "inicio": 31.38,
+    "fim": 35.98
+   },
+   "palavras": [
+    {
+     "p": "fazem",
+     "i": 35.531,
+     "f": 35.751
+    },
+    {
+     "p": "experimentos",
+     "i": 35.751,
+     "f": 36.571
+    },
+    {
+     "p": "conversam",
+     "i": 36.891,
+     "f": 37.491
+    },
+    {
+     "p": "com",
+     "i": 37.491,
+     "f": 37.631
+    },
+    {
+     "p": "pesquisadoras",
+     "i": 37.631,
+     "f": 38.491
+    },
+    {
+     "p": "e",
+     "i": 38.491,
+     "f": 38.751
+    },
+    {
+     "p": "descobrem",
+     "i": 38.751,
+     "f": 39.291
+    },
+    {
+     "p": "novos",
+     "i": 39.291,
+     "f": 39.711
+    },
+    {
+     "p": "caminhos",
+     "i": 39.711,
+     "f": 40.131
+    }
+   ],
+   "texto": "…fazem experimentos, conversam com pesquisadoras e descobrem novos caminhos."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 40.864,
+   "fim": 45.824,
+   "origem": {
+    "inicio": 36.18,
+    "fim": 41.14
+   },
+   "palavras": [
+    {
+     "p": "Porque",
+     "i": 40.864,
+     "f": 41.404
+    },
+    {
+     "p": "diversidade",
+     "i": 41.404,
+     "f": 42.264
+    },
+    {
+     "p": "e",
+     "i": 42.264,
+     "f": 42.484
+    },
+    {
+     "p": "equidade",
+     "i": 42.484,
+     "f": 43.144
+    },
+    {
+     "p": "de",
+     "i": 43.144,
+     "f": 43.324
+    },
+    {
+     "p": "gênero",
+     "i": 43.324,
+     "f": 43.784
+    },
+    {
+     "p": "também",
+     "i": 43.784,
+     "f": 44.224
+    },
+    {
+     "p": "são",
+     "i": 44.224,
+     "f": 44.504
+    },
+    {
+     "p": "valores",
+     "i": 44.504,
+     "f": 44.924
+    },
+    {
+     "p": "da",
+     "i": 44.924,
+     "f": 45.124
+    },
+    {
+     "p": "boa",
+     "i": 45.124,
+     "f": 45.364
+    },
+    {
+     "p": "ciência",
+     "i": 45.364,
+     "f": 45.824
+    }
+   ],
+   "texto": "Porque diversidade e equidade de gênero também são valores da boa ciência."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 46.557,
+   "fim": 50.897,
+   "origem": {
+    "inicio": 41.54,
+    "fim": 45.88
+   },
+   "palavras": [
+    {
+     "p": "Ciência",
+     "i": 46.557,
+     "f": 47.277
+    },
+    {
+     "p": "Coisa",
+     "i": 47.537,
+     "f": 48.017
+    },
+    {
+     "p": "de",
+     "i": 48.017,
+     "f": 48.217
+    },
+    {
+     "p": "menina",
+     "i": 48.217,
+     "f": 48.577
+    },
+    {
+     "p": "e",
+     "i": 48.717,
+     "f": 49.077
+    },
+    {
+     "p": "de",
+     "i": 49.077,
+     "f": 49.237
+    },
+    {
+     "p": "todo",
+     "i": 49.237,
+     "f": 49.537
+    },
+    {
+     "p": "mundo",
+     "i": 49.537,
+     "f": 49.837
+    },
+    {
+     "p": "que",
+     "i": 49.837,
+     "f": 50.057
+    },
+    {
+     "p": "tem",
+     "i": 50.057,
+     "f": 50.257
+    },
+    {
+     "p": "curiosidade",
+     "i": 50.257,
+     "f": 50.897
+    }
+   ],
+   "texto": "Ciência? Coisa de menina — e de todo mundo que tem curiosidade!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 52.049,
+   "fim": 55.849,
+   "origem": {
+    "inicio": 46.68,
+    "fim": 50.48
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 52.049,
+     "f": 52.193
+    },
+    {
+     "p": "pê",
+     "i": 52.193,
+     "f": 52.337
+    },
+    {
+     "p": "dois",
+     "i": 52.337,
+     "f": 52.625
+    },
+    {
+     "p": "bê",
+     "i": 52.625,
+     "f": 52.769
+    },
+    {
+     "p": "energia",
+     "i": 52.989,
+     "f": 53.609
+    },
+    {
+     "p": "viva",
+     "i": 53.609,
+     "f": 54.149
+    },
+    {
+     "p": "ciência",
+     "i": 54.449,
+     "f": 54.989
+    },
+    {
+     "p": "que",
+     "i": 54.989,
+     "f": 55.169
+    },
+    {
+     "p": "transforma",
+     "i": 55.169,
+     "f": 55.849
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

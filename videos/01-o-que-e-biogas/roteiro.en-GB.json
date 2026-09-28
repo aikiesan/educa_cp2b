@@ -1,0 +1,77 @@
+{
+ "titulo": "Derivados: versões em inglês, vinheta e pílulas",
+ "idioma": "en-GB",
+ "narracao": {
+  "arquivo": "entrada/narracao/en-GB/ep90_en-GB_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "C- P- two- B",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "What is biogas? And biomethane?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "It all starts with what nobody wants: food scraps, manure, crop leftovers…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Inside the biodigester — a sealed tank with no oxygen — microbes throw a party…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "…and release a gas: biogas!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "It's mostly methane and carbon dioxide, with a pinch of other gases…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "…some of them really smelly!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "But by burning biogas, we can make heat and electricity.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "And there's more: take out the carbon dioxide and impurities, and biomethane is born — almost pure methane!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "It's just like natural gas, only renewable: it can travel through the gas grid to homes and industries, or fuel lorries and buses.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L10",
+   "texto": "And what's left in the biodigester becomes biofertiliser for the fields… closing the loop!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L11",
+   "texto": "Biogas and biomethane: today's waste is tomorrow's energy!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: living energy, science that transforms!",
+   "fala": "C-P-two-B: living energy, science that transforms!",
+   "voz": "Sulafat"
+  }
+ ]
+}

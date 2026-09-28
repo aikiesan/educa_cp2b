@@ -1,0 +1,72 @@
+{
+  "_sobre": "Ep. 16 · Biorrefinaria: um resíduo, vários produtos — estilo B (planta técnica), antes × depois: a refinaria de petróleo fica azul-planta; a biorrefinaria ganha cor quadro a quadro. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "B",
+  "seed": 16,
+  "pecas": {
+    "barril": "ep16/_folha/pecas_ep16_1", "acucar": "ep16/_folha/pecas_ep16_2", "etanol": "ep16/_folha/pecas_ep16_3",
+    "bagaco": "ep16/_folha/pecas_ep16_4", "caldeira": "ep16/_folha/pecas_ep16_5", "torta": "ep16/_folha/pecas_ep16_6",
+    "refinaria": "ep16/_folha/refinaria", "vinhaca": "ep04/_folha/pecas_ep04_2", "granja": "ep17/_folha/pecas_ep17_2"
+  },
+  "assinatura": { "cientista": true },
+  "cenas": [
+    { "fala": "L01", "arranjo": "palco", "revela": "L02:biomassa", "itens": [
+      { "p": "refinaria", "id": "ref", "em": "refinaria" },
+      { "p": "barril", "em": "petróleo" },
+      { "p": "etanol", "id": "garrafa", "em": "produtos", "s": 0.8 },
+      { "fx": "seta", "de": "ref", "para": "garrafa", "em": "vários" },
+      { "p": "cientista:pensa", "lugar": "narrador", "em": 0.4 }
+    ]},
+    { "fala": "L02", "arranjo": "palco", "revela": "biomassa", "itens": [
+      { "p": "refinaria", "em": 0.05, "s": 1.05 },
+      { "p": "barril", "em": 0.1, "sai": { "em": "mesmo", "como": "voa" } },
+      { "p": "cana_feixe", "em": "biomassa-0.4", "entra": "voa" },
+      { "txt": "BIORREFINARIA", "tipo": "letras", "lugar": "titulo", "em": "biorrefinaria" }
+    ]},
+    { "fala": "L03", "arranjo": "fila", "revela": "cana", "itens": [
+      { "p": "cana_planta", "em": "cana" },
+      { "p": "acucar", "em": "açúcar", "entra": "cai" },
+      { "p": "etanol", "em": "etanol", "entra": "cai" },
+      { "txt": "açúcar", "tipo": "etiqueta", "sobre": "acucar", "rel": [0, 0.58], "tam": 0.7, "em": "açúcar+0.2" },
+      { "txt": "etanol", "tipo": "etiqueta", "sobre": "etanol", "rel": [0, 0.58], "tam": 0.9, "em": "etanol+0.2" }
+    ]},
+    { "fala": "L04", "arranjo": "fila", "revela": "bagaço", "itens": [
+      { "p": "bagaco", "em": "bagaço-0.2", "entra": "cai" },
+      { "p": "caldeira", "em": "calor" },
+      { "p": "lampada", "em": "eletricidade-0.5", "brilha": "eletricidade" },
+      { "fx": "chama", "sobre": "caldeira", "rel": [0, 0.08], "tam": 0.3, "em": "calor" }
+    ]},
+    { "fala": "L05", "arranjo": "fila", "revela": "vinhaça", "itens": [
+      { "p": "vinhaca", "em": "vinhaça", "entra": "cai" },
+      { "p": "torta", "em": "torta", "entra": "cai" },
+      { "p": "biodigestor", "em": "biogás-0.5" },
+      { "txt": "BIOGÁS · BIOMETANO", "tipo": "letras", "lugar": "titulo", "em": "biogás" }
+    ]},
+    { "fala": "L06", "arranjo": "dupla", "revela": "sobra", "itens": [
+      { "p": "biodigestor", "id": "bio", "em": 0.05 },
+      { "p": "cana_planta", "id": "cana", "em": "canavial", "entra": "cresce" },
+      { "fx": "cano", "de": "bio", "para": "cana", "em": "volta", "baixo": 50 },
+      { "p": "broto", "sobre": "cana", "rel": [0.5, 0.3], "tam": 0.4, "em": "adubo", "entra": "cresce" }
+    ]},
+    { "fala": "L07", "arranjo": "palco", "revela": "usina", "itens": [
+      { "p": "biodigestor", "id": "bio", "em": 0.05 },
+      { "p": "vaca", "id": "vaca", "em": "pecuária" },
+      { "p": "granja", "id": "granja", "em": "região" },
+      { "fx": "seta", "de": "granja", "para": "bio", "em": "resíduo" },
+      { "fx": "bolhas", "sobre": "bio", "rel": [0, -0.6], "tam": 0.8, "em": "biometano-0.5", "n": 10 },
+      { "txt": "mais biometano!", "tipo": "etiqueta", "lugar": "titulo", "em": "biometano" }
+    ]},
+    { "fala": "L08", "arranjo": "grade", "colunas": 2, "revela": 0.1, "itens": [
+      { "p": "cana_feixe", "id": "a", "em": 0.1 },
+      { "p": "refinaria", "id": "b", "em": 0.25 },
+      { "p": "broto", "id": "d", "em": 0.55 },
+      { "p": "biodigestor", "id": "c", "em": 0.4 },
+      { "fx": "ciclo", "itens": ["a", "b", "c", "d"], "em": "Nada", "passo": 0.3 }
+    ]},
+    { "fala": "L09", "arranjo": "palco", "revela": 0.1, "itens": [
+      { "p": "refinaria", "em": 0.1, "s": 1.05 },
+      { "txt": "UM RESÍDUO, VÁRIOS PRODUTOS", "tipo": "letras", "lugar": "titulo", "em": "resíduo" },
+      { "fx": "brilho", "de": "refinaria", "em": "vários", "n": 7 },
+      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.3 }
+    ]}
+  ]
+}

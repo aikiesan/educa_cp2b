@@ -1,0 +1,62 @@
+{
+ "titulo": "Laranja inteira: nada se perde",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep07_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Suco de laranja no café da manhã… e um cafezinho depois. Hum!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "São Paulo é terra de laranja e de café — e as indústrias deixam muita sobra: casca, bagaço, polpa.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Essas sobras podem virar ração, óleo, adubo… e também biogás!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Mas a casca da laranja tem um óleo que atrapalha os micróbios.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Por isso os pesquisadores misturam as sobras com outros resíduos, como esterco — e a digestão volta a andar bem.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "No café, a casca e a polpa também viram energia no biodigestor.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Da fruta ao cafezinho, nada precisa se perder.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Laranja inteira: aproveitada até a casca!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

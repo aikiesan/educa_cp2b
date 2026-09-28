@@ -7,8 +7,8 @@
     "vozes": {
       "Sulafat": "calorosa, clara e confiante; ritmo tranquilo"
     },
-    "arquivo_original": "entrada/pilar2b_sulafat_take1.wav",
-    "script": "entrada/generate_pilar2b_tts.py"
+    "arquivo_original": "entrada/narracao/pt-BR/ep02_pt-BR_Sulafat_take1.wav",
+    "script": "tools/tts/antigos/generate_pilar2b_tts.py"
   },
   "_campos": "texto = legenda/tela; fala = forma pronunciada (usada no TTS e no alinhador)",
   "legenda_subst": [

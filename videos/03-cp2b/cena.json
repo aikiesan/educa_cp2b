@@ -1,0 +1,111 @@
+{
+  "_sobre": "Ep. 03 · O que é o CP2B — estilo P (livro): o livro do CP2B. A capa abre no tempo forte antes da 1ª fala; cada fala é uma página dupla e a folha vira no tempo da música. Cada peça mora numa página ('pagina': 1 = esquerda/de cima, 2 = direita/de baixo) e nada atravessa a dobra. Âncoras e textos por língua ({pt-BR, en-GB}). Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "P",
+  "seed": 3,
+  "capa": {"titulo": {"pt-BR": "O que é o CP2B?", "en-GB": "What is CP2B?"}},
+  "pecas": {
+    "barraca": "ep03/_folha/laboratorio_campo", "predio": "ep03/_folha/predio", "toldo": "ep03/_folha/pecas_ep03_2",
+    "medidor": "ep03/_folha/pecas_ep03_4", "p1": "ep03/_folha/pesquisadores_1", "p2": "ep03/_folha/pesquisadores_2",
+    "p3": "ep03/_folha/pesquisadores_3", "p4": "ep03/_folha/pesquisadores_4", "p6": "ep03/_folha/pesquisadores_6",
+    "p7": "ep03/_folha/pesquisadores_7", "p8": "ep03/_folha/pesquisadores_8", "fazenda": "ep17/_folha/pecas_ep17_2",
+    "vila": "ep17/_folha/pecas_ep17_3", "usina_bio": "ep17/_folha/pecas_ep17_6", "mapa": "ep19/_folha/pecas_ep19_8",
+    "governo": "ep20/_folha/pecas_ep20_7", "documento": "ep20/_folha/pecas_ep20_8", "frasco": "ep15/_folha/pecas_ep15_5",
+    "nipe": "marcas/nipe", "fapesp": "marcas/fapesp", "unicamp": "marcas/unicamp",
+    "planta": "ep11/_folha/pecas_ep11_6"
+  },
+  "assinatura": {"cientista": true, "texto": {"pt-BR": "Processo FAPESP 2024/01112-1", "en-GB": "FAPESP grant 2024/01112-1"}},
+  "cenas": [
+    {"fala": "L01", "itens": [
+      {"p": "cientista:acena", "pagina": 1, "em": 0, "entra": "nenhum"},
+      {"txt": {"pt-BR": "o livro do CP2B", "en-GB": "the CP2B book"}, "tipo": "etiqueta", "pagina": 1, "lugar": "rodape", "em": 0, "entra": "nenhum", "papel": "lima"},
+      {"p": "saco_restos", "id": "saco", "pagina": 2, "em": {"pt-BR": "Resíduo-0.15", "en-GB": "Waste-0.15"}},
+      {"txt": {"pt-BR": "RESÍDUO?", "en-GB": "WASTE?"}, "tipo": "carimbo", "sobre": "saco", "rel": [0, 0.2], "tam": 0.8, "em": {"pt-BR": "Resíduo+0.25", "en-GB": "Waste+0.25"}, "cor": "coral"},
+      {"p": "lampada", "sobre": "saco", "rel": [0.56, -0.42], "tam": 0.42, "em": {"pt-BR": "recurso-0.2", "en-GB": "resource-0.2"}, "entra": "pop", "brilha": {"pt-BR": "recurso", "en-GB": "resource"}},
+      {"txt": {"pt-BR": "RECURSO!", "en-GB": "RESOURCE!"}, "tipo": "letras", "pagina": 2, "lugar": "titulo", "em": {"pt-BR": "recurso", "en-GB": "resource"}}
+    ]},
+    {"fala": "L02", "paginas": [{"arranjo": "dupla"}, {"arranjo": "dupla"}], "itens": [
+      {"txt": "São Paulo", "tipo": "letras", "pagina": 1, "lugar": "titulo", "em": {"pt-BR": "São", "en-GB": "São"}},
+      {"p": "fazenda", "pagina": 1, "em": {"pt-BR": "campo-0.2", "en-GB": "farms-0.2"}, "s": 1.15},
+      {"p": "vila", "pagina": 1, "em": {"pt-BR": "cidades-0.2", "en-GB": "cities-0.2"}, "s": 1.15},
+      {"p": "saco_restos", "pagina": 2, "em": {"pt-BR": "resíduos", "en-GB": "waste"}, "sai": {"pt-BR": "mas", "en-GB": "yet"}},
+      {"p": "caminhao_lixo", "pagina": 2, "em": {"pt-BR": "orgânicos", "en-GB": "organic"}, "sai": {"pt-BR": "mas", "en-GB": "yet"}},
+      {"p": "medidor", "pagina": 2, "lugar": "centro", "em": {"pt-BR": "pequena-0.3", "en-GB": "small-0.3"}},
+      {"txt": {"pt-BR": "só um pouquinho vira energia", "en-GB": "only a little becomes energy"}, "tipo": "mao", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "pequena", "en-GB": "small"}, "cor": "coral"}
+    ]},
+    {"fala": "L03", "paginas": [{"arranjo": "dupla"}, {}], "itens": [
+      {"txt": {"pt-BR": "pra mudar isso…", "en-GB": "to change that…"}, "tipo": "mao", "pagina": 1, "lugar": "titulo", "em": {"pt-BR": "Pra", "en-GB": "To"}, "cor": "petrol"},
+      {"p": "cientista:aponta", "pagina": 1, "em": {"pt-BR": "mudar", "en-GB": "change"}},
+      {"p": "planta", "pagina": 1, "em": {"pt-BR": "nasceu-0.2", "en-GB": "born-0.2"}, "entra": "cresce"},
+      {"p": "marca", "id": "logo", "pagina": 2, "em": {"pt-BR": "cê", "en-GB": "C"}, "entra": "pop", "s": 1.2},
+      {"fx": "brilho", "sobre": "logo", "rel": [0, -0.1], "tam": 0.9, "em": {"pt-BR": "cê+0.25", "en-GB": "C+0.25"}, "n": 6},
+      {"txt": {"pt-BR": "Centro Paulista de Estudos\nem Biogás e Bioprodutos", "en-GB": "São Paulo Center for\nBiogas and Bioproducts Studies"}, "tipo": "etiqueta", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "Centro", "en-GB": "Center"}}
+    ]},
+    {"fala": "L04", "paginas": [{"arranjo": "palco", "arranjoV": "fila"}, {}], "itens": [
+      {"p": "predio", "id": "pr", "pagina": 1, "em": {"pt-BR": "sede-0.2", "en-GB": "Based-0.1"}},
+      {"p": "pino_coral", "sobre": "pr", "rel": [0.06, -0.46], "tam": 0.24, "em": {"pt-BR": "NIPE", "en-GB": "NIPE"}, "entra": "cai"},
+      {"p": "nipe", "pagina": 1, "em": {"pt-BR": "NIPE", "en-GB": "NIPE"}, "entra": "pop"},
+      {"p": "unicamp", "pagina": 1, "em": {"pt-BR": "Unicamp", "en-GB": "Unicamp"}, "entra": "pop"},
+      {"p": "documento", "id": "doc", "pagina": 2, "em": {"pt-BR": "apoio", "en-GB": "supported"}, "entra": "cai"},
+      {"txt": {"pt-BR": "apoio", "en-GB": "supported by"}, "tipo": "mao", "pagina": 2, "lugar": "titulo", "em": {"pt-BR": "apoio", "en-GB": "supported"}, "cor": "petrol"},
+      {"p": "fapesp", "sobre": "doc", "rel": [0, 0.18], "tam": 0.82, "em": {"pt-BR": "FAPESP", "en-GB": "FAPESP"}, "entra": "pop"}
+    ]},
+    {"fala": "L05", "paginas": [{"arranjo": "dupla"}, {"arranjo": "fila"}], "itens": [
+      {"txt": {"pt-BR": "Nossa missão", "en-GB": "Our mission"}, "tipo": "letras", "pagina": 1, "lugar": "titulo", "em": {"pt-BR": "missão", "en-GB": "mission"}},
+      {"p": "saco_restos", "id": "r", "pagina": 1, "em": {"pt-BR": "resíduos-0.2", "en-GB": "waste-0.2"}, "s": 1.25},
+      {"p": "maquina", "id": "m", "pagina": 1, "em": {"pt-BR": "transformar", "en-GB": "turning"}, "s": 1.25},
+      {"fx": "seta", "de": "r", "para": "m", "pagina": 1, "em": {"pt-BR": "em", "en-GB": "into"}},
+      {"fx": "chama", "pagina": 2, "em": {"pt-BR": "biogás", "en-GB": "biogas"}, "s": 0.55},
+      {"p": "onibus", "pagina": 2, "em": {"pt-BR": "biometano", "en-GB": "biomethane"}, "s": 1.2},
+      {"p": "frasco", "pagina": 2, "em": {"pt-BR": "bioprodutos", "en-GB": "bioproducts"}, "s": 1.2},
+      {"txt": {"pt-BR": "ciência · tecnologia · impacto social", "en-GB": "science · technology · social impact"}, "tipo": "mao", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "ciência", "en-GB": "science"}, "cor": "verdeEsc"}
+    ]},
+    {"fala": "L06", "paginas": [{}, {}], "itens": [
+      {"txt": {"pt-BR": "laboratório vivo", "en-GB": "living lab"}, "tipo": "letras", "pagina": 1, "lugar": "titulo", "em": {"pt-BR": "laboratório", "en-GB": "living"}},
+      {"p": "barraca", "id": "b", "pagina": 1, "em": {"pt-BR": "laboratório-0.3", "en-GB": "living-0.3"}, "s": 1.1, "chao": false},
+      {"p": "p3", "sobre": "b", "rel": [0.4, 0.12], "tam": 0.42, "em": {"pt-BR": "testando", "en-GB": "testing"}},
+      {"p": "artigo", "id": "inv", "pagina": 2, "em": {"pt-BR": "inventário-0.2", "en-GB": "inventories-0.2"}, "entra": "cai", "chao": false},
+      {"p": "governo", "id": "gov", "pagina": 2, "em": {"pt-BR": "políticas-0.2", "en-GB": "public-0.2"}, "chao": false},
+      {"fx": "seta", "de": "inv", "para": "gov", "pagina": 2, "em": {"pt-BR": "às", "en-GB": "to"}},
+      {"txt": {"pt-BR": "do inventário de resíduos…", "en-GB": "from waste inventories…"}, "tipo": "mao", "pagina": 2, "lugar": "titulo", "em": {"pt-BR": "inventário", "en-GB": "inventories"}, "cor": "petrol"},
+      {"txt": {"pt-BR": "…às políticas públicas", "en-GB": "…to public policy"}, "tipo": "mao", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "às", "en-GB": "to"}, "cor": "coral"}
+    ]},
+    {"fala": "L07", "paginas": [{"arranjo": "grade", "colunas": 2}, {}], "itens": [
+      {"txt": {"pt-BR": "uma rede", "en-GB": "a network"}, "tipo": "letras", "pagina": 1, "lugar": "titulo", "em": {"pt-BR": "rede", "en-GB": "network"}},
+      {"p": "p1", "pagina": 1, "em": {"pt-BR": "pesquisadores", "en-GB": "researchers"}},
+      {"p": "p8", "pagina": 1, "em": {"pt-BR": "pesquisadores+0.25", "en-GB": "researchers+0.25"}},
+      {"p": "p2", "pagina": 1, "em": {"pt-BR": "universidades", "en-GB": "universities"}},
+      {"p": "empresario", "pagina": 1, "em": {"pt-BR": "empresas", "en-GB": "companies"}},
+      {"p": "mapa", "id": "mapa", "pagina": 2, "em": {"pt-BR": "Brasil-0.4", "en-GB": "Brazil-0.4"}},
+      {"p": "pino_lima", "sobre": "mapa", "rel": [-0.15, 0.03], "tam": 0.2, "em": {"pt-BR": "Brasil", "en-GB": "Brazil"}, "entra": "cai"},
+      {"p": "pino_coral", "sobre": "mapa", "rel": [0.0, -0.2], "tam": 0.2, "em": {"pt-BR": "Brasil+0.35", "en-GB": "Brazil+0.35"}, "entra": "cai"},
+      {"p": "pino_ambar", "sobre": "mapa", "rel": [0.05, -0.27], "tam": 0.2, "em": {"pt-BR": "Brasil+0.6", "en-GB": "Brazil+0.6"}, "entra": "cai"},
+      {"txt": {"pt-BR": "no Brasil e no exterior", "en-GB": "in Brazil and abroad"}, "tipo": "mao", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "Brasil", "en-GB": "Brazil"}, "cor": "petrol"},
+      {"txt": "Olá!", "tipo": "balao", "sobre": "mapa", "rel": [-0.36, 0.0], "tam": 0.34, "em": {"pt-BR": "Brasil+0.2", "en-GB": "Brazil+0.2"}, "cauda": [0.35, 0.9]},
+      {"txt": "¡Hola!", "tipo": "balao", "sobre": "mapa", "rel": [-0.14, -0.36], "tam": 0.34, "em": {"pt-BR": "exterior", "en-GB": "abroad"}, "cauda": [0.3, 0.9]},
+      {"txt": "Hallo!", "tipo": "balao", "sobre": "mapa", "rel": [0.24, -0.4], "tam": 0.32, "em": {"pt-BR": "exterior+0.3", "en-GB": "abroad+0.3"}, "cauda": [-0.35, 0.9]}
+    ]},
+    {"fala": "L08", "paginas": [{"arranjo": "grade", "colunas": 1}, {"arranjo": "fila"}], "itens": [
+      {"txt": {"pt-BR": "EXCELÊNCIA", "en-GB": "EXCELLENCE"}, "tipo": "carimbo", "pagina": 1, "em": {"pt-BR": "excelência", "en-GB": "excellence"}, "cor": "verdeEsc"},
+      {"txt": {"pt-BR": "ÉTICA", "en-GB": "ETHICS"}, "tipo": "carimbo", "pagina": 1, "em": {"pt-BR": "ética", "en-GB": "ethics"}, "cor": "petrol"},
+      {"txt": {"pt-BR": "DIVERSIDADE", "en-GB": "DIVERSITY"}, "tipo": "carimbo", "pagina": 2, "lugar": "titulo", "em": {"pt-BR": "diversidade", "en-GB": "diversity"}, "cor": "coral"},
+      {"p": "p4", "pagina": 2, "em": {"pt-BR": "diversidade+0.15", "en-GB": "diversity+0.15"}},
+      {"p": "p6", "pagina": 2, "em": {"pt-BR": "diversidade+0.3", "en-GB": "diversity+0.3"}},
+      {"p": "p7", "pagina": 2, "em": {"pt-BR": "diversidade+0.45", "en-GB": "diversity+0.45"}},
+      {"txt": {"pt-BR": "SOCIEDADE", "en-GB": "SOCIETY"}, "tipo": "carimbo", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "sociedade", "en-GB": "society"}, "cor": "ambar"}
+    ]},
+    {"fala": "L09", "paginas": [{}, {}], "itens": [
+      {"p": "toldo", "pagina": 1, "em": {"pt-BR": "vitrine-0.3", "en-GB": "showcase-0.3"}, "s": 0.75, "id": "toldo", "chao": false, "dy": -0.22},
+      {"p": "usina_bio", "pagina": 1, "em": {"pt-BR": "soluções-0.2", "en-GB": "biogas-0.2"}, "sobre": "toldo", "rel": [-0.3, 0.78], "tam": 0.42},
+      {"p": "onibus", "pagina": 1, "em": {"pt-BR": "soluções+0.15", "en-GB": "biogas+0.15"}, "sobre": "toldo", "rel": [0.02, 0.78], "tam": 0.5},
+      {"p": "lampada", "pagina": 1, "em": {"pt-BR": "biogás", "en-GB": "solutions"}, "brilha": {"pt-BR": "biogás+0.2", "en-GB": "solutions+0.2"}, "sobre": "toldo", "rel": [0.33, 0.78], "tam": 0.4},
+      {"txt": {"pt-BR": "vitrine de soluções", "en-GB": "a showcase of solutions"}, "tipo": "etiqueta", "pagina": 1, "lugar": "rodape", "em": {"pt-BR": "vitrine", "en-GB": "showcase"}},
+      {"p": "mapa", "id": "mapa", "pagina": 2, "em": {"pt-BR": "referência-0.3", "en-GB": "benchmark-0.3"}},
+      {"p": "pino_lima", "sobre": "mapa", "rel": [-0.16, 0.02], "tam": 0.22, "em": {"pt-BR": "América", "en-GB": "Latin"}, "entra": "cai"},
+      {"fx": "estrela", "n": 1, "sobre": "mapa", "rel": [-0.26, -0.01], "tam": 0.11, "em": {"pt-BR": "referência+0.00", "en-GB": "benchmark+0.00"}},
+      {"fx": "estrela", "n": 1, "sobre": "mapa", "rel": [-0.19, 0.07], "tam": 0.11, "em": {"pt-BR": "referência+0.12", "en-GB": "benchmark+0.12"}},
+      {"fx": "estrela", "n": 1, "sobre": "mapa", "rel": [-0.12, 0.13], "tam": 0.11, "em": {"pt-BR": "referência+0.24", "en-GB": "benchmark+0.24"}},
+      {"fx": "estrela", "n": 1, "sobre": "mapa", "rel": [-0.17, 0.23], "tam": 0.11, "em": {"pt-BR": "referência+0.36", "en-GB": "benchmark+0.36"}},
+      {"txt": {"pt-BR": "América Latina", "en-GB": "Latin America"}, "tipo": "etiqueta", "pagina": 2, "lugar": "rodape", "em": {"pt-BR": "Latina", "en-GB": "America"}, "papel": "lima"}
+    ]}
+  ]
+}

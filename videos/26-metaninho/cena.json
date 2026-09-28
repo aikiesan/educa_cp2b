@@ -1,0 +1,72 @@
+{
+  "_sobre": "Ep. 26 · Metaninho: de molécula a mascote — estilo F (feltro & crochê), história de origem: a molécula de papel vira o Metaninho de crochê; o cientista entra pela porta de feltro; no fim, a sombra da Arqueia passa ao fundo (estreia no ep. 27). Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "F",
+  "seed": 26,
+  "pecas": {
+    "novelo_azul": "ep26/_folha/mesa_croche_1", "novelo_lima": "ep26/_folha/mesa_croche_2", "novelo_coral": "ep26/_folha/mesa_croche_3",
+    "agulha1": "ep26/_folha/mesa_croche_4", "agulha2": "ep26/_folha/mesa_croche_5", "alfineteira": "ep26/_folha/mesa_croche_6",
+    "fita_metrica": "ep26/_folha/mesa_croche_7", "placa": "ep26/_folha/mesa_croche_8", "porta": "ep26/_folha/mesa_croche_9"
+  },
+  "assinatura": {"cientista": true},
+  "cenas": [
+    {"fala": "L01", "arranjo": "palco", "itens": [
+      {"fx": "molecula", "tipo": "CH4", "n": 1, "em": "molécula-0.3", "s": 2.0},
+      {"p": "novelo_azul", "em": 0.15, "entra": "cai"},
+      {"p": "novelo_lima", "em": 0.45, "entra": "cai"},
+      {"txt": "Era uma vez…", "tipo": "mao", "lugar": "titulo", "em": "Era", "cor": "petrol"},
+      {"p": "fita_metrica", "lugar": "rodape", "em": "metano"}
+    ]},
+    {"fala": "L02", "arranjo": "palco", "itens": [
+      {"fx": "molecula", "tipo": "CH4", "n": 1, "id": "m", "em": 0.05, "s": 2.0},
+      {"txt": "carbono no meio", "tipo": "mao", "em": "carbono", "cor": "petrol", "lugar": "base"},
+      {"txt": "hidrogênios em volta", "tipo": "mao", "em": "rodeada", "cor": "verdeEsc", "lugar": "topo"},
+      {"txt": "CH4", "tipo": "formula", "lugar": "rodape", "em": "rodeada"}
+    ]},
+    {"fala": "L03", "arranjo": "fila", "itens": [
+      {"fx": "molecula", "tipo": "CH4", "n": 1, "id": "m", "em": 0.05, "s": 1.6},
+      {"fx": "chama", "id": "c", "em": "chama"},
+      {"p": "lampada", "id": "l", "em": "energia-0.4", "brilha": "energia"},
+      {"fx": "seta", "de": "m", "para": "c", "em": "faz"},
+      {"fx": "seta", "de": "c", "para": "l", "em": "vira"},
+      {"txt": "ESTRELA DO BIOGÁS", "tipo": "letras", "lugar": "titulo", "em": "estrela"}
+    ]},
+    {"fala": "L04", "arranjo": "palco", "itens": [
+      {"fx": "molecula", "tipo": "CH4", "n": 1, "id": "m", "em": 0.05, "s": 2.0, "sai": "crochê"},
+      {"p": "agulha1", "em": "pontinhos", "anima": "balanca"},
+      {"p": "agulha2", "em": "pontinhos+0.3", "anima": "balanca"},
+      {"p": "mascote:dorme", "sobre": "m", "rel": [0, 0.1], "tam": 1.05, "em": "crochê", "entra": "aparece", "sai": "bochechas"},
+      {"p": "mascote:surpreso", "sobre": "m", "rel": [0, 0.1], "tam": 1.05, "em": "bochechas", "entra": "nenhum"},
+      {"p": "placa", "id": "placa", "lugar": "titulo", "em": "nome", "s": 1.3},
+      {"txt": "Metaninho", "tipo": "mao", "sobre": "placa", "rel": [0, 0.02], "tam": 0.62, "em": "nome", "cor": "petrol", "contorno": false}
+    ]},
+    {"fala": "L05", "arranjo": "fila", "itens": [
+      {"p": "mascote:acena", "em": "fofinho", "anima": "acena"},
+      {"p": "mascote:surpreso", "em": "curioso"},
+      {"p": "mascote:pula", "em": "perto", "anima": "quica"},
+      {"txt": "MASCOTE DO CP2B", "tipo": "letras", "lugar": "titulo", "em": "mascote"}
+    ]},
+    {"fala": "L06", "arranjo": "dupla", "itens": [
+      {"p": "mascote:acena", "em": 0.05, "anima": "acena"},
+      {"p": "porta", "id": "porta", "em": "parceiro", "entra": "abre"},
+      {"p": "cientista:acena", "sobre": "porta", "rel": [0, 0.06], "tam": 0.88, "em": "cientista"},
+      {"txt": "parceiros de aventura", "tipo": "etiqueta", "lugar": "titulo", "em": "aventuras", "papel": "lima"},
+      {"txt": "tim-tim\npor tim-tim!", "tipo": "balao", "sobre": "cientista:acena", "rel": [-0.62, -0.42], "tam": 0.75, "em": "explica"}
+    ]},
+    {"fala": "L07", "arranjo": "fila", "itens": [
+      {"p": "saco_restos", "id": "r", "em": "resíduos"},
+      {"p": "biodigestor", "id": "b", "em": "viram-0.3"},
+      {"p": "lampada", "id": "l", "em": "energia-0.3", "brilha": "energia"},
+      {"fx": "seta", "de": "r", "para": "b", "em": "viram"},
+      {"fx": "seta", "de": "b", "para": "l", "em": "energia"},
+      {"p": "cientista:aponta", "lugar": "narrador", "em": "Juntos"},
+      {"txt": "episódio por episódio", "tipo": "etiqueta", "lugar": "rodape", "em": "episódio", "papel": "amarelo"}
+    ]},
+    {"fala": "L08", "arranjo": "dupla", "itens": [
+      {"p": "cientista:pula", "em": 0.05, "anima": "quica"},
+      {"p": "mascote:pula", "em": 0.2, "anima": "quica"},
+      {"txt": "A AVENTURA COMEÇA!", "tipo": "letras", "lugar": "titulo", "em": "aventura"},
+      {"p": "arqueia:curiosa", "lugar": "canto_dir", "em": "começando-0.4", "entra": "desliza_dir", "alpha": 0.4, "fundo": true},
+      {"fx": "confete", "lugar": "centro", "em": "começando"}
+    ]}
+  ]
+}

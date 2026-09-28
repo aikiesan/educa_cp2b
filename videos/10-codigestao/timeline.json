@@ -1,0 +1,647 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 54.774,
+ "musica": {
+  "bpm": 102.4669425018631,
+  "periodo": 0.5855547021802573,
+  "downbeat0": 1.808,
+  "compasso": 2.342218808721029,
+  "logo": 49.644,
+  "cortes": []
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 1.858,
+   "fim": 6.158,
+   "origem": {
+    "inicio": 0.28,
+    "fim": 4.58
+   },
+   "palavras": [
+    {
+     "p": "Todo",
+     "i": 1.858,
+     "f": 2.098
+    },
+    {
+     "p": "cozinheiro",
+     "i": 2.098,
+     "f": 2.698
+    },
+    {
+     "p": "sabe",
+     "i": 2.698,
+     "f": 3.098
+    },
+    {
+     "p": "a",
+     "i": 3.278,
+     "f": 3.538
+    },
+    {
+     "p": "mistura",
+     "i": 3.538,
+     "f": 4.018
+    },
+    {
+     "p": "certa",
+     "i": 4.018,
+     "f": 4.438
+    },
+    {
+     "p": "faz",
+     "i": 4.438,
+     "f": 4.838
+    },
+    {
+     "p": "toda",
+     "i": 4.838,
+     "f": 5.418
+    },
+    {
+     "p": "a",
+     "i": 5.418,
+     "f": 5.598
+    },
+    {
+     "p": "diferença",
+     "i": 5.598,
+     "f": 6.158
+    }
+   ],
+   "texto": "Todo cozinheiro sabe: a mistura certa faz toda a diferença!"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 6.983,
+   "fim": 11.823,
+   "origem": {
+    "inicio": 5.25,
+    "fim": 10.09
+   },
+   "palavras": [
+    {
+     "p": "No",
+     "i": 6.983,
+     "f": 7.073
+    },
+    {
+     "p": "biodigestor",
+     "i": 7.073,
+     "f": 7.713
+    },
+    {
+     "p": "é",
+     "i": 7.713,
+     "f": 7.793
+    },
+    {
+     "p": "igualzinho",
+     "i": 7.793,
+     "f": 8.333
+    },
+    {
+     "p": "Os",
+     "i": 8.593,
+     "f": 9.093
+    },
+    {
+     "p": "micróbios",
+     "i": 9.093,
+     "f": 9.633
+    },
+    {
+     "p": "gostam",
+     "i": 9.633,
+     "f": 10.013
+    },
+    {
+     "p": "de",
+     "i": 10.013,
+     "f": 10.153
+    },
+    {
+     "p": "uma",
+     "i": 10.153,
+     "f": 10.293
+    },
+    {
+     "p": "dieta",
+     "i": 10.293,
+     "f": 10.633
+    },
+    {
+     "p": "equilibrada",
+     "i": 10.633,
+     "f": 11.823
+    }
+   ],
+   "texto": "No biodigestor é igualzinho. Os micróbios gostam de uma dieta equilibrada."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 12.648,
+   "fim": 16.798,
+   "origem": {
+    "inicio": 10.44,
+    "fim": 14.59
+   },
+   "palavras": [
+    {
+     "p": "Alguns",
+     "i": 12.648,
+     "f": 13.028
+    },
+    {
+     "p": "resíduos",
+     "i": 13.028,
+     "f": 13.528
+    },
+    {
+     "p": "têm",
+     "i": 13.528,
+     "f": 13.708
+    },
+    {
+     "p": "muito",
+     "i": 13.708,
+     "f": 14.108
+    },
+    {
+     "p": "carbono",
+     "i": 14.108,
+     "f": 14.588
+    },
+    {
+     "p": "como",
+     "i": 14.808,
+     "f": 15.028
+    },
+    {
+     "p": "a",
+     "i": 15.028,
+     "f": 15.168
+    },
+    {
+     "p": "palha",
+     "i": 15.168,
+     "f": 15.768
+    },
+    {
+     "p": "e",
+     "i": 15.768,
+     "f": 15.888
+    },
+    {
+     "p": "o",
+     "i": 15.888,
+     "f": 16.008
+    },
+    {
+     "p": "bagaço",
+     "i": 16.008,
+     "f": 16.798
+    }
+   ],
+   "texto": "Alguns resíduos têm muito carbono, como a palha e o bagaço…"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 17.623,
+   "fim": 20.303,
+   "origem": {
+    "inicio": 14.87,
+    "fim": 17.55
+   },
+   "palavras": [
+    {
+     "p": "outros",
+     "i": 17.623,
+     "f": 17.973
+    },
+    {
+     "p": "têm",
+     "i": 17.973,
+     "f": 18.153
+    },
+    {
+     "p": "muito",
+     "i": 18.153,
+     "f": 18.533
+    },
+    {
+     "p": "nitrogênio",
+     "i": 18.533,
+     "f": 19.273
+    },
+    {
+     "p": "como",
+     "i": 19.433,
+     "f": 19.753
+    },
+    {
+     "p": "o",
+     "i": 19.753,
+     "f": 19.893
+    },
+    {
+     "p": "esterco",
+     "i": 19.893,
+     "f": 20.303
+    }
+   ],
+   "texto": "…outros têm muito nitrogênio, como o esterco."
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 21.128,
+   "fim": 25.378,
+   "origem": {
+    "inicio": 18.28,
+    "fim": 22.53
+   },
+   "palavras": [
+    {
+     "p": "Sozinhos",
+     "i": 21.128,
+     "f": 21.608
+    },
+    {
+     "p": "eles",
+     "i": 21.608,
+     "f": 21.808
+    },
+    {
+     "p": "podem",
+     "i": 21.808,
+     "f": 22.108
+    },
+    {
+     "p": "desandar",
+     "i": 22.108,
+     "f": 22.808
+    },
+    {
+     "p": "a",
+     "i": 22.808,
+     "f": 22.948
+    },
+    {
+     "p": "receita",
+     "i": 22.948,
+     "f": 23.428
+    },
+    {
+     "p": "Juntos",
+     "i": 23.888,
+     "f": 24.408
+    },
+    {
+     "p": "eles",
+     "i": 24.408,
+     "f": 24.588
+    },
+    {
+     "p": "se",
+     "i": 24.588,
+     "f": 24.748
+    },
+    {
+     "p": "completam",
+     "i": 24.748,
+     "f": 25.378
+    }
+   ],
+   "texto": "Sozinhos, eles podem desandar a receita. Juntos, eles se completam!"
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 26.203,
+   "fim": 33.023,
+   "origem": {
+    "inicio": 23.54,
+    "fim": 30.36
+   },
+   "palavras": [
+    {
+     "p": "Isso",
+     "i": 26.203,
+     "f": 26.443
+    },
+    {
+     "p": "se",
+     "i": 26.443,
+     "f": 26.643
+    },
+    {
+     "p": "chama",
+     "i": 26.643,
+     "f": 26.863
+    },
+    {
+     "p": "codigestão",
+     "i": 26.863,
+     "f": 28.043
+    },
+    {
+     "p": "misturar",
+     "i": 28.043,
+     "f": 29.043
+    },
+    {
+     "p": "resíduos",
+     "i": 29.043,
+     "f": 29.703
+    },
+    {
+     "p": "pra",
+     "i": 29.703,
+     "f": 29.903
+    },
+    {
+     "p": "produzir",
+     "i": 29.903,
+     "f": 30.383
+    },
+    {
+     "p": "mais",
+     "i": 30.383,
+     "f": 30.763
+    },
+    {
+     "p": "biogás",
+     "i": 30.763,
+     "f": 31.403
+    },
+    {
+     "p": "com",
+     "i": 31.503,
+     "f": 31.703
+    },
+    {
+     "p": "mais",
+     "i": 31.703,
+     "f": 32.123
+    },
+    {
+     "p": "estabilidade",
+     "i": 32.123,
+     "f": 33.023
+    }
+   ],
+   "texto": "Isso se chama codigestão: misturar resíduos pra produzir mais biogás, com mais estabilidade."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 33.848,
+   "fim": 39.158,
+   "origem": {
+    "inicio": 31.07,
+    "fim": 36.38
+   },
+   "palavras": [
+    {
+     "p": "Bagaço",
+     "i": 33.848,
+     "f": 34.438
+    },
+    {
+     "p": "com",
+     "i": 34.438,
+     "f": 34.658
+    },
+    {
+     "p": "vinhaça",
+     "i": 34.658,
+     "f": 35.298
+    },
+    {
+     "p": "palha",
+     "i": 35.538,
+     "f": 35.958
+    },
+    {
+     "p": "com",
+     "i": 35.958,
+     "f": 36.118
+    },
+    {
+     "p": "esterco",
+     "i": 36.118,
+     "f": 36.758
+    },
+    {
+     "p": "casca",
+     "i": 37.178,
+     "f": 37.558
+    },
+    {
+     "p": "de",
+     "i": 37.558,
+     "f": 37.698
+    },
+    {
+     "p": "laranja",
+     "i": 37.698,
+     "f": 38.198
+    },
+    {
+     "p": "com",
+     "i": 38.198,
+     "f": 38.398
+    },
+    {
+     "p": "esterco",
+     "i": 38.398,
+     "f": 39.158
+    }
+   ],
+   "texto": "Bagaço com vinhaça, palha com esterco, casca de laranja com esterco…"
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 39.983,
+   "fim": 44.383,
+   "origem": {
+    "inicio": 36.63,
+    "fim": 41.03
+   },
+   "palavras": [
+    {
+     "p": "e",
+     "i": 39.983,
+     "f": 40.493
+    },
+    {
+     "p": "os",
+     "i": 40.493,
+     "f": 40.633
+    },
+    {
+     "p": "pesquisadores",
+     "i": 40.633,
+     "f": 41.253
+    },
+    {
+     "p": "testam",
+     "i": 41.253,
+     "f": 41.893
+    },
+    {
+     "p": "as",
+     "i": 41.893,
+     "f": 42.033
+    },
+    {
+     "p": "proporções",
+     "i": 42.033,
+     "f": 42.753
+    },
+    {
+     "p": "como",
+     "i": 42.913,
+     "f": 43.113
+    },
+    {
+     "p": "numa",
+     "i": 43.113,
+     "f": 43.313
+    },
+    {
+     "p": "receita",
+     "i": 43.313,
+     "f": 43.873
+    },
+    {
+     "p": "de",
+     "i": 43.873,
+     "f": 43.993
+    },
+    {
+     "p": "bolo",
+     "i": 43.993,
+     "f": 44.383
+    }
+   ],
+   "texto": "…e os pesquisadores testam as proporções, como numa receita de bolo."
+  },
+  {
+   "id": "L09",
+   "voz": "Sulafat",
+   "inicio": 45.208,
+   "fim": 48.648,
+   "origem": {
+    "inicio": 41.8,
+    "fim": 45.24
+   },
+   "palavras": [
+    {
+     "p": "Codigestão",
+     "i": 45.208,
+     "f": 45.928
+    },
+    {
+     "p": "juntos",
+     "i": 46.208,
+     "f": 46.988
+    },
+    {
+     "p": "os",
+     "i": 47.108,
+     "f": 47.228
+    },
+    {
+     "p": "resíduos",
+     "i": 47.228,
+     "f": 47.728
+    },
+    {
+     "p": "rendem",
+     "i": 47.728,
+     "f": 48.128
+    },
+    {
+     "p": "mais",
+     "i": 48.128,
+     "f": 48.648
+    }
+   ],
+   "texto": "Codigestão: juntos, os resíduos rendem mais!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 49.794,
+   "fim": 53.774,
+   "origem": {
+    "inicio": 46.26,
+    "fim": 50.24
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 49.794,
+     "f": 50.074
+    },
+    {
+     "p": "pê",
+     "i": 50.074,
+     "f": 50.234
+    },
+    {
+     "p": "dois",
+     "i": 50.234,
+     "f": 50.554
+    },
+    {
+     "p": "bê",
+     "i": 50.554,
+     "f": 50.714
+    },
+    {
+     "p": "energia",
+     "i": 50.954,
+     "f": 51.654
+    },
+    {
+     "p": "viva",
+     "i": 51.654,
+     "f": 52.034
+    },
+    {
+     "p": "ciência",
+     "i": 52.374,
+     "f": 52.774
+    },
+    {
+     "p": "que",
+     "i": 52.774,
+     "f": 52.954
+    },
+    {
+     "p": "transforma",
+     "i": 52.954,
+     "f": 53.774
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

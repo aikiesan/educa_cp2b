@@ -1,0 +1,793 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 64.414,
+ "musica": {
+  "bpm": 103.11625857603086,
+  "periodo": 0.5818675040052982,
+  "downbeat0": 1.816,
+  "compasso": 2.3274700160211927,
+  "logo": 59.384,
+  "cortes": [
+   {
+    "de": 18.108,
+    "para": 13.453
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 1.866,
+   "fim": 4.406,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 2.54
+   },
+   "palavras": [
+    {
+     "p": "Where",
+     "i": 1.866,
+     "f": 2.446
+    },
+    {
+     "p": "is",
+     "i": 2.446,
+     "f": 2.906
+    },
+    {
+     "p": "São",
+     "i": 2.906,
+     "f": 3.226
+    },
+    {
+     "p": "Paulo's",
+     "i": 3.226,
+     "f": 3.726
+    },
+    {
+     "p": "biogas",
+     "i": 3.726,
+     "f": 4.406
+    }
+   ],
+   "texto": "Where is São Paulo's biogas?"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 5.128,
+   "fim": 14.648,
+   "origem": {
+    "inicio": 2.92,
+    "fim": 12.44
+   },
+   "palavras": [
+    {
+     "p": "It's",
+     "i": 5.128,
+     "f": 5.848
+    },
+    {
+     "p": "hidden",
+     "i": 5.848,
+     "f": 6.188
+    },
+    {
+     "p": "in",
+     "i": 6.188,
+     "f": 6.508
+    },
+    {
+     "p": "waste",
+     "i": 6.508,
+     "f": 6.988
+    },
+    {
+     "p": "in",
+     "i": 7.248,
+     "f": 7.588
+    },
+    {
+     "p": "sugarcane",
+     "i": 7.588,
+     "f": 8.468
+    },
+    {
+     "p": "in",
+     "i": 8.628,
+     "f": 8.868
+    },
+    {
+     "p": "manure",
+     "i": 8.868,
+     "f": 9.348
+    },
+    {
+     "p": "in",
+     "i": 9.748,
+     "f": 10.088
+    },
+    {
+     "p": "city",
+     "i": 10.088,
+     "f": 10.428
+    },
+    {
+     "p": "rubbish",
+     "i": 10.428,
+     "f": 10.888
+    },
+    {
+     "p": "spread",
+     "i": 11.288,
+     "f": 11.748
+    },
+    {
+     "p": "across",
+     "i": 11.748,
+     "f": 12.108
+    },
+    {
+     "p": "six",
+     "i": 12.108,
+     "f": 12.326
+    },
+    {
+     "p": "hundred",
+     "i": 12.326,
+     "f": 12.835
+    },
+    {
+     "p": "and",
+     "i": 12.835,
+     "f": 13.053
+    },
+    {
+     "p": "forty",
+     "i": 13.053,
+     "f": 13.417
+    },
+    {
+     "p": "five",
+     "i": 13.417,
+     "f": 13.708
+    },
+    {
+     "p": "municipalities",
+     "i": 13.708,
+     "f": 14.648
+    }
+   ],
+   "texto": "It's hidden in waste: in sugarcane, in manure, in city rubbish… spread across 645 municipalities.",
+   "fala": "It's hidden in waste: in sugarcane, in manure, in city rubbish… spread across six hundred and forty-five municipalities."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 15.37,
+   "fim": 20.59,
+   "origem": {
+    "inicio": 12.9,
+    "fim": 18.12
+   },
+   "palavras": [
+    {
+     "p": "To",
+     "i": 15.37,
+     "f": 16.23
+    },
+    {
+     "p": "find",
+     "i": 16.23,
+     "f": 16.57
+    },
+    {
+     "p": "that",
+     "i": 16.57,
+     "f": 16.79
+    },
+    {
+     "p": "potential",
+     "i": 16.79,
+     "f": 17.27
+    },
+    {
+     "p": "C",
+     "i": 17.77,
+     "f": 17.927
+    },
+    {
+     "p": "P",
+     "i": 17.927,
+     "f": 18.083
+    },
+    {
+     "p": "two",
+     "i": 18.083,
+     "f": 18.553
+    },
+    {
+     "p": "B",
+     "i": 18.553,
+     "f": 18.71
+    },
+    {
+     "p": "created",
+     "i": 18.71,
+     "f": 19.43
+    },
+    {
+     "p": "Pilar",
+     "i": 19.43,
+     "f": 20.074
+    },
+    {
+     "p": "two",
+     "i": 20.074,
+     "f": 20.461
+    },
+    {
+     "p": "B",
+     "i": 20.461,
+     "f": 20.59
+    }
+   ],
+   "texto": "To find that potential, CP2B created PILAR-2b.",
+   "fala": "To find that potential, C-P-two-B created Pilar two-B."
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 21.312,
+   "fim": 27.212,
+   "origem": {
+    "inicio": 18.32,
+    "fim": 24.22
+   },
+   "palavras": [
+    {
+     "p": "An",
+     "i": 21.312,
+     "f": 22.272
+    },
+    {
+     "p": "online",
+     "i": 22.272,
+     "f": 22.732
+    },
+    {
+     "p": "platform",
+     "i": 22.732,
+     "f": 23.212
+    },
+    {
+     "p": "that",
+     "i": 23.212,
+     "f": 23.592
+    },
+    {
+     "p": "brings",
+     "i": 23.592,
+     "f": 23.932
+    },
+    {
+     "p": "together",
+     "i": 23.932,
+     "f": 24.252
+    },
+    {
+     "p": "data",
+     "i": 24.252,
+     "f": 24.672
+    },
+    {
+     "p": "from",
+     "i": 24.672,
+     "f": 24.992
+    },
+    {
+     "p": "farming",
+     "i": 24.992,
+     "f": 25.592
+    },
+    {
+     "p": "livestock",
+     "i": 25.932,
+     "f": 26.472
+    },
+    {
+     "p": "and",
+     "i": 26.472,
+     "f": 26.772
+    },
+    {
+     "p": "cities",
+     "i": 26.772,
+     "f": 27.212
+    }
+   ],
+   "texto": "An online platform that brings together data from farming, livestock and cities…"
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 27.934,
+   "fim": 32.954,
+   "origem": {
+    "inicio": 24.44,
+    "fim": 29.46
+   },
+   "palavras": [
+    {
+     "p": "and",
+     "i": 27.934,
+     "f": 28.814
+    },
+    {
+     "p": "calculates",
+     "i": 28.814,
+     "f": 29.534
+    },
+    {
+     "p": "how",
+     "i": 29.534,
+     "f": 29.814
+    },
+    {
+     "p": "much",
+     "i": 29.814,
+     "f": 30.134
+    },
+    {
+     "p": "biogas",
+     "i": 30.134,
+     "f": 30.834
+    },
+    {
+     "p": "each",
+     "i": 30.834,
+     "f": 31.434
+    },
+    {
+     "p": "municipality",
+     "i": 31.434,
+     "f": 32.114
+    },
+    {
+     "p": "could",
+     "i": 32.114,
+     "f": 32.514
+    },
+    {
+     "p": "produce",
+     "i": 32.514,
+     "f": 32.954
+    }
+   ],
+   "texto": "…and calculates how much biogas each municipality could produce."
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 33.676,
+   "fim": 38.776,
+   "origem": {
+    "inicio": 30.0,
+    "fim": 35.1
+   },
+   "palavras": [
+    {
+     "p": "Just",
+     "i": 33.676,
+     "f": 34.296
+    },
+    {
+     "p": "choose",
+     "i": 34.296,
+     "f": 34.716
+    },
+    {
+     "p": "the",
+     "i": 34.716,
+     "f": 34.876
+    },
+    {
+     "p": "type",
+     "i": 34.876,
+     "f": 35.096
+    },
+    {
+     "p": "of",
+     "i": 35.096,
+     "f": 35.236
+    },
+    {
+     "p": "waste",
+     "i": 35.236,
+     "f": 35.596
+    },
+    {
+     "p": "click",
+     "i": 35.876,
+     "f": 36.156
+    },
+    {
+     "p": "on",
+     "i": 36.156,
+     "f": 36.316
+    },
+    {
+     "p": "your",
+     "i": 36.316,
+     "f": 36.456
+    },
+    {
+     "p": "city",
+     "i": 36.456,
+     "f": 36.796
+    },
+    {
+     "p": "and",
+     "i": 36.836,
+     "f": 37.276
+    },
+    {
+     "p": "see",
+     "i": 37.276,
+     "f": 37.516
+    },
+    {
+     "p": "the",
+     "i": 37.516,
+     "f": 37.656
+    },
+    {
+     "p": "result",
+     "i": 37.656,
+     "f": 38.016
+    },
+    {
+     "p": "straight",
+     "i": 38.016,
+     "f": 38.436
+    },
+    {
+     "p": "away",
+     "i": 38.436,
+     "f": 38.776
+    }
+   ],
+   "texto": "Just choose the type of waste, click on your city… and see the result straight away."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 39.498,
+   "fim": 44.478,
+   "origem": {
+    "inicio": 35.5,
+    "fim": 40.48
+   },
+   "palavras": [
+    {
+     "p": "All",
+     "i": 39.498,
+     "f": 40.218
+    },
+    {
+     "p": "based",
+     "i": 40.218,
+     "f": 40.558
+    },
+    {
+     "p": "on",
+     "i": 40.558,
+     "f": 40.758
+    },
+    {
+     "p": "science",
+     "i": 40.758,
+     "f": 41.318
+    },
+    {
+     "p": "the",
+     "i": 41.538,
+     "f": 41.838
+    },
+    {
+     "p": "sources",
+     "i": 41.838,
+     "f": 42.278
+    },
+    {
+     "p": "and",
+     "i": 42.278,
+     "f": 42.738
+    },
+    {
+     "p": "methods",
+     "i": 42.738,
+     "f": 43.118
+    },
+    {
+     "p": "are",
+     "i": 43.118,
+     "f": 43.298
+    },
+    {
+     "p": "there",
+     "i": 43.298,
+     "f": 43.458
+    },
+    {
+     "p": "for",
+     "i": 43.458,
+     "f": 43.658
+    },
+    {
+     "p": "everyone",
+     "i": 43.658,
+     "f": 44.058
+    },
+    {
+     "p": "to",
+     "i": 44.058,
+     "f": 44.258
+    },
+    {
+     "p": "see",
+     "i": 44.258,
+     "f": 44.478
+    }
+   ],
+   "texto": "All based on science: the sources and methods are there for everyone to see."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 45.2,
+   "fim": 52.4,
+   "origem": {
+    "inicio": 40.74,
+    "fim": 47.94
+   },
+   "palavras": [
+    {
+     "p": "So",
+     "i": 45.2,
+     "f": 45.92
+    },
+    {
+     "p": "public",
+     "i": 45.92,
+     "f": 46.44
+    },
+    {
+     "p": "managers",
+     "i": 46.44,
+     "f": 46.98
+    },
+    {
+     "p": "companies",
+     "i": 47.36,
+     "f": 47.82
+    },
+    {
+     "p": "and",
+     "i": 47.84,
+     "f": 48.18
+    },
+    {
+     "p": "researchers",
+     "i": 48.18,
+     "f": 48.68
+    },
+    {
+     "p": "can",
+     "i": 48.68,
+     "f": 49.32
+    },
+    {
+     "p": "find",
+     "i": 49.32,
+     "f": 49.76
+    },
+    {
+     "p": "where",
+     "i": 49.76,
+     "f": 50.04
+    },
+    {
+     "p": "it's",
+     "i": 50.04,
+     "f": 50.28
+    },
+    {
+     "p": "worth",
+     "i": 50.28,
+     "f": 50.52
+    },
+    {
+     "p": "investing",
+     "i": 50.52,
+     "f": 51.04
+    },
+    {
+     "p": "in",
+     "i": 51.04,
+     "f": 51.36
+    },
+    {
+     "p": "renewable",
+     "i": 51.36,
+     "f": 51.88
+    },
+    {
+     "p": "energy",
+     "i": 51.88,
+     "f": 52.4
+    }
+   ],
+   "texto": "So public managers, companies and researchers can find where it's worth investing in renewable energy."
+  },
+  {
+   "id": "L09",
+   "voz": "Sulafat",
+   "inicio": 53.122,
+   "fim": 58.382,
+   "origem": {
+    "inicio": 48.72,
+    "fim": 53.98
+   },
+   "palavras": [
+    {
+     "p": "Pilar",
+     "i": 53.122,
+     "f": 53.602
+    },
+    {
+     "p": "two",
+     "i": 53.602,
+     "f": 54.037
+    },
+    {
+     "p": "B",
+     "i": 54.037,
+     "f": 54.182
+    },
+    {
+     "p": "the",
+     "i": 54.522,
+     "f": 54.822
+    },
+    {
+     "p": "biogas",
+     "i": 54.822,
+     "f": 55.462
+    },
+    {
+     "p": "map",
+     "i": 55.462,
+     "f": 55.762
+    },
+    {
+     "p": "of",
+     "i": 55.762,
+     "f": 55.962
+    },
+    {
+     "p": "São",
+     "i": 55.962,
+     "f": 56.302
+    },
+    {
+     "p": "Paulo",
+     "i": 56.302,
+     "f": 56.662
+    },
+    {
+     "p": "Take",
+     "i": 56.942,
+     "f": 57.302
+    },
+    {
+     "p": "a",
+     "i": 57.302,
+     "f": 57.422
+    },
+    {
+     "p": "look",
+     "i": 57.422,
+     "f": 57.602
+    },
+    {
+     "p": "and",
+     "i": 57.602,
+     "f": 57.982
+    },
+    {
+     "p": "explore",
+     "i": 57.982,
+     "f": 58.382
+    }
+   ],
+   "texto": "PILAR-2b: the biogas map of São Paulo. Take a look and explore!",
+   "fala": "Pilar two-B: the biogas map of São Paulo. Take a look and explore!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 59.534,
+   "fim": 63.414,
+   "origem": {
+    "inicio": 55.32,
+    "fim": 59.2
+   },
+   "palavras": [
+    {
+     "p": "C",
+     "i": 59.534,
+     "f": 59.654
+    },
+    {
+     "p": "P",
+     "i": 59.654,
+     "f": 59.774
+    },
+    {
+     "p": "two",
+     "i": 59.774,
+     "f": 60.134
+    },
+    {
+     "p": "B",
+     "i": 60.134,
+     "f": 60.254
+    },
+    {
+     "p": "living",
+     "i": 60.654,
+     "f": 61.094
+    },
+    {
+     "p": "energy",
+     "i": 61.094,
+     "f": 61.654
+    },
+    {
+     "p": "science",
+     "i": 62.014,
+     "f": 62.514
+    },
+    {
+     "p": "that",
+     "i": 62.514,
+     "f": 62.894
+    },
+    {
+     "p": "transforms",
+     "i": 62.894,
+     "f": 63.414
+    }
+   ],
+   "texto": "CP2B: living energy, science that transforms!",
+   "fala": "C-P-two-B: living energy, science that transforms!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "six hundred and forty- five",
+   "645"
+  ],
+  [
+   "C- P- two- B",
+   "CP2B"
+  ],
+  [
+   "two- B",
+   "2b"
+  ]
+ ]
+}

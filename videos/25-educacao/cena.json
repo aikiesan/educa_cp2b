@@ -1,0 +1,75 @@
+{
+  "_sobre": "Ep. 25 · Aprender biogás: cursos e escolas — estilo L (lousa), aula relâmpago: o sino toca no começo e no fim; o cientista é o professor que desenha a giz. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "L",
+  "seed": 25,
+  "pecas": {
+    "sino": "ep25/_folha/pecas_ep25_1", "apagador": "ep25/_folha/pecas_ep25_2", "giz_p": "ep25/_folha/pecas_ep25_3",
+    "composteira": "ep25/_folha/pecas_ep25_4", "notebook_l": "ep25/_folha/pecas_ep25_5", "microfone": "ep25/_folha/pecas_ep25_6",
+    "maleta": "ep25/_folha/pecas_ep25_7", "proposta": "ep25/_folha/pecas_ep25_8", "escola": "ep24/_folha/pecas_ep24_5",
+    "microscopio": "ep24/_folha/pecas_ep24_4", "lousa_p": "ep20/_folha/pecas_ep20_4", "capacete": "ep20/_folha/pecas_ep20_2",
+    "aluno": "ep19/_folha/equipe_1", "aluna": "ep19/_folha/equipe_3"
+  },
+  "assinatura": {"cientista": true},
+  "cenas": [
+    {"fala": "L01", "arranjo": "palco", "itens": [
+      {"p": "sino", "id": "sino", "em": 0.05, "anima": "treme", "s": 1.05},
+      {"fx": "ondas", "sobre": "sino", "rel": [0.55, -0.3], "tam": 0.6, "em": "Triiim"},
+      {"txt": "AULA RELÂMPAGO", "tipo": "giz", "lugar": "titulo", "em": "Aula"},
+      {"fx": "raios", "lugar": "canto", "em": "relâmpago"},
+      {"txt": "como se aprende biogás?", "tipo": "giz", "lugar": "rodape", "em": "como"},
+      {"p": "cientista:apresenta", "lugar": "narrador", "em": 0.4}
+    ]},
+    {"fala": "L02", "arranjo": "dupla", "itens": [
+      {"p": "livros", "em": "aprender"},
+      {"fx": "chama", "em": "missão-0.4"},
+      {"txt": "missão", "tipo": "giz", "lugar": "rodape", "em": "parte"},
+      {"p": "cientista:aponta", "lugar": "narrador", "em": 0.1}
+    ]},
+    {"fala": "L03", "arranjo": "fila", "itens": [
+      {"p": "capacete", "em": "profissionais"},
+      {"p": "aluno", "em": "estudantes"},
+      {"p": "aluna", "em": "estudantes+0.3"},
+      {"txt": "CURSOS", "tipo": "giz", "lugar": "titulo", "em": "curso"},
+      {"txt": "biogás · biometano · bioprodutos", "tipo": "giz", "lugar": "rodape", "em": "biogás"}
+    ]},
+    {"fala": "L04", "arranjo": "fila", "itens": [
+      {"p": "lousa_p", "id": "a", "em": "Presencial"},
+      {"p": "notebook_l", "id": "b", "em": "online"},
+      {"p": "maleta", "id": "c", "em": "empresas-0.5"},
+      {"txt": "presencial", "tipo": "giz", "sobre": "a", "rel": [0, 0.7], "tam": 0.7, "em": "Presencial+0.2"},
+      {"txt": "online", "tipo": "giz", "sobre": "b", "rel": [0, 0.7], "tam": 0.6, "em": "online+0.2"},
+      {"txt": "sob medida", "tipo": "giz", "sobre": "c", "rel": [0, 0.7], "tam": 0.7, "em": "medida"},
+      {"txt": "ou híbrido!", "tipo": "giz", "lugar": "titulo", "em": "híbrido"}
+    ]},
+    {"fala": "L05", "arranjo": "fila", "itens": [
+      {"p": "escola", "em": "escolas"},
+      {"p": "composteira", "id": "comp", "em": "resto"},
+      {"p": "broto", "id": "br", "em": "adubo", "entra": "cresce"},
+      {"p": "lampada", "em": "energia-0.3", "brilha": "energia"},
+      {"fx": "seta", "de": "comp", "para": "br", "em": "vira"},
+      {"p": "apagador", "pos": [-0.36, 0.34], "caixa": [0.14, 0.18], "em": 0.02, "z": 5, "muda": [{"em": 0.1, "dx": 4.6, "d": 1.0, "som": "papel_desliza"}], "sai": "aprende"}
+    ]},
+    {"fala": "L06", "arranjo": "fila", "itens": [
+      {"p": "microscopio", "em": "laboratórios"},
+      {"p": "microfone", "em": "palestras"},
+      {"p": "casa_verde", "em": "comunidades-0.5"},
+      {"p": "casa_creme", "em": "comunidades"},
+      {"txt": "visitas", "tipo": "giz", "lugar": "titulo", "em": "visitas"},
+      {"txt": "educação ambiental", "tipo": "giz", "lugar": "rodape", "em": "educação"}
+    ]},
+    {"fala": "L07", "arranjo": "palco", "itens": [
+      {"p": "proposta", "id": "prop", "em": "propor", "entra": "cai", "s": 1.05},
+      {"p": "giz_p", "sobre": "prop", "rel": [0.55, 0.3], "tam": 0.45, "em": "curso", "entra": "desliza_dir"},
+      {"txt": "proponha um curso!", "tipo": "giz", "lugar": "titulo", "em": "pesquisador"},
+      {"p": "cientista:aponta", "lugar": "narrador", "em": 0.2}
+    ]},
+    {"fala": "L08", "arranjo": "palco", "itens": [
+      {"p": "sino", "id": "sino", "em": 0.05, "anima": "treme"},
+      {"fx": "ondas", "sobre": "sino", "rel": [0.55, -0.3], "tam": 0.6, "em": "Triiim"},
+      {"p": "lampada", "em": "ideias-0.4", "brilha": "ideias"},
+      {"txt": "fim da aula!", "tipo": "giz", "lugar": "titulo", "em": "Fim"},
+      {"fx": "confete", "lugar": "tudo", "em": "começo"},
+      {"p": "cientista:pula", "lugar": "narrador", "em": "começo"}
+    ]}
+  ]
+}

@@ -1,0 +1,57 @@
+{
+ "titulo": "Mitos e verdades do biogás",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep14_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Biogás: mito ou verdade? Bora testar!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "\"Biogás tem cheiro de ovo podre.\" Em parte, é verdade: o biogás bruto tem um pouco de gás sulfídrico, que cheira mal — mas ele é tirado na limpeza!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "\"Só fazenda grande consegue fazer biogás.\" Mito! Tem biodigestor de todo tamanho: do sítio à cidade.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "\"Biogás só serve pra cozinhar.\" Mito! Ele gera calor, eletricidade e, purificado, vira combustível até de caminhão.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "\"O que sobra do biodigestor é lixo.\" Mito! Vira biofertilizante pra lavoura.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "\"Biogás é energia renovável.\" Verdade! Enquanto houver resíduo, tem biogás.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "E aí, acertou todas? Manda pra alguém que ainda acredita em mito!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

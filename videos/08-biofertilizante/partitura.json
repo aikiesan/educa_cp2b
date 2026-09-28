@@ -1,0 +1,28 @@
+{
+ "_sobre": "gerado por tools/episodio/produzir.py (etapa partitura); tempos da trilha em segundos no arquivo ORIGINAL",
+ "roteiro": "roteiro.json",
+ "vo": "entrada/narracao/pt-BR/ep08_pt-BR_Sulafat_take1.wav",
+ "tempo_narracao": 1.0,
+ "musica": {
+  "arquivo": "entrada/musica/musica_ep08.mp3",
+  "bpm": 89.982,
+  "downbeat0": 0.14,
+  "cortes": [
+   {
+    "de": 34.813,
+    "para": 37.48
+   }
+  ],
+  "logo_musica": 47.485,
+  "cauda": 4.51
+ },
+ "plano": {
+  "pausa": 0.93,
+  "primeira_fala": 2.86,
+  "folga_antes_do_logo": 1.0,
+  "saltos": [
+   "-1c (34.8→37.5s)"
+  ],
+  "duracao_trilha": 51.36
+ }
+}

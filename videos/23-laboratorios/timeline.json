@@ -1,0 +1,805 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 54.107,
+ "musica": {
+  "bpm": 109.95041012881306,
+  "periodo": 0.5457005565482351,
+  "downbeat0": 1.442,
+  "compasso": 2.1828022261929405,
+  "logo": 49.737,
+  "cortes": [
+   {
+    "de": 12.356,
+    "para": 18.904
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 1.492,
+   "fim": 5.372,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 3.88
+   },
+   "palavras": [
+    {
+     "p": "Toda",
+     "i": 1.492,
+     "f": 2.032
+    },
+    {
+     "p": "grande",
+     "i": 2.032,
+     "f": 2.272
+    },
+    {
+     "p": "solução",
+     "i": 2.272,
+     "f": 2.732
+    },
+    {
+     "p": "começa",
+     "i": 2.732,
+     "f": 3.032
+    },
+    {
+     "p": "pequenininha",
+     "i": 3.032,
+     "f": 3.852
+    },
+    {
+     "p": "dentro",
+     "i": 4.052,
+     "f": 4.272
+    },
+    {
+     "p": "de",
+     "i": 4.272,
+     "f": 4.412
+    },
+    {
+     "p": "um",
+     "i": 4.412,
+     "f": 4.492
+    },
+    {
+     "p": "tubo",
+     "i": 4.492,
+     "f": 4.772
+    },
+    {
+     "p": "de",
+     "i": 4.772,
+     "f": 4.892
+    },
+    {
+     "p": "ensaio",
+     "i": 4.892,
+     "f": 5.372
+    }
+   ],
+   "texto": "Toda grande solução começa pequenininha… dentro de um tubo de ensaio!"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 6.187,
+   "fim": 13.487,
+   "origem": {
+    "inicio": 4.1,
+    "fim": 11.4
+   },
+   "palavras": [
+    {
+     "p": "Nos",
+     "i": 6.187,
+     "f": 6.747
+    },
+    {
+     "p": "laboratórios",
+     "i": 6.747,
+     "f": 7.447
+    },
+    {
+     "p": "do",
+     "i": 7.447,
+     "f": 7.587
+    },
+    {
+     "p": "cê",
+     "i": 7.587,
+     "f": 7.735
+    },
+    {
+     "p": "pê",
+     "i": 7.735,
+     "f": 7.883
+    },
+    {
+     "p": "dois",
+     "i": 7.883,
+     "f": 8.179
+    },
+    {
+     "p": "bê",
+     "i": 8.179,
+     "f": 8.327
+    },
+    {
+     "p": "os",
+     "i": 8.507,
+     "f": 8.727
+    },
+    {
+     "p": "pesquisadores",
+     "i": 8.727,
+     "f": 9.327
+    },
+    {
+     "p": "conhecem",
+     "i": 9.327,
+     "f": 9.827
+    },
+    {
+     "p": "os",
+     "i": 9.827,
+     "f": 9.967
+    },
+    {
+     "p": "micróbios",
+     "i": 9.967,
+     "f": 10.607
+    },
+    {
+     "p": "analisam",
+     "i": 10.747,
+     "f": 11.227
+    },
+    {
+     "p": "os",
+     "i": 11.227,
+     "f": 11.367
+    },
+    {
+     "p": "resíduos",
+     "i": 11.367,
+     "f": 12.067
+    },
+    {
+     "p": "e",
+     "i": 12.067,
+     "f": 12.207
+    },
+    {
+     "p": "medem",
+     "i": 12.207,
+     "f": 12.467
+    },
+    {
+     "p": "cada",
+     "i": 12.467,
+     "f": 12.827
+    },
+    {
+     "p": "molécula",
+     "i": 12.827,
+     "f": 13.487
+    }
+   ],
+   "texto": "Nos laboratórios do CP2B, os pesquisadores conhecem os micróbios, analisam os resíduos e medem cada molécula.",
+   "fala": "Nos laboratórios do cê-pê-dois-bê, os pesquisadores conhecem os micróbios, analisam os resíduos e medem cada molécula."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 14.302,
+   "fim": 18.462,
+   "origem": {
+    "inicio": 12.32,
+    "fim": 16.48
+   },
+   "palavras": [
+    {
+     "p": "Depois",
+     "i": 14.302,
+     "f": 14.862
+    },
+    {
+     "p": "testam",
+     "i": 15.162,
+     "f": 15.422
+    },
+    {
+     "p": "tudo",
+     "i": 15.422,
+     "f": 15.782
+    },
+    {
+     "p": "em",
+     "i": 15.782,
+     "f": 15.922
+    },
+    {
+     "p": "reatores",
+     "i": 15.922,
+     "f": 16.342
+    },
+    {
+     "p": "de",
+     "i": 16.342,
+     "f": 16.462
+    },
+    {
+     "p": "bancada",
+     "i": 16.462,
+     "f": 16.962
+    },
+    {
+     "p": "pra",
+     "i": 17.082,
+     "f": 17.262
+    },
+    {
+     "p": "achar",
+     "i": 17.262,
+     "f": 17.522
+    },
+    {
+     "p": "a",
+     "i": 17.522,
+     "f": 17.642
+    },
+    {
+     "p": "receita",
+     "i": 17.642,
+     "f": 17.982
+    },
+    {
+     "p": "certa",
+     "i": 17.982,
+     "f": 18.462
+    }
+   ],
+   "texto": "Depois, testam tudo em reatores de bancada, pra achar a receita certa."
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 19.277,
+   "fim": 24.397,
+   "origem": {
+    "inicio": 17.2,
+    "fim": 22.32
+   },
+   "palavras": [
+    {
+     "p": "Deu",
+     "i": 19.277,
+     "f": 19.537
+    },
+    {
+     "p": "certo",
+     "i": 19.537,
+     "f": 19.877
+    },
+    {
+     "p": "Hora",
+     "i": 20.097,
+     "f": 20.517
+    },
+    {
+     "p": "de",
+     "i": 20.517,
+     "f": 20.637
+    },
+    {
+     "p": "crescer",
+     "i": 20.637,
+     "f": 21.017
+    },
+    {
+     "p": "o",
+     "i": 21.217,
+     "f": 21.497
+    },
+    {
+     "p": "processo",
+     "i": 21.497,
+     "f": 21.877
+    },
+    {
+     "p": "vai",
+     "i": 21.877,
+     "f": 22.077
+    },
+    {
+     "p": "pra",
+     "i": 22.077,
+     "f": 22.197
+    },
+    {
+     "p": "reatores",
+     "i": 22.197,
+     "f": 22.617
+    },
+    {
+     "p": "maiores",
+     "i": 22.617,
+     "f": 23.137
+    },
+    {
+     "p": "que",
+     "i": 23.297,
+     "f": 23.437
+    },
+    {
+     "p": "imitam",
+     "i": 23.437,
+     "f": 23.757
+    },
+    {
+     "p": "a",
+     "i": 23.757,
+     "f": 23.857
+    },
+    {
+     "p": "vida",
+     "i": 23.857,
+     "f": 24.077
+    },
+    {
+     "p": "real",
+     "i": 24.077,
+     "f": 24.397
+    }
+   ],
+   "texto": "Deu certo? Hora de crescer: o processo vai pra reatores maiores, que imitam a vida real."
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 25.212,
+   "fim": 32.692,
+   "origem": {
+    "inicio": 22.78,
+    "fim": 30.26
+   },
+   "palavras": [
+    {
+     "p": "Só",
+     "i": 25.212,
+     "f": 25.772
+    },
+    {
+     "p": "que",
+     "i": 25.772,
+     "f": 26.012
+    },
+    {
+     "p": "entre",
+     "i": 26.012,
+     "f": 26.312
+    },
+    {
+     "p": "o",
+     "i": 26.312,
+     "f": 26.432
+    },
+    {
+     "p": "laboratório",
+     "i": 26.432,
+     "f": 27.052
+    },
+    {
+     "p": "e",
+     "i": 27.052,
+     "f": 27.172
+    },
+    {
+     "p": "a",
+     "i": 27.172,
+     "f": 27.252
+    },
+    {
+     "p": "indústria",
+     "i": 27.252,
+     "f": 27.732
+    },
+    {
+     "p": "tem",
+     "i": 27.852,
+     "f": 28.012
+    },
+    {
+     "p": "um",
+     "i": 28.012,
+     "f": 28.132
+    },
+    {
+     "p": "desafio",
+     "i": 28.132,
+     "f": 28.492
+    },
+    {
+     "p": "famoso",
+     "i": 28.492,
+     "f": 28.972
+    },
+    {
+     "p": "o",
+     "i": 28.972,
+     "f": 29.452
+    },
+    {
+     "p": "vale",
+     "i": 29.452,
+     "f": 29.772
+    },
+    {
+     "p": "da",
+     "i": 29.772,
+     "f": 29.932
+    },
+    {
+     "p": "morte",
+     "i": 29.932,
+     "f": 30.332
+    },
+    {
+     "p": "onde",
+     "i": 30.552,
+     "f": 30.852
+    },
+    {
+     "p": "muita",
+     "i": 30.852,
+     "f": 31.232
+    },
+    {
+     "p": "ideia",
+     "i": 31.232,
+     "f": 31.492
+    },
+    {
+     "p": "boa",
+     "i": 31.492,
+     "f": 31.812
+    },
+    {
+     "p": "fica",
+     "i": 31.812,
+     "f": 32.112
+    },
+    {
+     "p": "pelo",
+     "i": 32.112,
+     "f": 32.312
+    },
+    {
+     "p": "caminho",
+     "i": 32.312,
+     "f": 32.692
+    }
+   ],
+   "texto": "Só que, entre o laboratório e a indústria, tem um desafio famoso: o \"vale da morte\" — onde muita ideia boa fica pelo caminho."
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 33.507,
+   "fim": 39.067,
+   "origem": {
+    "inicio": 30.72,
+    "fim": 36.28
+   },
+   "palavras": [
+    {
+     "p": "Por",
+     "i": 33.507,
+     "f": 34.087
+    },
+    {
+     "p": "isso",
+     "i": 34.087,
+     "f": 34.387
+    },
+    {
+     "p": "o",
+     "i": 34.587,
+     "f": 34.627
+    },
+    {
+     "p": "cê",
+     "i": 34.627,
+     "f": 34.747
+    },
+    {
+     "p": "pê",
+     "i": 34.747,
+     "f": 34.867
+    },
+    {
+     "p": "dois",
+     "i": 34.867,
+     "f": 35.107
+    },
+    {
+     "p": "bê",
+     "i": 35.107,
+     "f": 35.227
+    },
+    {
+     "p": "trabalha",
+     "i": 35.227,
+     "f": 35.667
+    },
+    {
+     "p": "junto",
+     "i": 35.667,
+     "f": 35.907
+    },
+    {
+     "p": "com",
+     "i": 35.907,
+     "f": 36.067
+    },
+    {
+     "p": "empresas",
+     "i": 36.067,
+     "f": 36.407
+    },
+    {
+     "p": "parceiras",
+     "i": 36.407,
+     "f": 37.107
+    },
+    {
+     "p": "pra",
+     "i": 37.287,
+     "f": 37.407
+    },
+    {
+     "p": "atravessar",
+     "i": 37.407,
+     "f": 37.967
+    },
+    {
+     "p": "esse",
+     "i": 37.967,
+     "f": 38.147
+    },
+    {
+     "p": "vale",
+     "i": 38.147,
+     "f": 38.387
+    },
+    {
+     "p": "em",
+     "i": 38.387,
+     "f": 38.587
+    },
+    {
+     "p": "conjunto",
+     "i": 38.587,
+     "f": 39.067
+    }
+   ],
+   "texto": "Por isso o CP2B trabalha junto com empresas parceiras, pra atravessar esse vale em conjunto!",
+   "fala": "Por isso o cê-pê-dois-bê trabalha junto com empresas parceiras, pra atravessar esse vale em conjunto!"
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 39.882,
+   "fim": 44.482,
+   "origem": {
+    "inicio": 36.7,
+    "fim": 41.3
+   },
+   "palavras": [
+    {
+     "p": "E",
+     "i": 39.882,
+     "f": 40.382
+    },
+    {
+     "p": "aí",
+     "i": 40.382,
+     "f": 40.542
+    },
+    {
+     "p": "vem",
+     "i": 40.542,
+     "f": 40.762
+    },
+    {
+     "p": "a",
+     "i": 40.762,
+     "f": 40.942
+    },
+    {
+     "p": "planta",
+     "i": 40.942,
+     "f": 41.182
+    },
+    {
+     "p": "piloto",
+     "i": 41.182,
+     "f": 41.602
+    },
+    {
+     "p": "a",
+     "i": 41.762,
+     "f": 42.042
+    },
+    {
+     "p": "tecnologia",
+     "i": 42.042,
+     "f": 42.542
+    },
+    {
+     "p": "funcionando",
+     "i": 42.542,
+     "f": 43.322
+    },
+    {
+     "p": "em",
+     "i": 43.322,
+     "f": 43.462
+    },
+    {
+     "p": "escala",
+     "i": 43.462,
+     "f": 43.822
+    },
+    {
+     "p": "de",
+     "i": 43.822,
+     "f": 44.022
+    },
+    {
+     "p": "verdade",
+     "i": 44.022,
+     "f": 44.482
+    }
+   ],
+   "texto": "E aí vem a planta piloto: a tecnologia funcionando em escala de verdade."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 45.297,
+   "fim": 48.737,
+   "origem": {
+    "inicio": 42.1,
+    "fim": 45.54
+   },
+   "palavras": [
+    {
+     "p": "Da",
+     "i": 45.297,
+     "f": 45.457
+    },
+    {
+     "p": "bancada",
+     "i": 45.457,
+     "f": 46.037
+    },
+    {
+     "p": "à",
+     "i": 46.037,
+     "f": 46.257
+    },
+    {
+     "p": "planta",
+     "i": 46.257,
+     "f": 46.637
+    },
+    {
+     "p": "piloto",
+     "i": 46.637,
+     "f": 47.037
+    },
+    {
+     "p": "cada",
+     "i": 47.397,
+     "f": 47.697
+    },
+    {
+     "p": "fase",
+     "i": 47.697,
+     "f": 48.017
+    },
+    {
+     "p": "é",
+     "i": 48.017,
+     "f": 48.117
+    },
+    {
+     "p": "uma",
+     "i": 48.117,
+     "f": 48.197
+    },
+    {
+     "p": "conquista",
+     "i": 48.197,
+     "f": 48.737
+    }
+   ],
+   "texto": "Da bancada à planta piloto: cada fase é uma conquista!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 49.887,
+   "fim": 53.107,
+   "origem": {
+    "inicio": 46.54,
+    "fim": 49.76
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 49.887,
+     "f": 50.015
+    },
+    {
+     "p": "pê",
+     "i": 50.015,
+     "f": 50.143
+    },
+    {
+     "p": "dois",
+     "i": 50.143,
+     "f": 50.399
+    },
+    {
+     "p": "bê",
+     "i": 50.399,
+     "f": 50.527
+    },
+    {
+     "p": "energia",
+     "i": 50.527,
+     "f": 51.167
+    },
+    {
+     "p": "viva",
+     "i": 51.167,
+     "f": 51.627
+    },
+    {
+     "p": "ciência",
+     "i": 51.847,
+     "f": 52.327
+    },
+    {
+     "p": "que",
+     "i": 52.327,
+     "f": 52.487
+    },
+    {
+     "p": "transforma",
+     "i": 52.487,
+     "f": 53.107
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

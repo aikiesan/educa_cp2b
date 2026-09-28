@@ -1,0 +1,28 @@
+{
+ "_sobre": "gerado por tools/episodio/produzir.py (etapa partitura); tempos da trilha em segundos no arquivo ORIGINAL",
+ "roteiro": "roteiro.en-GB.json",
+ "vo": "entrada/narracao/en-GB/ep90_en-GB_Sulafat_take1.wav",
+ "tempo_narracao": 1.0,
+ "musica": {
+  "arquivo": "entrada/musica/The_Papercut_Invention.mp3",
+  "bpm": 105.013,
+  "downbeat0": 1.082,
+  "cortes": [
+   {
+    "de": 12.509,
+    "para": 7.938
+   }
+  ],
+  "logo_musica": 63.089,
+  "cauda": 6.15
+ },
+ "plano": {
+  "pausa": 0.77,
+  "primeira_fala": 1.13,
+  "folga_antes_do_logo": 1.0,
+  "saltos": [
+   "+2c (12.5→7.9s)"
+  ],
+  "duracao_trilha": 66.66
+ }
+}

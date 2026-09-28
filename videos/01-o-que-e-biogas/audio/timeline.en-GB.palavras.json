@@ -1,0 +1,848 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 73.81,
+ "musica": {
+  "bpm": 105.01337050068032,
+  "periodo": 0.5713558160635487,
+  "downbeat0": 1.082,
+  "compasso": 2.2854232642541947,
+  "logo": 67.66,
+  "cortes": [
+   {
+    "de": 12.509,
+    "para": 7.938
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 1.132,
+   "fim": 4.232,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 3.1
+   },
+   "palavras": [
+    {
+     "p": "What",
+     "i": 1.132,
+     "f": 1.632
+    },
+    {
+     "p": "is",
+     "i": 1.632,
+     "f": 1.912
+    },
+    {
+     "p": "biogas",
+     "i": 1.912,
+     "f": 2.832
+    },
+    {
+     "p": "And",
+     "i": 2.832,
+     "f": 3.412
+    },
+    {
+     "p": "biomethane",
+     "i": 3.412,
+     "f": 4.232
+    }
+   ],
+   "texto": "What is biogas? And biomethane?"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 5.007,
+   "fim": 11.127,
+   "origem": {
+    "inicio": 3.58,
+    "fim": 9.7
+   },
+   "palavras": [
+    {
+     "p": "It",
+     "i": 5.007,
+     "f": 5.727
+    },
+    {
+     "p": "all",
+     "i": 5.727,
+     "f": 5.967
+    },
+    {
+     "p": "starts",
+     "i": 5.967,
+     "f": 6.527
+    },
+    {
+     "p": "with",
+     "i": 6.527,
+     "f": 6.807
+    },
+    {
+     "p": "what",
+     "i": 6.807,
+     "f": 7.007
+    },
+    {
+     "p": "nobody",
+     "i": 7.007,
+     "f": 7.567
+    },
+    {
+     "p": "wants",
+     "i": 7.567,
+     "f": 8.027
+    },
+    {
+     "p": "food",
+     "i": 8.287,
+     "f": 8.727
+    },
+    {
+     "p": "scraps",
+     "i": 8.727,
+     "f": 9.167
+    },
+    {
+     "p": "manure",
+     "i": 9.507,
+     "f": 9.847
+    },
+    {
+     "p": "crop",
+     "i": 10.267,
+     "f": 10.607
+    },
+    {
+     "p": "leftovers",
+     "i": 10.607,
+     "f": 11.127
+    }
+   ],
+   "texto": "It all starts with what nobody wants: food scraps, manure, crop leftovers…"
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 11.902,
+   "fim": 18.402,
+   "origem": {
+    "inicio": 10.5,
+    "fim": 17.0
+   },
+   "palavras": [
+    {
+     "p": "Inside",
+     "i": 11.902,
+     "f": 12.682
+    },
+    {
+     "p": "the",
+     "i": 12.682,
+     "f": 13.002
+    },
+    {
+     "p": "biodigester",
+     "i": 13.002,
+     "f": 14.142
+    },
+    {
+     "p": "a",
+     "i": 14.342,
+     "f": 14.682
+    },
+    {
+     "p": "sealed",
+     "i": 14.682,
+     "f": 15.002
+    },
+    {
+     "p": "tank",
+     "i": 15.002,
+     "f": 15.362
+    },
+    {
+     "p": "with",
+     "i": 15.362,
+     "f": 15.582
+    },
+    {
+     "p": "no",
+     "i": 15.582,
+     "f": 15.802
+    },
+    {
+     "p": "oxygen",
+     "i": 15.802,
+     "f": 16.282
+    },
+    {
+     "p": "microbes",
+     "i": 16.702,
+     "f": 17.402
+    },
+    {
+     "p": "throw",
+     "i": 17.402,
+     "f": 17.702
+    },
+    {
+     "p": "a",
+     "i": 17.702,
+     "f": 17.902
+    },
+    {
+     "p": "party",
+     "i": 17.902,
+     "f": 18.402
+    }
+   ],
+   "texto": "Inside the biodigester — a sealed tank with no oxygen — microbes throw a party…"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 19.177,
+   "fim": 21.817,
+   "origem": {
+    "inicio": 17.0,
+    "fim": 19.64
+   },
+   "palavras": [
+    {
+     "p": "and",
+     "i": 19.177,
+     "f": 19.877
+    },
+    {
+     "p": "release",
+     "i": 19.877,
+     "f": 20.257
+    },
+    {
+     "p": "a",
+     "i": 20.257,
+     "f": 20.457
+    },
+    {
+     "p": "gas",
+     "i": 20.457,
+     "f": 20.757
+    },
+    {
+     "p": "biogas",
+     "i": 21.017,
+     "f": 21.817
+    }
+   ],
+   "texto": "…and release a gas: biogas!"
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 22.592,
+   "fim": 27.732,
+   "origem": {
+    "inicio": 19.96,
+    "fim": 25.1
+   },
+   "palavras": [
+    {
+     "p": "It's",
+     "i": 22.592,
+     "f": 23.392
+    },
+    {
+     "p": "mostly",
+     "i": 23.392,
+     "f": 23.832
+    },
+    {
+     "p": "methane",
+     "i": 23.832,
+     "f": 24.372
+    },
+    {
+     "p": "and",
+     "i": 24.372,
+     "f": 24.772
+    },
+    {
+     "p": "carbon",
+     "i": 24.772,
+     "f": 25.152
+    },
+    {
+     "p": "dioxide",
+     "i": 25.152,
+     "f": 25.672
+    },
+    {
+     "p": "with",
+     "i": 25.672,
+     "f": 26.292
+    },
+    {
+     "p": "a",
+     "i": 26.292,
+     "f": 26.432
+    },
+    {
+     "p": "pinch",
+     "i": 26.432,
+     "f": 26.732
+    },
+    {
+     "p": "of",
+     "i": 26.732,
+     "f": 27.012
+    },
+    {
+     "p": "other",
+     "i": 27.012,
+     "f": 27.332
+    },
+    {
+     "p": "gases",
+     "i": 27.332,
+     "f": 27.732
+    }
+   ],
+   "texto": "It's mostly methane and carbon dioxide, with a pinch of other gases…"
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 28.507,
+   "fim": 30.707,
+   "origem": {
+    "inicio": 25.36,
+    "fim": 27.56
+   },
+   "palavras": [
+    {
+     "p": "some",
+     "i": 28.507,
+     "f": 29.087
+    },
+    {
+     "p": "of",
+     "i": 29.087,
+     "f": 29.207
+    },
+    {
+     "p": "them",
+     "i": 29.207,
+     "f": 29.387
+    },
+    {
+     "p": "really",
+     "i": 29.387,
+     "f": 30.127
+    },
+    {
+     "p": "smelly",
+     "i": 30.127,
+     "f": 30.707
+    }
+   ],
+   "texto": "…some of them really smelly!"
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 31.482,
+   "fim": 35.802,
+   "origem": {
+    "inicio": 27.56,
+    "fim": 31.88
+   },
+   "palavras": [
+    {
+     "p": "But",
+     "i": 31.482,
+     "f": 32.502
+    },
+    {
+     "p": "by",
+     "i": 32.502,
+     "f": 32.702
+    },
+    {
+     "p": "burning",
+     "i": 32.702,
+     "f": 33.202
+    },
+    {
+     "p": "biogas",
+     "i": 33.202,
+     "f": 33.902
+    },
+    {
+     "p": "we",
+     "i": 34.062,
+     "f": 34.242
+    },
+    {
+     "p": "can",
+     "i": 34.242,
+     "f": 34.402
+    },
+    {
+     "p": "make",
+     "i": 34.402,
+     "f": 34.622
+    },
+    {
+     "p": "heat",
+     "i": 34.622,
+     "f": 35.002
+    },
+    {
+     "p": "and",
+     "i": 35.002,
+     "f": 35.282
+    },
+    {
+     "p": "electricity",
+     "i": 35.282,
+     "f": 35.802
+    }
+   ],
+   "texto": "But by burning biogas, we can make heat and electricity."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 36.577,
+   "fim": 44.457,
+   "origem": {
+    "inicio": 32.66,
+    "fim": 40.54
+   },
+   "palavras": [
+    {
+     "p": "And",
+     "i": 36.577,
+     "f": 36.937
+    },
+    {
+     "p": "there's",
+     "i": 36.937,
+     "f": 37.297
+    },
+    {
+     "p": "more",
+     "i": 37.297,
+     "f": 37.697
+    },
+    {
+     "p": "take",
+     "i": 38.077,
+     "f": 38.537
+    },
+    {
+     "p": "out",
+     "i": 38.537,
+     "f": 38.717
+    },
+    {
+     "p": "the",
+     "i": 38.717,
+     "f": 38.857
+    },
+    {
+     "p": "carbon",
+     "i": 38.857,
+     "f": 39.157
+    },
+    {
+     "p": "dioxide",
+     "i": 39.157,
+     "f": 39.657
+    },
+    {
+     "p": "and",
+     "i": 39.657,
+     "f": 40.017
+    },
+    {
+     "p": "impurities",
+     "i": 40.017,
+     "f": 40.597
+    },
+    {
+     "p": "and",
+     "i": 40.597,
+     "f": 41.237
+    },
+    {
+     "p": "biomethane",
+     "i": 41.237,
+     "f": 42.317
+    },
+    {
+     "p": "is",
+     "i": 42.317,
+     "f": 42.497
+    },
+    {
+     "p": "born",
+     "i": 42.497,
+     "f": 42.797
+    },
+    {
+     "p": "almost",
+     "i": 42.977,
+     "f": 43.537
+    },
+    {
+     "p": "pure",
+     "i": 43.537,
+     "f": 43.997
+    },
+    {
+     "p": "methane",
+     "i": 43.997,
+     "f": 44.457
+    }
+   ],
+   "texto": "And there's more: take out the carbon dioxide and impurities, and biomethane is born — almost pure methane!"
+  },
+  {
+   "id": "L09",
+   "voz": "Sulafat",
+   "inicio": 45.232,
+   "fim": 53.692,
+   "origem": {
+    "inicio": 40.86,
+    "fim": 49.32
+   },
+   "palavras": [
+    {
+     "p": "It's",
+     "i": 45.232,
+     "f": 45.852
+    },
+    {
+     "p": "just",
+     "i": 45.852,
+     "f": 46.092
+    },
+    {
+     "p": "like",
+     "i": 46.092,
+     "f": 46.372
+    },
+    {
+     "p": "natural",
+     "i": 46.372,
+     "f": 46.792
+    },
+    {
+     "p": "gas",
+     "i": 46.792,
+     "f": 47.152
+    },
+    {
+     "p": "only",
+     "i": 47.392,
+     "f": 47.892
+    },
+    {
+     "p": "renewable",
+     "i": 47.892,
+     "f": 48.352
+    },
+    {
+     "p": "it",
+     "i": 48.752,
+     "f": 49.212
+    },
+    {
+     "p": "can",
+     "i": 49.212,
+     "f": 49.372
+    },
+    {
+     "p": "travel",
+     "i": 49.372,
+     "f": 49.652
+    },
+    {
+     "p": "through",
+     "i": 49.652,
+     "f": 49.852
+    },
+    {
+     "p": "the",
+     "i": 49.852,
+     "f": 50.012
+    },
+    {
+     "p": "gas",
+     "i": 50.012,
+     "f": 50.292
+    },
+    {
+     "p": "grid",
+     "i": 50.292,
+     "f": 50.532
+    },
+    {
+     "p": "to",
+     "i": 50.532,
+     "f": 50.732
+    },
+    {
+     "p": "homes",
+     "i": 50.732,
+     "f": 51.112
+    },
+    {
+     "p": "and",
+     "i": 51.112,
+     "f": 51.312
+    },
+    {
+     "p": "industries",
+     "i": 51.312,
+     "f": 51.772
+    },
+    {
+     "p": "or",
+     "i": 51.992,
+     "f": 52.372
+    },
+    {
+     "p": "fuel",
+     "i": 52.372,
+     "f": 52.692
+    },
+    {
+     "p": "lorries",
+     "i": 52.692,
+     "f": 53.172
+    },
+    {
+     "p": "and",
+     "i": 53.172,
+     "f": 53.352
+    },
+    {
+     "p": "buses",
+     "i": 53.352,
+     "f": 53.692
+    }
+   ],
+   "texto": "It's just like natural gas, only renewable: it can travel through the gas grid to homes and industries, or fuel lorries and buses."
+  },
+  {
+   "id": "L10",
+   "voz": "Sulafat",
+   "inicio": 54.467,
+   "fim": 60.407,
+   "origem": {
+    "inicio": 49.82,
+    "fim": 55.76
+   },
+   "palavras": [
+    {
+     "p": "And",
+     "i": 54.467,
+     "f": 54.967
+    },
+    {
+     "p": "what's",
+     "i": 54.967,
+     "f": 55.207
+    },
+    {
+     "p": "left",
+     "i": 55.207,
+     "f": 55.487
+    },
+    {
+     "p": "in",
+     "i": 55.487,
+     "f": 55.647
+    },
+    {
+     "p": "the",
+     "i": 55.647,
+     "f": 55.747
+    },
+    {
+     "p": "biodigester",
+     "i": 55.747,
+     "f": 56.567
+    },
+    {
+     "p": "becomes",
+     "i": 56.567,
+     "f": 57.207
+    },
+    {
+     "p": "biofertiliser",
+     "i": 57.207,
+     "f": 58.387
+    },
+    {
+     "p": "for",
+     "i": 58.387,
+     "f": 58.627
+    },
+    {
+     "p": "the",
+     "i": 58.627,
+     "f": 58.727
+    },
+    {
+     "p": "fields",
+     "i": 58.727,
+     "f": 59.127
+    },
+    {
+     "p": "closing",
+     "i": 59.507,
+     "f": 59.947
+    },
+    {
+     "p": "the",
+     "i": 59.947,
+     "f": 60.147
+    },
+    {
+     "p": "loop",
+     "i": 60.147,
+     "f": 60.407
+    }
+   ],
+   "texto": "And what's left in the biodigester becomes biofertiliser for the fields… closing the loop!"
+  },
+  {
+   "id": "L11",
+   "voz": "Sulafat",
+   "inicio": 61.182,
+   "fim": 66.662,
+   "origem": {
+    "inicio": 55.76,
+    "fim": 61.24
+   },
+   "palavras": [
+    {
+     "p": "Biogas",
+     "i": 61.182,
+     "f": 62.762
+    },
+    {
+     "p": "and",
+     "i": 62.762,
+     "f": 63.042
+    },
+    {
+     "p": "biomethane",
+     "i": 63.042,
+     "f": 63.862
+    },
+    {
+     "p": "today's",
+     "i": 63.862,
+     "f": 64.762
+    },
+    {
+     "p": "waste",
+     "i": 64.762,
+     "f": 65.082
+    },
+    {
+     "p": "is",
+     "i": 65.082,
+     "f": 65.602
+    },
+    {
+     "p": "tomorrow's",
+     "i": 65.602,
+     "f": 66.182
+    },
+    {
+     "p": "energy",
+     "i": 66.182,
+     "f": 66.662
+    }
+   ],
+   "texto": "Biogas and biomethane: today's waste is tomorrow's energy!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 67.81,
+   "fim": 72.81,
+   "origem": {
+    "inicio": 61.24,
+    "fim": 66.24
+   },
+   "palavras": [
+    {
+     "p": "C",
+     "i": 67.81,
+     "f": 68.13
+    },
+    {
+     "p": "P",
+     "i": 68.13,
+     "f": 68.45
+    },
+    {
+     "p": "two",
+     "i": 68.45,
+     "f": 69.41
+    },
+    {
+     "p": "B",
+     "i": 69.41,
+     "f": 69.73
+    },
+    {
+     "p": "living",
+     "i": 69.73,
+     "f": 70.47
+    },
+    {
+     "p": "energy",
+     "i": 70.47,
+     "f": 71.01
+    },
+    {
+     "p": "science",
+     "i": 71.01,
+     "f": 71.81
+    },
+    {
+     "p": "that",
+     "i": 71.81,
+     "f": 72.33
+    },
+    {
+     "p": "transforms",
+     "i": 72.33,
+     "f": 72.81
+    }
+   ],
+   "texto": "CP2B: living energy, science that transforms!",
+   "fala": "C-P-two-B: living energy, science that transforms!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "C- P- two- B",
+   "CP2B"
+  ]
+ ]
+}

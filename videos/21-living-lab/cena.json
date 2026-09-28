@@ -1,0 +1,60 @@
+{
+  "_sobre": "Ep. 21 · Living-Lab: comida que vira combustível no campus — estilo D (maquete de papelão), corrida contra o relógio (cronômetro); o mascote vai de passageiro. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "D",
+  "seed": 21,
+  "pecas": {
+    "campus": "ep21/_folha/campus", "bandeja": "ep21/_folha/pecas_ep21_1", "carrinho": "ep21/_folha/pecas_ep21_2",
+    "cronometro": "ep21/_folha/pecas_ep21_3", "relogio": "ep21/_folha/pecas_ep21_4", "fila": "ep21/_folha/pecas_ep21_7",
+    "piloto": "ep23/_folha/planta_piloto", "onibus_campus": "ep18/_folha/pecas_ep18_1", "prato": "ep11/_folha/pecas_ep11_5"
+  },
+  "molduras": [{ "tipo": "cronometro", "de": "L02:inicio", "ate": "L06:fim" }],
+  "cenas": [
+    { "fala": "L01", "arranjo": "palco", "itens": [
+      { "p": "campus", "em": 0.2, "s": 1.05 },
+      { "p": "relogio", "em": "Meio", "entra": "gira" },
+      { "p": "fila", "em": "restaurante", "entra": "desliza_dir" },
+      { "txt": "meio-dia!", "tipo": "letras", "lugar": "titulo", "em": "campus" }
+    ]},
+    { "fala": "L02", "arranjo": "palco", "itens": [
+      { "p": "bandeja", "em": "almoço", "entra": "cai", "s": 1.05 },
+      { "p": "cronometro", "em": "sobra", "anima": "treme" },
+      { "txt": "sobras", "tipo": "etiqueta", "lugar": "canto", "em": "comida" }
+    ]},
+    { "fala": "L03", "arranjo": "palco", "itens": [
+      { "p": "saco_restos", "em": "sobras", "s": 1.05 },
+      { "txt": "PESQUISA!", "tipo": "carimbo", "lugar": "centro", "em": "pesquisa-0.2", "cor": "verdeEsc" },
+      { "fx": "xis", "lugar": "canto", "em": "lixo" }
+    ]},
+    { "fala": "L04", "arranjo": "dupla", "itens": [
+      { "p": "carrinho", "id": "car", "em": "separados", "entra": "desliza_esq" },
+      { "p": "piloto", "id": "pp", "em": "piloto-0.5" },
+      { "fx": "tracejado", "de": "car", "para": "pp", "em": "levados" },
+      { "txt": "planta piloto", "tipo": "etiqueta", "lugar": "rodape", "em": "universidade" }
+    ]},
+    { "fala": "L05", "arranjo": "palco", "itens": [
+      { "p": "piloto", "em": 0.05, "s": 1.05 },
+      { "txt": "H2", "tipo": "formula", "lugar": "esquerda", "em": "hidrogênio" },
+      { "fx": "molecula", "tipo": "CH4", "n": 1, "lugar": "direita", "em": "metano" },
+      { "txt": "BIOHITANO!", "tipo": "letras", "lugar": "titulo", "em": "metano" },
+      { "fx": "bolhas", "lugar": "centro", "em": "transformam", "n": 8 }
+    ]},
+    { "fala": "L06", "arranjo": "palco", "itens": [
+      { "p": "onibus_campus", "em": "ônibus-0.6", "entra": "desliza_esq", "s": 1.05 },
+      { "p": "mascote:acena", "sobre": "onibus_campus", "rel": [-0.18, -0.45], "tam": 0.3, "em": "ônibus", "anima": "acena" },
+      { "fx": "estrada", "lugar": "base", "em": "rodar", "fundo": true },
+      { "txt": "combustível do campus", "tipo": "etiqueta", "lugar": "titulo", "em": "combustível" }
+    ]},
+    { "fala": "L07", "arranjo": "palco", "itens": [
+      { "p": "campus", "id": "cp", "em": 0.05, "s": 1.05 },
+      { "fx": "ciclo", "sobre": "cp", "rel": [0, 0], "tam": 0.8, "em": "vivo" },
+      { "txt": "laboratório vivo", "tipo": "etiqueta", "lugar": "titulo", "em": "laboratório", "papel": "lima" }
+    ]},
+    { "fala": "L08", "arranjo": "dupla", "itens": [
+      { "p": "prato", "em": "prato" },
+      { "p": "onibus_campus", "em": "ônibus-0.4" },
+      { "fx": "coracao", "sobre": "prato", "rel": [0.44, -0.32], "tam": 0.32, "em": "exemplo" },
+      { "txt": "DO PRATO PRO ÔNIBUS", "tipo": "letras", "lugar": "titulo", "em": "Do" },
+      { "p": "mascote:pula", "sobre": "onibus_campus", "rel": [0.12, -0.62], "tam": 0.42, "em": "universidade", "anima": "quica" }
+    ]}
+  ]
+}

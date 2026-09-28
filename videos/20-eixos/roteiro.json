@@ -1,0 +1,77 @@
+{
+ "titulo": "Os eixos do CP2B",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep20_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Como o CP2B se organiza? Em eixos de pesquisa, que trabalham juntos!",
+   "fala": "Como o cê-pê-dois-bê se organiza? Em eixos de pesquisa, que trabalham juntos!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Um eixo faz o inventário dos resíduos e mapeia onde eles estão.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Outro cuida da ciência de base: entender os micróbios e os processos.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Tem o eixo que leva as ideias pra escala maior, junto com as empresas.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Um que avalia os impactos: na economia, no ambiente e na energia.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Um que inventa bioprodutos, na lógica da biorrefinaria.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Um de educação e capacitação, pra formar gente nova no biogás.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Um de difusão científica — é ele que ajuda a fazer vídeos como este!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "E um de políticas públicas, pra transformar pesquisa em regras e programas.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L10",
+   "texto": "Muitos jeitos de olhar pro resíduo… e um só objetivo: energia viva!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

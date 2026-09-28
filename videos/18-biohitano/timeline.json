@@ -1,0 +1,667 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 49.334,
+ "musica": {
+  "bpm": 110.00604676296649,
+  "periodo": 0.5454245631540955,
+  "downbeat0": 2.276,
+  "compasso": 2.181698252616382,
+  "logo": 44.824,
+  "cortes": [
+   {
+    "de": 21.911,
+    "para": 41.546
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 2.326,
+   "fim": 6.466,
+   "origem": {
+    "inicio": 0.58,
+    "fim": 4.72
+   },
+   "palavras": [
+    {
+     "p": "Hidrogênio",
+     "i": 2.326,
+     "f": 2.966
+    },
+    {
+     "p": "ou",
+     "i": 2.966,
+     "f": 3.326
+    },
+    {
+     "p": "metano",
+     "i": 3.326,
+     "f": 3.886
+    },
+    {
+     "p": "E",
+     "i": 4.346,
+     "f": 4.666
+    },
+    {
+     "p": "se",
+     "i": 4.666,
+     "f": 4.866
+    },
+    {
+     "p": "fossem",
+     "i": 4.866,
+     "f": 5.306
+    },
+    {
+     "p": "os",
+     "i": 5.306,
+     "f": 5.526
+    },
+    {
+     "p": "dois",
+     "i": 5.526,
+     "f": 5.846
+    },
+    {
+     "p": "juntos",
+     "i": 5.846,
+     "f": 6.466
+    }
+   ],
+   "texto": "Hidrogênio ou metano? E se fossem os dois juntos?"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 7.248,
+   "fim": 11.748,
+   "origem": {
+    "inicio": 5.16,
+    "fim": 9.66
+   },
+   "palavras": [
+    {
+     "p": "Esse",
+     "i": 7.248,
+     "f": 7.828
+    },
+    {
+     "p": "é",
+     "i": 7.828,
+     "f": 7.928
+    },
+    {
+     "p": "o",
+     "i": 7.928,
+     "f": 8.008
+    },
+    {
+     "p": "biohitano",
+     "i": 8.008,
+     "f": 8.788
+    },
+    {
+     "p": "uma",
+     "i": 9.008,
+     "f": 9.168
+    },
+    {
+     "p": "das",
+     "i": 9.168,
+     "f": 9.368
+    },
+    {
+     "p": "grandes",
+     "i": 9.368,
+     "f": 9.768
+    },
+    {
+     "p": "apostas",
+     "i": 9.768,
+     "f": 10.308
+    },
+    {
+     "p": "de",
+     "i": 10.308,
+     "f": 10.408
+    },
+    {
+     "p": "pesquisa",
+     "i": 10.408,
+     "f": 10.868
+    },
+    {
+     "p": "do",
+     "i": 10.868,
+     "f": 11.048
+    },
+    {
+     "p": "cê",
+     "i": 11.048,
+     "f": 11.188
+    },
+    {
+     "p": "pê",
+     "i": 11.188,
+     "f": 11.328
+    },
+    {
+     "p": "dois",
+     "i": 11.328,
+     "f": 11.608
+    },
+    {
+     "p": "bê",
+     "i": 11.608,
+     "f": 11.748
+    }
+   ],
+   "texto": "Esse é o biohitano, uma das grandes apostas de pesquisa do CP2B.",
+   "fala": "Esse é o biohitano, uma das grandes apostas de pesquisa do cê-pê-dois-bê."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 12.53,
+   "fim": 15.69,
+   "origem": {
+    "inicio": 10.06,
+    "fim": 13.22
+   },
+   "palavras": [
+    {
+     "p": "A",
+     "i": 12.53,
+     "f": 13.15
+    },
+    {
+     "p": "ideia",
+     "i": 13.15,
+     "f": 13.53
+    },
+    {
+     "p": "é",
+     "i": 13.53,
+     "f": 13.75
+    },
+    {
+     "p": "dividir",
+     "i": 13.75,
+     "f": 14.15
+    },
+    {
+     "p": "a",
+     "i": 14.15,
+     "f": 14.25
+    },
+    {
+     "p": "digestão",
+     "i": 14.25,
+     "f": 14.71
+    },
+    {
+     "p": "em",
+     "i": 14.71,
+     "f": 14.89
+    },
+    {
+     "p": "duas",
+     "i": 14.89,
+     "f": 15.13
+    },
+    {
+     "p": "etapas",
+     "i": 15.13,
+     "f": 15.69
+    }
+   ],
+   "texto": "A ideia é dividir a digestão em duas etapas."
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 16.472,
+   "fim": 19.512,
+   "origem": {
+    "inicio": 13.42,
+    "fim": 16.46
+   },
+   "palavras": [
+    {
+     "p": "Na",
+     "i": 16.472,
+     "f": 16.852
+    },
+    {
+     "p": "primeira",
+     "i": 16.852,
+     "f": 17.412
+    },
+    {
+     "p": "os",
+     "i": 17.672,
+     "f": 17.752
+    },
+    {
+     "p": "micróbios",
+     "i": 17.752,
+     "f": 18.272
+    },
+    {
+     "p": "produzem",
+     "i": 18.272,
+     "f": 18.772
+    },
+    {
+     "p": "hidrogênio",
+     "i": 18.772,
+     "f": 19.512
+    }
+   ],
+   "texto": "Na primeira, os micróbios produzem hidrogênio…"
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 20.294,
+   "fim": 23.294,
+   "origem": {
+    "inicio": 16.56,
+    "fim": 19.56
+   },
+   "palavras": [
+    {
+     "p": "e",
+     "i": 20.294,
+     "f": 20.514
+    },
+    {
+     "p": "na",
+     "i": 20.514,
+     "f": 20.634
+    },
+    {
+     "p": "segunda",
+     "i": 20.634,
+     "f": 21.114
+    },
+    {
+     "p": "outros",
+     "i": 21.434,
+     "f": 21.874
+    },
+    {
+     "p": "micróbios",
+     "i": 21.874,
+     "f": 22.414
+    },
+    {
+     "p": "produzem",
+     "i": 22.414,
+     "f": 22.834
+    },
+    {
+     "p": "metano",
+     "i": 22.834,
+     "f": 23.294
+    }
+   ],
+   "texto": "…e, na segunda, outros micróbios produzem metano."
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 24.076,
+   "fim": 28.216,
+   "origem": {
+    "inicio": 19.98,
+    "fim": 24.12
+   },
+   "palavras": [
+    {
+     "p": "Misturados",
+     "i": 24.076,
+     "f": 24.796
+    },
+    {
+     "p": "os",
+     "i": 24.956,
+     "f": 25.116
+    },
+    {
+     "p": "dois",
+     "i": 25.116,
+     "f": 25.296
+    },
+    {
+     "p": "formam",
+     "i": 25.296,
+     "f": 25.696
+    },
+    {
+     "p": "um",
+     "i": 25.696,
+     "f": 25.856
+    },
+    {
+     "p": "combustível",
+     "i": 25.856,
+     "f": 26.376
+    },
+    {
+     "p": "renovável",
+     "i": 26.376,
+     "f": 27.156
+    },
+    {
+     "p": "o",
+     "i": 27.296,
+     "f": 27.456
+    },
+    {
+     "p": "biohitano",
+     "i": 27.456,
+     "f": 28.216
+    }
+   ],
+   "texto": "Misturados, os dois formam um combustível renovável — o biohitano!"
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 28.998,
+   "fim": 35.078,
+   "origem": {
+    "inicio": 24.3,
+    "fim": 30.38
+   },
+   "palavras": [
+    {
+     "p": "Os",
+     "i": 28.998,
+     "f": 29.618
+    },
+    {
+     "p": "pesquisadores",
+     "i": 29.618,
+     "f": 30.238
+    },
+    {
+     "p": "testam",
+     "i": 30.238,
+     "f": 30.698
+    },
+    {
+     "p": "isso",
+     "i": 30.698,
+     "f": 30.938
+    },
+    {
+     "p": "com",
+     "i": 30.938,
+     "f": 31.158
+    },
+    {
+     "p": "vinhaça",
+     "i": 31.158,
+     "f": 31.858
+    },
+    {
+     "p": "com",
+     "i": 32.018,
+     "f": 32.198
+    },
+    {
+     "p": "torta",
+     "i": 32.198,
+     "f": 32.618
+    },
+    {
+     "p": "de",
+     "i": 32.618,
+     "f": 32.778
+    },
+    {
+     "p": "filtro",
+     "i": 32.778,
+     "f": 33.118
+    },
+    {
+     "p": "da",
+     "i": 33.118,
+     "f": 33.298
+    },
+    {
+     "p": "cana",
+     "i": 33.298,
+     "f": 33.778
+    },
+    {
+     "p": "e",
+     "i": 33.778,
+     "f": 34.098
+    },
+    {
+     "p": "com",
+     "i": 34.098,
+     "f": 34.318
+    },
+    {
+     "p": "restos",
+     "i": 34.318,
+     "f": 34.618
+    },
+    {
+     "p": "de",
+     "i": 34.618,
+     "f": 34.758
+    },
+    {
+     "p": "comida",
+     "i": 34.758,
+     "f": 35.078
+    }
+   ],
+   "texto": "Os pesquisadores testam isso com vinhaça, com torta de filtro da cana e com restos de comida."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 35.86,
+   "fim": 40.26,
+   "origem": {
+    "inicio": 30.56,
+    "fim": 34.96
+   },
+   "palavras": [
+    {
+     "p": "E",
+     "i": 35.86,
+     "f": 36.24
+    },
+    {
+     "p": "o",
+     "i": 36.24,
+     "f": 36.36
+    },
+    {
+     "p": "objetivo",
+     "i": 36.36,
+     "f": 36.8
+    },
+    {
+     "p": "é",
+     "i": 36.8,
+     "f": 37.08
+    },
+    {
+     "p": "ver",
+     "i": 37.08,
+     "f": 37.26
+    },
+    {
+     "p": "esse",
+     "i": 37.26,
+     "f": 37.4
+    },
+    {
+     "p": "combustível",
+     "i": 37.4,
+     "f": 37.92
+    },
+    {
+     "p": "rodando",
+     "i": 37.92,
+     "f": 38.38
+    },
+    {
+     "p": "nos",
+     "i": 38.38,
+     "f": 38.6
+    },
+    {
+     "p": "ônibus",
+     "i": 38.6,
+     "f": 39.06
+    },
+    {
+     "p": "do",
+     "i": 39.06,
+     "f": 39.18
+    },
+    {
+     "p": "campus",
+     "i": 39.18,
+     "f": 39.62
+    },
+    {
+     "p": "da",
+     "i": 39.62,
+     "f": 39.8
+    },
+    {
+     "p": "Unicamp",
+     "i": 39.8,
+     "f": 40.26
+    }
+   ],
+   "texto": "E o objetivo é ver esse combustível rodando nos ônibus do campus da Unicamp!"
+  },
+  {
+   "id": "L09",
+   "voz": "Sulafat",
+   "inicio": 41.042,
+   "fim": 43.822,
+   "origem": {
+    "inicio": 35.76,
+    "fim": 38.54
+   },
+   "palavras": [
+    {
+     "p": "Biohitano",
+     "i": 41.042,
+     "f": 41.682
+    },
+    {
+     "p": "dois",
+     "i": 41.822,
+     "f": 42.302
+    },
+    {
+     "p": "gases",
+     "i": 42.302,
+     "f": 42.642
+    },
+    {
+     "p": "uma",
+     "i": 42.942,
+     "f": 43.142
+    },
+    {
+     "p": "energia",
+     "i": 43.142,
+     "f": 43.502
+    },
+    {
+     "p": "só",
+     "i": 43.502,
+     "f": 43.822
+    }
+   ],
+   "texto": "Biohitano: dois gases, uma energia só!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 44.974,
+   "fim": 48.334,
+   "origem": {
+    "inicio": 39.6,
+    "fim": 42.96
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 44.974,
+     "f": 45.102
+    },
+    {
+     "p": "pê",
+     "i": 45.102,
+     "f": 45.23
+    },
+    {
+     "p": "dois",
+     "i": 45.23,
+     "f": 45.486
+    },
+    {
+     "p": "bê",
+     "i": 45.486,
+     "f": 45.614
+    },
+    {
+     "p": "energia",
+     "i": 45.614,
+     "f": 46.254
+    },
+    {
+     "p": "viva",
+     "i": 46.254,
+     "f": 46.714
+    },
+    {
+     "p": "ciência",
+     "i": 46.934,
+     "f": 47.454
+    },
+    {
+     "p": "que",
+     "i": 47.454,
+     "f": 47.634
+    },
+    {
+     "p": "transforma",
+     "i": 47.634,
+     "f": 48.334
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

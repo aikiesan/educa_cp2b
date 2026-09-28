@@ -1,0 +1,67 @@
+{
+ "titulo": "Biofertilizante: o que sobra também vale",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep08_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Depois que o biodigestor faz o biogás… o que sobra lá dentro?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Sobra o digestato: um material que já foi \"digerido\" pelos micróbios.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Ele guarda os nutrientes que as plantas adoram: nitrogênio, fósforo e potássio.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "E, como já está estabilizado, tem bem menos cheiro que o esterco fresco.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Espalhado na lavoura, ele alimenta o solo…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "…a planta cresce forte — e dá pra trocar parte do adubo químico.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "A planta vira alimento, a sobra vira resíduo, o resíduo volta pro biodigestor…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "É o ciclo se fechando!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Biofertilizante: o que sobra também vale!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

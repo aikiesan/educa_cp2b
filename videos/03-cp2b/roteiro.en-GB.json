@@ -1,0 +1,68 @@
+{
+ "titulo": "O que é o CP2B",
+ "idioma": "en-GB",
+ "narracao": {
+  "arquivo": "entrada/narracao/en-GB/ep03_en-GB_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "C- P- two- B",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Waste… or resource?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "São Paulo produces a great deal of organic waste, on farms and in cities — yet only a small share becomes energy.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "To change that, CP2B was born: the São Paulo Center for Biogas and Bioproducts Studies!",
+   "fala": "To change that, C-P-two-B was born: the São Paulo Center for Biogas and Bioproducts Studies!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Based at NIPE, at Unicamp, and supported by FAPESP.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Our mission: turning waste into biogas, biomethane and bioproducts — through science, technology and social impact.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "We work as a living lab, testing solutions in the field — from waste inventories to public policy.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "We are a network of researchers, universities and companies, in Brazil and abroad.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Driven by excellence, ethics, diversity and a commitment to society.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "We want São Paulo to become a showcase for biogas solutions — and a benchmark across Latin America!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: living energy, science that transforms!",
+   "fala": "C-P-two-B: living energy, science that transforms!",
+   "voz": "Sulafat"
+  }
+ ]
+}

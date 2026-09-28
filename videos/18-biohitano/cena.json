@@ -1,0 +1,64 @@
+{
+  "_sobre": "Ep. 18 · Biohitano: a aposta do CP2B — estilo Q (quadrinhos), dupla de heróis Hidro (H₂) & Metaninho (CH₄); a Arqueia fabrica o metano na 2ª etapa; o cientista narra a HQ. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "Q",
+  "seed": 18,
+  "percurso": "quadros",
+  "pecas": {
+    "tanques": "ep18/_folha/dois_tanques", "onibus_campus": "ep18/_folha/pecas_ep18_1", "baloes": "ep18/_folha/pecas_ep18_2",
+    "bandeja": "ep18/_folha/pecas_ep18_3", "tesoura": "ep12/_folha/pecas_ep12_1", "vinhaca": "ep04/_folha/pecas_ep04_2", "torta": "ep16/_folha/pecas_ep16_6"
+  },
+  "assinatura": { "cientista": true },
+  "cenas": [
+    { "fala": "L01", "arranjo": "dupla", "itens": [
+      { "txt": "H₂", "tipo": "pow", "em": "Hidrogênio", "fundo": "ceu", "cor": "petrol" },
+      { "fx": "molecula", "tipo": "CH4", "n": 1, "em": "metano", "s": 1.4 },
+      { "txt": "?", "tipo": "balao", "lugar": "canto", "em": "juntos-0.6" }
+    ]},
+    { "fala": "L02", "arranjo": "palco", "itens": [
+      { "txt": "BIOHITANO", "tipo": "letras", "em": "biohitano" },
+      { "txt": "APOSTA CP2B", "tipo": "carimbo", "lugar": "rodape", "em": "apostas", "cor": "coral" },
+      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.3 }
+    ]},
+    { "fala": "L03", "arranjo": "palco", "itens": [
+      { "p": "tanques", "em": 0.1, "s": 1.05 },
+      { "p": "tesoura", "em": "dividir", "entra": "desliza_esq", "muda": [{ "em": "digestão", "dx": 0.15, "rot": 0.3, "d": 0.5, "som": "fatia" }] },
+      { "txt": "duas etapas", "tipo": "etiqueta", "lugar": "rodape", "em": "etapas" }
+    ]},
+    { "fala": "L04", "arranjo": "palco", "itens": [
+      { "p": "tanques", "id": "t", "em": 0.05, "s": 1.05 },
+      { "fx": "bolhas", "sobre": "t", "rel": [-0.28, -0.4], "tam": 0.4, "em": "micróbios", "n": 8, "tinta": "ceu" },
+      { "txt": "etapa 1", "tipo": "etiqueta", "sobre": "t", "rel": [-0.28, 0.45], "tam": 0.3, "em": "primeira" },
+      { "txt": "H₂", "tipo": "pow", "lugar": "canto", "em": "hidrogênio", "fundo": "ceu", "cor": "petrol" }
+    ]},
+    { "fala": "L05", "arranjo": "palco", "itens": [
+      { "p": "tanques", "id": "t", "em": 0.05, "s": 1.05 },
+      { "fx": "bolhas", "sobre": "t", "rel": [0.18, -0.45], "tam": 0.45, "em": "segunda", "n": 9, "tinta": "lima" },
+      { "txt": "etapa 2", "tipo": "etiqueta", "sobre": "t", "rel": [0.18, 0.45], "tam": 0.3, "em": "segunda" },
+      { "p": "arqueia_eng:valvula", "lugar": "narrador", "em": "outros" },
+      { "fx": "molecula", "tipo": "CH4", "n": 1, "lugar": "canto", "em": "metano" }
+    ]},
+    { "fala": "L06", "arranjo": "palco", "itens": [
+      { "p": "baloes", "em": "Misturados", "entra": "cresce" },
+      { "txt": "POW!", "tipo": "pow", "lugar": "canto", "em": "formam" },
+      { "fx": "brilho", "de": "baloes", "em": "combustível", "n": 6 },
+      { "txt": "BIOHITANO!", "tipo": "letras", "lugar": "titulo", "em": "renovável" }
+    ]},
+    { "fala": "L07", "arranjo": "fila", "itens": [
+      { "p": "vinhaca", "em": "vinhaça" },
+      { "p": "torta", "em": "torta" },
+      { "p": "bandeja", "em": "comida-0.4" },
+      { "txt": "vinhaça · torta de filtro · restos de comida", "tipo": "etiqueta", "lugar": "rodape", "em": "testam" }
+    ]},
+    { "fala": "L08", "arranjo": "palco", "itens": [
+      { "p": "onibus_campus", "em": "combustível", "entra": "desliza_esq", "s": 1.05 },
+      { "fx": "estrada", "lugar": "base", "em": "rodando", "fundo": true },
+      { "txt": "campus da Unicamp", "tipo": "etiqueta", "lugar": "titulo", "em": "campus" },
+      { "txt": "VRUUM!", "tipo": "pow", "lugar": "canto", "em": "ônibus" }
+    ]},
+    { "fala": "L09", "arranjo": "palco", "recua": "energia", "itens": [
+      { "p": "baloes", "em": 0.1, "muda": [{ "em": "gases", "dy": -0.12, "d": 1.2 }] },
+      { "txt": "DOIS GASES, UMA ENERGIA!", "tipo": "letras", "lugar": "titulo", "em": "Biohitano" },
+      { "fx": "confete", "lugar": "centro", "em": "uma" }
+    ]}
+  ]
+}

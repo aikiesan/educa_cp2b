@@ -1,0 +1,308 @@
+{
+ "_sobre": "Ep. 23 · Da bancada à planta piloto — estilo D (maquete de papelão), subir de fase (videogame): o mascote é o jogador, com HUD de corações e barra de fase. Formato: docs/EPISODIO_GENERICO.md",
+ "estilo": "D",
+ "seed": 23,
+ "pecas": {
+  "tubo": "ep23/_folha/pecas_ep23_1",
+  "penhasco1": "ep23/_folha/pecas_ep23_2",
+  "penhasco2": "ep23/_folha/pecas_ep23_3",
+  "tabuas": "ep23/_folha/pecas_ep23_4",
+  "bandeira": "ep23/_folha/pecas_ep23_5",
+  "moeda": "ep23/_folha/pecas_ep23_6",
+  "coracao_p": "ep23/_folha/pecas_ep23_7",
+  "bancada": "ep23/_folha/laboratorio_bancada",
+  "piloto": "ep23/_folha/planta_piloto",
+  "reator": "ep20/_folha/pecas_ep20_1"
+ },
+ "molduras": [
+  {
+   "tipo": "game",
+   "de": "L01:inicio",
+   "ate": "L08:fim"
+  }
+ ],
+ "cenas": [
+  {
+   "fala": "L01",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "tubo",
+     "em": "solução",
+     "brilha": "pequenininha",
+     "s": 1.05
+    },
+    {
+     "txt": "START",
+     "tipo": "etiqueta",
+     "lugar": "rodape",
+     "em": "Toda",
+     "papel": "lima"
+    },
+    {
+     "p": "mascote:em_pe",
+     "lugar": "narrador",
+     "em": 0.4,
+     "anima": "quica"
+    }
+   ]
+  },
+  {
+   "fala": "L02",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "bancada",
+     "em": "laboratórios",
+     "s": 1.05
+    },
+    {
+     "p": "moeda",
+     "em": "micróbios",
+     "anima": "gira",
+     "vel": 2.5
+    },
+    {
+     "txt": "laboratórios do CP2B",
+     "tipo": "etiqueta",
+     "lugar": "titulo",
+     "em": "pesquisadores"
+    },
+    {
+     "fx": "brilho",
+     "de": "bancada",
+     "em": "molécula",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "fala": "L03",
+   "arranjo": "fila",
+   "itens": [
+    {
+     "p": "reator",
+     "id": "r1",
+     "em": "testam"
+    },
+    {
+     "p": "reator",
+     "id": "r2",
+     "em": "reatores"
+    },
+    {
+     "p": "reator",
+     "id": "r3",
+     "em": "receita-0.4"
+    },
+    {
+     "fx": "xis",
+     "sobre": "r1",
+     "rel": [
+      0,
+      -0.2
+     ],
+     "tam": 0.6,
+     "em": "reatores"
+    },
+    {
+     "fx": "xis",
+     "sobre": "r2",
+     "rel": [
+      0,
+      -0.2
+     ],
+     "tam": 0.6,
+     "em": "bancada"
+    },
+    {
+     "fx": "check",
+     "sobre": "r3",
+     "rel": [
+      0,
+      -0.2
+     ],
+     "tam": 0.7,
+     "em": "certa"
+    }
+   ]
+  },
+  {
+   "fala": "L04",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "reator",
+     "em": "certo",
+     "muda": [
+      {
+       "em": "crescer",
+       "s": 1.35,
+       "d": 1.0,
+       "som": "papel_desliza"
+      }
+     ]
+    },
+    {
+     "p": "biodigestor",
+     "em": "maiores",
+     "s": 0.8
+    },
+    {
+     "txt": "FASE 2",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "Hora"
+    }
+   ]
+  },
+  {
+   "fala": "L05",
+   "arranjo": "dupla",
+   "itens": [
+    {
+     "p": "penhasco1",
+     "id": "p1",
+     "em": "laboratório",
+     "dx": -0.16,
+     "dy": 0.06
+    },
+    {
+     "p": "penhasco2",
+     "id": "p2",
+     "em": "indústria",
+     "dx": 0.16,
+     "dy": 0.06
+    },
+    {
+     "p": "mascote:surpreso",
+     "sobre": "p1",
+     "rel": [
+      0.1,
+      -0.45
+     ],
+     "tam": 0.45,
+     "em": "desafio"
+    },
+    {
+     "txt": "VALE DA MORTE",
+     "tipo": "letras",
+     "lugar": "titulo",
+     "em": "vale"
+    }
+   ]
+  },
+  {
+   "fala": "L06",
+   "arranjo": "dupla",
+   "itens": [
+    {
+     "p": "penhasco1",
+     "id": "p1",
+     "em": 0.05,
+     "dx": -0.16,
+     "dy": 0.06
+    },
+    {
+     "p": "penhasco2",
+     "id": "p2",
+     "em": 0.05,
+     "dx": 0.16,
+     "dy": 0.06
+    },
+    {
+     "p": "tabuas",
+     "lugar": "centro",
+     "em": "parceiras",
+     "entra": "voa",
+     "s": 0.7
+    },
+    {
+     "p": "mascote:pula",
+     "sobre": "p1",
+     "rel": [
+      0.1,
+      -0.45
+     ],
+     "tam": 0.45,
+     "em": "atravessar-0.6",
+     "muda": [
+      {
+       "em": "atravessar",
+       "para": "p2",
+       "rel": [
+        -0.05,
+        -0.45
+       ],
+       "arco": 0.9,
+       "d": 1.1,
+       "som": "boing"
+      }
+     ]
+    },
+    {
+     "txt": "empresas parceiras",
+     "tipo": "etiqueta",
+     "lugar": "titulo",
+     "em": "empresas"
+    }
+   ]
+  },
+  {
+   "fala": "L07",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "p": "piloto",
+     "em": "piloto",
+     "brilha": "verdade",
+     "s": 1.1
+    },
+    {
+     "p": "bandeira",
+     "em": "funcionando",
+     "entra": "cresce"
+    },
+    {
+     "txt": "planta piloto",
+     "tipo": "etiqueta",
+     "lugar": "titulo",
+     "em": "planta"
+    }
+   ]
+  },
+  {
+   "fala": "L08",
+   "arranjo": "palco",
+   "itens": [
+    {
+     "txt": "FASE CONCLUÍDA!",
+     "tipo": "letras",
+     "em": "bancada",
+     "lugar": "titulo"
+    },
+    {
+     "p": "coracao_p",
+     "em": "conquista-0.5",
+     "anima": "pulsa"
+    },
+    {
+     "p": "mascote:pula",
+     "em": "planta",
+     "anima": "quica"
+    },
+    {
+     "fx": "estrela",
+     "n": 5,
+     "lugar": "base",
+     "em": "fase"
+    },
+    {
+     "fx": "confete",
+     "lugar": "centro",
+     "em": "conquista"
+    }
+   ]
+  }
+ ]
+}

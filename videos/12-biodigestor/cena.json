@@ -1,0 +1,122 @@
+{
+ "_sobre": "Ep. 12 · Por dentro do biodigestor — estilo B (planta técnica), visita guiada / raio-X: cada quadro começa como desenho azul e ganha cor na palavra-chave (revela); o cientista guia; a Arqueia espia pela escotilha no fim. Formato: docs/EPISODIO_GENERICO.md",
+ "estilo": "B",
+ "seed": 12,
+ "pecas": {
+  "corte": "ep12/_folha/biodigestor_corte",
+  "lagoa": "ep12/_folha/lagoa_coberta",
+  "tesoura": "ep12/_folha/pecas_ep12_1",
+  "termo": "ep12/_folha/pecas_ep12_2",
+  "ampulheta": "ep12/_folha/pecas_ep12_3",
+  "helice": "ep12/_folha/pecas_ep12_4",
+  "cadeado": "ep12/_folha/pecas_ep12_5",
+  "balde": "ep08/_folha/pecas_ep08_2"
+ },
+ "assinatura": { "cientista": true },
+ "cenas": [
+  {
+   "fala": "L01",
+   "revela": "abrir",
+   "itens": [
+    { "txt": "POR DENTRO", "tipo": "letras", "lugar": "titulo", "em": "dentro" },
+    { "p": "biodigestor", "id": "bio", "em": 0.25, "entra": "cai" },
+    { "p": "tesoura", "sobre": "bio", "rel": [-0.56, 0.02], "tam": 0.26, "em": "acontece", "entra": "desliza_esq",
+      "muda": [ { "em": "biodigestor", "dx": 3.8, "rot": 0.08, "d": 1.3, "som": "papel_desliza" } ] },
+    { "p": "cientista:aponta_esq", "lugar": "narrador", "em": 0.6 }
+   ]
+  },
+  {
+   "fala": "L02",
+   "revela": "aqui",
+   "cam": [ { "em": "aqui", "alvo": "ent", "z": 1.35, "d": 0.8 } ],
+   "itens": [
+    { "p": "corte", "em": 0.1, "entra": "cai" },
+    { "txt": "entrada", "tipo": "etiqueta", "id": "ent", "sobre": "corte", "rel": [-0.2, -0.43], "tam": 0.3, "em": "entra" },
+    { "p": "esterco", "sobre": "corte", "rel": [-0.42, -0.6], "tam": 0.13, "em": "resíduos", "entra": "cai",
+      "muda": [ { "em": "misturadinhos", "dy": 0.7, "s": 0.35, "alpha": 0, "d": 0.5 } ] },
+    { "p": "banana", "sobre": "corte", "rel": [-0.33, -0.62], "tam": 0.12, "em": "resíduos+0.25", "entra": "cai",
+      "muda": [ { "em": "misturadinhos+0.15", "dx": -0.5, "dy": 0.9, "s": 0.35, "alpha": 0, "d": 0.5 } ] }
+   ]
+  },
+  {
+   "fala": "L03",
+   "arranjo": "palco",
+   "revela": "dentro",
+   "itens": [
+    { "p": "cadeado", "em": 0.1, "entra": "cai" },
+    { "fx": "molecula", "id": "o2", "tipo": "O2", "humor": "nojo", "em": "oxigênio" },
+    { "txt": "SEM O₂", "tipo": "carimbo", "sobre": "cadeado", "rel": [0, 0.24], "tam": 0.8, "em": "oxigênio+0.2", "cor": "coral" },
+    { "fx": "xis", "sobre": "o2", "rel": [0.12, 0], "tam": 0.75, "em": "oxigênio+0.45" },
+    { "p": "cientista:prancheta", "lugar": "narrador", "em": 0.4 }
+   ]
+  },
+  {
+   "fala": "L04",
+   "arranjo": "palco",
+   "revela": "gostam",
+   "itens": [
+    { "p": "termo", "em": 0.1, "entra": "cresce" },
+    { "fx": "microbio", "n": 3, "humor": "feliz", "em": "micróbios" },
+    { "txt": "morninho", "tipo": "mao", "em": "morninho", "cor": "amarelo" },
+    { "fx": "ondas", "sobre": "termo", "rel": [0.35, 0.05], "tam": 0.75, "em": "morninho" }
+   ]
+  },
+  {
+   "fala": "L05",
+   "arranjo": "palco",
+   "revela": "mexe",
+   "itens": [
+    { "p": "helice", "em": 0.1, "anima": "gira", "vel": 0.5 },
+    { "fx": "microbio", "n": 4, "humor": "comendo", "em": "comida" },
+    { "fx": "ciclo", "sobre": "helice", "tam": 1.25, "em": "mexe", "cor": "lima" },
+    { "txt": "misturador", "tipo": "etiqueta", "sobre": "helice", "rel": [0, 0.66], "tam": 0.7, "em": "misturador" },
+    { "p": "cientista:aponta_esq", "lugar": "narrador", "em": 0.3 }
+   ]
+  },
+  {
+   "fala": "L06",
+   "revela": "biogás",
+   "cam": [ { "em": "guardado", "alvo": "gas", "z": 1.35, "d": 0.8 } ],
+   "itens": [
+    { "p": "corte", "em": 0.1 },
+    { "fx": "bolhas", "sobre": "corte", "rel": [-0.03, 0.0], "tam": 0.42, "em": "sobe", "n": 10, "tinta": "lima" },
+    { "txt": "biogás", "tipo": "etiqueta", "id": "gas", "sobre": "corte", "rel": [-0.02, -0.31], "tam": 0.3, "em": "guardado" }
+   ]
+  },
+  {
+   "fala": "L07",
+   "arranjo": "fila",
+   "revela": "dentro",
+   "itens": [
+    { "p": "ampulheta", "em": 0.15,
+      "muda": [ { "em": "tempo", "rot": 3.1416, "d": 0.8, "som": "whoosh_curto" } ] },
+    { "p": "balde", "em": "sai", "entra": "desliza_dir" },
+    { "fx": "seta", "de": "ampulheta", "para": "balde", "em": "sai+0.25", "cor": "lima" },
+    { "txt": "biofertilizante", "tipo": "etiqueta", "sobre": "balde", "rel": [0, 0.64], "tam": 1.0, "em": "outro" },
+    { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.3 }
+   ]
+  },
+  {
+   "fala": "L08",
+   "arranjo": "dupla",
+   "revela": "coberta",
+   "itens": [
+    { "p": "lagoa", "em": "vários" },
+    { "p": "corte", "id": "tanque", "em": "e" },
+    { "txt": "lagoa coberta", "tipo": "etiqueta", "sobre": "lagoa", "rel": [0, 0.78], "tam": 0.5, "em": "coberta" },
+    { "txt": "tanque com misturador", "tipo": "etiqueta", "sobre": "tanque", "rel": [0, 0.64], "tam": 1.0, "em": "e+0.25" }
+   ]
+  },
+  {
+   "fala": "L09",
+   "revela": "dentro",
+   "cam": [ { "em": "dentro", "alvo": "arq", "z": 2.0, "d": 0.8 } ],
+   "itens": [
+    { "p": "biodigestor", "id": "bio", "em": 0.1, "entra": "cai" },
+    { "p": "arqueia_rosto:concentrada", "id": "arq", "sobre": "bio", "rel": [0.074, 0.184], "tam": 0.339, "chao": false, "fundo": true, "em": "dentro", "entra": "sobe" },
+    { "txt": "cozinha de micróbios!", "tipo": "etiqueta", "sobre": "bio", "rel": [0.045, 0.0], "tam": 0.5, "em": "dentro+0.35" },
+    { "p": "cientista:aponta_esq", "lugar": "narrador", "em": 0.3 }
+   ]
+  }
+ ]
+}

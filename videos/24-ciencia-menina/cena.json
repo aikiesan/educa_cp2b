@@ -1,0 +1,70 @@
+{
+  "_sobre": "Ep. 24 · Ciência, coisa de menina — estilo Q (quadrinhos), super-heroínas da ciência: a estudante de jaleco-capa é a protagonista da revistinha; no fim a câmera recua e mostra a página inteira da HQ. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "Q",
+  "seed": 24,
+  "percurso": "quadros",
+  "pecas": {
+    "estudante": "ep24/_folha/herois_1", "pipeta": "ep24/_folha/herois_2", "engenheira": "ep24/_folha/herois_3",
+    "geografa": "ep24/_folha/herois_4", "jurista": "ep24/_folha/herois_5", "onibus_escolar": "ep24/_folha/pecas_ep24_1",
+    "revista": "ep24/_folha/pecas_ep24_2", "ideia": "ep24/_folha/pecas_ep24_3", "microscopio": "ep24/_folha/pecas_ep24_4",
+    "escola": "ep24/_folha/pecas_ep24_5", "casca": "ep24/_folha/pecas_ep24_6"
+  },
+  "assinatura": {"cientista": true},
+  "cenas": [
+    {"fala": "L01", "arranjo": "palco", "itens": [
+      {"p": "revista", "id": "rev", "em": 0.1, "s": 1.1},
+      {"txt": "CIÊNCIA!", "tipo": "letras", "sobre": "rev", "rel": [0.02, -0.37], "tam": 0.6, "em": 0.35},
+      {"p": "estudante", "sobre": "rev", "rel": [0, 0.13], "tam": 0.62, "em": "heroína", "entra": "cai"},
+      {"txt": "ZAP!", "tipo": "pow", "em": "superpoder", "fundo": "amarelo", "cor": "coral"},
+      {"txt": "curiosidade!", "tipo": "etiqueta", "em": "curiosidade", "papel": "lima", "lugar": "rodape"}
+    ]},
+    {"fala": "L02", "arranjo": "dupla", "itens": [
+      {"p": "estudante", "id": "h1", "em": 0.05},
+      {"p": "casca", "em": "resto", "entra": "cai"},
+      {"p": "ideia", "sobre": "h1", "rel": [0.62, -0.4], "tam": 0.5, "em": "pergunta", "brilha": "energia"}
+    ]},
+    {"fala": "L03", "arranjo": "grade", "colunas": 4, "itens": [
+      {"p": "microscopio", "em": "micróbios"},
+      {"p": "maquina", "em": "máquinas"},
+      {"p": "pino_coral", "em": "mapas"},
+      {"p": "livros", "em": "leis"},
+      {"txt": "lugar pra todo mundo!", "tipo": "etiqueta", "lugar": "titulo", "em": "lugar", "papel": "amarelo"}
+    ]},
+    {"fala": "L04", "arranjo": "fila", "itens": [
+      {"p": "pipeta", "em": "cientistas"},
+      {"p": "engenheira", "em": "cientistas+0.25"},
+      {"p": "geografa", "em": "cientistas+0.5"},
+      {"p": "jurista", "em": "cientistas+0.75"},
+      {"txt": "MULHERES NA CIÊNCIA!", "tipo": "letras", "lugar": "titulo", "em": "mulheres"},
+      {"fx": "brilho", "lugar": "tudo", "em": "dirige", "n": 8}
+    ]},
+    {"fala": "L05", "arranjo": "fila", "itens": [
+      {"p": "escola", "em": "ensino"},
+      {"p": "onibus_escolar", "em": "estudantes", "entra": "desliza_dir"},
+      {"p": "microscopio", "em": "laboratórios"},
+      {"txt": "Ciência, coisa de menina", "tipo": "etiqueta", "lugar": "titulo", "em": "projetos", "papel": "coral"}
+    ]},
+    {"fala": "L06", "arranjo": "dupla", "itens": [
+      {"p": "estudante", "id": "h1", "em": 0.05},
+      {"p": "pipeta", "id": "h2", "em": "experimentos-0.3"},
+      {"txt": "UAU!", "tipo": "pow", "em": "experimentos", "fundo": "amarelo", "cor": "coral", "sobre": "h2", "rel": [0.62, 0.1], "tam": 0.4},
+      {"fx": "bolhas", "sobre": "h2", "rel": [0.32, -0.36], "tam": 0.34, "em": "experimentos", "n": 6, "tinta": "lima"},
+      {"txt": "Como\nfunciona?", "tipo": "balao", "sobre": "h1", "rel": [0.55, -0.42], "tam": 0.5, "em": "conversam"},
+      {"txt": "Vamos\ndescobrir!", "tipo": "balao", "sobre": "h2", "rel": [-0.55, -0.42], "tam": 0.5, "em": "descobrem", "cauda": [0.35, 0.9]}
+    ]},
+    {"fala": "L07", "arranjo": "grade", "colunas": 1, "itens": [
+      {"p": "estudante", "em": 0.05, "lugar": "narrador"},
+      {"txt": "DIVERSIDADE", "tipo": "carimbo", "em": "diversidade", "cor": "coral"},
+      {"txt": "EQUIDADE DE GÊNERO", "tipo": "carimbo", "em": "equidade", "cor": "petrol"},
+      {"txt": "valores da boa ciência", "tipo": "etiqueta", "lugar": "rodape", "em": "valores", "papel": "amarelo"}
+    ]},
+    {"fala": "L08", "arranjo": "fila", "recua": "todo", "itens": [
+      {"p": "pipeta", "em": "menina"},
+      {"p": "estudante", "em": "Coisa", "anima": "quica"},
+      {"p": "jurista", "em": "menina+0.2"},
+      {"p": "cientista:acena", "em": "mundo"},
+      {"txt": "COISA DE MENINA!", "tipo": "letras", "lugar": "titulo", "em": "Coisa"},
+      {"fx": "confete", "lugar": "centro", "em": "curiosidade"}
+    ]}
+  ]
+}

@@ -1,0 +1,68 @@
+{
+ "titulo": "Da bancada à planta piloto",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep23_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Toda grande solução começa pequenininha… dentro de um tubo de ensaio!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Nos laboratórios do CP2B, os pesquisadores conhecem os micróbios, analisam os resíduos e medem cada molécula.",
+   "fala": "Nos laboratórios do cê-pê-dois-bê, os pesquisadores conhecem os micróbios, analisam os resíduos e medem cada molécula.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Depois, testam tudo em reatores de bancada, pra achar a receita certa.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Deu certo? Hora de crescer: o processo vai pra reatores maiores, que imitam a vida real.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Só que, entre o laboratório e a indústria, tem um desafio famoso: o \"vale da morte\" — onde muita ideia boa fica pelo caminho.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Por isso o CP2B trabalha junto com empresas parceiras, pra atravessar esse vale em conjunto!",
+   "fala": "Por isso o cê-pê-dois-bê trabalha junto com empresas parceiras, pra atravessar esse vale em conjunto!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "E aí vem a planta piloto: a tecnologia funcionando em escala de verdade.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Da bancada à planta piloto: cada fase é uma conquista!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+  "_sobre": "Ep. 05 · Do chiqueiro à tomada — estilo F, colcha de retalhos de feltro + twist musical: cada fala é um retalho costurado aos vizinhos (em cobrinha, 3×3); a agulha costura a linha de lã de um retalho ao outro no tempo da trilha; onomatopeias (OINC, CÓ, PLOP) caem nos tempos fortes, bichos quicam no compasso e o Metaninho de crochê marca o ritmo; no fim a câmera recua e mostra a colcha inteira: do chiqueiro à tomada. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "F",
+  "seed": 5,
+  "colcha": {"enfeites": [{"p": "alfineteira", "retalho": 0, "pos": [-0.2, 0.05], "h": 300, "rot": -0.08, "posV": [-0.18, -0.12], "hV": 300}, {"p": "novelo_coral", "retalho": 0, "pos": [0.16, -0.14], "h": 250, "posV": [0.16, 0.06], "hV": 240}, {"p": "novelo_lima", "retalho": 0, "pos": [0.28, 0.16], "h": 200, "posV": [-0.1, 0.24], "hV": 210}, {"p": "agulha_croche", "retalho": 0, "pos": [0.0, 0.3], "h": 90, "rot": -0.25, "posV": [0.12, 0.34], "hV": 80}]},
+  "pecas": {
+    "porco": "ep05/_folha/animais_1", "leitao": "ep05/_folha/animais_2", "galinha": "ep05/_folha/animais_3",
+    "galinha2": "ep05/_folha/animais_4", "pintinho": "ep05/_folha/animais_5", "granja": "ep05/_folha/granja",
+    "lampada_feltro": "ep05/_folha/pecas_ep05_1", "casa_fazenda": "ep05/_folha/pecas_ep05_2", "tomada": "ep05/_folha/pecas_ep05_3",
+    "cofrinho": "ep05/_folha/pecas_ep05_4", "lagoa": "ep05/_folha/pecas_ep05_5", "bosta": "ep10/_folha/ingredientes_4",
+    "lagoa_coberta": "ep12/_folha/lagoa_coberta", "termometro": "ep12/_folha/pecas_ep12_2", "ampulheta": "ep12/_folha/pecas_ep12_3",
+    "motor": "ep09/_folha/pecas_ep09_1", "horta": "ep17/_folha/pecas_ep17_5", "adubo": "ep15/_folha/pecas_ep15_3",
+    "produtor": "ep19/_folha/equipe_4", "alfineteira": "ep26/_folha/mesa_croche_6", "novelo_coral": "ep26/_folha/mesa_croche_3",
+    "novelo_lima": "ep26/_folha/mesa_croche_2", "agulha_croche": "ep26/_folha/mesa_croche_5"
+  },
+  "cenas": [
+    {"fala": "L01", "arranjo": "fila", "itens": [
+      {"p": "mascote:pula", "id": "maestro", "lugar": "narrador", "em": 0.5, "entra": "cai", "anima": "quica"},
+      {"fx": "notas", "sobre": "maestro", "rel": [-0.35, -0.55], "tam": 0.55, "em": 1.1, "n": 4},
+      {"p": "porco", "em": "Oinc", "batida": "forte", "entra": "cai", "anima": "quica"},
+      {"txt": "OINC!", "tipo": "pow", "sobre": "porco", "rel": [0.05, -0.78], "tam": 0.6, "em": "Oinc", "batida": "forte", "cor": "coral"},
+      {"p": "galinha", "em": "Có", "batida": true, "entra": "cai", "anima": "quica"},
+      {"txt": "CÓ-CÓ!", "tipo": "pow", "sobre": "galinha", "rel": [0.1, -0.8], "tam": 0.6, "em": "có#2", "batida": true, "cor": "ambar"},
+      {"p": "pintinho", "sobre": "galinha", "rel": [0.62, 0.3], "tam": 0.42, "em": "ri", "batida": true, "entra": "cai", "anima": "quica"},
+      {"fx": "coracao", "sobre": "porco", "rel": [-0.3, -0.5], "tam": 0.25, "em": "feliz", "batida": true},
+      {"p": "bosta", "id": "bosta", "em": "esterco-0.1", "batida": true, "entra": "cai", "s": 0.8, "chao": true},
+      {"txt": "PLOP!", "tipo": "pow", "sobre": "bosta", "rel": [0.05, -0.95], "tam": 0.6, "em": "esterco", "batida": true, "cor": "marrom"},
+      {"fx": "mosca", "sobre": "bosta", "rel": [0.1, -0.55], "tam": 0.9, "em": "esterco+0.35"}
+    ]},
+    {"fala": "L02", "arranjo": "palco", "itens": [
+      {"p": "granja", "id": "granja", "em": "granjas-0.2", "batida": true, "s": 1.08},
+      {"p": "leitao", "em": "porcos", "batida": true, "entra": "cai", "anima": "quica"},
+      {"p": "galinha2", "em": "galinhas", "batida": true, "entra": "cai", "anima": "quica"},
+      {"p": "bosta", "id": "b1", "sobre": "granja", "rel": [-0.3, 0.42], "tam": 0.13, "em": "esterco", "batida": true, "entra": "cai", "muda": [{"em": "acumula", "s": 1.35, "d": 0.3, "batida": true}, {"em": "santo", "s": 1.7, "d": 0.3, "batida": true}]},
+      {"p": "bosta", "id": "b2", "sobre": "granja", "rel": [-0.08, 0.46], "tam": 0.12, "em": "acumula", "batida": true, "entra": "cai", "muda": [{"em": "todo", "s": 1.4, "d": 0.3, "batida": true}, {"em": "dia", "s": 1.75, "d": 0.3, "batida": true}]},
+      {"p": "bosta", "id": "b3", "sobre": "granja", "rel": [0.28, 0.46], "tam": 0.12, "em": "todo", "batida": true, "entra": "cai", "muda": [{"em": "dia", "s": 1.5, "d": 0.3, "batida": true}]},
+      {"p": "ampulheta", "lugar": "canto", "em": "todo", "batida": true, "s": 1.25, "muda": [{"em": "santo", "rot": 3.1416, "d": 0.35, "batida": true}, {"em": "dia", "rot": 6.2832, "d": 0.35, "batida": true}]},
+      {"txt": "todo santo dia", "tipo": "etiqueta", "lugar": "rodape", "em": "acumula"},
+      {"p": "mascote:em_pe", "entra": "cai", "anima": "quica", "id": "m2", "sobre": "granja", "rel": [0.12, -0.62], "tam": 0.28, "em": "granjas", "poses": [{"em": "acumula", "p": "surpreso"}]},
+      {"txt": "Quanto\nesterco!", "tipo": "balao", "sobre": "m2", "rel": [-0.75, -0.25], "tam": 0.9, "em": "santo", "cauda": [0.45, 0.8]}
+    ]},
+    {"fala": "L03", "arranjo": "palco", "itens": [
+      {"p": "lagoa", "id": "lagoa", "em": "aberto-0.3", "batida": true, "s": 1.05},
+      {"fx": "cheiro", "de": "lagoa", "sobre": "lagoa", "rel": [0, -0.25], "tam": 0.85, "em": "cheira"},
+      {"fx": "mosca", "sobre": "lagoa", "rel": [-0.25, -0.4], "tam": 0.4, "em": "mal"},
+      {"txt": "ECA!", "tipo": "pow", "em": "mal", "batida": true, "cor": "verde", "sobre": "lagoa", "rel": [-0.36, -0.55], "tam": 0.3},
+      {"fx": "molecula", "tipo": "CH4", "n": 3, "humor": "nojo", "sobre": "lagoa", "rel": [0.05, -0.85], "tam": 0.9, "em": "metano", "batida": true, "sobe": true, "vel": 70},
+      {"txt": "CH4", "tipo": "formula", "lugar": "titulo", "em": "metano+0.1", "cor": "coral"},
+      {"p": "termometro", "lugar": "direita", "em": "esquenta-0.2", "batida": true, "entra": "cai", "anima": "treme", "brilha": "planeta"},
+      {"fx": "raios", "lugar": "direita", "em": "planeta", "cor": "coral", "n": 12, "fundo": true},
+      {"p": "mascote:em_pe", "entra": "cai", "id": "m3", "sobre": "lagoa", "rel": [-0.44, 0.18], "tam": 0.2, "em": "aberto", "poses": [{"em": "cheira", "p": "surpreso"}]}
+    ]},
+    {"fala": "L04", "arranjo": "palco", "itens": [
+      {"p": "lagoa", "id": "lagoa4", "em": 0.05, "entra": "nenhum", "s": 1.0, "sai": "biodigestor+0.35", "lugar": "centro"},
+      {"p": "lagoa_coberta", "id": "bio", "em": "biodigestor", "batida": "forte", "entra": "cai", "s": 1.02, "lugar": "centro"},
+      {"txt": "biodigestor", "tipo": "etiqueta", "lugar": "rodape", "em": "biodigestor+0.3", "papel": "lima"},
+      {"fx": "molecula", "tipo": "CH4", "n": 3, "humor": "feliz", "sobre": "bio", "rel": [0.02, -0.75], "tam": 1.0, "em": "metano", "batida": true},
+      {"txt": "COMBUSTÍVEL!", "tipo": "letras", "lugar": "titulo", "em": "vira", "batida": true},
+      {"fx": "chama", "sobre": "bio", "rel": [0.44, -0.62], "tam": 0.26, "em": "vira", "batida": true},
+      {"p": "mascote:surpreso", "id": "masc4", "lugar": "esquerda", "em": "dentro", "batida": true, "entra": "cai", "anima": "quica", "s": 0.75, "poses": [{"em": "vira", "p": "pula"}]}
+    ]},
+    {"fala": "L05", "arranjo": "fila", "itens": [
+      {"p": "lampada_feltro", "id": "lamp", "em": "aquecer", "batida": true, "entra": "cai", "brilha": "granja", "anima": "balanca", "s": 0.72},
+      {"p": "leitao", "sobre": "lamp", "rel": [-0.15, 0.78], "tam": 0.55, "em": "granja", "batida": true, "anima": "quica"},
+      {"p": "pintinho", "sobre": "lamp", "rel": [0.42, 0.82], "tam": 0.38, "em": "granja+0.25", "batida": true, "anima": "quica"},
+      {"p": "motor", "id": "motor", "em": "girar", "batida": true, "entra": "cai", "anima": "treme"},
+      {"fx": "engrenagem", "sobre": "motor", "rel": [0.02, 0.72], "tam": 0.45, "em": "gerador", "batida": true},
+      {"p": "casa_fazenda", "id": "casa", "em": "acender-0.2", "batida": true, "entra": "cai", "brilha": "luzes", "anima": "quica"},
+      {"fx": "brilho", "de": "casa", "sobre": "casa", "em": "luzes", "n": 5},
+      {"p": "mascote:em_pe", "entra": "cai", "anima": "quica", "id": "m5", "sobre": "casa", "rel": [0.5, 0.38], "tam": 0.4, "em": "girar", "poses": [{"em": "luzes", "p": "pula"}]}
+    ]},
+    {"fala": "L06", "arranjo": "palco", "itens": [
+      {"p": "horta", "id": "horta", "em": "campo", "batida": true, "entra": "cresce", "s": 1.05},
+      {"p": "trator", "id": "trator", "em": "volta-0.3", "batida": true, "entra": "desliza_esq", "anima": "treme", "som": "trator", "somDur": 2.2, "s": 1.25},
+      {"fx": "gotas", "de": "trator", "saida": [-0.42, 0.3], "n": 5, "cor": "marrom", "em": "campo"},
+      {"p": "adubo", "em": "sobra", "batida": true, "entra": "cai", "anima": "quica"},
+      {"txt": "biofertilizante", "tipo": "etiqueta", "lugar": "titulo", "em": "como", "papel": "lima"},
+      {"p": "mascote:acena", "entra": "cai", "id": "m6", "sobre": "trator", "rel": [0.12, -0.62], "tam": 0.5, "em": "volta"}
+    ]},
+    {"fala": "L07", "itens": [
+      {"txt": "MENOS CHEIRO", "tipo": "carimbo", "pos": [-0.24, -0.28], "caixa": [0.4, 0.14], "posV": [0, -0.26], "caixaV": [0.8, 0.09], "em": "cheiro", "batida": true, "cor": "verdeEsc"},
+      {"txt": "MENOS POLUIÇÃO", "tipo": "carimbo", "pos": [-0.24, -0.06], "caixa": [0.44, 0.14], "posV": [0, -0.155], "caixaV": [0.86, 0.09], "em": "poluição", "batida": true, "cor": "petrol"},
+      {"txt": "MAIS ENERGIA", "tipo": "carimbo", "pos": [-0.24, 0.16], "caixa": [0.4, 0.14], "posV": [0, -0.05], "caixaV": [0.8, 0.09], "em": "energia", "batida": true, "cor": "coral"},
+      {"p": "cofrinho", "id": "cofre", "pos": [0.2, 0.08], "caixa": [0.3, 0.46], "posV": [-0.15, 0.22], "caixaV": [0.52, 0.2], "em": "economia-0.15", "batida": true, "entra": "cai", "anima": "quica"},
+      {"fx": "estrela", "n": 3, "sobre": "cofre", "rel": [0, -0.7], "tam": 0.7, "em": "economia+0.25"},
+      {"p": "produtor", "pos": [0.4, 0.12], "caixa": [0.2, 0.5], "posV": [0.26, 0.25], "caixaV": [0.4, 0.22], "em": "economia+0.3", "batida": true, "entra": "desliza_dir"},
+      {"p": "mascote:em_pe", "entra": "cai", "anima": "quica", "id": "m7", "sobre": "cofre", "rel": [0.05, 0.66], "tam": 0.4, "em": "cheiro", "poses": [{"em": "economia", "p": "pula"}]}
+    ]},
+    {"fala": "L08", "arranjo": "fila", "recua": "trabalhando", "itens": [
+      {"p": "porco", "id": "porco8", "em": "chiqueiro", "batida": true, "entra": "cai", "anima": "quica"},
+      {"p": "lagoa_coberta", "id": "bio8", "em": "chiqueiro+0.3", "batida": true, "entra": "cai"},
+      {"p": "tomada", "id": "tomada", "em": "tomada", "batida": true, "entra": "cai", "anima": "quica", "s": 1.25},
+      {"fx": "tracejado", "de": "porco8", "para": "bio8", "em": "à", "cor": "coral", "w": 8},
+      {"fx": "tracejado", "de": "bio8", "para": "tomada", "em": "tomada+0.1", "cor": "coral", "w": 8},
+      {"txt": "DO CHIQUEIRO À TOMADA", "tipo": "letras", "lugar": "titulo", "em": "Do"},
+      {"fx": "brilho", "de": "tomada", "sobre": "tomada", "em": "esterco", "n": 5},
+      {"p": "mascote:em_pe", "entra": "cai", "anima": "quica", "id": "m8", "sobre": "tomada", "rel": [0.66, 0.2], "tam": 0.55, "em": "tomada", "poses": [{"em": "esterco", "p": "pula"}]}
+    ]}
+  ]
+}

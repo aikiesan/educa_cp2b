@@ -1,0 +1,68 @@
+{
+ "titulo": "Quem faz o CP2B",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep19_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Quem transforma resíduo em energia? Gente! Muita gente.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "No CP2B tem estudante de iniciação científica, de mestrado e de doutorado…",
+   "fala": "No cê-pê-dois-bê tem estudante de iniciação científica, de mestrado e de doutorado…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "…pesquisadoras e pesquisadores de pós-doutorado, professoras e professores…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "…e uma equipe técnica e administrativa que faz tudo funcionar.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Tem gente da engenharia, da biologia, da química, da economia, do direito, da geografia, da comunicação…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "…de várias universidades e institutos, e de empresas parceiras.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Cada um enxerga o resíduo de um jeito — e é juntando esses olhares que nascem as soluções.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Quem faz o CP2B? A gente — e quem mais quiser vir junto!",
+   "fala": "Quem faz o cê-pê-dois-bê? A gente — e quem mais quiser vir junto!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "titulo": "Por dentro do biodigestor",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep12_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Já imaginou o que acontece dentro de um biodigestor? Vamos abrir um!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Tudo entra por aqui: os resíduos, bem misturadinhos.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Lá dentro não pode ter oxigênio — é um tanque bem fechado.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Os micróbios gostam de um ambiente morninho e estável, sem susto.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Um misturador mexe devagar, pra comida chegar a todo mundo.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "O biogás sobe e fica guardado aqui em cima, na cúpula.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "E, depois de um tempo lá dentro, o material pronto sai do outro lado, como biofertilizante.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Tem biodigestor de vários jeitos: a lagoa coberta, comum nas fazendas, e o tanque com misturador, das usinas.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Por fora, parece simples. Por dentro, é uma cozinha de micróbios!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

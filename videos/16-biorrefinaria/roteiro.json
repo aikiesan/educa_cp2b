@@ -1,0 +1,67 @@
+{
+ "titulo": "Biorrefinaria: um resíduo, vários produtos",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep16_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Sabe a refinaria de petróleo, que tira vários produtos de uma coisa só?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "A biorrefinaria faz o mesmo… mas com biomassa e resíduos!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Pega a cana: dela saem o açúcar e o etanol.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "O bagaço vira calor e eletricidade…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…a vinhaça e a torta de filtro viram biogás e biometano…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "…e o que sobra ainda volta pro canavial como adubo.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "E dá pra ir além, juntando a usina com a pecuária da região: mais resíduo, mais biometano!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Nada se perde, tudo se aproveita.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Biorrefinaria: um resíduo, vários produtos!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

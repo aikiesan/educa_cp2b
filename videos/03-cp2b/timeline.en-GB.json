@@ -1,0 +1,818 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 71.909,
+ "musica": {
+  "bpm": 94.9870714898048,
+  "periodo": 0.6316649103814086,
+  "downbeat0": 2.105,
+  "compasso": 2.5266596415256344,
+  "logo": 65.909,
+  "cortes": [
+   {
+    "de": 50.112,
+    "para": 42.532
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 2.155,
+   "fim": 4.065,
+   "origem": {
+    "inicio": 0.34,
+    "fim": 2.25
+   },
+   "palavras": [
+    {
+     "p": "Waste",
+     "i": 2.155,
+     "f": 2.775
+    },
+    {
+     "p": "or",
+     "i": 2.775,
+     "f": 3.335
+    },
+    {
+     "p": "resource",
+     "i": 3.335,
+     "f": 4.065
+    }
+   ],
+   "texto": "Waste… or resource?"
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 5.038,
+   "fim": 13.698,
+   "origem": {
+    "inicio": 2.82,
+    "fim": 11.48
+   },
+   "palavras": [
+    {
+     "p": "São",
+     "i": 5.038,
+     "f": 5.258
+    },
+    {
+     "p": "Paulo",
+     "i": 5.258,
+     "f": 5.738
+    },
+    {
+     "p": "produces",
+     "i": 5.738,
+     "f": 6.258
+    },
+    {
+     "p": "a",
+     "i": 6.258,
+     "f": 6.558
+    },
+    {
+     "p": "great",
+     "i": 6.558,
+     "f": 6.838
+    },
+    {
+     "p": "deal",
+     "i": 6.838,
+     "f": 7.198
+    },
+    {
+     "p": "of",
+     "i": 7.198,
+     "f": 7.458
+    },
+    {
+     "p": "organic",
+     "i": 7.458,
+     "f": 7.818
+    },
+    {
+     "p": "waste",
+     "i": 7.818,
+     "f": 8.258
+    },
+    {
+     "p": "on",
+     "i": 8.438,
+     "f": 8.818
+    },
+    {
+     "p": "farms",
+     "i": 8.818,
+     "f": 9.438
+    },
+    {
+     "p": "and",
+     "i": 9.438,
+     "f": 9.738
+    },
+    {
+     "p": "in",
+     "i": 9.738,
+     "f": 9.998
+    },
+    {
+     "p": "cities",
+     "i": 9.998,
+     "f": 10.438
+    },
+    {
+     "p": "yet",
+     "i": 10.818,
+     "f": 11.358
+    },
+    {
+     "p": "only",
+     "i": 11.358,
+     "f": 11.798
+    },
+    {
+     "p": "a",
+     "i": 11.798,
+     "f": 11.998
+    },
+    {
+     "p": "small",
+     "i": 11.998,
+     "f": 12.378
+    },
+    {
+     "p": "share",
+     "i": 12.378,
+     "f": 12.738
+    },
+    {
+     "p": "becomes",
+     "i": 12.738,
+     "f": 13.218
+    },
+    {
+     "p": "energy",
+     "i": 13.218,
+     "f": 13.698
+    }
+   ],
+   "texto": "São Paulo produces a great deal of organic waste, on farms and in cities — yet only a small share becomes energy."
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 14.671,
+   "fim": 22.161,
+   "origem": {
+    "inicio": 12.39,
+    "fim": 19.88
+   },
+   "palavras": [
+    {
+     "p": "To",
+     "i": 14.671,
+     "f": 14.781
+    },
+    {
+     "p": "change",
+     "i": 14.781,
+     "f": 15.281
+    },
+    {
+     "p": "that",
+     "i": 15.281,
+     "f": 15.681
+    },
+    {
+     "p": "C",
+     "i": 15.921,
+     "f": 16.101
+    },
+    {
+     "p": "P",
+     "i": 16.101,
+     "f": 16.281
+    },
+    {
+     "p": "two",
+     "i": 16.281,
+     "f": 16.821
+    },
+    {
+     "p": "B",
+     "i": 16.821,
+     "f": 17.001
+    },
+    {
+     "p": "was",
+     "i": 17.001,
+     "f": 17.281
+    },
+    {
+     "p": "born",
+     "i": 17.281,
+     "f": 17.561
+    },
+    {
+     "p": "the",
+     "i": 17.761,
+     "f": 18.201
+    },
+    {
+     "p": "São",
+     "i": 18.201,
+     "f": 18.481
+    },
+    {
+     "p": "Paulo",
+     "i": 18.481,
+     "f": 19.001
+    },
+    {
+     "p": "Center",
+     "i": 19.001,
+     "f": 19.401
+    },
+    {
+     "p": "for",
+     "i": 19.401,
+     "f": 19.701
+    },
+    {
+     "p": "Biogas",
+     "i": 19.701,
+     "f": 20.481
+    },
+    {
+     "p": "and",
+     "i": 20.481,
+     "f": 20.641
+    },
+    {
+     "p": "Bioproducts",
+     "i": 20.641,
+     "f": 21.361
+    },
+    {
+     "p": "Studies",
+     "i": 21.361,
+     "f": 22.161
+    }
+   ],
+   "texto": "To change that, CP2B was born: the São Paulo Center for Biogas and Bioproducts Studies!",
+   "fala": "To change that, C-P-two-B was born: the São Paulo Center for Biogas and Bioproducts Studies!"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 23.134,
+   "fim": 27.124,
+   "origem": {
+    "inicio": 20.34,
+    "fim": 24.33
+   },
+   "palavras": [
+    {
+     "p": "Based",
+     "i": 23.134,
+     "f": 23.454
+    },
+    {
+     "p": "at",
+     "i": 23.454,
+     "f": 23.714
+    },
+    {
+     "p": "NIPE",
+     "i": 23.714,
+     "f": 24.054
+    },
+    {
+     "p": "at",
+     "i": 24.434,
+     "f": 24.574
+    },
+    {
+     "p": "Unicamp",
+     "i": 24.574,
+     "f": 25.134
+    },
+    {
+     "p": "and",
+     "i": 25.274,
+     "f": 25.554
+    },
+    {
+     "p": "supported",
+     "i": 25.554,
+     "f": 26.074
+    },
+    {
+     "p": "by",
+     "i": 26.074,
+     "f": 26.394
+    },
+    {
+     "p": "FAPESP",
+     "i": 26.394,
+     "f": 27.124
+    }
+   ],
+   "texto": "Based at NIPE, at Unicamp, and supported by FAPESP."
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 28.097,
+   "fim": 37.127,
+   "origem": {
+    "inicio": 25.18,
+    "fim": 34.21
+   },
+   "palavras": [
+    {
+     "p": "Our",
+     "i": 28.097,
+     "f": 28.237
+    },
+    {
+     "p": "mission",
+     "i": 28.237,
+     "f": 28.597
+    },
+    {
+     "p": "turning",
+     "i": 28.757,
+     "f": 29.377
+    },
+    {
+     "p": "waste",
+     "i": 29.377,
+     "f": 29.777
+    },
+    {
+     "p": "into",
+     "i": 29.777,
+     "f": 30.077
+    },
+    {
+     "p": "biogas",
+     "i": 30.077,
+     "f": 30.917
+    },
+    {
+     "p": "biomethane",
+     "i": 31.357,
+     "f": 32.137
+    },
+    {
+     "p": "and",
+     "i": 32.137,
+     "f": 32.417
+    },
+    {
+     "p": "bioproducts",
+     "i": 32.417,
+     "f": 33.237
+    },
+    {
+     "p": "through",
+     "i": 33.237,
+     "f": 33.797
+    },
+    {
+     "p": "science",
+     "i": 33.797,
+     "f": 34.377
+    },
+    {
+     "p": "technology",
+     "i": 34.677,
+     "f": 35.237
+    },
+    {
+     "p": "and",
+     "i": 35.237,
+     "f": 35.657
+    },
+    {
+     "p": "social",
+     "i": 35.657,
+     "f": 36.177
+    },
+    {
+     "p": "impact",
+     "i": 36.177,
+     "f": 37.127
+    }
+   ],
+   "texto": "Our mission: turning waste into biogas, biomethane and bioproducts — through science, technology and social impact."
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 38.1,
+   "fim": 44.51,
+   "origem": {
+    "inicio": 34.78,
+    "fim": 41.19
+   },
+   "palavras": [
+    {
+     "p": "We",
+     "i": 38.1,
+     "f": 38.2
+    },
+    {
+     "p": "work",
+     "i": 38.2,
+     "f": 38.54
+    },
+    {
+     "p": "as",
+     "i": 38.54,
+     "f": 38.74
+    },
+    {
+     "p": "a",
+     "i": 38.74,
+     "f": 38.86
+    },
+    {
+     "p": "living",
+     "i": 38.86,
+     "f": 39.18
+    },
+    {
+     "p": "lab",
+     "i": 39.18,
+     "f": 39.62
+    },
+    {
+     "p": "testing",
+     "i": 39.82,
+     "f": 40.3
+    },
+    {
+     "p": "solutions",
+     "i": 40.3,
+     "f": 40.86
+    },
+    {
+     "p": "in",
+     "i": 40.86,
+     "f": 41.1
+    },
+    {
+     "p": "the",
+     "i": 41.1,
+     "f": 41.2
+    },
+    {
+     "p": "field",
+     "i": 41.2,
+     "f": 41.52
+    },
+    {
+     "p": "from",
+     "i": 41.74,
+     "f": 42.22
+    },
+    {
+     "p": "waste",
+     "i": 42.22,
+     "f": 42.66
+    },
+    {
+     "p": "inventories",
+     "i": 42.66,
+     "f": 43.24
+    },
+    {
+     "p": "to",
+     "i": 43.24,
+     "f": 43.6
+    },
+    {
+     "p": "public",
+     "i": 43.6,
+     "f": 43.96
+    },
+    {
+     "p": "policy",
+     "i": 43.96,
+     "f": 44.51
+    }
+   ],
+   "texto": "We work as a living lab, testing solutions in the field — from waste inventories to public policy."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 45.483,
+   "fim": 51.333,
+   "origem": {
+    "inicio": 41.75,
+    "fim": 47.6
+   },
+   "palavras": [
+    {
+     "p": "We",
+     "i": 45.483,
+     "f": 45.993
+    },
+    {
+     "p": "are",
+     "i": 45.993,
+     "f": 46.153
+    },
+    {
+     "p": "a",
+     "i": 46.153,
+     "f": 46.313
+    },
+    {
+     "p": "network",
+     "i": 46.313,
+     "f": 46.693
+    },
+    {
+     "p": "of",
+     "i": 46.693,
+     "f": 46.953
+    },
+    {
+     "p": "researchers",
+     "i": 46.953,
+     "f": 47.533
+    },
+    {
+     "p": "universities",
+     "i": 47.933,
+     "f": 48.533
+    },
+    {
+     "p": "and",
+     "i": 48.533,
+     "f": 48.893
+    },
+    {
+     "p": "companies",
+     "i": 48.893,
+     "f": 49.413
+    },
+    {
+     "p": "in",
+     "i": 49.633,
+     "f": 50.033
+    },
+    {
+     "p": "Brazil",
+     "i": 50.033,
+     "f": 50.393
+    },
+    {
+     "p": "and",
+     "i": 50.393,
+     "f": 50.873
+    },
+    {
+     "p": "abroad",
+     "i": 50.873,
+     "f": 51.333
+    }
+   ],
+   "texto": "We are a network of researchers, universities and companies, in Brazil and abroad."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 52.306,
+   "fim": 57.576,
+   "origem": {
+    "inicio": 48.44,
+    "fim": 53.71
+   },
+   "palavras": [
+    {
+     "p": "Driven",
+     "i": 52.306,
+     "f": 52.686
+    },
+    {
+     "p": "by",
+     "i": 52.686,
+     "f": 52.966
+    },
+    {
+     "p": "excellence",
+     "i": 52.966,
+     "f": 53.646
+    },
+    {
+     "p": "ethics",
+     "i": 54.126,
+     "f": 54.606
+    },
+    {
+     "p": "diversity",
+     "i": 54.946,
+     "f": 55.546
+    },
+    {
+     "p": "and",
+     "i": 55.546,
+     "f": 56.086
+    },
+    {
+     "p": "a",
+     "i": 56.086,
+     "f": 56.206
+    },
+    {
+     "p": "commitment",
+     "i": 56.206,
+     "f": 56.666
+    },
+    {
+     "p": "to",
+     "i": 56.666,
+     "f": 56.946
+    },
+    {
+     "p": "society",
+     "i": 56.946,
+     "f": 57.576
+    }
+   ],
+   "texto": "Driven by excellence, ethics, diversity and a commitment to society."
+  },
+  {
+   "id": "L09",
+   "voz": "Sulafat",
+   "inicio": 58.549,
+   "fim": 64.909,
+   "origem": {
+    "inicio": 54.46,
+    "fim": 60.82
+   },
+   "palavras": [
+    {
+     "p": "We",
+     "i": 58.549,
+     "f": 58.709
+    },
+    {
+     "p": "want",
+     "i": 58.709,
+     "f": 59.049
+    },
+    {
+     "p": "São",
+     "i": 59.049,
+     "f": 59.269
+    },
+    {
+     "p": "Paulo",
+     "i": 59.269,
+     "f": 59.649
+    },
+    {
+     "p": "to",
+     "i": 59.649,
+     "f": 59.829
+    },
+    {
+     "p": "become",
+     "i": 59.829,
+     "f": 60.109
+    },
+    {
+     "p": "a",
+     "i": 60.109,
+     "f": 60.349
+    },
+    {
+     "p": "showcase",
+     "i": 60.349,
+     "f": 60.889
+    },
+    {
+     "p": "for",
+     "i": 60.889,
+     "f": 61.229
+    },
+    {
+     "p": "biogas",
+     "i": 61.229,
+     "f": 61.829
+    },
+    {
+     "p": "solutions",
+     "i": 61.829,
+     "f": 62.289
+    },
+    {
+     "p": "and",
+     "i": 62.289,
+     "f": 62.989
+    },
+    {
+     "p": "a",
+     "i": 62.989,
+     "f": 63.129
+    },
+    {
+     "p": "benchmark",
+     "i": 63.129,
+     "f": 63.589
+    },
+    {
+     "p": "across",
+     "i": 63.589,
+     "f": 64.049
+    },
+    {
+     "p": "Latin",
+     "i": 64.049,
+     "f": 64.369
+    },
+    {
+     "p": "America",
+     "i": 64.369,
+     "f": 64.909
+    }
+   ],
+   "texto": "We want São Paulo to become a showcase for biogas solutions — and a benchmark across Latin America!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 66.059,
+   "fim": 70.909,
+   "origem": {
+    "inicio": 61.68,
+    "fim": 66.53
+   },
+   "palavras": [
+    {
+     "p": "C",
+     "i": 66.059,
+     "f": 66.352
+    },
+    {
+     "p": "P",
+     "i": 66.352,
+     "f": 66.506
+    },
+    {
+     "p": "two",
+     "i": 66.506,
+     "f": 66.966
+    },
+    {
+     "p": "B",
+     "i": 66.966,
+     "f": 67.119
+    },
+    {
+     "p": "living",
+     "i": 67.319,
+     "f": 68.059
+    },
+    {
+     "p": "energy",
+     "i": 68.059,
+     "f": 68.559
+    },
+    {
+     "p": "science",
+     "i": 68.879,
+     "f": 69.459
+    },
+    {
+     "p": "that",
+     "i": 69.459,
+     "f": 69.719
+    },
+    {
+     "p": "transforms",
+     "i": 69.719,
+     "f": 70.909
+    }
+   ],
+   "texto": "CP2B: living energy, science that transforms!",
+   "fala": "C-P-two-B: living energy, science that transforms!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "C- P- two- B",
+   "CP2B"
+  ]
+ ]
+}

@@ -1,10 +1,10 @@
 {
   "_sobre": "Parâmetros da partitura (montar_timeline.py / mixar.py / alinhar_vo.py). Tempos da trilha em segundos no arquivo ORIGINAL.",
   "roteiro": "roteiro.json",
-  "vo": "entrada/biogas_multispeaker.wav",
+  "vo": "entrada/narracao/pt-BR/ep01_pt-BR_SulafatPuck_take1.wav",
   "tempo_narracao": 1.035,
   "musica": {
-    "arquivo": "entrada/musica_The_Papercut_Invention.mp3",
+    "arquivo": "entrada/musica/The_Papercut_Invention.mp3",
     "titulo": "The Papercut Invention",
     "bpm": 105.013,
     "downbeat0": 1.080,

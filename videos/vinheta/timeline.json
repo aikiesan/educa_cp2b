@@ -1,0 +1,28 @@
+{
+ "fonte": "tools/episodio/derivados.py (sem narração)",
+ "tempo_narracao": 1.0,
+ "duracao": 5.108,
+ "musica": {
+  "bpm": 119.99926178195989,
+  "periodo": 0.500003075927423,
+  "downbeat0": 0.0,
+  "compasso": 2.000012303709692,
+  "logo": 2.508,
+  "cortes": [
+   {
+    "de": 0.0,
+    "para": 45.279
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "-",
+   "inicio": 0.2,
+   "fim": 2.408,
+   "palavras": [],
+   "texto": ""
+  }
+ ]
+}

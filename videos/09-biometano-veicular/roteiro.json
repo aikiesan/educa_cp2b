@@ -1,0 +1,62 @@
+{
+ "titulo": "Biometano no tanque",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep09_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Esse caminhão anda com gás feito de lixo e esterco. É sério!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Tudo começa no biodigestor, com o biogás…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "…que passa por uma limpeza: sai o gás carbônico, saem as impurezas. Nasce o biometano!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Ele pode seguir pelo gasoduto, junto com o gás natural…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…ou ser comprimido em cilindros e viajar de carreta até onde o cano não chega.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "No posto, a bomba enche o tanque do caminhão, do ônibus… e até do trator!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Os motores a gás funcionam do mesmo jeito — só que com combustível renovável.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Biometano no tanque: energia que sai do campo e da cidade… e volta pra estrada!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

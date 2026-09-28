@@ -1,0 +1,67 @@
+{
+ "titulo": "Carbono que volta pro ciclo",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep11_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Todo gás carbônico é igual? Nem sempre! Olha só.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "A planta cresce tirando gás carbônico do ar.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Ela vira comida, vira resíduo… e no biodigestor, vira biogás.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Quando a gente usa esse biogás, o carbono volta pro ar…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…e a próxima planta pega ele de novo. É um ciclo curtinho, que gira rápido.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Já o petróleo e o carvão guardam um carbono que ficou enterrado por muito, muito tempo.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Queimar esse carbono antigo é jogar gás carbônico novo na atmosfera.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "E tem mais: tratar o resíduo no biodigestor evita que o metano escape pro ar.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Carbono que volta pro ciclo: com biogás, a roda gira sem pesar no clima!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

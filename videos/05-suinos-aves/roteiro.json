@@ -1,0 +1,62 @@
+{
+ "titulo": "Do chiqueiro à tomada",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep05_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Oinc! Có-có-ri-có! Na fazenda, bicho feliz também faz… muito esterco!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Nas granjas de porcos e de galinhas, esse esterco se acumula todo santo dia.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Se ficar a céu aberto, ele cheira mal e solta metano no ar — um gás que esquenta o planeta.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Mas dentro de um biodigestor, esse mesmo metano vira combustível!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "O biogás pode aquecer a granja, girar um gerador… e acender as luzes da fazenda.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "E o que sobra volta pro campo como biofertilizante.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Menos cheiro, menos poluição, mais energia — e economia pro produtor.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Do chiqueiro à tomada: é o esterco trabalhando a favor!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

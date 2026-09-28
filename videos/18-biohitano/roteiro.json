@@ -1,0 +1,72 @@
+{
+ "titulo": "Biohitano: a aposta do CP2B",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep18_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Hidrogênio ou metano? E se fossem os dois juntos?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Esse é o biohitano, uma das grandes apostas de pesquisa do CP2B.",
+   "fala": "Esse é o biohitano, uma das grandes apostas de pesquisa do cê-pê-dois-bê.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "A ideia é dividir a digestão em duas etapas.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Na primeira, os micróbios produzem hidrogênio…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…e, na segunda, outros micróbios produzem metano.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Misturados, os dois formam um combustível renovável — o biohitano!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Os pesquisadores testam isso com vinhaça, com torta de filtro da cana e com restos de comida.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "E o objetivo é ver esse combustível rodando nos ônibus do campus da Unicamp!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Biohitano: dois gases, uma energia só!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

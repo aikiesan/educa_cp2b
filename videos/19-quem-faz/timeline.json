@@ -1,0 +1,694 @@
+{
+ "fonte": "alinhamento",
+ "tempo_narracao": 1.0,
+ "duracao": 54.654,
+ "musica": {
+  "bpm": 104.70682323555417,
+  "periodo": 0.5730285586548713,
+  "downbeat0": 2.94,
+  "compasso": 2.2921142346194854,
+  "logo": 50.384,
+  "cortes": [
+   {
+    "de": 0.0,
+    "para": 2.76
+   },
+   {
+    "de": 28.62,
+    "para": 42.373
+   }
+  ]
+ },
+ "falas": [
+  {
+   "id": "L01",
+   "voz": "Sulafat",
+   "inicio": 2.99,
+   "fim": 7.71,
+   "origem": {
+    "inicio": 0.0,
+    "fim": 4.72
+   },
+   "palavras": [
+    {
+     "p": "Quem",
+     "i": 2.99,
+     "f": 3.49
+    },
+    {
+     "p": "transforma",
+     "i": 3.49,
+     "f": 4.11
+    },
+    {
+     "p": "resíduo",
+     "i": 4.11,
+     "f": 4.63
+    },
+    {
+     "p": "em",
+     "i": 4.63,
+     "f": 4.77
+    },
+    {
+     "p": "energia",
+     "i": 4.77,
+     "f": 5.29
+    },
+    {
+     "p": "Gente",
+     "i": 5.75,
+     "f": 6.33
+    },
+    {
+     "p": "Muita",
+     "i": 6.75,
+     "f": 7.39
+    },
+    {
+     "p": "gente",
+     "i": 7.39,
+     "f": 7.71
+    }
+   ],
+   "texto": "Quem transforma resíduo em energia? Gente! Muita gente."
+  },
+  {
+   "id": "L02",
+   "voz": "Sulafat",
+   "inicio": 8.541,
+   "fim": 13.881,
+   "origem": {
+    "inicio": 5.28,
+    "fim": 10.62
+   },
+   "palavras": [
+    {
+     "p": "No",
+     "i": 8.541,
+     "f": 9.101
+    },
+    {
+     "p": "cê",
+     "i": 9.101,
+     "f": 9.233
+    },
+    {
+     "p": "pê",
+     "i": 9.233,
+     "f": 9.365
+    },
+    {
+     "p": "dois",
+     "i": 9.365,
+     "f": 9.629
+    },
+    {
+     "p": "bê",
+     "i": 9.629,
+     "f": 9.761
+    },
+    {
+     "p": "tem",
+     "i": 9.761,
+     "f": 10.021
+    },
+    {
+     "p": "estudante",
+     "i": 10.021,
+     "f": 10.481
+    },
+    {
+     "p": "de",
+     "i": 10.481,
+     "f": 10.661
+    },
+    {
+     "p": "iniciação",
+     "i": 10.661,
+     "f": 11.121
+    },
+    {
+     "p": "científica",
+     "i": 11.121,
+     "f": 12.001
+    },
+    {
+     "p": "de",
+     "i": 12.141,
+     "f": 12.241
+    },
+    {
+     "p": "mestrado",
+     "i": 12.241,
+     "f": 12.901
+    },
+    {
+     "p": "e",
+     "i": 12.901,
+     "f": 13.121
+    },
+    {
+     "p": "de",
+     "i": 13.121,
+     "f": 13.241
+    },
+    {
+     "p": "doutorado",
+     "i": 13.241,
+     "f": 13.881
+    }
+   ],
+   "texto": "No CP2B tem estudante de iniciação científica, de mestrado e de doutorado…",
+   "fala": "No cê-pê-dois-bê tem estudante de iniciação científica, de mestrado e de doutorado…"
+  },
+  {
+   "id": "L03",
+   "voz": "Sulafat",
+   "inicio": 14.712,
+   "fim": 19.332,
+   "origem": {
+    "inicio": 11.06,
+    "fim": 15.68
+   },
+   "palavras": [
+    {
+     "p": "pesquisadoras",
+     "i": 14.712,
+     "f": 15.792
+    },
+    {
+     "p": "e",
+     "i": 15.792,
+     "f": 15.892
+    },
+    {
+     "p": "pesquisadores",
+     "i": 15.892,
+     "f": 16.512
+    },
+    {
+     "p": "de",
+     "i": 16.512,
+     "f": 16.712
+    },
+    {
+     "p": "pós",
+     "i": 16.712,
+     "f": 16.912
+    },
+    {
+     "p": "doutorado",
+     "i": 16.912,
+     "f": 17.472
+    },
+    {
+     "p": "professoras",
+     "i": 17.952,
+     "f": 18.592
+    },
+    {
+     "p": "e",
+     "i": 18.592,
+     "f": 18.672
+    },
+    {
+     "p": "professores",
+     "i": 18.672,
+     "f": 19.332
+    }
+   ],
+   "texto": "…pesquisadoras e pesquisadores de pós-doutorado, professoras e professores…"
+  },
+  {
+   "id": "L04",
+   "voz": "Sulafat",
+   "inicio": 20.163,
+   "fim": 23.703,
+   "origem": {
+    "inicio": 15.92,
+    "fim": 19.46
+   },
+   "palavras": [
+    {
+     "p": "e",
+     "i": 20.163,
+     "f": 20.703
+    },
+    {
+     "p": "uma",
+     "i": 20.703,
+     "f": 20.863
+    },
+    {
+     "p": "equipe",
+     "i": 20.863,
+     "f": 21.103
+    },
+    {
+     "p": "técnica",
+     "i": 21.103,
+     "f": 21.563
+    },
+    {
+     "p": "e",
+     "i": 21.563,
+     "f": 21.763
+    },
+    {
+     "p": "administrativa",
+     "i": 21.763,
+     "f": 22.603
+    },
+    {
+     "p": "que",
+     "i": 22.603,
+     "f": 22.743
+    },
+    {
+     "p": "faz",
+     "i": 22.743,
+     "f": 22.963
+    },
+    {
+     "p": "tudo",
+     "i": 22.963,
+     "f": 23.243
+    },
+    {
+     "p": "funcionar",
+     "i": 23.243,
+     "f": 23.703
+    }
+   ],
+   "texto": "…e uma equipe técnica e administrativa que faz tudo funcionar."
+  },
+  {
+   "id": "L05",
+   "voz": "Sulafat",
+   "inicio": 24.534,
+   "fim": 32.534,
+   "origem": {
+    "inicio": 19.78,
+    "fim": 27.78
+   },
+   "palavras": [
+    {
+     "p": "Tem",
+     "i": 24.534,
+     "f": 24.954
+    },
+    {
+     "p": "gente",
+     "i": 24.954,
+     "f": 25.234
+    },
+    {
+     "p": "da",
+     "i": 25.234,
+     "f": 25.414
+    },
+    {
+     "p": "engenharia",
+     "i": 25.414,
+     "f": 26.114
+    },
+    {
+     "p": "da",
+     "i": 26.374,
+     "f": 26.514
+    },
+    {
+     "p": "biologia",
+     "i": 26.514,
+     "f": 27.134
+    },
+    {
+     "p": "da",
+     "i": 27.374,
+     "f": 27.534
+    },
+    {
+     "p": "química",
+     "i": 27.534,
+     "f": 28.114
+    },
+    {
+     "p": "da",
+     "i": 28.374,
+     "f": 28.534
+    },
+    {
+     "p": "economia",
+     "i": 28.534,
+     "f": 29.174
+    },
+    {
+     "p": "do",
+     "i": 29.434,
+     "f": 29.594
+    },
+    {
+     "p": "direito",
+     "i": 29.594,
+     "f": 29.954
+    },
+    {
+     "p": "da",
+     "i": 30.434,
+     "f": 30.594
+    },
+    {
+     "p": "geografia",
+     "i": 30.594,
+     "f": 31.414
+    },
+    {
+     "p": "da",
+     "i": 31.774,
+     "f": 31.894
+    },
+    {
+     "p": "comunicação",
+     "i": 31.894,
+     "f": 32.534
+    }
+   ],
+   "texto": "Tem gente da engenharia, da biologia, da química, da economia, do direito, da geografia, da comunicação…"
+  },
+  {
+   "id": "L06",
+   "voz": "Sulafat",
+   "inicio": 33.365,
+   "fim": 37.905,
+   "origem": {
+    "inicio": 27.78,
+    "fim": 32.32
+   },
+   "palavras": [
+    {
+     "p": "de",
+     "i": 33.365,
+     "f": 34.325
+    },
+    {
+     "p": "várias",
+     "i": 34.325,
+     "f": 34.765
+    },
+    {
+     "p": "universidades",
+     "i": 34.765,
+     "f": 35.505
+    },
+    {
+     "p": "e",
+     "i": 35.505,
+     "f": 35.685
+    },
+    {
+     "p": "institutos",
+     "i": 35.685,
+     "f": 36.245
+    },
+    {
+     "p": "e",
+     "i": 36.445,
+     "f": 36.765
+    },
+    {
+     "p": "de",
+     "i": 36.765,
+     "f": 36.865
+    },
+    {
+     "p": "empresas",
+     "i": 36.865,
+     "f": 37.265
+    },
+    {
+     "p": "parceiras",
+     "i": 37.265,
+     "f": 37.905
+    }
+   ],
+   "texto": "…de várias universidades e institutos, e de empresas parceiras."
+  },
+  {
+   "id": "L07",
+   "voz": "Sulafat",
+   "inicio": 38.736,
+   "fim": 43.936,
+   "origem": {
+    "inicio": 32.72,
+    "fim": 37.92
+   },
+   "palavras": [
+    {
+     "p": "Cada",
+     "i": 38.736,
+     "f": 39.316
+    },
+    {
+     "p": "um",
+     "i": 39.316,
+     "f": 39.476
+    },
+    {
+     "p": "enxerga",
+     "i": 39.476,
+     "f": 39.916
+    },
+    {
+     "p": "o",
+     "i": 39.916,
+     "f": 39.996
+    },
+    {
+     "p": "resíduo",
+     "i": 39.996,
+     "f": 40.376
+    },
+    {
+     "p": "de",
+     "i": 40.376,
+     "f": 40.476
+    },
+    {
+     "p": "um",
+     "i": 40.476,
+     "f": 40.576
+    },
+    {
+     "p": "jeito",
+     "i": 40.576,
+     "f": 40.916
+    },
+    {
+     "p": "e",
+     "i": 41.196,
+     "f": 41.576
+    },
+    {
+     "p": "é",
+     "i": 41.576,
+     "f": 41.656
+    },
+    {
+     "p": "juntando",
+     "i": 41.656,
+     "f": 42.196
+    },
+    {
+     "p": "esses",
+     "i": 42.196,
+     "f": 42.336
+    },
+    {
+     "p": "olhares",
+     "i": 42.336,
+     "f": 42.876
+    },
+    {
+     "p": "que",
+     "i": 42.876,
+     "f": 43.056
+    },
+    {
+     "p": "nascem",
+     "i": 43.056,
+     "f": 43.376
+    },
+    {
+     "p": "as",
+     "i": 43.376,
+     "f": 43.476
+    },
+    {
+     "p": "soluções",
+     "i": 43.476,
+     "f": 43.936
+    }
+   ],
+   "texto": "Cada um enxerga o resíduo de um jeito — e é juntando esses olhares que nascem as soluções."
+  },
+  {
+   "id": "L08",
+   "voz": "Sulafat",
+   "inicio": 44.767,
+   "fim": 49.387,
+   "origem": {
+    "inicio": 38.44,
+    "fim": 43.06
+   },
+   "palavras": [
+    {
+     "p": "Quem",
+     "i": 44.767,
+     "f": 45.427
+    },
+    {
+     "p": "faz",
+     "i": 45.427,
+     "f": 45.767
+    },
+    {
+     "p": "o",
+     "i": 45.767,
+     "f": 45.867
+    },
+    {
+     "p": "cê",
+     "i": 45.867,
+     "f": 45.971
+    },
+    {
+     "p": "pê",
+     "i": 45.971,
+     "f": 46.075
+    },
+    {
+     "p": "dois",
+     "i": 46.075,
+     "f": 46.283
+    },
+    {
+     "p": "bê",
+     "i": 46.283,
+     "f": 46.387
+    },
+    {
+     "p": "A",
+     "i": 46.807,
+     "f": 47.367
+    },
+    {
+     "p": "gente",
+     "i": 47.367,
+     "f": 47.627
+    },
+    {
+     "p": "e",
+     "i": 47.867,
+     "f": 48.187
+    },
+    {
+     "p": "quem",
+     "i": 48.187,
+     "f": 48.427
+    },
+    {
+     "p": "mais",
+     "i": 48.427,
+     "f": 48.707
+    },
+    {
+     "p": "quiser",
+     "i": 48.707,
+     "f": 48.947
+    },
+    {
+     "p": "vir",
+     "i": 48.947,
+     "f": 49.087
+    },
+    {
+     "p": "junto",
+     "i": 49.087,
+     "f": 49.387
+    }
+   ],
+   "texto": "Quem faz o CP2B? A gente — e quem mais quiser vir junto!",
+   "fala": "Quem faz o cê-pê-dois-bê? A gente — e quem mais quiser vir junto!"
+  },
+  {
+   "id": "LF",
+   "voz": "Sulafat",
+   "inicio": 50.534,
+   "fim": 53.654,
+   "origem": {
+    "inicio": 44.06,
+    "fim": 47.18
+   },
+   "palavras": [
+    {
+     "p": "Cê",
+     "i": 50.534,
+     "f": 50.666
+    },
+    {
+     "p": "pê",
+     "i": 50.666,
+     "f": 50.798
+    },
+    {
+     "p": "dois",
+     "i": 50.798,
+     "f": 51.062
+    },
+    {
+     "p": "bê",
+     "i": 51.062,
+     "f": 51.194
+    },
+    {
+     "p": "energia",
+     "i": 51.194,
+     "f": 51.854
+    },
+    {
+     "p": "viva",
+     "i": 51.854,
+     "f": 52.194
+    },
+    {
+     "p": "ciência",
+     "i": 52.474,
+     "f": 52.974
+    },
+    {
+     "p": "que",
+     "i": 52.974,
+     "f": 53.114
+    },
+    {
+     "p": "transforma",
+     "i": 53.114,
+     "f": 53.654
+    }
+   ],
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!"
+  }
+ ],
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ]
+}

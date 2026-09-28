@@ -1,0 +1,72 @@
+{
+ "titulo": "O que é o CP2B",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep03_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "cê- pê- dois- bê",
+   "CP2B"
+  ],
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Resíduo… ou recurso?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "São Paulo gera muitos resíduos orgânicos, no campo e nas cidades — mas só uma pequena parte vira energia.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Pra mudar isso, nasceu o CP2B: o Centro Paulista de Estudos em Biogás e Bioprodutos!",
+   "fala": "Pra mudar isso, nasceu o cê-pê-dois-bê: o Centro Paulista de Estudos em Biogás e Bioprodutos!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Com sede no NIPE, na Unicamp, e apoio da FAPESP.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "Nossa missão: transformar resíduos em biogás, biometano e bioprodutos — com ciência, tecnologia e impacto social.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "Funcionamos como um laboratório vivo, testando soluções no campo — do inventário de resíduos às políticas públicas.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Somos uma rede de pesquisadores, universidades e empresas, no Brasil e no exterior.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "Com excelência, ética, diversidade e compromisso com a sociedade.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Queremos fazer de São Paulo uma vitrine de soluções em biogás — e uma referência na América Latina!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}

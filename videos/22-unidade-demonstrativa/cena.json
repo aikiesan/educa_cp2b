@@ -1,0 +1,62 @@
+{
+  "_sobre": "Ep. 22 · A usina de biogás na cooperativa — estilo C (colagem), antes × depois: quadros ANTES em papel sépia, DEPOIS coloridos; o cientista confere na prancheta. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "C",
+  "seed": 22,
+  "pecas": {
+    "cooperativa": "ep22/_folha/cooperativa", "residuos": "ep22/_folha/pecas_ep22_1", "prancheta": "ep22/_folha/pecas_ep22_2",
+    "caminhao_diesel": "ep22/_folha/pecas_ep22_3", "residuos2": "ep22/_folha/pecas_ep22_4", "placa": "ep22/_folha/pecas_ep22_5"
+  },
+  "assinatura": { "cientista": true },
+  "cenas": [
+    { "fala": "L01", "arranjo": "palco", "itens": [
+      { "p": "cooperativa", "em": 0.2, "s": 1.05 },
+      { "txt": "cooperativa", "tipo": "etiqueta", "lugar": "rodape", "em": "cooperativa" },
+      { "p": "cientista:prancheta", "lugar": "narrador", "em": 0.5 }
+    ]},
+    { "fala": "L02", "arranjo": "dupla", "folha": "#d9cbb3", "itens": [
+      { "p": "residuos", "em": "resíduo", "entra": "cai" },
+      { "p": "caminhao_diesel", "id": "cd", "em": "caminhões" },
+      { "fx": "fumaca", "sobre": "cd", "rel": [-0.25, -0.62], "tam": 0.6, "em": "diesel" },
+      { "txt": "ANTES", "tipo": "carimbo", "lugar": "titulo", "em": "Antes", "cor": "marrom" }
+    ]},
+    { "fala": "L03", "arranjo": "fila", "folha": "#e3eed6", "itens": [
+      { "p": "residuos2", "id": "r2", "em": "sobras" },
+      { "p": "biodigestor", "id": "bio", "em": "biodigestor-0.5", "entra": "cai" },
+      { "p": "cooperativa", "em": 0.05 },
+      { "fx": "seta", "de": "r2", "para": "bio", "em": "entram" },
+      { "txt": "DEPOIS", "tipo": "carimbo", "lugar": "titulo", "em": "Depois", "cor": "verdeEsc" }
+    ]},
+    { "fala": "L04", "arranjo": "fila", "itens": [
+      { "p": "biodigestor", "id": "b", "em": 0.05, "s": 0.9 },
+      { "p": "gerador", "id": "g", "em": "gerar" },
+      { "p": "lampada", "id": "l", "em": "eletricidade-0.5", "brilha": "eletricidade" },
+      { "fx": "seta", "de": "b", "para": "g", "em": "biogás" },
+      { "fx": "seta", "de": "g", "para": "l", "em": "eletricidade-0.4" }
+    ]},
+    { "fala": "L05", "arranjo": "fila", "itens": [
+      { "p": "maquina", "id": "m", "em": "purificado" },
+      { "p": "bomba", "id": "bo", "em": "abastecer" },
+      { "p": "caminhao", "id": "c", "em": "frota", "entra": "desliza_dir" },
+      { "fx": "seta", "de": "m", "para": "bo", "em": "biometano" },
+      { "txt": "no lugar do diesel!", "tipo": "etiqueta", "lugar": "titulo", "em": "diesel-0.5", "papel": "lima" }
+    ]},
+    { "fala": "L06", "arranjo": "palco", "itens": [
+      { "p": "trator", "em": 0.1, "entra": "desliza_dir" },
+      { "p": "muda", "em": "campo", "entra": "cresce" },
+      { "p": "broto", "em": "biofertilizante", "entra": "cresce" },
+      { "txt": "biofertilizante", "tipo": "etiqueta", "lugar": "titulo", "em": "sai" }
+    ]},
+    { "fala": "L07", "arranjo": "palco", "itens": [
+      { "p": "placa", "id": "pl", "em": "unidade-0.3", "entra": "cai" },
+      { "txt": "unidade demonstrativa", "tipo": "mao", "sobre": "pl", "rel": [0, -0.25], "tam": 0.6, "em": "demonstrativa", "cor": "petrol" },
+      { "p": "prancheta", "em": "prática" },
+      { "p": "cientista:prancheta", "em": "funciona-0.6" },
+      { "fx": "check", "lugar": "canto", "em": "funciona" }
+    ]},
+    { "fala": "L08", "arranjo": "palco", "itens": [
+      { "p": "caminhao", "em": 0.1, "entra": "desliza_esq", "s": 1.05 },
+      { "fx": "coracao", "sobre": "caminhao", "rel": [0.2, -0.12], "tam": 0.3, "em": "tanque", "cor": "lima" },
+      { "txt": "MOVIDA A BIOGÁS!", "tipo": "letras", "lugar": "titulo", "em": "cooperativa" }
+    ]}
+  ]
+}

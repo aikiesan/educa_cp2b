@@ -5,6 +5,9 @@
 (function (G) {
   'use strict';
   const C = G.Colagem;
+  // ?idioma=en-GB → textos da tela em inglês (versões derivadas eps. 90/91); padrão pt-BR
+  const EN = /^en/.test(new URLSearchParams(G.location.search).get('idioma') || '');
+  const trd = (pt, en) => (EN ? en : pt);
   const { core, shapes: S, sprite: SP, ink: I, text: T, paper: P, extras: X } = C;
   const { tw, E, clamp, lerp, settle, pulse, hrand, R: RNG, snoise1, TAU, mixHex, shade, smooth } = core;
   const INK = SP.INK;
@@ -107,9 +110,9 @@
   const MAP_TAB = { x: 0, y: 25, s: 1 };          // pose do mapa sobre a mesa
   const SLOT = [-268, -28, 212].map((y) => ({ x: -530, y }));
   const CATS = [
-    { id: 'agr', nome: 'Agrícola', cor: PAL.verde, img: 'cana', imgS: 0.26 },
-    { id: 'pec', nome: 'Pecuária', cor: PAL.ambar, img: 'vaca', imgS: 0.2 },
-    { id: 'urb', nome: 'Urbano', cor: PAL.petrol, img: 'casa', imgS: 0.3 },
+    { id: 'agr', nome: trd('Agrícola', "Agricultural"), cor: PAL.verde, img: 'cana', imgS: 0.26 },
+    { id: 'pec', nome: trd('Pecuária', "Livestock"), cor: PAL.ambar, img: 'vaca', imgS: 0.2 },
+    { id: 'urb', nome: trd('Urbano', "Urban"), cor: PAL.petrol, img: 'casa', imgS: 0.3 },
   ];
   // ---------- layout por formato (h = 16:9 · v = 9:16 Stories) ----------
   let FMT = 'h', MARCA = true;
@@ -380,8 +383,8 @@
   let TITLE1, TITLE2, HERO, FTITLE, STRIP;
   let QMARKS = [];
   function buildTitle() {
-    TITLE1 = T.ransom('ONDE ESTÁ O', { size: 96, seed: 3, papers: ['#fbf8f0', '#f2c14e', '#b6e03b', '#f3ead8'] });
-    TITLE2 = T.ransom('BIOGÁS?', { size: 200, seed: 8, tilt: 0.1 });
+    TITLE1 = T.ransom(trd('ONDE ESTÁ O', "WHERE IS THE"), { size: 96, seed: 3, papers: ['#fbf8f0', '#f2c14e', '#b6e03b', '#f3ead8'] });
+    TITLE2 = T.ransom(trd('BIOGÁS?', "BIOGAS?"), { size: 200, seed: 8, tilt: 0.1 });
     // a marca é "PILAR-2b" (b minúsculo): a última letra usa uma fonte com caixa-baixa
     const PF = ['Luckiest Guy', 'Alfa Slab One', 'Bungee', 'Titan One', 'Archivo Black', 'Luckiest Guy', 'Lilita One', 'Abril Fatface'];
     const PP = ['#b6e03b', '#1e3e4c', '#fbf8f0', '#d37402', '#5ca032', '#fbf8f0', '#f2c14e', '#1e3e4c'];
@@ -409,7 +412,7 @@
       ctx.save(); ctx.translate(TT.x + 20, TT.y3 + f.dy); ctx.rotate(-0.02 + f.rot * 0.3);
       const sIn = pop(tq, tS - 0.2, 0.3);
       ctx.save(); ctx.scale(sIn, 1); SP.piece(ctx, STRIP, { color: PAL.papel, kind: 'smooth', seed: 5, shadow: { zoom: rc.zoom }, edge: 0.15 }); ctx.restore();
-      T.hand(ctx, 'de São Paulo?', 0, -4, { size: 104, font: 'Caveat Brush', color: PAL.verdeEsc, progress: wp, boil: rc.boil, seed: 21 });
+      T.hand(ctx, trd('de São Paulo?', "in São Paulo?"), 0, -4, { size: 104, font: 'Caveat Brush', color: PAL.verdeEsc, progress: wp, boil: rc.boil, seed: 21 });
       ctx.restore();
     }
   }
@@ -615,7 +618,7 @@
       ctx.save(); ctx.translate(PANEL.x + PANEL.w / 2, PANEL.y + PANEL.h / 2); ctx.scale(1, pIn); ctx.translate(-(PANEL.x + PANEL.w / 2), -(PANEL.y + PANEL.h / 2));
       SP.piece(ctx, UI_PANEL, { color: '#f1ede2', kind: 'smooth', seed: 75, edge: 0.18, shade: 0.3 });
       ctx.fillStyle = PAL.petrol; ctx.font = uiFont(700, 40); ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
-      ctx.fillText('Filtros', PANEL.x + 26, PANEL.y + 38);
+      ctx.fillText(trd('Filtros', "Filters"), PANEL.x + 26, PANEL.y + 38);
       ctx.restore();
     }
     // barra superior
@@ -648,8 +651,8 @@
     ctx.save(); ctx.translate(x, y); ctx.scale(lIn, lIn);
     UI_LEG.forEach((poly, k) => SP.piece(ctx, poly, { color: RAMP[mode === 'blank' ? 'tot' : mode][k], seed: 80 + k, edge: 0.25, shade: 0.3, shadow: { zoom: rc.zoom, strength: 0.5 } }));
     ctx.fillStyle = INK; ctx.font = uiFont(700, 30); ctx.textBaseline = 'middle';
-    ctx.textAlign = 'right'; ctx.fillText('menos', -76, 17);
-    ctx.textAlign = 'left'; ctx.fillText('mais', 272, 17);
+    ctx.textAlign = 'right'; ctx.fillText(trd('menos', "less"), -76, 17);
+    ctx.textAlign = 'left'; ctx.fillText(trd('mais', "more"), 272, 17);
     ctx.restore();
     void t;
   }
@@ -832,7 +835,7 @@
     SP.tape(ctx, -W0 / 2 + 50, -H0 / 2 + 6, 110, 38, -0.45, { seed: 7, zoom: rc.zoom });
     ctx.fillStyle = PAL.petrol; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
     ctx.font = uiFont(700, 58); ctx.fillText(m.n, -W0 / 2 + 34, -H0 / 2 + 62);
-    ctx.fillStyle = '#51666f'; ctx.font = uiFont(700, 30); ctx.fillText('Potencial de biogás', -W0 / 2 + 34, -H0 / 2 + 118);
+    ctx.fillStyle = '#51666f'; ctx.font = uiFont(700, 30); ctx.fillText(trd('Potencial de biogás', "Biogas potential"), -W0 / 2 + 34, -H0 / 2 + 118);
     const rows = [['agrícola', PAL.verde], ['pecuária', PAL.ambar], ['urbano', PAL.petrol]];
     rows.forEach(([nm, col], k) => {
       const yy = -H0 / 2 + 170 + k * 50;
@@ -1048,7 +1051,7 @@
       const OV = LAY.ov, fs = FMT === 'v' ? 0.82 : 1;
       FTITLE.forEach((l, i) => { const p = pop(tq, tP - 0.1 + i * 0.055, 0.3, 2.6); if (p > 0) SP.place(ctx, l.spr, Wd / 2 + l.x * fs, OV.titleY + l.y * fs, { rot: l.rot, s: p * fs, lift: (1 - p) * 0.9 }); });
       const wp = clamp((t - tO + 0.05) / (endOf('L09', 'Paulo') - tO + 0.1));
-      if (wp > 0) T.hand(ctx, 'o mapa do biogás de São Paulo', Wd / 2, OV.subY, { size: OV.subS, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil, seed: 31, stroke: '#fbf8f0', strokeW: 12 });
+      if (wp > 0) T.hand(ctx, trd('o mapa do biogás de São Paulo', "the biogas map of São Paulo"), Wd / 2, OV.subY, { size: OV.subS, font: 'Caveat', weight: 700, color: PAL.verdeEsc, progress: wp, boil: rc.boil, seed: 31, stroke: '#fbf8f0', strokeW: 12 });
       const u = pop(tq, tA - 0.15, 0.4);
       if (u > 0) {
         const ux = Wd * OV.urlX, uy = OV.urlY;
@@ -1078,7 +1081,7 @@
       if (logo) { const lw = lwMax, lh = lw * logo.height / logo.width; ctx.drawImage(logo, -lw / 2, -ch / 2 + 50, lw, lh); }
       ctx.fillStyle = PAL.petrol; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `700 46px "Neulis Sans", "Kalam", sans-serif`;
-      ctx.fillText('Energia viva, ciência que transforma.', 0, ch / 2 - 88);
+      ctx.fillText(trd('Energia viva, ciência que transforma.', "Living energy, science that transforms."), 0, ch / 2 - 88);
       ctx.fillStyle = PAL.verde; ctx.fillRect(-120, ch / 2 - 44, 240, 6);
       ctx.restore();
       if (p > 0.9) { SP.tape(ctx, Wd / 2 - cw / 2 + 40, H / 2 - ch / 2 + 10, 150, 46, -0.6, { seed: 3 }); SP.tape(ctx, Wd / 2 + cw / 2 - 40, H / 2 + ch / 2 - 10, 150, 46, -0.6, { seed: 5 }); }

@@ -1,0 +1,67 @@
+{
+ "titulo": "Vinhaça: o tesouro líquido da cana",
+ "idioma": "pt-BR",
+ "narracao": {
+  "arquivo": "entrada/narracao/pt-BR/ep04_pt-BR_Sulafat_take1.wav",
+  "voz": "Sulafat"
+ },
+ "legenda_subst": [
+  [
+   "Cê- pê- dois- bê",
+   "CP2B"
+  ]
+ ],
+ "falas": [
+  {
+   "id": "L01",
+   "texto": "Você sabia que a cana guarda um segredo… líquido?",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L02",
+   "texto": "Quando a usina produz etanol, sobra a vinhaça: um caldo escuro, cheio de matéria orgânica.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L03",
+   "texto": "Por muito tempo, ela foi direto pro canavial, pra adubar a terra.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L04",
+   "texto": "Mas antes disso, a vinhaça pode dar uma paradinha no biodigestor…",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L05",
+   "texto": "…onde os micróbios transformam essa matéria orgânica em biogás!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L06",
+   "texto": "E o que sai do biodigestor continua sendo um ótimo adubo pra lavoura.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L07",
+   "texto": "Ou seja: a mesma vinhaça dá energia… e ainda alimenta a cana!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L08",
+   "texto": "E São Paulo é o estado que mais produz cana no Brasil. Imagina o tamanho desse tesouro!",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "L09",
+   "texto": "Vinhaça: da usina pro biodigestor, e do biodigestor pra energia.",
+   "voz": "Sulafat"
+  },
+  {
+   "id": "LF",
+   "texto": "CP2B: energia viva, ciência que transforma!",
+   "fala": "Cê-pê-dois-bê: energia viva, ciência que transforma!",
+   "voz": "Sulafat"
+  }
+ ]
+}
