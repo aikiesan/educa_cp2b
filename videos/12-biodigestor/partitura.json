@@ -14,12 +14,12 @@
    }
   ],
   "logo_musica": 53.731,
-  "cauda": 4.61
+  "cauda": 4.67
  },
  "plano": {
-  "pausa": 0.81,
+  "pausa": 1.05,
   "primeira_fala": 2.49,
-  "folga_antes_do_logo": 1.0,
+  "folga_antes_do_logo": 1.06,
   "saltos": [],
   "duracao_trilha": 59.53
  }

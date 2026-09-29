@@ -1,65 +1,65 @@
 1
-00:00:02,437 --> 00:00:06,457
+00:00:02,437 --> 00:00:06,317
 Já imaginou o que acontece
 dentro de um biodigestor?
 
 2
-00:00:06,517 --> 00:00:07,617
+00:00:06,377 --> 00:00:07,597
 Vamos abrir um!
 
 3
-00:00:08,122 --> 00:00:12,082
+00:00:08,347 --> 00:00:12,097
 Tudo entra por aqui:
 os resíduos, bem misturadinhos.
 
 4
-00:00:12,587 --> 00:00:16,787
+00:00:12,847 --> 00:00:16,767
 Lá dentro não pode ter oxigênio
 – é um tanque bem fechado.
 
 5
-00:00:17,292 --> 00:00:21,872
+00:00:17,517 --> 00:00:21,807
 Os micróbios gostam de um ambiente
 morninho e estável, sem susto.
 
 6
-00:00:22,377 --> 00:00:26,397
+00:00:22,557 --> 00:00:26,377
 Um misturador mexe devagar,
 pra comida chegar a todo mundo.
 
 7
-00:00:26,902 --> 00:00:30,982
+00:00:27,127 --> 00:00:31,007
 O biogás sobe e fica guardado
 aqui em cima, na cúpula.
 
 8
-00:00:31,487 --> 00:00:33,987
+00:00:31,757 --> 00:00:33,577
 E, depois de um tempo lá dentro,
 
 9
-00:00:34,027 --> 00:00:37,947
+00:00:33,617 --> 00:00:37,597
 o material pronto sai do outro
 lado, como biofertilizante.
 
 10
-00:00:38,452 --> 00:00:41,832
+00:00:38,347 --> 00:00:41,507
 Tem biodigestor de vários
 jeitos: a lagoa coberta,
 
 11
-00:00:41,872 --> 00:00:45,752
+00:00:41,547 --> 00:00:45,627
 comum nas fazendas, e o tanque
 com misturador, das usinas.
 
 12
-00:00:46,257 --> 00:00:48,177
+00:00:46,377 --> 00:00:48,047
 Por fora, parece simples.
 
 13
-00:00:48,217 --> 00:00:50,777
+00:00:48,087 --> 00:00:50,717
 Por dentro, é uma cozinha de micróbios!
 
 14
-00:00:51,629 --> 00:00:55,389
+00:00:51,629 --> 00:00:55,449
 CP2B: energia viva,
 ciência que transforma!
