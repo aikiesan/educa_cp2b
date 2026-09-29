@@ -1,71 +1,71 @@
 1
-00:00:01,770 --> 00:00:06,350
+00:00:04,596 --> 00:00:09,016
 Bom dia! Eu sou a Arqueia
 e moro num biodigestor.
 
 2
-00:00:06,610 --> 00:00:07,510
+00:00:09,276 --> 00:00:10,286
 Quer ver o meu dia?
 
 3
-00:00:08,053 --> 00:00:12,873
+00:00:10,946 --> 00:00:15,516
 Tudo começa quando chega comida:
 restos, esterco, palha…
 
 4
-00:00:13,416 --> 00:00:15,796
+00:00:16,176 --> 00:00:18,456
 Primeiro, minhas colegas bactérias quebram
 
 5
-00:00:15,836 --> 00:00:17,916
+00:00:18,496 --> 00:00:20,576
 os pedaços grandes em pedacinhos.
 
 6
-00:00:17,956 --> 00:00:19,256
+00:00:20,616 --> 00:00:22,016
 É a hidrólise!
 
 7
-00:00:19,799 --> 00:00:23,519
+00:00:22,676 --> 00:00:26,196
 Depois, outras transformam
 esses pedacinhos em ácidos.
 
 8
-00:00:23,559 --> 00:00:25,199
+00:00:26,236 --> 00:00:27,966
 É a acidogênese!
 
 9
-00:00:25,742 --> 00:00:31,942
+00:00:28,626 --> 00:00:34,606
 Aí vem a acetogênese: os ácidos viram
 acetato, hidrogênio e gás carbônico.
 
 10
-00:00:32,485 --> 00:00:36,205
+00:00:35,266 --> 00:00:38,806
 E agora é a minha vez:
 eu transformo tudo isso em metano!
 
 11
-00:00:36,245 --> 00:00:37,845
+00:00:38,846 --> 00:00:40,526
 É a metanogênese!
 
 12
-00:00:38,388 --> 00:00:40,208
+00:00:41,186 --> 00:00:42,696
 Tudo isso sem oxigênio, viu?
 
 13
-00:00:40,248 --> 00:00:42,268
+00:00:42,736 --> 00:00:44,866
 A gente não se dá nada bem com ele.
 
 14
-00:00:42,811 --> 00:00:48,131
+00:00:45,526 --> 00:00:50,656
 No fim do dia, o biodigestor tá cheio
 de biogás… e eu, cheia de orgulho!
 
 15
-00:00:48,674 --> 00:00:53,074
+00:00:51,316 --> 00:00:55,896
 Um dia na vida de um micróbio:
 pequenininhos, mas movendo energia!
 
 16
-00:00:53,923 --> 00:00:57,523
+00:00:56,748 --> 00:01:00,448
 CP2B: energia viva,
 ciência que transforma!

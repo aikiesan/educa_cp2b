@@ -10,18 +10,18 @@
   "cortes": [
    {
     "de": 41.326,
-    "para": 49.802
+    "para": 46.977
    }
   ],
   "logo_musica": 62.299,
-  "cauda": 4.45
+  "cauda": 4.55
  },
  "plano": {
-  "pausa": 0.84,
-  "primeira_fala": 1.82,
+  "pausa": 0.96,
+  "primeira_fala": 4.65,
   "folga_antes_do_logo": 1.0,
   "saltos": [
-   "-3c (41.3→49.8s)"
+   "-2c (41.3→47.0s)"
   ],
   "duracao_trilha": 67.5
  }

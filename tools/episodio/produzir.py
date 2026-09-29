@@ -300,7 +300,7 @@ def etapa_partitura(ep, lang, d, o):
     # silêncio no começo da trilha: corta até o primeiro som
     trim = an['inicio_som'] - 0.05 if an['inicio_som'] > 0.45 else 0.0
     if trim > 0: cortes.append({'de': 0.0, 'para': round(trim, 3)})
-    d0 = next(x for x in down if x - trim >= 0.9) - trim   # 1º tempo forte (tempo editado) a partir de ~0,9 s
+    d0 = next(x for x in down if x - trim >= max(0.9, o.intro or 0)) - trim   # 1º tempo forte (tempo editado) a partir de ~0,9 s (ou de --intro)
     t_first = d0 + 0.05
     fala_total = sum(dur[i] for i in corpo)
     P0, PMIN, PMAX = o.pausa, 0.3, 1.05
@@ -458,6 +458,7 @@ def main():
     ap.add_argument('--musica', default=None, help='trilha (padrão entrada/musica/musica_epNN.mp3)')
     ap.add_argument('--tempo', type=float, default=None, help='aceleração fixa da narração')
     ap.add_argument('--pausa', type=float, default=0.55)
+    ap.add_argument('--intro', type=float, default=None, help='partitura: segundos livres antes da 1ª fala (abertura com o logo)')
     ap.add_argument('--crf', type=int, default=21)
     ap.add_argument('--frac', type=float, default=0.72, help='quadros: ponto de cada fala a fotografar (0-1)')
     ap.add_argument('--workers', type=int, default=3)
