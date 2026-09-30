@@ -1,378 +1,91 @@
 {
- "_sobre": "Ep. 15 · Bioprodutos: muito além da energia — estilo D (maquete de papelão), comercial retrô de TV: cada produto ganha seu anúncio e, no fim, a estante cheia; o mascote é o garoto-propaganda. Formato: docs/EPISODIO_GENERICO.md",
- "estilo": "D",
- "seed": 15,
- "pecas": {
-  "estante": "ep15/_folha/estante",
-  "biometano": "ep15/_folha/pecas_ep15_1",
-  "cilindro_co2": "ep15/_folha/pecas_ep15_2",
-  "adubo": "ep15/_folha/pecas_ep15_3",
-  "frasco_ambar": "ep15/_folha/pecas_ep15_4",
-  "frasco_lima": "ep15/_folha/pecas_ep15_5",
-  "frasco_amarelo": "ep15/_folha/pecas_ep15_6",
-  "gel": "ep15/_folha/pecas_ep15_7",
-  "estufa": "ep15/_folha/pecas_ep15_8",
-  "refri": "ep15/_folha/pecas_ep15_9"
- },
- "molduras": [
-  {
-   "tipo": "tv",
-   "de": "L01:inicio",
-   "ate": "L09:fim",
-   "cor": "#24343b",
-   "cor2": "#e9d6b1"
-  }
- ],
- "cenas": [
-  {
-   "fala": "L01",
-   "arranjo": "dupla",
-   "itens": [
-    {
-     "fx": "chama",
-     "em": "energia",
-     "s": 0.9
-    },
-    {
-     "p": "estante",
-     "em": "muito",
-     "entra": "desliza_dir"
-    },
-    {
-     "txt": "muito mais!",
-     "tipo": "mao",
-     "lugar": "rodape",
-     "em": "mais-0.3",
-     "cor": "coral"
-    }
-   ]
+  "_sobre": "Ep. 15 · Bioprodutos — estilo D (papelão), twist MÁQUINA DE VENDER: a chama azul de um nicho da 'BIO-MÁQUINA' (a câmera começa colada nela e recua); o Metaninho paga com uma casca de banana ('Pago com resíduo!') e a máquina acende; cada bioproduto cai da sua mola na palavra (visor mostra A1, A2…), passa pela bandeja 'RETIRE AQUI' e pula para a estante ao lado, que vai enchendo com etiquetas; os usos aparecem acima. No fim: estante cheia + plaquinha 'não está à venda: está na pesquisa!'. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "D",
+  "seed": 15,
+  "mascote": "papel",
+  "molduras": [{"tipo": "tv", "de": 0.1, "ate": "L09:fim", "cor": "#7a5638", "cor2": "#c9a574"}],
+  "pecas": {
+    "estante": "ep15/_folha/estante", "biometano": "ep15/_folha/pecas_ep15_1", "co2": "ep15/_folha/pecas_ep15_2",
+    "biofert": "ep15/_folha/pecas_ep15_3", "frasco_a": "ep15/_folha/pecas_ep15_4", "frasco_b": "ep15/_folha/pecas_ep15_5",
+    "gel": "ep15/_folha/pecas_ep15_7", "estufa": "ep15/_folha/pecas_ep15_8", "refri": "ep15/_folha/pecas_ep15_9",
+    "baloes": "ep18/_folha/pecas_ep18_2", "onibus": "ep18/_folha/pecas_ep18_1", "lavoura": "ep17/_folha/pecas_ep17_5",
+    "vinhaca": "ep04/_folha/pecas_ep04_2", "lodo": "ep16/_folha/pecas_ep16_6"
   },
-  {
-   "fala": "L02",
-   "arranjo": "palco",
-   "itens": [
-    {
-     "p": "estante",
-     "em": 0.05
-    },
-    {
-     "txt": "BIOPRODUTOS",
-     "tipo": "letras",
-     "lugar": "titulo",
-     "em": "bioprodutos"
-    },
-    {
-     "p": "mascote:acena",
-     "lugar": "narrador",
-     "em": 0.4,
-     "anima": "acena"
-    },
-    {
-     "txt": "da biomassa e dos resíduos",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "biomassa"
-    }
-   ]
-  },
-  {
-   "fala": "L03",
-   "arranjo": "palco",
-   "itens": [
-    {
-     "p": "biometano",
-     "em": "biometano",
-     "entra": "cai",
-     "s": 1.05
-    },
-    {
-     "p": "onibus",
-     "em": "diesel-0.6"
-    },
-    {
-     "p": "fogao",
-     "em": "natural",
-     "s": 0.9
-    },
-    {
-     "txt": "biometano",
-     "tipo": "etiqueta",
-     "lugar": "titulo",
-     "em": "biometano+0.2",
-     "papel": "lima"
-    },
-    {
-     "fx": "estrela",
-     "n": 3,
-     "lugar": "base",
-     "em": "substitui"
-    }
-   ]
-  },
-  {
-   "fala": "L04",
-   "arranjo": "palco",
-   "itens": [
-    {
-     "p": "adubo",
-     "em": "biofertilizante-0.4",
-     "entra": "cai",
-     "s": 1.1
-    },
-    {
-     "p": "broto",
-     "em": "campo",
-     "entra": "cresce"
-    },
-    {
-     "txt": "biofertilizante",
-     "tipo": "etiqueta",
-     "lugar": "titulo",
-     "em": "biofertilizante"
-    }
-   ]
-  },
-  {
-   "fala": "L05",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "p": "cilindro_co2",
-     "em": "gás",
-     "entra": "cai"
-    },
-    {
-     "p": "refri",
-     "em": "recuperado"
-    },
-    {
-     "p": "estufa",
-     "em": "indústria-0.6"
-    },
-    {
-     "txt": "CO2",
-     "tipo": "formula",
-     "lugar": "titulo",
-     "em": "carbônico"
-    }
-   ]
-  },
-  {
-   "fala": "L06",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "p": "frasco_ambar",
-     "em": "vinhaça",
-     "entra": "cai"
-    },
-    {
-     "p": "frasco_lima",
-     "em": "ácidos",
-     "entra": "cai"
-    },
-    {
-     "p": "frasco_amarelo",
-     "em": "orgânicos",
-     "entra": "cai"
-    },
-    {
-     "txt": "ácidos orgânicos",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "ácidos+0.3"
-    },
-    {
-     "txt": "alto valor!",
-     "tipo": "carimbo",
-     "lugar": "titulo",
-     "em": "valor-0.4",
-     "cor": "ambar"
-    }
-   ]
-  },
-  {
-   "fala": "L07",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "txt": "H2",
-     "tipo": "formula",
-     "em": "hidrogênio"
-    },
-    {
-     "txt": "+",
-     "tipo": "mao",
-     "em": "hidrogênio+0.3",
-     "cor": "petrol"
-    },
-    {
-     "fx": "molecula",
-     "tipo": "CH4",
-     "n": 1,
-     "em": "metano",
-     "s": 1.2
-    },
-    {
-     "txt": "BIOHITANO",
-     "tipo": "letras",
-     "lugar": "titulo",
-     "em": "biohitano"
-    }
-   ]
-  },
-  {
-   "fala": "L08",
-   "arranjo": "dupla",
-   "itens": [
-    {
-     "p": "gel",
-     "em": "lodo",
-     "entra": "cai",
-     "s": 1.05
-    },
-    {
-     "p": "lupa",
-     "em": "pesquisa",
-     "anima": "balanca"
-    },
-    {
-     "txt": "do lodo",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "lodo+0.3"
-    },
-    {
-     "txt": "novos materiais",
-     "tipo": "mao",
-     "lugar": "titulo",
-     "em": "materiais-0.5",
-     "cor": "verdeEsc"
-    }
-   ]
-  },
-  {
-   "fala": "L09",
-   "itens": [
-    {
-     "p": "estante",
-     "id": "est",
-     "lugar": "tudo",
-     "em": 0.05
-    },
-    {
-     "p": "biometano",
-     "sobre": "est",
-     "rel": [
-      -0.26,
-      -0.26
-     ],
-     "tam": 0.105,
-     "chao": true,
-     "em": 0.25
-    },
-    {
-     "p": "cilindro_co2",
-     "sobre": "est",
-     "rel": [
-      0.02,
-      -0.26
-     ],
-     "tam": 0.105,
-     "chao": true,
-     "em": 0.4
-    },
-    {
-     "p": "adubo",
-     "sobre": "est",
-     "rel": [
-      0.27,
-      -0.26
-     ],
-     "tam": 0.105,
-     "chao": true,
-     "em": 0.55
-    },
-    {
-     "p": "frasco_ambar",
-     "sobre": "est",
-     "rel": [
-      -0.25,
-      -0.11
-     ],
-     "tam": 0.1,
-     "chao": true,
-     "em": 0.7
-    },
-    {
-     "p": "frasco_lima",
-     "sobre": "est",
-     "rel": [
-      0,
-      -0.11
-     ],
-     "tam": 0.1,
-     "chao": true,
-     "em": 0.85
-    },
-    {
-     "p": "frasco_amarelo",
-     "sobre": "est",
-     "rel": [
-      0.25,
-      -0.11
-     ],
-     "tam": 0.1,
-     "chao": true,
-     "em": 1.0
-    },
-    {
-     "p": "gel",
-     "sobre": "est",
-     "rel": [
-      -0.18,
-      0.05
-     ],
-     "tam": 0.1,
-     "chao": true,
-     "em": 1.15
-    },
-    {
-     "p": "refri",
-     "sobre": "est",
-     "rel": [
-      0.18,
-      0.05
-     ],
-     "tam": 0.1,
-     "chao": true,
-     "em": 1.3
-    },
-    {
-     "p": "estufa",
-     "sobre": "est",
-     "rel": [
-      0,
-      0.21
-     ],
-     "tam": 0.13,
-     "chao": true,
-     "em": 1.45
-    },
-    {
-     "fx": "brilho",
-     "de": "est",
-     "em": "prateleira",
-     "n": 8
-    },
-    {
-     "txt": "a prateleira de amanhã!",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "prateleira"
-    }
-   ],
-   "zoom": 1.3
-  }
- ]
+  "cenas": [
+    {"falas": ["L01", "L02", "L03", "L04", "L05", "L06", "L07", "L08", "L09"], "empurra": 0.0, "cam": [{"em": 0.0, "alvo": "a_A1", "z": 2.7, "zV": 2.0, "d": 0.01}, {"em": "L01:Mas", "foco": [0, 0], "z": 1.0, "d": 1.1}, {"em": "L03:biometano-0.35", "foco": [-0.07, 0.01], "focoV": [0, -0.04], "z": 1.1, "zV": 1.06, "d": 0.45}, {"em": "L03:biometano+0.8", "foco": [0.07, -0.01], "focoV": [0, 0.03], "z": 1.1, "zV": 1.06, "d": 0.6}, {"em": "L04:biofertilizante-0.35", "foco": [-0.07, 0.01], "focoV": [0, -0.04], "z": 1.1, "zV": 1.06, "d": 0.45}, {"em": "L04:biofertilizante+0.8", "foco": [0.07, -0.01], "focoV": [0, 0.03], "z": 1.1, "zV": 1.06, "d": 0.6}, {"em": "L05:carbônico-0.35", "foco": [-0.07, 0.01], "focoV": [0, -0.04], "z": 1.1, "zV": 1.06, "d": 0.45}, {"em": "L05:carbônico+0.8", "foco": [0.07, -0.01], "focoV": [0, 0.03], "z": 1.1, "zV": 1.06, "d": 0.6}, {"em": "L06:ácidos-0.35", "foco": [-0.07, 0.01], "focoV": [0, -0.04], "z": 1.1, "zV": 1.06, "d": 0.45}, {"em": "L06:ácidos+0.8", "foco": [0.07, -0.01], "focoV": [0, 0.03], "z": 1.1, "zV": 1.06, "d": 0.6}, {"em": "L07:biohitano-0.35", "foco": [-0.07, 0.01], "focoV": [0, -0.04], "z": 1.1, "zV": 1.06, "d": 0.45}, {"em": "L07:biohitano+0.8", "foco": [0.07, -0.01], "focoV": [0, 0.03], "z": 1.1, "zV": 1.06, "d": 0.6}, {"em": "L08:matéria-0.35", "foco": [-0.07, 0.01], "focoV": [0, -0.04], "z": 1.1, "zV": 1.06, "d": 0.45}, {"em": "L08:matéria+0.8", "foco": [0.07, -0.01], "focoV": [0, 0.03], "z": 1.1, "zV": 1.06, "d": 0.6}, {"em": "L09:Bioprodutos", "foco": [0, 0], "z": 1.0, "d": 0.8}], "itens": [
+      {"p": "@vending", "id": "maq", "pos": [-0.25, 0.02], "caixa": [0.36, 0.92], "posV": [-0.02, -0.12], "caixaV": [0.64, 0.42], "em": 0.02, "entra": "nenhum", "brilha": "L02:resíduos+0.4"},
+      {"p": "estante", "id": "est", "pos": [0.2, 0.1], "caixa": [0.46, 0.62], "posV": [0, 0.235], "caixaV": [0.9, 0.25], "em": "L02:vários", "entra": "sobe"},
+      {"fx": "ancora", "id": "a_bandeja", "sobre": "maq", "rel": [-0.089, 0.33], "tam": 0.2},
+      {"fx": "ancora", "id": "a_entrada", "sobre": "maq", "rel": [0.332, -0.031], "tam": 0.2},
+      {"fx": "ancora", "id": "a_A1", "sobre": "maq", "rel": [-0.247, -0.262], "tam": 0.2},
+      {"fx": "chama", "sobre": "maq", "rel": [-0.247, -0.252], "tam": 0.14, "em": 0.1, "sai": "L02:bioprodutos"},
+      {"txt": "energia", "tipo": "etiqueta", "sobre": "maq", "rel": [-0.247, -0.187], "tam": 0.09, "em": "L01:energia", "sai": "L01:mais+0.4", "papel": "lima", "z": 9},
+      {"txt": "BIOPRODUTOS", "tipo": "letras", "pos": [0.2, -0.33], "caixa": [0.46, 0.14], "posV": [0, -0.37], "caixaV": [0.8, 0.05], "em": "L02:bioprodutos", "sai": "L03:O"},
+      {"txt": "feitos de biomassa\ne resíduos", "tipo": "mao", "pos": [0.2, -0.2], "caixa": [0.4, 0.12], "posV": [0.3, 0.07], "caixaV": [0.36, 0.06], "em": "L02:produtos", "sai": "L03:O", "cor": "petrol"},
+      {"p": "banana", "id": "moeda", "sobre": "maq", "rel": [0.62, 0.15], "tam": 0.08, "em": "L02:partir", "entra": "pop", "z": 9, "muda": [{"em": "L02:resíduos", "para": "a_entrada", "rel": [0, -0.1], "arco": 0.4, "d": 0.4, "s": 0.5, "som": "papel_desliza"}, {"em": "L02:resíduos+0.4", "alpha": 0, "d": 0.15}]},
+      {"fx": "raios", "sobre": "maq", "rel": [0, -0.05], "tam": 0.9, "em": "L02:resíduos+0.4", "ate": "L02:resíduos+1.3", "cor": "amarelo", "n": 16, "fundo": true},
+      {"p": "mascote:em_pe", "id": "met", "pos": [-0.02, 0.29], "caixa": [0.09, 0.26], "posV": [0.36, 0.0], "caixaV": [0.2, 0.1], "em": "L01:Mas", "entra": "sobe", "z": 10, "poses": [{"em": "L01:mais", "p": "surpreso"}, {"em": "L02:partir", "p": "acena"}, {"em": "L02:bioprodutos", "p": "pula"}, {"em": "L03:biometano", "p": "surpreso"}, {"em": "L03:diesel", "p": "pula"}, {"em": "L05:carbônico", "p": "surpreso"}, {"em": "L05:indústria", "p": "acena"}, {"em": "L07:biohitano", "p": "surpreso"}, {"em": "L07:juntos", "p": "pula"}, {"em": "L08:lodo", "p": "surpreso"}, {"em": "L09:Bioprodutos", "p": "pula"}]},
+      {"txt": "Muito\nmais?", "tipo": "balao", "sobre": "met", "rel": [-0.3, -0.62], "tam": 0.95, "em": "L01:mais", "sai": "L02:Da", "cauda": [0.3, 0.9]},
+      {"txt": "Pago com\nresíduo!", "tipo": "balao", "sobre": "met", "rel": [-0.3, -0.62], "tam": 0.95, "em": "L02:partir", "sai": "L02:resíduos+0.8", "cauda": [0.3, 0.9]},
+      {"txt": "Do lodo?!\nQue legal!", "tipo": "balao", "sobre": "met", "rel": [-0.3, -0.62], "tam": 0.95, "em": "L08:lodo+0.2", "sai": "L08:materiais+0.3", "cauda": [0.3, 0.9]},
+      {"fx": "ancora", "id": "e_A1", "sobre": "est", "rel": [-0.22, -0.27], "tam": 0.2},
+      {"fx": "ancora", "id": "e_A2", "sobre": "est", "rel": [0.2, -0.27], "tam": 0.2},
+      {"fx": "ancora", "id": "e_B1", "sobre": "est", "rel": [-0.22, -0.11], "tam": 0.2},
+      {"fx": "ancora", "id": "e_B2", "sobre": "est", "rel": [0.2, -0.11], "tam": 0.2},
+      {"fx": "ancora", "id": "e_C1", "sobre": "est", "rel": [-0.22, 0.05], "tam": 0.2},
+      {"fx": "ancora", "id": "e_C2", "sobre": "est", "rel": [0.2, 0.05], "tam": 0.2},
+      {"p": "biometano", "id": "p_A1", "sobre": "maq", "rel": [-0.247, -0.267], "tam": 0.13, "em": "L02:bioprodutos+0.00", "entra": "pop", "z": 6, "muda": [{"em": "L03:biometano", "para": "a_bandeja", "rel": [0, -0.05], "d": 0.45, "som": "papel_pousa"}, {"em": "L03:biometano+0.9", "para": "e_A1", "rel": [0, 0], "arco": 0.9, "d": 0.6, "s": 1.25, "som": "boing"}]},
+      {"txt": "A1", "tipo": "giz", "sobre": "maq", "rel": [0.332, -0.297], "tam": 0.08, "em": "L03:biometano-0.35", "sai": "L04:biofertilizante-0.4", "cor": "lima", "z": 9},
+      {"fx": "engrenagem", "sobre": "maq", "rel": [-0.147, -0.21200000000000002], "tam": 0.1, "em": "L03:biometano-0.2", "ate": "L03:biometano+0.3", "z": 7},
+      {"fx": "estrela", "n": 2, "sobre": "est", "rel": [-0.22, -0.33], "tam": 0.2, "em": "L03:biometano+1.45", "z": 8},
+      {"txt": "biometano", "tipo": "etiqueta", "sobre": "est", "rel": [-0.22, -0.192], "tam": 0.15, "em": "L03:biometano+1.5", "z": 9, "papel": "lima"},
+      {"p": "biofert", "id": "p_A2", "sobre": "maq", "rel": [0.058, -0.267], "tam": 0.13, "em": "L02:bioprodutos+0.12", "entra": "pop", "z": 6, "muda": [{"em": "L04:biofertilizante", "para": "a_bandeja", "rel": [0, -0.05], "d": 0.45, "som": "papel_pousa"}, {"em": "L04:biofertilizante+0.9", "para": "e_A2", "rel": [0, 0], "arco": 0.9, "d": 0.6, "s": 1.25, "som": "boing"}]},
+      {"txt": "A2", "tipo": "giz", "sobre": "maq", "rel": [0.332, -0.297], "tam": 0.08, "em": "L04:biofertilizante-0.35", "sai": "L05:carbônico-0.4", "cor": "lima", "z": 9},
+      {"fx": "engrenagem", "sobre": "maq", "rel": [0.158, -0.21200000000000002], "tam": 0.1, "em": "L04:biofertilizante-0.2", "ate": "L04:biofertilizante+0.3", "z": 7},
+      {"fx": "estrela", "n": 2, "sobre": "est", "rel": [0.2, -0.33], "tam": 0.2, "em": "L04:biofertilizante+1.45", "z": 8},
+      {"txt": "biofertilizante", "tipo": "etiqueta", "sobre": "est", "rel": [0.2, -0.192], "tam": 0.2, "em": "L04:biofertilizante+1.5", "z": 9, "papel": "amarelo"},
+      {"p": "co2", "id": "p_B1", "sobre": "maq", "rel": [-0.247, -0.07200000000000001], "tam": 0.13, "em": "L02:bioprodutos+0.24", "entra": "pop", "z": 6, "muda": [{"em": "L05:carbônico", "para": "a_bandeja", "rel": [0, -0.05], "d": 0.45, "som": "papel_pousa"}, {"em": "L05:carbônico+0.9", "para": "e_B1", "rel": [0, 0], "arco": 0.9, "d": 0.6, "s": 1.25, "som": "boing"}]},
+      {"txt": "B1", "tipo": "giz", "sobre": "maq", "rel": [0.332, -0.297], "tam": 0.08, "em": "L05:carbônico-0.35", "sai": "L06:ácidos-0.4", "cor": "lima", "z": 9},
+      {"fx": "engrenagem", "sobre": "maq", "rel": [-0.147, -0.017], "tam": 0.1, "em": "L05:carbônico-0.2", "ate": "L05:carbônico+0.3", "z": 7},
+      {"fx": "estrela", "n": 2, "sobre": "est", "rel": [-0.22, -0.16999999999999998], "tam": 0.2, "em": "L05:carbônico+1.45", "z": 8},
+      {"txt": "CO₂ recuperado", "tipo": "etiqueta", "sobre": "est", "rel": [-0.22, -0.032], "tam": 0.2, "em": "L05:carbônico+1.5", "z": 9, "papel": "ceu"},
+      {"p": "frasco_a", "id": "p_B2", "sobre": "maq", "rel": [0.058, -0.07200000000000001], "tam": 0.12, "em": "L02:bioprodutos+0.36", "entra": "pop", "z": 6, "muda": [{"em": "L06:ácidos", "para": "a_bandeja", "rel": [0, -0.05], "d": 0.45, "som": "papel_pousa"}, {"em": "L06:ácidos+0.9", "para": "e_B2", "rel": [0, 0], "arco": 0.9, "d": 0.6, "s": 1.25, "som": "boing"}]},
+      {"txt": "B2", "tipo": "giz", "sobre": "maq", "rel": [0.332, -0.297], "tam": 0.08, "em": "L06:ácidos-0.35", "sai": "L07:biohitano-0.4", "cor": "lima", "z": 9},
+      {"fx": "engrenagem", "sobre": "maq", "rel": [0.158, -0.017], "tam": 0.1, "em": "L06:ácidos-0.2", "ate": "L06:ácidos+0.3", "z": 7},
+      {"fx": "estrela", "n": 2, "sobre": "est", "rel": [0.2, -0.16999999999999998], "tam": 0.2, "em": "L06:ácidos+1.45", "z": 8},
+      {"txt": "ácidos orgânicos", "tipo": "etiqueta", "sobre": "est", "rel": [0.2, -0.032], "tam": 0.2, "em": "L06:ácidos+1.5", "z": 9, "papel": "coral"},
+      {"p": "baloes", "id": "p_C1", "sobre": "maq", "rel": [-0.247, 0.123], "tam": 0.14, "em": "L02:bioprodutos+0.48", "entra": "pop", "z": 6, "muda": [{"em": "L07:biohitano", "para": "a_bandeja", "rel": [0, -0.05], "d": 0.45, "som": "papel_pousa"}, {"em": "L07:biohitano+0.9", "para": "e_C1", "rel": [0, 0], "arco": 0.9, "d": 0.6, "s": 1.25, "som": "boing"}]},
+      {"txt": "C1", "tipo": "giz", "sobre": "maq", "rel": [0.332, -0.297], "tam": 0.08, "em": "L07:biohitano-0.35", "sai": "L08:matéria-0.4", "cor": "lima", "z": 9},
+      {"fx": "engrenagem", "sobre": "maq", "rel": [-0.147, 0.178], "tam": 0.1, "em": "L07:biohitano-0.2", "ate": "L07:biohitano+0.3", "z": 7},
+      {"fx": "estrela", "n": 2, "sobre": "est", "rel": [-0.22, -0.009999999999999995], "tam": 0.2, "em": "L07:biohitano+1.45", "z": 8},
+      {"txt": "biohitano", "tipo": "etiqueta", "sobre": "est", "rel": [-0.22, 0.128], "tam": 0.15, "em": "L07:biohitano+1.5", "z": 9, "papel": "lima"},
+      {"p": "gel", "id": "p_C2", "sobre": "maq", "rel": [0.058, 0.123], "tam": 0.12, "em": "L02:bioprodutos+0.60", "entra": "pop", "z": 6, "muda": [{"em": "L08:matéria", "para": "a_bandeja", "rel": [0, -0.05], "d": 0.45, "som": "papel_pousa"}, {"em": "L08:matéria+0.9", "para": "e_C2", "rel": [0, 0], "arco": 0.9, "d": 0.6, "s": 1.25, "som": "boing"}]},
+      {"txt": "C2", "tipo": "giz", "sobre": "maq", "rel": [0.332, -0.297], "tam": 0.08, "em": "L08:matéria-0.35", "sai": "L09:Bioprodutos", "cor": "lima", "z": 9},
+      {"fx": "engrenagem", "sobre": "maq", "rel": [0.158, 0.178], "tam": 0.1, "em": "L08:matéria-0.2", "ate": "L08:matéria+0.3", "z": 7},
+      {"fx": "estrela", "n": 2, "sobre": "est", "rel": [0.2, -0.009999999999999995], "tam": 0.2, "em": "L08:matéria+1.45", "z": 8},
+      {"txt": "material do lodo", "tipo": "etiqueta", "sobre": "est", "rel": [0.2, 0.128], "tam": 0.2, "em": "L08:matéria+1.5", "z": 9, "papel": "amarelo"},
+      {"p": "frasco_b", "sobre": "p_B2", "rel": [0.55, 0.12], "tam": 0.7, "em": "L02:bioprodutos+0.4", "entra": "pop", "segue": true, "z": 7},
+      {"p": "fogao", "pos": [0.08, -0.34], "caixa": [0.1, 0.14], "posV": [0.33, -0.22999999999999998], "caixaV": [0.21000000000000002, 0.07], "em": "L03:natural", "sai": "L04:o", "entra": "pop", "z": 11},
+      {"txt": "no lugar do gás", "tipo": "etiqueta", "pos": [0.08, -0.25], "caixa": [0.14, 0.06], "posV": [0.33, -0.19], "caixaV": [0.3, 0.03], "em": "L03:natural", "sai": "L04:o", "z": 12},
+      {"p": "onibus", "pos": [0.3, -0.34], "caixa": [0.14, 0.14], "posV": [0.33, -0.13], "caixaV": [0.29400000000000004, 0.07], "em": "L03:diesel", "sai": "L04:o", "entra": "pop", "z": 11},
+      {"txt": "e do diesel", "tipo": "etiqueta", "pos": [0.3, -0.25], "caixa": [0.14, 0.06], "posV": [0.33, -0.09], "caixaV": [0.3, 0.03], "em": "L03:diesel", "sai": "L04:o", "z": 12},
+      {"p": "lavoura", "pos": [0.2, -0.34], "caixa": [0.14, 0.14], "posV": [0.33, -0.18], "caixaV": [0.29400000000000004, 0.07], "em": "L04:campo", "sai": "L05:e", "entra": "pop", "z": 11},
+      {"txt": "volta pro campo", "tipo": "etiqueta", "pos": [0.2, -0.25], "caixa": [0.14, 0.06], "posV": [0.33, -0.13], "caixaV": [0.3, 0.03], "em": "L04:campo", "sai": "L05:e", "z": 12},
+      {"p": "refri", "pos": [0.08, -0.34], "caixa": [0.07, 0.14], "posV": [0.33, -0.22999999999999998], "caixaV": [0.14700000000000002, 0.07], "em": "L05:usado", "sai": "L06:Os", "entra": "pop", "z": 11},
+      {"p": "estufa", "pos": [0.26, -0.34], "caixa": [0.12, 0.14], "posV": [0.33, -0.13], "caixaV": [0.252, 0.07], "em": "L05:usado+0.2", "sai": "L06:Os", "entra": "pop", "z": 11},
+      {"txt": "pela indústria", "tipo": "etiqueta", "pos": [0.17, -0.25], "caixa": [0.14, 0.06], "posV": [0.33, -0.07999999999999999], "caixaV": [0.3, 0.03], "em": "L05:indústria", "sai": "L06:Os", "z": 12},
+      {"p": "vinhaca", "pos": [0.12, -0.34], "caixa": [0.08, 0.14], "posV": [0.33, -0.22999999999999998], "caixaV": [0.168, 0.07], "em": "L06:vinhaça", "sai": "L07:e", "entra": "pop", "z": 11},
+      {"txt": "da vinhaça", "tipo": "etiqueta", "pos": [0.12, -0.25], "caixa": [0.14, 0.06], "posV": [0.33, -0.18], "caixaV": [0.3, 0.03], "em": "L06:vinhaça", "sai": "L07:e", "z": 12},
+      {"txt": "alto valor!", "tipo": "etiqueta", "pos": [0.3, -0.3], "caixa": [0.14, 0.06], "posV": [0.33, -0.13], "caixaV": [0.3, 0.03], "em": "L06:valor", "sai": "L07:e", "z": 12, "papel": "amarelo"},
+      {"txt": "H₂ + CH₄", "tipo": "etiqueta", "pos": [0.2, -0.32], "caixa": [0.2, 0.08], "posV": [0.33, -0.28], "caixaV": [0.3, 0.035], "em": "L07:hidrogênio", "sai": "L08:Tem", "papel": "ceu", "z": 12},
+      {"txt": "juntos!", "tipo": "etiqueta", "pos": [0.2, -0.24], "caixa": [0.14, 0.06], "posV": [0.33, -0.16999999999999998], "caixaV": [0.3, 0.03], "em": "L07:juntos", "sai": "L08:Tem", "z": 12},
+      {"p": "lodo", "pos": [0.1, -0.34], "caixa": [0.12, 0.14], "posV": [0.33, -0.22999999999999998], "caixaV": [0.252, 0.07], "em": "L08:lodo", "sai": "L09:Bioprodutos", "entra": "pop", "z": 11},
+      {"p": "lupa", "pos": [0.24, -0.34], "caixa": [0.07, 0.14], "posV": [0.33, -0.13999999999999999], "caixaV": [0.14700000000000002, 0.07], "em": "L08:pesquisa", "sai": "L09:Bioprodutos", "entra": "pop", "z": 11},
+      {"p": "cientista:prancheta", "pos": [0.42, -0.26], "caixa": [0.09, 0.3], "posV": [0.36, 0.08], "caixaV": [0.18, 0.1], "em": "L06:pesquisadores", "sai": "L09:Bioprodutos", "entra": "desliza_dir", "z": 12, "poses": [{"em": "L07:testam", "p": "lupa"}, {"em": "L08:pesquisa", "p": "aponta_esq"}]},
+      {"txt": "BIOPRODUTOS", "tipo": "letras", "pos": [0.2, -0.33], "caixa": [0.46, 0.14], "posV": [0, -0.37], "caixaV": [0.8, 0.05], "em": "L09:Bioprodutos"},
+      {"fx": "brilho", "de": "est", "sobre": "est", "rel": [0, 0], "tam": 0.9, "em": "L09:prateleira", "n": 7},
+      {"txt": "não está à venda:\nestá na pesquisa!", "tipo": "etiqueta", "sobre": "est", "rel": [0, 0.24], "tam": 0.5, "em": "L09:hoje", "papel": "coral", "z": 12},
+      {"fx": "confete", "lugar": "centro", "em": "L09:amanhã"}
+    ]}
+  ]
 }

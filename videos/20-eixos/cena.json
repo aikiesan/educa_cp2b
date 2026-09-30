@@ -1,74 +1,54 @@
 {
-  "_sobre": "Ep. 20 · Os eixos do CP2B — estilo N (caderno de campo), fichário com abas: uma página por eixo; o cientista vira as abas. Formato: docs/EPISODIO_GENERICO.md",
-  "estilo": "N",
+  "_sobre": "Ep. 20 · Eixos de pesquisa — estilo C (colagem), twist MAPA DE METRÔ: abre com o logo CP2B; a estação central CP2B e as rotas planejadas (tracejado); cada eixo é uma LINHA colorida desenhada na hora (reta + diagonal a 45°), com o Metaninho num bondinho na ponta, as estações nas quinas e a placa do terminal (1 inventário · 2 ciência de base · 3 processos · 4 avaliação · 5 bioprodutos · 6 educação · 7 difusão · 8 políticas públicas); no fim, um bondinho de cada linha volta à estação central, que acende: ENERGIA VIVA — muitos caminhos, um só destino. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "C",
   "seed": 20,
-  "percurso": "desce",
+  "mascote": "papel",
+  "abertura": {"selo": "NOVA LINHA!", "canal": "MAPA DAS\nLINHAS CP2B", "sub": "ep. 20 · eixos de pesquisa", "p": "mascote:acena", "virada": 1.9, "ate": 4.6},
   "pecas": {
-    "caderno": "ep20/_folha/caderno", "reator": "ep20/_folha/pecas_ep20_1", "capacete": "ep20/_folha/pecas_ep20_2",
-    "balanca": "ep20/_folha/pecas_ep20_3", "lousa": "ep20/_folha/pecas_ep20_4", "filmadora": "ep20/_folha/pecas_ep20_6",
-    "governo": "ep20/_folha/pecas_ep20_7", "documento": "ep20/_folha/pecas_ep20_8", "folha_c": "ep20/_folha/pecas_ep20_9",
-    "frasco_ambar": "ep15/_folha/pecas_ep15_4", "frasco_lima": "ep15/_folha/pecas_ep15_5", "frasco_amarelo": "ep15/_folha/pecas_ep15_6",
-    "aluno": "ep19/_folha/equipe_1", "aluna": "ep19/_folha/equipe_3"
+    "pino": "ep02/pino_coral2", "bancada": "ep20/_folha/pecas_ep20_1", "tanque": "ep17/_folha/pecas_ep17_6",
+    "capacete": "ep20/_folha/pecas_ep20_2", "balanca": "ep20/_folha/pecas_ep20_3", "folha": "ep20/_folha/pecas_ep20_9",
+    "frasco_a": "ep15/_folha/pecas_ep15_4", "frasco_b": "ep15/_folha/pecas_ep15_5", "frasco_c": "ep15/_folha/pecas_ep15_6",
+    "lousa": "ep20/_folha/pecas_ep20_4", "estudante": "ep24/_folha/herois_1", "camera": "ep20/_folha/pecas_ep20_6",
+    "predio": "ep20/_folha/pecas_ep20_7", "documento": "ep20/_folha/pecas_ep20_8"
   },
-  "assinatura": { "cientista": true },
   "cenas": [
-    { "fala": "L01", "arranjo": "palco", "itens": [
-      { "p": "caderno", "em": 0.2, "entra": "abre", "s": 1.05 },
-      { "txt": "EIXOS DE PESQUISA", "tipo": "letras", "lugar": "titulo", "em": "eixos" },
-      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.5 }
-    ]},
-    { "fala": "L02", "arranjo": "fila", "itens": [
-      { "p": "saco_restos", "em": "resíduos-0.4" },
-      { "p": "pino_coral", "em": "mapeia", "entra": "cai" },
-      { "p": "pino_lima", "em": "mapeia+0.2", "entra": "cai" },
-      { "p": "pino_ambar", "em": "onde", "entra": "cai" },
-      { "txt": "resíduos", "tipo": "etiqueta", "lugar": "titulo", "em": "inventário", "papel": "lima" }
-    ]},
-    { "fala": "L03", "arranjo": "palco", "itens": [
-      { "fx": "lente", "n": 5, "humor": "feliz", "em": "ciência" },
-      { "fx": "engrenagem", "em": "processos", "s": 0.8 },
-      { "txt": "ciência de base", "tipo": "etiqueta", "lugar": "titulo", "em": "base", "papel": "amarelo" }
-    ]},
-    { "fala": "L04", "arranjo": "palco", "itens": [
-      { "p": "reator", "em": 0.2, "muda": [{ "em": "maior", "s": 1.35, "d": 1.0, "som": "papel_desliza" }] },
-      { "p": "capacete", "em": "empresas" },
-      { "p": "biodigestor", "em": "escala", "s": 0.8 },
-      { "txt": "processos", "tipo": "etiqueta", "lugar": "titulo", "em": "eixo", "papel": "ceu" }
-    ]},
-    { "fala": "L05", "arranjo": "palco", "itens": [
-      { "p": "balanca", "em": "avalia", "anima": "balanca" },
-      { "txt": "economia · ambiente · energia", "tipo": "mao", "lugar": "rodape", "em": "economia", "cor": "petrol" },
-      { "txt": "avaliação integrada", "tipo": "etiqueta", "lugar": "titulo", "em": "impactos", "papel": "coral" }
-    ]},
-    { "fala": "L06", "arranjo": "fila", "itens": [
-      { "p": "frasco_ambar", "em": "inventa" },
-      { "p": "frasco_lima", "em": "bioprodutos" },
-      { "p": "frasco_amarelo", "em": "biorrefinaria-0.4" },
-      { "txt": "bioprodutos", "tipo": "etiqueta", "lugar": "titulo", "em": "bioprodutos", "papel": "lima" }
-    ]},
-    { "fala": "L07", "arranjo": "palco", "itens": [
-      { "p": "lousa", "em": "educação" },
-      { "p": "aluno", "em": "formar" },
-      { "p": "aluna", "em": "gente" },
-      { "txt": "educação", "tipo": "etiqueta", "lugar": "titulo", "em": "capacitação", "papel": "amarelo" }
-    ]},
-    { "fala": "L08", "arranjo": "dupla", "itens": [
-      { "p": "filmadora", "em": "difusão" },
-      { "p": "cientista:acena", "em": "vídeos-0.4" },
-      { "txt": "vídeos\ncomo este!", "tipo": "balao", "sobre": "cientista:acena", "rel": [-0.6, -0.45], "tam": 0.72, "em": "vídeos" },
-      { "txt": "comunicação", "tipo": "etiqueta", "lugar": "titulo", "em": "científica", "papel": "ceu" }
-    ]},
-    { "fala": "L09", "arranjo": "dupla", "itens": [
-      { "p": "governo", "em": "políticas" },
-      { "p": "documento", "em": "regras", "entra": "cai" },
-      { "txt": "APROVADO", "tipo": "carimbo", "sobre": "documento", "rel": [0, 0.15], "tam": 0.9, "em": "programas", "cor": "verdeEsc" },
-      { "txt": "políticas públicas", "tipo": "etiqueta", "lugar": "titulo", "em": "públicas", "papel": "coral" }
-    ]},
-    { "fala": "L10", "arranjo": "palco", "itens": [
-      { "p": "caderno", "id": "c", "em": 0.1 },
-      { "fx": "ciclo", "sobre": "c", "rel": [0, 0], "tam": 0.75, "em": "jeitos" },
-      { "txt": "ENERGIA VIVA!", "tipo": "letras", "lugar": "titulo", "em": "objetivo" },
-      { "p": "folha_c", "sobre": "c", "rel": [0.46, 0.35], "tam": 0.25, "em": "resíduo" }
+    {"falas": ["L01", "L02", "L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10"], "folha": "#fbf8f0", "empurra": 0.03, "itens": [
+      {"txt": "1 · INVENTÁRIO", "tipo": "etiqueta", "papel": "#e4572e", "pos": [-0.314, -0.225], "caixa": [0.2, 0.06], "posV": [-0.296, -0.183], "caixaV": [0.34, 0.032], "em": "L02:inventário", "z": 8, "max": 44},
+      {"txt": "2 · CIÊNCIA DE BASE", "tipo": "etiqueta", "papel": "#2e9e5b", "pos": [-0.13, -0.387], "caixa": [0.2, 0.06], "posV": [-0.152, -0.34], "caixaV": [0.28, 0.032], "em": "L03:ciência", "z": 8, "max": 44},
+      {"txt": "3 · PROCESSOS", "tipo": "etiqueta", "papel": "#f2a93b", "pos": [0.13, -0.387], "caixa": [0.2, 0.06], "posV": [0.152, -0.34], "caixaV": [0.28, 0.032], "em": "L04:escala", "z": 8, "max": 44},
+      {"txt": "4 · AVALIAÇÃO", "tipo": "etiqueta", "papel": "#1e5f8c", "pos": [0.314, -0.225], "caixa": [0.2, 0.06], "posV": [0.296, -0.183], "caixaV": [0.34, 0.032], "em": "L05:avalia", "z": 8, "max": 44},
+      {"txt": "5 · BIOPRODUTOS", "tipo": "etiqueta", "papel": "#8fc13f", "pos": [0.314, 0.225], "caixa": [0.2, 0.06], "posV": [0.296, 0.183], "caixaV": [0.34, 0.032], "em": "L06:bioprodutos", "z": 8, "max": 44},
+      {"txt": "6 · EDUCAÇÃO", "tipo": "etiqueta", "papel": "#39a7cf", "pos": [0.13, 0.387], "caixa": [0.2, 0.06], "posV": [0.152, 0.34], "caixaV": [0.28, 0.032], "em": "L07:educação", "z": 8, "max": 44},
+      {"txt": "7 · DIFUSÃO", "tipo": "etiqueta", "papel": "#b04a9e", "pos": [-0.13, 0.387], "caixa": [0.2, 0.06], "posV": [-0.152, 0.34], "caixaV": [0.28, 0.032], "em": "L08:difusão", "z": 8, "max": 44},
+      {"txt": "8 · POLÍTICAS PÚBLICAS", "tipo": "etiqueta", "papel": "#d9a400", "pos": [-0.314, 0.225], "caixa": [0.2, 0.06], "posV": [-0.296, 0.183], "caixaV": [0.34, 0.032], "em": "L09:políticas", "z": 8, "max": 44},
+      {"pos": [-0.314, -0.115], "caixa": [0.15, 0.16], "posV": [-0.296, -0.111], "caixaV": [0.3, 0.09], "em": "L02:inventário", "z": 7, "setor": "total", "dur": 1.0, "fx": "mapa_sp"},
+      {"p": "pino", "pos": [-0.284, -0.185], "caixa": [0.03, 0.07], "posV": [-0.246, -0.166], "caixaV": [0.06, 0.04], "em": "L02:mapeia", "entra": "cai", "z": 7},
+      {"pos": [-0.13, -0.277], "caixa": [0.12, 0.17], "posV": [-0.122, -0.268], "caixaV": [0.24, 0.09], "em": "L03:ciência", "z": 7, "n": 4, "humor": "comendo", "caminho": false, "fx": "lente"},
+      {"p": "bancada", "pos": [0.11, -0.277], "caixa": [0.12, 0.15], "posV": [0.122, -0.268], "caixaV": [0.22, 0.085], "em": "L04:ideias", "entra": "pop", "z": 7, "poses": [{"em": "L04:escala", "p": "tanque"}], "muda": [{"em": "L04:maior", "s": 1.25, "d": 0.4}]},
+      {"p": "capacete", "pos": [0.2, -0.287], "caixa": [0.06, 0.07], "posV": [0.222, -0.288], "caixaV": [0.1, 0.04], "em": "L04:empresas", "entra": "cai", "z": 7},
+      {"p": "balanca", "pos": [0.304, -0.115], "caixa": [0.12, 0.15], "posV": [0.296, -0.111], "caixaV": [0.22, 0.085], "em": "L05:avalia", "entra": "pop", "z": 7},
+      {"p": "@moeda", "pos": [0.239, -0.215], "caixa": [0.035, 0.05], "posV": [0.196, -0.186], "caixaV": [0.06, 0.03], "em": "L05:economia", "entra": "pop", "z": 7},
+      {"p": "folha", "pos": [0.314, -0.24], "caixa": [0.03, 0.05], "posV": [0.296, -0.196], "caixaV": [0.05, 0.03], "em": "L05:ambiente", "entra": "pop", "z": 7},
+      {"pos": [0.389, -0.215], "caixa": [0.05, 0.07], "posV": [0.396, -0.186], "caixaV": [0.08, 0.04], "em": "L05:energia", "z": 7, "cor": "amarelo", "n": 10, "fx": "raios"},
+      {"p": "frasco_a", "pos": [0.269, 0.115], "caixa": [0.05, 0.12], "posV": [0.226, 0.111], "caixaV": [0.08, 0.07], "em": "L06:bioprodutos", "entra": "pop", "z": 7},
+      {"p": "frasco_b", "pos": [0.314, 0.115], "caixa": [0.05, 0.12], "posV": [0.296, 0.111], "caixaV": [0.08, 0.07], "em": "L06:bioprodutos+0.15", "entra": "pop", "z": 7},
+      {"p": "frasco_c", "pos": [0.359, 0.115], "caixa": [0.05, 0.12], "posV": [0.366, 0.111], "caixaV": [0.08, 0.07], "em": "L06:biorrefinaria", "entra": "pop", "z": 7},
+      {"p": "lousa", "pos": [0.11, 0.277], "caixa": [0.12, 0.15], "posV": [0.122, 0.268], "caixaV": [0.22, 0.085], "em": "L07:educação", "entra": "pop", "z": 7},
+      {"p": "estudante", "pos": [0.195, 0.247], "caixa": [0.04, 0.13], "posV": [0.222, 0.238], "caixaV": [0.07, 0.075], "em": "L07:gente", "entra": "desliza_dir", "z": 7},
+      {"p": "camera", "pos": [-0.13, 0.277], "caixa": [0.12, 0.15], "posV": [-0.122, 0.268], "caixaV": [0.22, 0.085], "em": "L08:difusão", "entra": "pop", "z": 7},
+      {"txt": "● REC", "tipo": "etiqueta", "papel": "coral", "pos": [-0.06, 0.177], "caixa": [0.07, 0.045], "posV": [-0.022, 0.198], "caixaV": [0.14, 0.025], "em": "L08:vídeos", "z": 7},
+      {"pos": [-0.13, 0.277], "caixa": [0.14, 0.18], "posV": [-0.122, 0.268], "caixaV": [0.26, 0.1], "em": "L08:este", "z": 7, "n": 5, "fx": "brilho"},
+      {"p": "predio", "pos": [-0.344, 0.115], "caixa": [0.12, 0.15], "posV": [-0.296, 0.111], "caixaV": [0.22, 0.085], "em": "L09:políticas", "entra": "pop", "z": 7},
+      {"p": "documento", "pos": [-0.254, 0.095], "caixa": [0.05, 0.1], "posV": [-0.206, 0.091], "caixaV": [0.08, 0.06], "em": "L09:regras", "entra": "cai", "z": 7},
+      {"pos": [-0.254, 0.095], "caixa": [0.04, 0.06], "posV": [-0.206, 0.091], "caixaV": [0.07, 0.035], "em": "L09:programas", "z": 7, "fx": "check"},
+      {"fx": "metro", "id": "mapa", "pos": [0, 0], "caixa": [1, 1], "posV": [0, 0], "caixaV": [1, 1], "em": 0.0, "linhas": [{"cor": "#e4572e", "pts": [[-0.0429, -0.0316], [-0.1932, -0.0316], [-0.2217, -0.0823]], "ptsV": [[-0.0762, -0.0178], [-0.1129, -0.0178], [-0.231, -0.0842]], "em": "L02:Um", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#2e9e5b", "pts": [[-0.0178, -0.0762], [-0.023, -0.0762], [-0.0918, -0.1986]], "ptsV": [[-0.0316, -0.0429], [-0.0316, -0.1672], [-0.0957, -0.2033]], "em": "L03:Outro", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#f2a93b", "pts": [[0.0178, -0.0762], [0.023, -0.0762], [0.0918, -0.1986]], "ptsV": [[0.0316, -0.0429], [0.0316, -0.1672], [0.0957, -0.2033]], "em": "L04:Tem", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#1e5f8c", "pts": [[0.0429, -0.0316], [0.1932, -0.0316], [0.2217, -0.0823]], "ptsV": [[0.0762, -0.0178], [0.1129, -0.0178], [0.231, -0.0842]], "em": "L05:Um", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#8fc13f", "pts": [[0.0429, 0.0316], [0.1932, 0.0316], [0.2217, 0.0823]], "ptsV": [[0.0762, 0.0178], [0.1129, 0.0178], [0.231, 0.0842]], "em": "L06:Um", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#39a7cf", "pts": [[0.0178, 0.0762], [0.023, 0.0762], [0.0918, 0.1986]], "ptsV": [[0.0316, 0.0429], [0.0316, 0.1672], [0.0957, 0.2033]], "em": "L07:Um", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#b04a9e", "pts": [[-0.0178, 0.0762], [-0.023, 0.0762], [-0.0918, 0.1986]], "ptsV": [[-0.0316, 0.0429], [-0.0316, 0.1672], [-0.0957, 0.2033]], "em": "L08:Um", "dur": 1.4, "estacoes": [1, 2]}, {"cor": "#d9a400", "pts": [[-0.0429, 0.0316], [-0.1932, 0.0316], [-0.2217, 0.0823]], "ptsV": [[-0.0762, 0.0178], [-0.1129, 0.0178], [-0.231, 0.0842]], "em": "L09:E", "dur": 1.4, "estacoes": [1, 2]}], "centro": "L01:organiza", "fantasma": "L01:eixos", "volta": "L10:Muitos", "brilha": "L10:objetivo", "fundo": true},
+      {"txt": "LINHAS DE PESQUISA", "tipo": "etiqueta", "papel": "amarelo", "pos": [-0.37, -0.41], "caixa": [0.2, 0.06], "posV": [-0.22, -0.4], "caixaV": [0.44, 0.032], "em": "L01:eixos", "z": 9},
+      {"txt": "?", "tipo": "pow", "pos": [0.07, -0.1], "caixa": [0.07, 0.1], "posV": [0.12, -0.07], "caixaV": [0.14, 0.05], "em": "L01:Como", "sai": "L01:organiza", "fundo": "amarelo", "z": 9},
+      {"p": "mascote:acena", "id": "met", "pos": [0.08, 0.06], "caixa": [0.06, 0.16], "posV": [0.12, 0.06], "caixaV": [0.14, 0.08], "em": "L01:organiza+0.2", "entra": "cai", "sai": "L02:Um", "z": 9, "poses": [{"em": "L01:juntos", "p": "pula"}]},
+      {"txt": "trabalham\njuntos!", "tipo": "balao", "sobre": "met", "rel": [0.9, -0.55], "tam": 1.1, "em": "L01:trabalham", "sai": "L02:Um", "cauda": [-0.4, 0.9], "z": 10},
+      {"p": "mascote:pula", "pos": [0.09, 0.08], "caixa": [0.06, 0.16], "posV": [0.13, 0.08], "caixaV": [0.14, 0.08], "em": "L10:objetivo", "entra": "cai", "anima": "quica", "z": 11},
+      {"txt": "muitos caminhos,\num só destino!", "tipo": "etiqueta", "papel": "lima", "pos": [0.0, 0.17], "caixa": [0.2, 0.09], "posV": [0.0, 0.13], "caixaV": [0.44, 0.05], "em": "L10:Muitos+0.4", "z": 12},
+      {"fx": "confete", "lugar": "centro", "em": "L10:viva"}
     ]}
   ]
 }

@@ -11,16 +11,22 @@
    {
     "de": 0.0,
     "para": 0.763
+   },
+   {
+    "de": 35.131,
+    "para": 30.331
    }
   ],
   "logo_musica": 57.377,
-  "cauda": 4.89
+  "cauda": 4.97
  },
  "plano": {
-  "pausa": 0.65,
-  "primeira_fala": 2.42,
+  "pausa": 0.87,
+  "primeira_fala": 5.62,
   "folga_antes_do_logo": 1.0,
-  "saltos": [],
+  "saltos": [
+   "+3c (35.1→30.3s)"
+  ],
   "duracao_trilha": 62.33
  }
 }

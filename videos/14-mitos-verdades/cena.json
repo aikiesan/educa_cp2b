@@ -1,58 +1,122 @@
 {
-  "_sobre": "Ep. 14 · Mitos e verdades do biogás — estilo C (colagem), programa de auditório: palco com holofotes e plateia, cientista apresentador, carimbos MITO / VERDADE. Formato: docs/EPISODIO_GENERICO.md",
+  "_sobre": "Ep. 14 · Mito ou verdade? — estilo C (colagem), twist GAME SHOW: abre com o logo que vira o cartão do programa; palco de papel com moldura de lâmpadas piscando, holofotes e plateia; o Metaninho é o competidor no púlpito com os botões MITO / VERDADE e chuta cada resposta; anel de suspense (tique-taque); carimbo no cartão; o placar dele no canto (½ ✓ ✗ ✓ ✓). Cortes secos na batida. Cada pergunta funciona sozinha como pílula. Formato: docs/EPISODIO_GENERICO.md",
   "estilo": "C",
   "seed": 14,
-  "mascote": "papel",
+  "show": true,
+  "transicao": "corta",
+  "naBatida": true,
+  "abertura": {"canal": "MITO OU\nVERDADE?", "sub": "ep. 14 · o show do biogás", "p": "mascote:pula", "virada": 1.9, "ate": 4.9},
+  "placar": {"nome": "METANINHO", "de": "L02:inicio", "pontos": [{"em": "L02:parte", "r": "meio"}, {"em": "L03:Mito", "r": "ok"}, {"em": "L04:Mito", "r": "erro"}, {"em": "L05:Mito", "r": "ok"}, {"em": "L06:Verdade", "r": "ok"}]},
+  "molduras": [{"tipo": "palco", "de": "L01:inicio", "ate": "L07:fim"}],
   "pecas": {
-    "ovo": "ep14/_folha/pecas_ep14_1", "sitio": "ep14/_folha/pecas_ep14_4", "fazenda": "ep14/_folha/pecas_ep14_5",
-    "predio": "ep14/_folha/pecas_ep14_6", "despertador": "ep14/_folha/pecas_ep14_7", "adubo": "ep14/_folha/pecas_ep14_8"
+    "carta": "ep27/_folha/carta", "ovo": "ep14/_folha/pecas_ep14_1", "sitio": "ep14/_folha/pecas_ep14_4",
+    "fazenda": "ep14/_folha/pecas_ep14_5", "predio": "ep14/_folha/pecas_ep14_6", "adubo": "ep14/_folha/pecas_ep14_8",
+    "lavoura": "ep17/_folha/pecas_ep17_5", "motor": "ep09/_folha/pecas_ep09_1"
   },
-  "molduras": [{ "tipo": "palco", "de": "L01:inicio", "ate": "L07:fim" }],
-  "assinatura": { "cientista": true },
   "cenas": [
-    { "fala": "L01", "arranjo": "palco", "itens": [
-      { "txt": "MITO OU\nVERDADE?", "tipo": "letras", "em": "mito" },
-      { "p": "despertador", "em": "testar", "anima": "treme", "s": 0.8 },
-      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.4 }
+    {"fala": "L01", "folha": "#1e3e4c", "itens": [
+      {"txt": "MITO OU\nVERDADE?", "tipo": "letras", "pos": [-0.14, -0.14], "caixa": [0.5, 0.4], "posV": [0, -0.2], "caixaV": [0.9, 0.2], "em": "mito"},
+      {"p": "cientista:apresenta", "id": "host", "pos": [0.34, 0.08], "caixa": [0.16, 0.5], "posV": [0.26, 0.14], "caixaV": [0.34, 0.2], "em": "Biogás", "entra": "desliza_dir", "poses": [{"em": "Bora", "p": "pula"}]},
+      {"txt": "Bora\ntestar!", "tipo": "balao", "sobre": "host", "rel": [-0.75, -0.5], "tam": 0.6, "em": "Bora", "cauda": [0.4, 0.9]},
+      {"p": "mascote:em_pe", "id": "met1", "pos": [0.02, 0.07], "caixa": [0.12, 0.34], "posV": [-0.22, 0.08], "caixaV": [0.3, 0.16], "em": "verdade", "entra": "cai", "poses": [{"em": "Bora", "p": "acena"}]},
+      {"p": "@botao_mito", "pos": [-0.07, 0.31], "caixa": [0.12, 0.13], "posV": [0.02, 0.26], "caixaV": [0.3, 0.06], "em": "mito", "entra": "pop", "batida": true, "z": 4},
+      {"p": "@botao_verdade", "pos": [0.11, 0.31], "caixa": [0.12, 0.13], "posV": [0.34, 0.26], "caixaV": [0.3, 0.06], "em": "verdade", "entra": "pop", "batida": true, "z": 4}
     ]},
-    { "fala": "L02", "arranjo": "dupla", "itens": [
-      { "p": "ovo", "em": "ovo", "entra": "cai" },
-      { "fx": "cheiro", "de": "ovo", "sobre": "ovo", "rel": [0, -0.3], "tam": 0.9, "em": "cheiro" },
-      { "p": "maquina", "em": "limpeza-0.8" },
-      { "txt": "EM PARTE", "tipo": "carimbo", "lugar": "titulo", "em": "parte", "cor": "ambar" },
-      { "fx": "check", "sobre": "maquina", "rel": [0.4, -0.45], "tam": 0.4, "em": "limpeza" }
+    {"fala": "L02", "folha": "#1e3e4c", "itens": [
+      {"p": "carta", "id": "card", "pos": [-0.32, -0.03], "caixa": [0.22, 0.66], "posV": [-0.18, -0.2], "caixaV": [0.46, 0.24], "em": 0.02, "entra": "gira"},
+      {"txt": "Biogás tem cheiro\nde ovo podre?", "tipo": "mao", "sobre": "card", "rel": [0, -0.25], "tam": 0.6, "em": "L02:inicio", "cor": "petrol"},
+      {"p": "ovo", "sobre": "card", "rel": [0, 0.14], "tam": 0.5, "em": "ovo", "entra": "pop", "z": 3, "som": "fedido"},
+      {"p": "mascote:em_pe", "id": "met", "pos": [-0.06, 0.07], "caixa": [0.12, 0.34], "posV": [0.24, -0.16], "caixaV": [0.3, 0.14], "em": 0.02, "entra": "nenhum", "poses": [{"em": "podre+0.15", "p": "pula"}, {"em": "Em", "p": "surpreso"}]},
+      {"p": "@botao_mito", "id": "bm", "pos": [-0.15, 0.31], "caixa": [0.12, 0.13], "posV": [-0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "brilha": "Em", "corBrilho": "rgba(242,193,78,0.35)"},
+      {"p": "@botao_verdade", "id": "bv", "pos": [0.03, 0.31], "caixa": [0.12, 0.13], "posV": [0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "brilha": "Em", "corBrilho": "rgba(242,193,78,0.35)"},
+      {"txt": "VERDADE!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "podre+0.15", "sai": "Em", "cauda": [-0.4, 0.9]},
+      {"fx": "contagem", "pos": [-0.06, -0.3], "caixa": [0.1, 0.18], "posV": [0.24, -0.3], "caixaV": [0.16, 0.07], "em": "podre+0.15", "ate": "Em"},
+      {"txt": "EM PARTE", "tipo": "carimbo", "sobre": "card", "rel": [0, 0.02], "tam": 0.5, "em": "Em", "cor": "ambar", "z": 8},
+      {"txt": "Hã?", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "Em+0.25", "cauda": [-0.4, 0.9]},
+      {"fx": "estrela", "n": 3, "sobre": "card", "rel": [0, -0.3], "tam": 0.5, "em": "Em"},
+      {"fx": "cheiro", "pos": [0.26, -0.22], "caixa": [0.184, 0.22999999999999998], "posV": [-0.22, 0.06], "caixaV": [0.44200000000000006, 0.10400000000000001], "em": "sulfídrico", "cor": "verde", "ate": "limpeza"},
+      {"fx": "molecula", "tipo": "H2S", "n": 1, "humor": "nojo", "pos": [0.26, -0.06], "caixa": [0.184, 0.253], "posV": [-0.22, 0.14], "caixaV": [0.44200000000000006, 0.13], "em": "sulfídrico", "ate": "limpeza+0.3"},
+      {"txt": "gás sulfídrico", "tipo": "etiqueta", "pos": [0.26, 0.12], "caixa": [0.22999999999999998, 0.092], "posV": [-0.22, 0.24], "caixaV": [0.5720000000000001, 0.052000000000000005], "em": "sulfídrico+0.2", "papel": "amarelo"},
+      {"p": "maquina", "id": "maq", "pos": [0.38, 0.06], "caixa": [0.11499999999999999, 0.368], "posV": [0.22, 0.15], "caixaV": [0.338, 0.18200000000000002], "em": "tirado", "entra": "cai", "anima": "treme"},
+      {"fx": "check", "pos": [0.38, -0.18], "caixa": [0.092, 0.13799999999999998], "posV": [0.34, 0.06], "caixaV": [0.18200000000000002, 0.078], "em": "limpeza"}
     ]},
-    { "fala": "L03", "arranjo": "fila", "itens": [
-      { "p": "fazenda", "em": "fazenda" },
-      { "p": "sitio", "em": "sítio" },
-      { "p": "predio", "em": "cidade" },
-      { "txt": "MITO!", "tipo": "carimbo", "lugar": "titulo", "em": "Mito", "cor": "coral" }
+    {"fala": "L03", "folha": "#1e3e4c", "itens": [
+      {"p": "carta", "id": "card", "pos": [-0.32, -0.03], "caixa": [0.22, 0.66], "posV": [-0.18, -0.2], "caixaV": [0.46, 0.24], "em": 0.02, "entra": "gira"},
+      {"txt": "Só fazenda grande\nfaz biogás?", "tipo": "mao", "sobre": "card", "rel": [0, -0.25], "tam": 0.6, "em": "L03:inicio", "cor": "petrol"},
+      {"p": "fazenda", "sobre": "card", "rel": [0, 0.14], "tam": 0.5, "em": "fazenda", "entra": "pop", "z": 3},
+      {"p": "mascote:em_pe", "id": "met", "pos": [-0.06, 0.07], "caixa": [0.12, 0.34], "posV": [0.24, -0.16], "caixaV": [0.3, 0.14], "em": 0.02, "entra": "nenhum", "poses": [{"em": "biogás+0.3", "p": "pula"}, {"em": "Mito", "p": "pula"}]},
+      {"p": "@botao_mito", "id": "bm", "pos": [-0.15, 0.31], "caixa": [0.12, 0.13], "posV": [-0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "brilha": "Mito", "muda": [{"em": "Mito", "s": 0.92, "d": 0.12}, {"em": "Mito+0.15", "s": 1.08, "d": 0.3}]},
+      {"p": "@botao_verdade", "id": "bv", "pos": [0.03, 0.31], "caixa": [0.12, 0.13], "posV": [0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "muda": [{"em": "Mito", "alpha": 0.35, "d": 0.3}]},
+      {"txt": "MITO!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "biogás+0.3", "sai": "Mito", "cauda": [-0.4, 0.9]},
+      {"fx": "contagem", "pos": [-0.06, -0.3], "caixa": [0.1, 0.18], "posV": [0.24, -0.3], "caixaV": [0.16, 0.07], "em": "biogás+0.3", "ate": "Mito"},
+      {"txt": "MITO", "tipo": "carimbo", "sobre": "card", "rel": [0, 0.02], "tam": 0.5, "em": "Mito", "cor": "coral", "z": 8},
+      {"txt": "Acertei!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "Mito+0.25", "cauda": [-0.4, 0.9]},
+      {"fx": "confete", "pos": [-0.06, -0.1], "caixa": [0.4, 0.4], "em": "Mito"},
+      {"p": "fazenda", "pos": [0.26, -0.18], "caixa": [0.184, 0.207], "posV": [-0.26, 0.14], "caixaV": [0.39, 0.11699999999999999], "em": "todo", "entra": "pop"},
+      {"p": "sitio", "pos": [0.36, 0.0], "caixa": [0.1725, 0.207], "posV": [0.02, 0.14], "caixaV": [0.36400000000000005, 0.11699999999999999], "em": "sítio", "entra": "pop"},
+      {"p": "predio", "pos": [0.26, 0.17], "caixa": [0.1265, 0.22999999999999998], "posV": [0.3, 0.14], "caixaV": [0.312, 0.13], "em": "cidade", "entra": "pop"},
+      {"txt": "de todo\ntamanho!", "tipo": "etiqueta", "pos": [0.38, 0.2], "caixa": [0.13799999999999998, 0.13799999999999998], "posV": [0.02, 0.24], "caixaV": [0.52, 0.065], "em": "tamanho", "papel": "lima"}
     ]},
-    { "fala": "L04", "arranjo": "grade", "colunas": 4, "itens": [
-      { "p": "fogao", "em": "cozinhar" },
-      { "p": "gerador", "em": "calor" },
-      { "p": "lampada", "em": "eletricidade", "brilha": "eletricidade+0.2" },
-      { "p": "caminhao", "em": "caminhão-0.6" },
-      { "txt": "MITO!", "tipo": "carimbo", "lugar": "titulo", "em": "Mito", "cor": "coral" }
+    {"fala": "L04", "folha": "#1e3e4c", "itens": [
+      {"p": "carta", "id": "card", "pos": [-0.32, -0.03], "caixa": [0.22, 0.66], "posV": [-0.18, -0.2], "caixaV": [0.46, 0.24], "em": 0.02, "entra": "gira"},
+      {"txt": "Biogás só serve\npra cozinhar?", "tipo": "mao", "sobre": "card", "rel": [0, -0.25], "tam": 0.6, "em": "L04:inicio", "cor": "petrol"},
+      {"p": "fogao", "sobre": "card", "rel": [0, 0.14], "tam": 0.5, "em": "cozinhar", "entra": "pop", "z": 3},
+      {"p": "mascote:em_pe", "id": "met", "pos": [-0.06, 0.07], "caixa": [0.12, 0.34], "posV": [0.24, -0.16], "caixaV": [0.3, 0.14], "em": 0.02, "entra": "nenhum", "poses": [{"em": "cozinhar+0.3", "p": "pula"}, {"em": "Mito", "p": "surpreso"}]},
+      {"p": "@botao_mito", "id": "bm", "pos": [-0.15, 0.31], "caixa": [0.12, 0.13], "posV": [-0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "brilha": "Mito", "muda": [{"em": "Mito", "s": 0.92, "d": 0.12}, {"em": "Mito+0.15", "s": 1.08, "d": 0.3}]},
+      {"p": "@botao_verdade", "id": "bv", "pos": [0.03, 0.31], "caixa": [0.12, 0.13], "posV": [0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "muda": [{"em": "Mito", "alpha": 0.35, "d": 0.3}]},
+      {"txt": "VERDADE!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "cozinhar+0.3", "sai": "Mito", "cauda": [-0.4, 0.9]},
+      {"fx": "contagem", "pos": [-0.06, -0.3], "caixa": [0.1, 0.18], "posV": [0.24, -0.3], "caixaV": [0.16, 0.07], "em": "cozinhar+0.3", "ate": "Mito"},
+      {"txt": "MITO", "tipo": "carimbo", "sobre": "card", "rel": [0, 0.02], "tam": 0.5, "em": "Mito", "cor": "coral", "z": 8},
+      {"txt": "Ops!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "Mito+0.25", "cauda": [-0.4, 0.9]},
+      {"fx": "confete", "pos": [-0.06, -0.1], "caixa": [0.4, 0.4], "em": "Mito"},
+      {"fx": "chama", "pos": [0.23, -0.2], "caixa": [0.06899999999999999, 0.161], "posV": [-0.3, 0.12], "caixaV": [0.156, 0.09100000000000001], "em": "calor"},
+      {"txt": "calor", "tipo": "etiqueta", "pos": [0.33, -0.2], "caixa": [0.11499999999999999, 0.0805], "posV": [-0.3, 0.2], "caixaV": [0.28600000000000003, 0.045500000000000006], "em": "calor+0.1"},
+      {"p": "motor", "pos": [0.26, 0.0], "caixa": [0.1495, 0.1955], "posV": [0.0, 0.12], "caixaV": [0.338, 0.10400000000000001], "em": "eletricidade", "entra": "pop", "anima": "treme"},
+      {"txt": "eletricidade", "tipo": "etiqueta", "pos": [0.38, 0.0], "caixa": [0.13799999999999998, 0.0805], "posV": [0.0, 0.2], "caixaV": [0.39, 0.045500000000000006], "em": "eletricidade+0.2"},
+      {"p": "caminhao", "pos": [0.3, 0.18], "caixa": [0.207, 0.161], "posV": [0.3, 0.12], "caixaV": [0.39, 0.09100000000000001], "em": "caminhão", "entra": "desliza_dir"},
+      {"txt": "combustível", "tipo": "etiqueta", "pos": [0.3, 0.29], "caixa": [0.161, 0.06899999999999999], "posV": [0.3, 0.2], "caixaV": [0.39, 0.045500000000000006], "em": "combustível", "papel": "lima"}
     ]},
-    { "fala": "L05", "arranjo": "palco", "itens": [
-      { "p": "adubo", "em": "biofertilizante-0.6", "entra": "gira" },
-      { "p": "saco_restos", "id": "lixo", "em": "sobra" },
-      { "fx": "seta", "de": "lixo", "para": "adubo", "em": "Vira" },
-      { "txt": "MITO!", "tipo": "carimbo", "lugar": "titulo", "em": "Mito", "cor": "coral" }
+    {"fala": "L05", "folha": "#1e3e4c", "itens": [
+      {"p": "carta", "id": "card", "pos": [-0.32, -0.03], "caixa": [0.22, 0.66], "posV": [-0.18, -0.2], "caixaV": [0.46, 0.24], "em": 0.02, "entra": "gira"},
+      {"txt": "O que sobra do\nbiodigestor é lixo?", "tipo": "mao", "sobre": "card", "rel": [0, -0.25], "tam": 0.6, "em": "L05:inicio", "cor": "petrol"},
+      {"p": "saco_restos", "sobre": "card", "rel": [0, 0.14], "tam": 0.42, "em": "sobra", "entra": "pop", "z": 3},
+      {"p": "mascote:em_pe", "id": "met", "pos": [-0.06, 0.07], "caixa": [0.12, 0.34], "posV": [0.24, -0.16], "caixaV": [0.3, 0.14], "em": 0.02, "entra": "nenhum", "poses": [{"em": "lixo+0.3", "p": "pula"}, {"em": "Mito", "p": "pula"}]},
+      {"p": "@botao_mito", "id": "bm", "pos": [-0.15, 0.31], "caixa": [0.12, 0.13], "posV": [-0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "brilha": "Mito", "muda": [{"em": "Mito", "s": 0.92, "d": 0.12}, {"em": "Mito+0.15", "s": 1.08, "d": 0.3}]},
+      {"p": "@botao_verdade", "id": "bv", "pos": [0.03, 0.31], "caixa": [0.12, 0.13], "posV": [0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "muda": [{"em": "Mito", "alpha": 0.35, "d": 0.3}]},
+      {"txt": "MITO!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "lixo+0.3", "sai": "Mito", "cauda": [-0.4, 0.9]},
+      {"fx": "contagem", "pos": [-0.06, -0.3], "caixa": [0.1, 0.18], "posV": [0.24, -0.3], "caixaV": [0.16, 0.07], "em": "lixo+0.3", "ate": "Mito"},
+      {"txt": "MITO", "tipo": "carimbo", "sobre": "card", "rel": [0, 0.02], "tam": 0.5, "em": "Mito", "cor": "coral", "z": 8},
+      {"txt": "Sabia!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "Mito+0.25", "cauda": [-0.4, 0.9]},
+      {"fx": "confete", "pos": [-0.06, -0.1], "caixa": [0.4, 0.4], "em": "Mito"},
+      {"p": "adubo", "pos": [0.26, -0.1], "caixa": [0.1725, 0.345], "posV": [-0.22, 0.13], "caixaV": [0.41600000000000004, 0.169], "em": "biofertilizante", "entra": "cai"},
+      {"txt": "biofertilizante", "tipo": "etiqueta", "pos": [0.26, 0.12], "caixa": [0.207, 0.0805], "posV": [-0.22, 0.24], "caixaV": [0.52, 0.045500000000000006], "em": "biofertilizante+0.3", "papel": "lima"},
+      {"p": "lavoura", "pos": [0.38, 0.12], "caixa": [0.1495, 0.22999999999999998], "posV": [0.24, 0.14], "caixaV": [0.41600000000000004, 0.14300000000000002], "em": "lavoura", "entra": "cresce"}
     ]},
-    { "fala": "L06", "arranjo": "fila", "itens": [
-      { "p": "saco_restos", "id": "r", "em": "resíduo-0.8" },
-      { "p": "biodigestor", "id": "b", "em": "renovável" },
-      { "p": "lampada", "id": "l", "em": "biogás", "brilha": "biogás+0.2" },
-      { "fx": "ciclo", "itens": ["r", "b", "l"], "em": "Enquanto", "passo": 0.4 },
-      { "txt": "VERDADE!", "tipo": "carimbo", "lugar": "titulo", "em": "Verdade", "cor": "verdeEsc" }
+    {"fala": "L06", "folha": "#1e3e4c", "itens": [
+      {"p": "carta", "id": "card", "pos": [-0.32, -0.03], "caixa": [0.22, 0.66], "posV": [-0.18, -0.2], "caixaV": [0.46, 0.24], "em": 0.02, "entra": "gira"},
+      {"txt": "Biogás é energia\nrenovável?", "tipo": "mao", "sobre": "card", "rel": [0, -0.25], "tam": 0.6, "em": "L06:inicio", "cor": "petrol"},
+      {"p": "biodigestor", "sobre": "card", "rel": [0, 0.14], "tam": 0.45, "em": "energia", "entra": "pop", "z": 3},
+      {"p": "mascote:em_pe", "id": "met", "pos": [-0.06, 0.07], "caixa": [0.12, 0.34], "posV": [0.24, -0.16], "caixaV": [0.3, 0.14], "em": 0.02, "entra": "nenhum", "poses": [{"em": "renovável+0.3", "p": "pula"}, {"em": "Verdade", "p": "pula"}]},
+      {"p": "@botao_mito", "id": "bm", "pos": [-0.15, 0.31], "caixa": [0.12, 0.13], "posV": [-0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "muda": [{"em": "Verdade", "alpha": 0.35, "d": 0.3}]},
+      {"p": "@botao_verdade", "id": "bv", "pos": [0.03, 0.31], "caixa": [0.12, 0.13], "posV": [0.2, 0.0], "caixaV": [0.34, 0.07], "em": 0.02, "entra": "nenhum", "z": 4, "brilha": "Verdade", "muda": [{"em": "Verdade", "s": 0.92, "d": 0.12}, {"em": "Verdade+0.15", "s": 1.08, "d": 0.3}]},
+      {"txt": "VERDADE!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "renovável+0.3", "sai": "Verdade", "cauda": [-0.4, 0.9]},
+      {"fx": "contagem", "pos": [-0.06, -0.3], "caixa": [0.1, 0.18], "posV": [0.24, -0.3], "caixaV": [0.16, 0.07], "em": "renovável+0.3", "ate": "Verdade"},
+      {"txt": "VERDADE", "tipo": "carimbo", "sobre": "card", "rel": [0, 0.02], "tam": 0.5, "em": "Verdade", "cor": "verdeEsc", "z": 8},
+      {"txt": "Uhuu!", "tipo": "balao", "sobre": "met", "rel": [0.7, -0.55], "tam": 0.85, "em": "Verdade+0.25", "cauda": [-0.4, 0.9]},
+      {"fx": "confete", "pos": [-0.06, -0.1], "caixa": [0.4, 0.4], "em": "Verdade"},
+      {"p": "saco_restos", "id": "r6", "pos": [0.22, 0.14], "caixa": [0.11499999999999999, 0.207], "posV": [-0.26, 0.2], "caixaV": [0.23399999999999999, 0.10400000000000001], "em": "resíduo", "entra": "pop"},
+      {"p": "biodigestor", "id": "b6", "pos": [0.31, -0.16], "caixa": [0.13799999999999998, 0.22999999999999998], "posV": [0.0, 0.1], "caixaV": [0.312, 0.11699999999999999], "em": "Enquanto", "entra": "pop"},
+      {"fx": "chama", "id": "c6", "pos": [0.4, 0.14], "caixa": [0.06899999999999999, 0.161], "posV": [0.26, 0.2], "caixaV": [0.156, 0.09100000000000001], "em": "biogás"},
+      {"fx": "ciclo", "itens": ["r6", "b6", "c6"], "pos": [0.31, 0.0], "caixa": [0.345, 0.575], "posV": [0, 0.16], "caixaV": [1.04, 0.20800000000000002], "em": "houver", "cor": "lima", "w": 7}
     ]},
-    { "fala": "L07", "arranjo": "palco", "itens": [
-      { "p": "mao", "em": "acertou", "entra": "desliza_esq", "s": 1.1 },
-      { "txt": "compartilhe!", "tipo": "letras", "lugar": "titulo", "em": "Manda" },
-      { "fx": "confete", "lugar": "centro", "em": "acertou" },
-      { "p": "cientista:pula", "lugar": "narrador", "em": 0.3 }
+    {"fala": "L07", "folha": "#1e3e4c", "itens": [
+      {"txt": "acertou\ntodas?", "tipo": "letras", "pos": [-0.16, -0.18], "caixa": [0.42, 0.32], "posV": [0, -0.22], "caixaV": [0.86, 0.16], "em": "acertou"},
+      {"p": "mascote:acena", "id": "met7", "pos": [0.02, 0.07], "caixa": [0.12, 0.34], "posV": [0.2, 0.02], "caixaV": [0.3, 0.16], "em": 0.02, "entra": "nenhum", "poses": [{"em": "Manda", "p": "pula"}]},
+      {"txt": "Quase!\n3 e meio!", "tipo": "balao", "sobre": "met7", "rel": [0.72, -0.5], "tam": 0.95, "em": "todas", "cauda": [-0.4, 0.9]},
+      {"p": "mao", "pos": [-0.2, 0.18], "caixa": [0.14, 0.26], "posV": [-0.2, 0.14], "caixaV": [0.3, 0.12], "em": "Manda", "entra": "pop", "anima": "pulsa"},
+      {"txt": "compartilhe!", "tipo": "etiqueta", "pos": [-0.2, 0.36], "caixa": [0.2, 0.08], "posV": [-0.2, 0.26], "caixaV": [0.44, 0.04], "em": "alguém", "papel": "lima"},
+      {"p": "cientista:pula", "pos": [0.34, 0.08], "caixa": [0.16, 0.5], "posV": [-0.28, 0.02], "caixaV": [0.3, 0.18], "em": "E", "entra": "desliza_dir"},
+      {"fx": "confete", "lugar": "centro", "em": "mito"}
     ]}
   ]
 }

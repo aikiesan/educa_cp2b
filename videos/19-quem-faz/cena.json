@@ -1,306 +1,138 @@
 {
- "_sobre": "Ep. 19 · Quem faz o CP2B — estilo C (colagem), foto de turma: o cartaz enche de gente, fila por fila; no fim, o cientista e o mascote entram na foto. Formato: docs/EPISODIO_GENERICO.md",
- "estilo": "C",
- "seed": 19,
- "mascote": "papel",
- "pecas": {
-  "e1": "ep19/_folha/equipe_1",
-  "e2": "ep19/_folha/equipe_2",
-  "e3": "ep19/_folha/equipe_3",
-  "e4": "ep19/_folha/equipe_4",
-  "e5": "ep19/_folha/equipe_5",
-  "e6": "ep19/_folha/equipe_6",
-  "e7": "ep19/_folha/equipe_7",
-  "e8": "ep19/_folha/equipe_8",
-  "p5": "ep03/_folha/pesquisadores_5",
-  "camera": "ep19/_folha/pecas_ep19_1",
-  "cavalete": "ep19/_folha/pecas_ep19_2",
-  "engrenagem": "ep19/_folha/pecas_ep19_3",
-  "folha_i": "ep19/_folha/pecas_ep19_4",
-  "frasco": "ep19/_folha/pecas_ep19_5",
-  "grafico": "ep19/_folha/pecas_ep19_6",
-  "balanca": "ep19/_folha/pecas_ep19_7",
-  "mapa": "ep19/_folha/pecas_ep19_8",
-  "megafone": "ep19/_folha/pecas_ep19_9",
-  "oculos": "ep19/_folha/pecas_ep19_10",
-  "oculos2": "ep19/_folha/pecas_ep19_11"
- },
- "assinatura": {
-  "cientista": true
- },
- "cenas": [
-  {
-   "fala": "L01",
-   "arranjo": "palco",
-   "itens": [
-    {
-     "p": "cavalete",
-     "em": 0.2
-    },
-    {
-     "p": "cientista:pensa",
-     "em": "transforma"
-    },
-    {
-     "p": "mascote:surpreso",
-     "sobre": "cavalete",
-     "rel": [
-      0.42,
-      0.2
-     ],
-     "tam": 0.4,
-     "em": "Gente",
-     "entra": "desliza_dir"
-    },
-    {
-     "txt": "foto de turma",
-     "tipo": "etiqueta",
-     "sobre": "cavalete",
-     "rel": [
-      0,
-      -0.2
-     ],
-     "tam": 0.6,
-     "em": "Quem"
-    },
-    {
-     "txt": "Gente!",
-     "tipo": "letras",
-     "lugar": "titulo",
-     "em": "Gente"
-    }
-   ]
+  "_sobre": "Ep. 19 · Quem faz o CP2B — estilo P (livro), twist ÁLBUM DE FIGURINHAS: abre com o logo CP2B; o álbum oficial (capa coral, selo ÁLBUM OFICIAL) abre na primeira fala; o Metaninho é o colecionador com o pacotinho ('Bora completar!'); a cada fala uma página dupla ganha as figurinhas coladas na palavra (estudantes de IC, mestrado e doutorado · pós-docs · professoras e professores · equipe técnica e administrativa); as áreas viram escudos (engenharia, biologia, química, economia, direito, geografia, comunicação); universidades, institutos e empresas parceiras são figurinhas BRILHANTES; os óculos de cada um se juntam e nasce a ideia (SOLUÇÕES!); no fim o time completo e o último espaço: VOCÊ! Papéis, não nomes (sem fotos de pessoas reais). Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "P",
+  "seed": 19,
+  "abertura": {"selo": "NOVO ÁLBUM!", "canal": "QUEM FAZ\nO CP2B", "sub": "ep. 19 · álbum oficial de figurinhas", "p": "mascote:acena", "virada": 1.5, "ate": 3.1},
+  "capa": {"titulo": "ÁLBUM DE FIGURINHAS", "cor": "#e4572e", "selo": "ÁLBUM\nOFICIAL"},
+  "album": {"titulo": "ÁLBUM OFICIAL CP2B", "faixa": "petrol"},
+  "pecas": {
+    "ic": "ep19/_folha/equipe_1", "mestrado": "ep03/_folha/pesquisadores_5", "doutorado": "ep03/_folha/pesquisadores_6",
+    "posdoc_a": "ep03/_folha/pesquisadores_1", "posdoc_o": "ep03/_folha/pesquisadores_7", "profa": "ep24/_folha/herois_5",
+    "prof": "ep19/_folha/equipe_5", "tecnica": "ep19/_folha/equipe_2", "tecnico": "ep19/_folha/equipe_8",
+    "adm_a": "ep19/_folha/equipe_3", "adm_o": "ep03/_folha/pesquisadores_4", "univ": "ep03/_folha/predio",
+    "inst": "ep24/_folha/pecas_ep24_4", "empresa": "ep02/empresario", "i_eng": "ep19/_folha/pecas_ep19_3",
+    "i_bio": "ep19/_folha/pecas_ep19_4", "i_qui": "ep19/_folha/pecas_ep19_5", "i_eco": "ep19/_folha/pecas_ep19_6",
+    "i_dir": "ep19/_folha/pecas_ep19_7", "i_geo": "ep19/_folha/pecas_ep19_8", "i_com": "ep19/_folha/pecas_ep19_9",
+    "oc_verde": "ep19/_folha/pecas_ep19_10", "oc_coral": "ep19/_folha/pecas_ep19_11", "oc_verde2": "ep19/_folha/pecas_ep19_10",
+    "ideia": "ep24/_folha/pecas_ep24_3"
   },
-  {
-   "fala": "L02",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "p": "e1",
-     "em": "estudante",
-     "entra": "cai"
-    },
-    {
-     "p": "p5",
-     "em": "mestrado",
-     "entra": "cai"
-    },
-    {
-     "p": "e7",
-     "em": "doutorado-0.3",
-     "entra": "cai"
-    },
-    {
-     "txt": "estudantes",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "iniciação"
-    }
-   ]
-  },
-  {
-   "fala": "L03",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "p": "e4",
-     "em": "pesquisadoras",
-     "entra": "cai"
-    },
-    {
-     "p": "e5",
-     "em": "professoras",
-     "entra": "cai"
-    },
-    {
-     "p": "e6",
-     "em": "professores-0.3",
-     "entra": "cai"
-    },
-    {
-     "txt": "pós-docs e professores",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "pós"
-    }
-   ]
-  },
-  {
-   "fala": "L04",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "p": "e2",
-     "em": "técnica",
-     "entra": "cai"
-    },
-    {
-     "p": "e3",
-     "em": "administrativa",
-     "entra": "cai"
-    },
-    {
-     "p": "e8",
-     "em": "funcionar-0.4",
-     "entra": "cai"
-    },
-    {
-     "txt": "equipe técnica e administrativa",
-     "tipo": "etiqueta",
-     "lugar": "rodape",
-     "em": "equipe"
-    }
-   ]
-  },
-  {
-   "fala": "L05",
-   "arranjo": "grade",
-   "colunas": 4,
-   "itens": [
-    {
-     "p": "engrenagem",
-     "em": "engenharia",
-     "entra": "voa"
-    },
-    {
-     "p": "folha_i",
-     "em": "biologia",
-     "entra": "voa"
-    },
-    {
-     "p": "frasco",
-     "em": "química",
-     "entra": "voa"
-    },
-    {
-     "p": "grafico",
-     "em": "economia",
-     "entra": "voa"
-    },
-    {
-     "p": "balanca",
-     "em": "direito",
-     "entra": "voa"
-    },
-    {
-     "p": "mapa",
-     "em": "geografia",
-     "entra": "voa"
-    },
-    {
-     "p": "megafone",
-     "em": "comunicação",
-     "entra": "voa"
-    }
-   ]
-  },
-  {
-   "fala": "L06",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "txt": "universidades",
-     "tipo": "etiqueta",
-     "em": "universidades"
-    },
-    {
-     "txt": "institutos",
-     "tipo": "etiqueta",
-     "em": "institutos",
-     "papel": "amarelo"
-    },
-    {
-     "txt": "empresas parceiras",
-     "tipo": "etiqueta",
-     "em": "empresas",
-     "papel": "lima"
-    }
-   ]
-  },
-  {
-   "fala": "L07",
-   "arranjo": "fila",
-   "itens": [
-    {
-     "p": "oculos",
-     "em": "enxerga"
-    },
-    {
-     "p": "oculos2",
-     "em": "jeito"
-    },
-    {
-     "p": "lampada",
-     "em": "soluções-0.6",
-     "brilha": "soluções"
-    },
-    {
-     "txt": "juntando olhares",
-     "tipo": "mao",
-     "lugar": "titulo",
-     "em": "juntando",
-     "cor": "verdeEsc"
-    }
-   ]
-  },
-  {
-   "fala": "L08",
-   "arranjo": "grade",
-   "colunas": 5,
-   "itens": [
-    {
-     "p": "e1",
-     "em": 0.1
-    },
-    {
-     "p": "e2",
-     "em": 0.2
-    },
-    {
-     "p": "e3",
-     "em": 0.3
-    },
-    {
-     "p": "e4",
-     "em": 0.4
-    },
-    {
-     "p": "e5",
-     "em": 0.5
-    },
-    {
-     "p": "e6",
-     "em": 0.6
-    },
-    {
-     "p": "cientista:acena",
-     "em": "gente"
-    },
-    {
-     "p": "mascote:pula",
-     "em": "gente+0.2"
-    },
-    {
-     "p": "e7",
-     "em": 0.7
-    },
-    {
-     "p": "e8",
-     "em": 0.8
-    },
-    {
-     "fx": "brilho",
-     "lugar": "tudo",
-     "em": "Quem",
-     "n": 8
-    },
-    {
-     "p": "camera",
-     "lugar": "titulo",
-     "em": "Quem-0.3",
-     "s": 0.55
-    }
-   ]
-  }
- ]
+  "cenas": [
+    {"fala": "L01", "folha": "#fdf3dc", "cab": ["QUEM FAZ O CP2B?", "FIGURINHAS"], "itens": [
+      {"pagina": 1, "pos": [-0.228, -0.26], "caixa": [0.34, 0.12], "posV": [-0.184, -0.278], "caixaV": [0.46, 0.06], "txt": "Quem transforma\nresíduo em energia?", "tipo": "mao", "em": "Quem", "cor": "petrol"},
+      {"pagina": 1, "pos": [-0.164, 0.118], "caixa": [0.13, 0.42], "posV": [0.224, -0.132], "caixaV": [0.2, 0.2], "p": "@pacote", "id": "pac", "em": 0.3, "entra": "pop", "poses": [{"em": "Gente", "p": "@pacote_aberto"}], "anima": "balanca"},
+      {"pagina": 1, "pos": [-0.32, 0.174], "caixa": [0.08, 0.26], "posV": [-0.2, -0.094], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": 0.4, "entra": "cai", "poses": [{"em": "Gente", "p": "surpreso"}, {"em": "Muita", "p": "pula"}], "z": 8, "chao": true},
+      {"pagina": 1, "pos": [-0.32, -0.036], "caixa": [0.1, 0.14], "posV": [0.0, -0.17], "caixaV": [0.24, 0.07], "txt": "Bora\ncompletar!", "tipo": "balao", "em": "Muita", "cauda": [0, 0.9], "z": 9, "caudaV": [-0.5, 0.6]},
+      {"txt": "GENTE!", "tipo": "pow", "sobre": "pac", "rel": [-0.1, -0.72], "tam": 0.7, "em": "Gente", "batida": true, "fundo": "amarelo", "pagina": 1, "z": 10},
+      {"fx": "confete", "sobre": "pac", "rel": [0, -0.4], "tam": 1.4, "em": "Gente", "pagina": 1},
+      {"pagina": 2, "pos": [0.114, -0.12], "caixa": [0.1, 0.3], "posV": [-0.256, 0.152], "caixaV": [0.24, 0.13], "p": "@slot|01|?", "em": 0.05, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.114, -0.12], "caixa": [0.1, 0.3], "posV": [-0.256, 0.152], "caixaV": [0.24, 0.13], "p": "@verso", "em": "Muita", "entra": "carimbo", "dur": 0.25, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, -0.12], "caixa": [0.1, 0.3], "posV": [0.0, 0.152], "caixaV": [0.24, 0.13], "p": "@slot|02|?", "em": 0.1, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.228, -0.12], "caixa": [0.1, 0.3], "posV": [0.0, 0.152], "caixaV": [0.24, 0.13], "p": "@verso", "em": "Muita+0.12", "entra": "carimbo", "dur": 0.25, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.341, -0.12], "caixa": [0.1, 0.3], "posV": [0.256, 0.152], "caixaV": [0.24, 0.13], "p": "@slot|03|?", "em": 0.15000000000000002, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.341, -0.12], "caixa": [0.1, 0.3], "posV": [0.256, 0.152], "caixaV": [0.24, 0.13], "p": "@verso", "em": "Muita+0.24", "entra": "carimbo", "dur": 0.25, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.114, 0.202], "caixa": [0.1, 0.3], "posV": [-0.256, 0.297], "caixaV": [0.24, 0.13], "p": "@slot|04|?", "em": 0.2, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.114, 0.202], "caixa": [0.1, 0.3], "posV": [-0.256, 0.297], "caixaV": [0.24, 0.13], "p": "@verso", "em": "Muita+0.36", "entra": "carimbo", "dur": 0.25, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, 0.202], "caixa": [0.1, 0.3], "posV": [0.0, 0.297], "caixaV": [0.24, 0.13], "p": "@slot|05|?", "em": 0.25, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.228, 0.202], "caixa": [0.1, 0.3], "posV": [0.0, 0.297], "caixaV": [0.24, 0.13], "p": "@verso", "em": "Muita+0.48", "entra": "carimbo", "dur": 0.25, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.341, 0.202], "caixa": [0.1, 0.3], "posV": [0.256, 0.297], "caixaV": [0.24, 0.13], "p": "@slot|06|?", "em": 0.3, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.341, 0.202], "caixa": [0.1, 0.3], "posV": [0.256, 0.297], "caixaV": [0.24, 0.13], "p": "@verso", "em": "Muita+0.60", "entra": "carimbo", "dur": 0.25, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, 0.034], "caixa": [0.32, 0.12], "posV": [0.0, 0.223], "caixaV": [0.7, 0.06], "txt": "MUITA GENTE!", "tipo": "carimbo", "em": "gente", "cor": "coral", "z": 8}
+    ]},
+    {"fala": "L02", "folha": "#e3eed6", "cab": ["ESTUDANTES", "PÓS-GRADUAÇÃO"], "itens": [
+      {"pagina": 1, "pos": [-0.185, 0.02], "caixa": [0.14, 0.42], "posV": [0.0, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|01|INICIAÇÃO\nCIENTÍFICA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.185, 0.02], "caixa": [0.14, 0.42], "posV": [0.0, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|ic|INICIAÇÃO\nCIENTÍFICA|lima|01|", "id": "f01", "em": "iniciação", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.355, 0.3], "caixa": [0.08, 0.26], "posV": [-0.304, -0.053], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "No-0.2", "entra": "cai", "poses": [{"em": "iniciação", "p": "pula"}, {"em": "doutorado", "p": "acena"}], "z": 8, "chao": true},
+      {"pagina": 1, "pos": [-0.341, 0.062], "caixa": [0.09, 0.12], "posV": [-0.304, -0.175], "caixaV": [0.2, 0.06], "txt": "Tenho!", "tipo": "balao", "em": "científica", "cauda": [0, 0.9], "z": 9},
+      {"pagina": 2, "pos": [0.146, 0.006], "caixa": [0.14, 0.42], "posV": [-0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|02|MESTRADO", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.146, 0.006], "caixa": [0.14, 0.42], "posV": [-0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|mestrado|MESTRADO|ceu|02|", "id": "f02", "em": "mestrado", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.309, 0.006], "caixa": [0.14, 0.42], "posV": [0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|03|DOUTORADO", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.309, 0.006], "caixa": [0.14, 0.42], "posV": [0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|doutorado|DOUTORADO|ambar|03|", "id": "f03", "em": "doutorado", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, 0.328], "caixa": [0.3, 0.07], "posV": [0.0, 0.351], "caixaV": [0.6, 0.04], "txt": "estudantes", "tipo": "etiqueta", "em": "estudante", "papel": "amarelo"}
+    ]},
+    {"fala": "L03", "folha": "#fdf3dc", "cab": ["PESQUISA", "ENSINO"], "itens": [
+      {"pagina": 1, "pos": [-0.309, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|04|PESQUISADORA\nPÓS-DOC", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.309, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|posdoc_a|PESQUISADORA\nPÓS-DOC|coral|04|", "id": "f04", "em": "pesquisadoras", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.146, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|05|PESQUISADOR\nPÓS-DOC", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.146, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|posdoc_o|PESQUISADOR\nPÓS-DOC|coral|05|", "id": "f05", "em": "pesquisadores", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.228, 0.321], "caixa": [0.3, 0.07], "posV": [0.0, -0.051], "caixaV": [0.6, 0.04], "txt": "pós-doutorado", "tipo": "etiqueta", "em": "pós", "papel": "coral"},
+      {"pagina": 2, "pos": [0.146, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|06|PROFESSORA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.146, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|profa|PROFESSORA|verde|06|", "id": "f06", "em": "professoras", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.309, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|07|PROFESSOR", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.309, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|prof|PROFESSOR|verde|07|", "id": "f07", "em": "professores", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, 0.3], "caixa": [0.08, 0.26], "posV": [0.0, 0.354], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "pesquisadoras", "entra": "cai", "poses": [{"em": "pesquisadores", "p": "surpreso"}, {"em": "professores", "p": "pula"}], "z": 8, "chao": true},
+      {"pagina": 2, "pos": [0.355, 0.3], "caixa": [0.1, 0.14], "posV": [0.0, 0.2], "caixaV": [0.24, 0.07], "txt": "Que\ntime!", "tipo": "balao", "em": "professores+0.2", "cauda": [-0.6, 0.4], "z": 9, "caudaV": [0, 0.9]}
+    ]},
+    {"fala": "L04", "folha": "#d9ecf2", "cab": ["EQUIPE TÉCNICA", "ADMINISTRAÇÃO"], "itens": [
+      {"pagina": 1, "pos": [-0.309, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|08|EQUIPE\nTÉCNICA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.309, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|tecnica|EQUIPE\nTÉCNICA|ceu|08|", "id": "f08", "em": "técnica", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.146, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|09|EQUIPE\nTÉCNICA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.146, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|tecnico|EQUIPE\nTÉCNICA|ceu|09|", "id": "f09", "em": "técnica+0.25", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.146, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|10|EQUIPE\nADMINISTRATIVA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.146, -0.008], "caixa": [0.14, 0.42], "posV": [-0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|adm_a|EQUIPE\nADMINISTRATIVA|ambar|10|", "id": "f10", "em": "administrativa", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.309, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|11|EQUIPE\nADMINISTRATIVA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.309, -0.008], "caixa": [0.14, 0.42], "posV": [0.224, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|adm_o|EQUIPE\nADMINISTRATIVA|ambar|11|", "id": "f11", "em": "administrativa+0.25", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"fx": "engrenagem", "pagina": 2, "pos": [0.225, -0.27], "caixa": [0.1, 0.12], "posV": [0.0, 0.1], "caixaV": [0.2, 0.08], "em": "funcionar", "z": 7},
+      {"pagina": 1, "pos": [-0.228, 0.321], "caixa": [0.3, 0.07], "posV": [0.0, -0.051], "caixaV": [0.6, 0.04], "txt": "faz tudo funcionar!", "tipo": "etiqueta", "em": "tudo", "papel": "lima"},
+      {"pagina": 2, "pos": [0.228, 0.3], "caixa": [0.08, 0.26], "posV": [0.0, 0.354], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "equipe", "entra": "cai", "poses": [{"em": "técnica", "p": "surpreso"}, {"em": "funcionar", "p": "pula"}], "z": 8, "chao": true},
+      {"pagina": 2, "pos": [0.355, 0.3], "caixa": [0.1, 0.14], "posV": [0.0, 0.2], "caixaV": [0.24, 0.07], "txt": "Valeu,\nequipe!", "tipo": "balao", "em": "funcionar", "cauda": [-0.6, 0.4], "z": 9, "caudaV": [0, 0.9]}
+    ]},
+    {"fala": "L05", "folha": "#f6d9cc", "cab": ["ÁREAS", "ÁREAS"], "itens": [
+      {"pagina": 1, "pos": [-0.309, -0.141], "caixa": [0.13, 0.38], "posV": [-0.256, -0.229], "caixaV": [0.24, 0.15], "p": "@escudo|i_eng|ENGENHARIA|ambar", "em": "engenharia", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.146, -0.141], "caixa": [0.13, 0.38], "posV": [0.0, -0.229], "caixaV": [0.24, 0.15], "p": "@escudo|i_bio|BIOLOGIA|verde", "em": "biologia", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.309, 0.216], "caixa": [0.13, 0.38], "posV": [0.256, -0.229], "caixaV": [0.24, 0.15], "p": "@escudo|i_qui|QUÍMICA|ceu", "em": "química", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.146, 0.216], "caixa": [0.13, 0.38], "posV": [0.0, -0.089], "caixaV": [0.24, 0.15], "p": "@escudo|i_eco|ECONOMIA|coral", "em": "economia", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.146, -0.141], "caixa": [0.13, 0.38], "posV": [-0.256, 0.16], "caixaV": [0.24, 0.15], "p": "@escudo|i_dir|DIREITO|petrol", "em": "direito", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.309, -0.141], "caixa": [0.13, 0.38], "posV": [0.0, 0.16], "caixaV": [0.24, 0.15], "p": "@escudo|i_geo|GEOGRAFIA|lima", "em": "geografia", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.146, 0.216], "caixa": [0.13, 0.38], "posV": [0.256, 0.16], "caixaV": [0.24, 0.15], "p": "@escudo|i_com|COMUNICAÇÃO|coral", "em": "comunicação", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.327, 0.3], "caixa": [0.08, 0.26], "posV": [-0.28, 0.351], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "Tem", "entra": "cai", "poses": [{"em": "engenharia", "p": "surpreso"}, {"em": "comunicação", "p": "pula"}], "z": 8, "chao": true},
+      {"pagina": 2, "pos": [0.313, 0.09], "caixa": [0.1, 0.14], "posV": [-0.04, 0.303], "caixaV": [0.24, 0.07], "txt": "Tudo\njunto!", "tipo": "balao", "em": "geografia", "cauda": [0.1, 0.9], "z": 9, "caudaV": [-0.6, 0.5]}
+    ]},
+    {"fala": "L06", "folha": "#fdf3dc", "cab": ["FIGURINHAS BRILHANTES", "PARCEIROS"], "itens": [
+      {"pagina": 1, "pos": [-0.309, 0.006], "caixa": [0.14, 0.42], "posV": [-0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|12|UNIVERSIDADES", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.309, 0.006], "caixa": [0.14, 0.42], "posV": [-0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|univ|UNIVERSIDADES|petrol|12|b", "id": "f12", "em": "universidades", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"fx": "brilho", "de": "f12", "sobre": "f12", "rel": [0, 0], "tam": 0.9, "em": "universidades+0.30", "n": 5, "z": 6},
+      {"pagina": 1, "pos": [-0.146, 0.006], "caixa": [0.14, 0.42], "posV": [0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@slot|13|INSTITUTOS", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.146, 0.006], "caixa": [0.14, 0.42], "posV": [0.224, -0.175], "caixaV": [0.26, 0.16], "p": "@fig|inst|INSTITUTOS|petrol|13|b", "id": "f13", "em": "institutos", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"fx": "brilho", "de": "f13", "sobre": "f13", "rel": [0, 0], "tam": 0.9, "em": "institutos+0.30", "n": 5, "z": 6},
+      {"pagina": 2, "pos": [0.157, 0.006], "caixa": [0.14, 0.42], "posV": [-0.16, 0.217], "caixaV": [0.26, 0.16], "p": "@slot|14|EMPRESAS\nPARCEIRAS", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.157, 0.006], "caixa": [0.14, 0.42], "posV": [-0.16, 0.217], "caixaV": [0.26, 0.16], "p": "@fig|empresa|EMPRESAS\nPARCEIRAS|petrol|14|b", "id": "f14", "em": "empresas", "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"fx": "brilho", "de": "f14", "sobre": "f14", "rel": [0, 0], "tam": 0.9, "em": "empresas+0.30", "n": 5, "z": 6},
+      {"pagina": 2, "pos": [0.334, 0.3], "caixa": [0.08, 0.26], "posV": [0.224, 0.351], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "várias", "entra": "cai", "poses": [{"em": "universidades", "p": "surpreso"}, {"em": "empresas", "p": "pula"}], "z": 8, "chao": true},
+      {"pagina": 2, "pos": [0.334, 0.055], "caixa": [0.12, 0.14], "posV": [0.224, 0.217], "caixaV": [0.3, 0.07], "txt": "Brilhaaante!", "tipo": "balao", "em": "parceiras", "cauda": [0, 0.9], "z": 9}
+    ]},
+    {"fala": "L07", "folha": "#e3eed6", "cab": ["OLHARES", "SOLUÇÕES"], "itens": [
+      {"pagina": 1, "pos": [-0.334, 0.062], "caixa": [0.14, 0.42], "posV": [-0.256, -0.161], "caixaV": [0.26, 0.16], "p": "@slot|01|ESTUDANTE", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.334, 0.062], "caixa": [0.14, 0.42], "posV": [-0.256, -0.161], "caixaV": [0.26, 0.16], "p": "@fig|ic|ESTUDANTE|lima|01|", "id": "f01", "em": 0.05, "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 1, "pos": [-0.121, 0.062], "caixa": [0.14, 0.42], "posV": [0.0, -0.161], "caixaV": [0.26, 0.16], "p": "@slot|04|PESQUISA", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 1, "pos": [-0.121, 0.062], "caixa": [0.14, 0.42], "posV": [0.0, -0.161], "caixaV": [0.26, 0.16], "p": "@fig|posdoc_a|PESQUISA|coral|04|", "id": "f04", "em": 0.1, "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.157, 0.062], "caixa": [0.14, 0.42], "posV": [0.256, 0.232], "caixaV": [0.26, 0.16], "p": "@slot|08|EQUIPE", "em": 0.02, "entra": "nenhum"},
+      {"pagina": 2, "pos": [0.157, 0.062], "caixa": [0.14, 0.42], "posV": [0.256, 0.232], "caixaV": [0.26, 0.16], "p": "@fig|tecnica|EQUIPE|ceu|08|", "id": "f08", "em": 0.15, "entra": "carimbo", "dur": 0.3, "som": "papel_pousa", "z": 4},
+      {"p": "oc_verde", "id": "oc0", "pagina": 0, "pos": [-0.334, -0.2], "caixa": [0.1, 0.1], "posV": [-0.26, -0.27], "caixaV": [0.2, 0.06], "em": "enxerga", "entra": "pop", "z": 9, "muda": [{"em": "juntando", "para": "ideia", "rel": [0, 0.1], "arco": 0.9, "d": 0.6, "s": 0.8, "som": "whoosh_curto"}, {"em": "nascem-0.05", "alpha": 0, "s": 0.4, "d": 0.3}]},
+      {"p": "oc_coral", "id": "oc1", "pagina": 0, "pos": [-0.121, -0.2], "caixa": [0.1, 0.1], "posV": [0.0, -0.27], "caixaV": [0.2, 0.06], "em": "enxerga+0.2", "entra": "pop", "z": 9, "muda": [{"em": "juntando+0.10", "para": "ideia", "rel": [0, 0.1], "arco": 0.9, "d": 0.6, "s": 0.8, "som": "whoosh_curto"}, {"em": "nascem-0.05", "alpha": 0, "s": 0.4, "d": 0.3}]},
+      {"p": "oc_verde2", "id": "oc2", "pagina": 0, "pos": [0.157, -0.2], "caixa": [0.1, 0.1], "posV": [0.26, 0.13], "caixaV": [0.2, 0.06], "em": "enxerga+0.4", "entra": "pop", "z": 9, "muda": [{"em": "juntando+0.20", "para": "ideia", "rel": [0, 0.1], "arco": 0.9, "d": 0.6, "s": 0.8, "som": "whoosh_curto"}, {"em": "nascem-0.05", "alpha": 0, "s": 0.4, "d": 0.3}]},
+      {"p": "ideia", "id": "ideia", "pagina": 0, "pos": [0.0, -0.02], "caixa": [0.26, 0.4], "posV": [0.0, 0.0], "caixaV": [0.6, 0.2], "em": "nascem", "entra": "pop", "brilha": "soluções", "z": 10},
+      {"txt": "SOLUÇÕES!", "tipo": "letras", "pagina": 0, "pos": [0.0, 0.3], "caixa": [0.36, 0.12], "posV": [0.0, 0.14], "caixaV": [0.8, 0.06], "em": "soluções", "z": 11},
+      {"fx": "brilho", "de": "ideia", "sobre": "ideia", "rel": [0, 0], "tam": 0.9, "em": "soluções", "n": 7, "pagina": 0, "z": 12},
+      {"pagina": 1, "pos": [-0.228, -0.288], "caixa": [0.34, 0.1], "posV": [0.0, -0.294], "caixaV": [0.6, 0.05], "txt": "cada um enxerga\nde um jeito", "tipo": "mao", "em": "Cada", "cor": "petrol"},
+      {"pagina": 2, "pos": [0.341, 0.3], "caixa": [0.08, 0.26], "posV": [0.256, 0.351], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "Cada", "entra": "cai", "poses": [{"em": "juntando", "p": "surpreso"}, {"em": "soluções", "p": "pula"}], "z": 8, "chao": true}
+    ]},
+    {"fala": "L08", "folha": "#fdf3dc", "cab": ["QUEM FAZ O CP2B?", "O TIME"], "itens": [
+      {"pagina": 1, "pos": [-0.228, -0.246], "caixa": [0.34, 0.13], "posV": [0.0, -0.283], "caixaV": [0.7, 0.06], "txt": "QUEM FAZ O CP2B?", "tipo": "letras", "em": "Quem"},
+      {"pagina": 1, "pos": [-0.298, 0.174], "caixa": [0.12, 0.5], "posV": [-0.16, -0.126], "caixaV": [0.24, 0.22], "p": "cientista:apresenta", "em": "faz", "entra": "desliza_esq", "chao": true, "poses": [{"em": "gente", "p": "pula"}], "z": 6},
+      {"pagina": 1, "pos": [-0.142, 0.244], "caixa": [0.08, 0.26], "posV": [0.192, -0.089], "caixaV": [0.16, 0.13], "p": "mascote:em_pe", "id": "met", "em": "faz+0.1", "entra": "cai", "poses": [{"em": "gente", "p": "pula"}, {"em": "quiser", "p": "acena"}], "z": 8, "chao": true},
+      {"pagina": 1, "pos": [-0.142, -0.05], "caixa": [0.1, 0.12], "posV": [0.192, -0.218], "caixaV": [0.24, 0.06], "txt": "A gente!", "tipo": "balao", "em": "gente", "cauda": [0, 0.9], "z": 9},
+      {"fx": "confete", "pagina": 1, "pos": [-0.225, 0.0], "caixa": [0.3, 0.3], "posV": [0.0, -0.18], "caixaV": [0.6, 0.15], "em": "gente"},
+      {"pagina": 2, "pos": [0.114, -0.162], "caixa": [0.08, 0.23], "posV": [-0.28, 0.126], "caixaV": [0.15, 0.08], "p": "@fig|ic|EQUIPE|lima|01|", "em": "Quem", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, -0.162], "caixa": [0.08, 0.23], "posV": [0.0, 0.126], "caixaV": [0.15, 0.08], "p": "@fig|mestrado|EQUIPE|ceu|02|", "em": "Quem+0.10", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.341, -0.162], "caixa": [0.08, 0.23], "posV": [0.28, 0.126], "caixaV": [0.15, 0.08], "p": "@fig|doutorado|EQUIPE|ambar|03|", "em": "Quem+0.20", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.114, 0.076], "caixa": [0.08, 0.23], "posV": [-0.28, 0.223], "caixaV": [0.15, 0.08], "p": "@fig|posdoc_a|EQUIPE|coral|04|", "em": "Quem+0.30", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, 0.076], "caixa": [0.08, 0.23], "posV": [0.0, 0.223], "caixaV": [0.15, 0.08], "p": "@fig|prof|EQUIPE|verde|05|", "em": "Quem+0.40", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.341, 0.076], "caixa": [0.08, 0.23], "posV": [0.28, 0.223], "caixaV": [0.15, 0.08], "p": "@fig|tecnica|EQUIPE|ceu|06|", "em": "Quem+0.50", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.114, 0.314], "caixa": [0.08, 0.23], "posV": [-0.28, 0.32], "caixaV": [0.15, 0.08], "p": "@fig|adm_a|EQUIPE|ambar|07|", "em": "Quem+0.60", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.228, 0.314], "caixa": [0.08, 0.23], "posV": [0.0, 0.32], "caixaV": [0.15, 0.08], "p": "@fig|empresa|EQUIPE|petrol|08|", "em": "Quem+0.70", "entra": "carimbo", "dur": 0.22, "som": "papel_pousa", "z": 4},
+      {"pagina": 2, "pos": [0.341, 0.314], "caixa": [0.08, 0.23], "posV": [0.28, 0.32], "caixaV": [0.15, 0.08], "p": "@voce", "id": "voce", "em": "quem#2", "entra": "pop", "anima": "pulsa", "z": 5},
+      {"fx": "brilho", "de": "voce", "sobre": "voce", "rel": [0, 0], "tam": 1.0, "em": "quiser", "n": 5, "pagina": 2, "z": 6},
+      {"pagina": 2, "pos": [0.228, -0.316], "caixa": [0.34, 0.07], "posV": [0.0, 0.075], "caixaV": [0.7, 0.04], "txt": "e quem mais quiser vir junto!", "tipo": "mao", "em": "gente", "cor": "coral", "z": 7}
+    ]}
+  ]
 }

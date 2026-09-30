@@ -502,6 +502,38 @@ def costura(dur=0.8, p=1.0, **_):
         y[k2:k2 + m2] += pull[:len(y) - k2]
     return st(norm(y, 0.4), 0, 0.3)
 
+def _quadrada(f, d, duty=0.5):
+    t = t_(d); return np.where((t * f) % 1.0 < duty, 1.0, -1.0) * 0.5
+
+def moeda(p=1.0, **_):
+    """Moedinha de videogame: duas notas quadradas curtas (si → mi)."""
+    a = _quadrada(988 * p, 0.07) * env(int(0.07 * SR), 0.001, 0.06, 1.5)
+    b = _quadrada(1319 * p, 0.28) * env(int(0.28 * SR), 0.001, 0.26, 3)
+    return st(norm(lp(np.concatenate([a, b]), 7000), 0.35))
+
+def pulo(p=1.0, **_):
+    """Pulinho de videogame: onda quadrada que sobe rápido."""
+    d = 0.22; t = t_(d); f = np.linspace(260, 780, len(t)) * p
+    y = np.where(np.cumsum(f / SR) % 1.0 < 0.5, 1.0, -1.0) * 0.5 * env(len(t), 0.002, 0.2, 2)
+    return st(norm(lp(y, 6000), 0.3))
+
+def powerup(p=1.0, **_):
+    """Power-up: arpejo quadrado subindo (dó-mi-sol-dó, duas vezes)."""
+    notas = [523, 659, 784, 1047, 659, 784, 1047, 1319]
+    y = np.concatenate([_quadrada(f * p, 0.075, 0.25) * env(int(0.075 * SR), 0.001, 0.07, 1.2) for f in notas])
+    return st(norm(lp(y, 7500), 0.35))
+
+def dado(p=1.0, **_):
+    """Dado de papel rolando na mesa: batidinhas secas que vão ficando mais espaçadas."""
+    d = 0.7
+    y = np.zeros(int(d * SR) + int(0.1 * SR))
+    tt, gap, amp = 0.0, 0.035, 1.0
+    while tt < d and amp > 0.15:
+        k = int(tt * SR); m = int(0.025 * SR)
+        y[k:k + m] += (bp(noise(0.025), 1200 * p, 5200 * p) * env(m, 0.0003, 0.008, 6) + np.sin(2 * np.pi * 420 * p * t_(0.025)) * env(m, 0.0005, 0.01, 6) * 0.4) * amp
+        tt += gap; gap *= 1.35; amp *= 0.85
+    return st(norm(y, 0.55), 0, 0.3)
+
 def papelada(dur=1.5, p=1.0, **_):
     """Chuva de pedacinhos de papel pousando (muitos toques curtos, densidade em arco)."""
     d = max(0.3, dur)
@@ -556,6 +588,64 @@ def preenche(dur=2.0, p=1.0, **_):
         m = min(len(b), len(y) - k)
         y[k:k + m] += st(b[:m], -0.6 + i * 0.15)
     return norm(y, 0.4)
+
+
+# ---------------- ep. 21: máquina maluca ----------------
+def sino(p=1.0, **_):
+    """Sino do relógio do meio-dia: dim-dom (dois toques de sino com cauda longa)."""
+    n = int(2.2 * SR)
+    y = np.zeros((n, 2), np.float32)
+    for k0, f, a, pan in [(0.0, 784.0, 1.0, -0.2), (0.32, 587.3, 0.85, 0.2)]:
+        k = int(k0 * SR)
+        b = (fm_bell(1.8, f * p, 1.41, 1.6, 1.6) + 0.35 * fm_bell(1.8, f * 2.0 * p, 1.0, 0.8, 1.0)) * a
+        m = min(len(b), n - k)
+        y[k:k + m] += st(b[:m], pan)
+    return norm(y, 0.5)
+
+def rola(dur=1.0, p=1.0, **_):
+    """Bolota de feltro rolando no papelão: ronco grave com batidinhas irregulares."""
+    d = max(0.3, dur); n = int(d * SR); t = t_(d)
+    y = lp(noise(d, 21), 260 * p) * (0.6 + 0.4 * np.sin(2 * np.pi * 7.5 * t) ** 2)
+    rr = np.random.default_rng(22)
+    for k0 in np.cumsum(rr.uniform(0.05, 0.12, int(d / 0.05))):
+        if k0 >= d - 0.03: break
+        k = int(k0 * SR); m = int(0.02 * SR)
+        y[k:k + m] += bp(noise(0.02), 500 * p, 1800 * p) * env(m, 0.0005, 0.008, 6) * rr.uniform(0.2, 0.5)
+    y *= adsr(n, 0.06, 1, 0.15)
+    return st(norm(y, 0.4), 0, 0.3)
+
+def domino(dur=0.6, p=1.0, **_):
+    """Dominós caindo em fila: estalos secos de papelão, cada vez mais perto."""
+    d = max(0.3, dur); n = int((d + 0.15) * SR)
+    y = np.zeros(n)
+    k0, gap, i = 0.0, d / 5.2, 0
+    while k0 < d and i < 12:
+        k = int(k0 * SR); m = int(0.035 * SR)
+        y[k:k + m] += (bp(noise(0.035, 30 + i), 900 * p, 4200 * p) * env(m, 0.0003, 0.01, 6) + np.sin(2 * np.pi * (380 + i * 25) * p * t_(0.035)) * env(m, 0.0005, 0.014, 6) * 0.5)
+        k0 += gap; gap *= 0.9; i += 1
+    return st(norm(y, 0.6), 0, 0.2)
+
+def fuup(p=1.0, **_):
+    """Tubo de sucção: chiado que sobe rápido e termina num 'tup'."""
+    d = 0.7; t = t_(d); n = len(t)
+    x = noise(d, 41)
+    f = 300 * p * np.exp(np.log(12) * t / d)
+    y = np.zeros(n)
+    for i0 in range(0, n, 512):
+        seg = x[i0:i0 + 512]
+        y[i0:i0 + len(seg)] = bp(seg, max(80, f[i0] * 0.7), min(SR / 2 - 200, f[i0] * 1.6), 1)
+    y *= adsr(n, 0.05, 1, 0.08) * (0.3 + 0.7 * t / d)
+    tup = sine_sweep(0.12, 420 * p, 160 * p) * env(int(0.12 * SR), 0.002, 0.05, 4)
+    out = np.concatenate([y, tup * 0.8])
+    return st(norm(out, 0.5), 0, 0.3)
+
+def tampa(p=1.0, **_):
+    """Tampa de lixeira batendo: baque grave + claque de plástico."""
+    d = 0.4; t = t_(d)
+    thud = np.sin(2 * np.pi * np.cumsum(np.linspace(150 * p, 70 * p, len(t))) / SR) * env(len(t), 0.001, 0.12, 4)
+    clack = bp(noise(d, 51), 1200 * p, 5000 * p) * env(len(t), 0.0003, 0.02, 6) * 0.9
+    ring = np.sin(2 * np.pi * 910 * p * t) * env(len(t), 0.001, 0.08, 5) * 0.15
+    return st(norm(thud + clack + ring, 0.8))
 
 
 LIB = {k: v for k, v in globals().items() if callable(v) and not k.startswith('_') and k not in {

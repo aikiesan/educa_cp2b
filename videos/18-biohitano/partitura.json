@@ -9,19 +9,19 @@
   "downbeat0": 0.094,
   "cortes": [
    {
-    "de": 21.911,
-    "para": 41.546
+    "de": 28.456,
+    "para": 45.91
    }
   ],
   "logo_musica": 64.459,
-  "cauda": 4.51
+  "cauda": 4.58
  },
  "plano": {
-  "pausa": 0.78,
-  "primeira_fala": 2.33,
+  "pausa": 0.85,
+  "primeira_fala": 4.51,
   "folga_antes_do_logo": 1.0,
   "saltos": [
-   "-9c (21.9→41.5s)"
+   "-8c (28.5→45.9s)"
   ],
   "duracao_trilha": 72.05
  }

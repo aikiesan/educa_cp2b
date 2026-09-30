@@ -1,64 +1,125 @@
 {
-  "_sobre": "Ep. 18 · Biohitano: a aposta do CP2B — estilo Q (quadrinhos), dupla de heróis Hidro (H₂) & Metaninho (CH₄); a Arqueia fabrica o metano na 2ª etapa; o cientista narra a HQ. Formato: docs/EPISODIO_GENERICO.md",
-  "estilo": "Q",
+  "_sobre": "Ep. 18 · Biohitano — estilo C (colagem), twist VIDEOGAME DE PLATAFORMA PARA 2 JOGADORES: abre com o logo CP2B ('PRESS START · SUPER DUPLA BIOHITANO'); tela ESCOLHA SEU JOGADOR (Hidro, H₂, herói pequeno de capa · Metaninho, CH₄) — '2 JOGADORES!'; depois uma fase só, que rola para a direita (céu de papel, chão de tijolos, canos de biogás): o bloco '?' solta o balão duplo do biohitano; a tesoura corta o biodigestor em dois tanques (fase 1-1 hidrogênio, fase 1-2 metano com a Arqueia); POWER-UP FUSÃO!; os blocos soltam vinhaça, torta de filtro e restos; o ônibus do campus até a bandeira da Unicamp; FASE CONCLUÍDA. HUD com placar, vidas e fase; sons de 8 bits. Formato: docs/EPISODIO_GENERICO.md",
+  "estilo": "C",
   "seed": 18,
-  "percurso": "quadros",
+  "grade": {"colunas": 9},
+  "abertura": {"selo": "PRESS START", "canal": "SUPER DUPLA\nBIOHITANO", "sub": "ep. 18 · 2 jogadores, 1 energia", "p": "mascote:pula", "virada": 1.9, "ate": 4.4},
+  "jogo": {"selecao": true, "de": "L02:inicio", "jogadores": [["HIDRO"], ["METANINHO"]], "fases": [{"em": "L02:inicio", "txt": "MUNDO 1"}, {"em": "L03:inicio", "txt": "MAPA"}, {"em": "L04:inicio", "txt": "1-1"}, {"em": "L05:inicio", "txt": "1-2"}, {"em": "L06:inicio", "txt": "BÔNUS"}, {"em": "L07:inicio", "txt": "1-3"}, {"em": "L08:inicio", "txt": "FINAL"}, {"em": "L09:inicio", "txt": "✓"}], "pontos": [{"em": "L02:biohitano", "n": 1000}, {"em": "L04:produzem", "n": 100}, {"em": "L04:hidrogênio", "n": 100}, {"em": "L05:produzem", "n": 100}, {"em": "L05:metano", "n": 200}, {"em": "L06:formam", "n": 1000, "som": "powerup"}, {"em": "L07:vinhaça", "n": 100}, {"em": "L07:torta", "n": 100}, {"em": "L07:restos", "n": 100}, {"em": "L08:Unicamp", "n": 500}, {"em": "L09:só", "n": 5000, "som": "powerup"}]},
   "pecas": {
-    "tanques": "ep18/_folha/dois_tanques", "onibus_campus": "ep18/_folha/pecas_ep18_1", "baloes": "ep18/_folha/pecas_ep18_2",
-    "bandeja": "ep18/_folha/pecas_ep18_3", "tesoura": "ep12/_folha/pecas_ep12_1", "vinhaca": "ep04/_folha/pecas_ep04_2", "torta": "ep16/_folha/pecas_ep16_6"
+    "carta": "ep27/_folha/carta", "tanques": "ep18/_folha/dois_tanques", "onibus": "ep18/_folha/pecas_ep18_1",
+    "baloes": "ep18/_folha/pecas_ep18_2", "bandeja": "ep18/_folha/pecas_ep18_3", "vinhaca": "ep04/_folha/pecas_ep04_2",
+    "torta": "ep16/_folha/pecas_ep16_6", "tesoura": "ep12/_folha/pecas_ep12_1", "pesquisadora": "ep03/_folha/pesquisadores_1",
+    "unicamp": "marcas/unicamp"
   },
-  "assinatura": { "cientista": true },
   "cenas": [
-    { "fala": "L01", "arranjo": "dupla", "itens": [
-      { "txt": "H₂", "tipo": "pow", "em": "Hidrogênio", "fundo": "ceu", "cor": "petrol" },
-      { "fx": "molecula", "tipo": "CH4", "n": 1, "em": "metano", "s": 1.4 },
-      { "txt": "?", "tipo": "balao", "lugar": "canto", "em": "juntos-0.6" }
+    {"fala": "L01", "itens": [
+      {"txt": "ESCOLHA SEU JOGADOR", "pos": [0, -0.33], "caixa": [0.62, 0.1], "posV": [0, -0.27], "caixaV": [0.86, 0.05], "tipo": "letras", "em": 0.1, "papeis": ["amarelo", "lima", "coral", "ceu"]},
+      {"p": "carta", "pos": [-0.2, 0.03], "caixa": [0.2, 0.52], "posV": [-0.22, -0.04], "caixaV": [0.4, 0.26], "id": "cH", "em": "Hidrogênio-0.3", "entra": "gira", "brilha": "Hidrogênio+0.1"},
+      {"p": "@h2", "sobre": "cH", "rel": [0, -0.14], "tam": 0.62, "em": "Hidrogênio", "entra": "pop", "z": 5, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "feliz", "olhar": [0.6, 0], "trocas": [{"em": "juntos", "humor": "alegre"}]}, "capa": {"em": "Hidrogênio+0.2", "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}},
+      {"txt": "HIDRO\nH₂", "tipo": "etiqueta", "sobre": "cH", "rel": [0, 0.28], "tam": 0.6, "em": "Hidrogênio+0.15", "papel": "ceu", "z": 6},
+      {"p": "carta", "pos": [0.2, 0.03], "caixa": [0.2, 0.52], "posV": [0.22, -0.04], "caixaV": [0.4, 0.26], "id": "cM", "em": "metano-0.3", "entra": "gira", "brilha": "metano+0.1"},
+      {"p": "mascote:em_pe", "sobre": "cM", "rel": [0, -0.1], "tam": 0.8, "em": "metano", "entra": "pop", "z": 5, "poses": [{"em": "juntos", "p": "pula"}]},
+      {"txt": "METANINHO\nCH₄", "tipo": "etiqueta", "sobre": "cM", "rel": [0, 0.28], "tam": 0.6, "em": "metano+0.15", "papel": "lima", "z": 6},
+      {"txt": "P1", "tipo": "pow", "sobre": "cH", "rel": [-0.45, -0.52], "tam": 0.34, "em": "Hidrogênio+0.2", "fundo": "ceu", "z": 8},
+      {"txt": "P2", "tipo": "pow", "sobre": "cM", "rel": [0.45, -0.52], "tam": 0.34, "em": "metano+0.2", "fundo": "lima", "z": 8},
+      {"txt": "OU?", "tipo": "balao", "pos": [0, -0.06], "caixa": [0.1, 0.16], "posV": [0, -0.19], "caixaV": [0.18, 0.08], "em": "ou", "sai": "juntos", "z": 7},
+      {"txt": "2 JOGADORES!", "pos": [0, 0.28], "caixa": [0.24, 0.09], "posV": [0, 0.14], "caixaV": [0.5, 0.05], "tipo": "pow", "em": "juntos", "batida": true, "fundo": "amarelo", "som": "powerup", "z": 9}
     ]},
-    { "fala": "L02", "arranjo": "palco", "itens": [
-      { "txt": "BIOHITANO", "tipo": "letras", "em": "biohitano" },
-      { "txt": "APOSTA CP2B", "tipo": "carimbo", "lugar": "rodape", "em": "apostas", "cor": "coral" },
-      { "p": "cientista:apresenta", "lugar": "narrador", "em": 0.3 }
+    {"fala": "L02", "itens": [
+      {"p": "@h2", "pos": [-0.38, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.3, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "Esse-0.2", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "feliz", "olhar": [0.6, 0], "trocas": []}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}, "muda": [{"em": "biohitano-0.15", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "biohitano+0.05", "dy": 0, "d": 0.25}]},
+      {"p": "mascote:em_pe", "pos": [-0.25, 0.15], "caixa": [0.1, 0.3], "posV": [-0.06, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "Esse-0.10", "entra": "cai", "z": 12, "poses": [{"em": "biohitano", "p": "pula"}, {"em": "apostas", "p": "acena"}], "muda": [{"em": "biohitano-0.09", "dy": -1.2, "d": 0.2}, {"em": "biohitano+0.11", "dy": 0, "d": 0.25}]},
+      {"p": "@bloco", "pos": [-0.3, -0.1], "caixa": [0.08, 0.14], "posV": [-0.3, -0.02], "caixaV": [0.16, 0.08], "id": "b2", "em": 0.05, "entra": "pop", "poses": [{"em": "biohitano", "p": "@bloco_vazio"}], "muda": [{"em": "biohitano-0.05", "dy": -0.25, "d": 0.08}, {"em": "biohitano+0.05", "dy": 0, "d": 0.12}]},
+      {"p": "baloes", "pos": [-0.17, -0.2], "caixa": [0.1, 0.3], "posV": [-0.3, -0.18], "caixaV": [0.18, 0.12], "em": "biohitano", "entra": "sobe", "anima": "flutua", "som": "powerup", "z": 4},
+      {"txt": "BIOHITANO", "pos": [0.2, -0.26], "caixa": [0.46, 0.14], "posV": [0.18, -0.16], "caixaV": [0.6, 0.05], "tipo": "letras", "em": "biohitano+0.1"},
+      {"txt": "H₂ + CH₄", "pos": [0.2, -0.1], "caixa": [0.24, 0.1], "posV": [0.18, -0.08], "caixaV": [0.4, 0.045], "tipo": "etiqueta", "em": "das", "papel": "ceu"},
+      {"txt": "APOSTA CP2B", "pos": [0.18, 0.1], "caixa": [0.3, 0.12], "posV": [0.18, 0.02], "caixaV": [0.56, 0.05], "tipo": "carimbo", "em": "apostas", "cor": "coral"},
+      {"txt": "+1000", "pos": [-0.3, -0.26], "caixa": [0.1, 0.08], "posV": [-0.14, -0.04], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "biohitano", "z": 20}
     ]},
-    { "fala": "L03", "arranjo": "palco", "itens": [
-      { "p": "tanques", "em": 0.1, "s": 1.05 },
-      { "p": "tesoura", "em": "dividir", "entra": "desliza_esq", "muda": [{ "em": "digestão", "dx": 0.15, "rot": 0.3, "d": 0.5, "som": "fatia" }] },
-      { "txt": "duas etapas", "tipo": "etiqueta", "lugar": "rodape", "em": "etapas" }
+    {"fala": "L03", "itens": [
+      {"p": "@h2", "pos": [-0.38, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.3, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "A-0.2", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "feliz", "olhar": [0.6, 0], "trocas": [{"em": "dividir", "humor": "surpresa"}, {"em": "etapas", "humor": "alegre"}]}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}},
+      {"p": "mascote:em_pe", "pos": [-0.25, 0.15], "caixa": [0.1, 0.3], "posV": [-0.06, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "A-0.10", "entra": "cai", "z": 12, "poses": [{"em": "duas", "p": "surpreso"}, {"em": "etapas", "p": "pula"}]},
+      {"p": "tanques", "pos": [0.1, 0.09], "caixa": [0.6, 0.42], "posV": [0.06, 0.15000000000000002], "caixaV": [0.9, 0.22], "chao": true, "id": "tq", "em": "ideia", "entra": "cai"},
+      {"p": "tesoura", "pos": [-0.44, -0.08], "caixa": [0.1, 0.16], "posV": [-0.44, -0.02], "caixaV": [0.2, 0.08], "em": "dividir-0.15", "entra": "pop", "rot": -0.5, "muda": [{"em": "dividir", "dx": 5.5, "d": 0.55, "som": "fatia"}], "sai": "digestão+0.2"},
+      {"txt": "TCHAC!", "pos": [0.06, -0.26], "caixa": [0.14, 0.12], "posV": [0.06, -0.16], "caixaV": [0.3, 0.07], "tipo": "pow", "em": "dividir+0.3", "batida": true, "fundo": "amarelo", "sai": "etapas+0.3"},
+      {"txt": "FASE 1-1", "pos": [-0.08, -0.14], "caixa": [0.16, 0.08], "posV": [-0.2, -0.06], "caixaV": [0.32, 0.045], "tipo": "etiqueta", "em": "duas", "papel": "ceu"},
+      {"txt": "FASE 1-2", "pos": [0.26, -0.18], "caixa": [0.16, 0.08], "posV": [0.26, -0.08], "caixaV": [0.32, 0.045], "tipo": "etiqueta", "em": "etapas", "papel": "lima"},
+      {"txt": "duas etapas", "pos": [0.1, -0.34], "caixa": [0.3, 0.08], "posV": [0, -0.22], "caixaV": [0.6, 0.04], "tipo": "mao", "em": "duas", "cor": "petrol"}
     ]},
-    { "fala": "L04", "arranjo": "palco", "itens": [
-      { "p": "tanques", "id": "t", "em": 0.05, "s": 1.05 },
-      { "fx": "bolhas", "sobre": "t", "rel": [-0.28, -0.4], "tam": 0.4, "em": "micróbios", "n": 8, "tinta": "ceu" },
-      { "txt": "etapa 1", "tipo": "etiqueta", "sobre": "t", "rel": [-0.28, 0.45], "tam": 0.3, "em": "primeira" },
-      { "txt": "H₂", "tipo": "pow", "lugar": "canto", "em": "hidrogênio", "fundo": "ceu", "cor": "petrol" }
+    {"fala": "L04", "itens": [
+      {"p": "@h2", "pos": [-0.38, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.3, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "Na-0.2", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "decidida", "olhar": [0.6, 0], "trocas": [{"em": "hidrogênio", "humor": "alegre"}]}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}, "muda": [{"em": "produzem", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "produzem+0.20", "dy": 0, "d": 0.25}, {"em": "hidrogênio", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "hidrogênio+0.20", "dy": 0, "d": 0.25}]},
+      {"p": "mascote:em_pe", "pos": [-0.25, 0.15], "caixa": [0.1, 0.3], "posV": [-0.06, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "Na-0.10", "entra": "cai", "z": 12, "poses": [{"em": "hidrogênio", "p": "surpreso"}], "muda": [{"em": "produzem+0.06", "dy": -1.2, "d": 0.2}, {"em": "produzem+0.26", "dy": 0, "d": 0.25}, {"em": "hidrogênio+0.06", "dy": -1.2, "d": 0.2}, {"em": "hidrogênio+0.26", "dy": 0, "d": 0.25}]},
+      {"txt": "etapa 1: hidrogênio", "pos": [0.06, -0.33], "caixa": [0.4, 0.09], "posV": [0.06, -0.245], "caixaV": [0.72, 0.045], "tipo": "etiqueta", "em": "primeira", "papel": "ceu"},
+      {"p": "@bloco", "pos": [-0.38, -0.08], "caixa": [0.07, 0.12], "posV": [-0.3, -0.04], "caixaV": [0.15, 0.08], "em": 0.05, "entra": "pop", "poses": [{"em": "produzem", "p": "@bloco_vazio"}]},
+      {"p": "@bloco", "pos": [-0.25, -0.08], "caixa": [0.07, 0.12], "posV": [-0.06, -0.04], "caixaV": [0.15, 0.08], "em": 0.1, "entra": "pop", "poses": [{"em": "hidrogênio", "p": "@bloco_vazio"}]},
+      {"p": "@h2", "pos": [-0.38, -0.22], "caixa": [0.1, 0.1], "posV": [-0.3, -0.12], "caixaV": [0.2, 0.06], "em": "produzem", "entra": "sobe", "anima": "flutua", "muda": [{"em": "produzem+0.6", "dy": -1.5, "alpha": 0, "d": 1.3}]},
+      {"p": "@h2", "pos": [-0.25, -0.22], "caixa": [0.1, 0.1], "posV": [-0.06, -0.12], "caixaV": [0.2, 0.06], "em": "hidrogênio", "entra": "sobe", "anima": "flutua", "muda": [{"em": "hidrogênio+0.6", "dy": -1.5, "alpha": 0, "d": 1.3}]},
+      {"txt": "+100", "pos": [-0.38, -0.3], "caixa": [0.1, 0.08], "posV": [-0.3, -0.17], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "produzem", "z": 20},
+      {"txt": "+100", "pos": [-0.25, -0.3], "caixa": [0.1, 0.08], "posV": [-0.06, -0.17], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "hidrogênio", "z": 20},
+      {"p": "tanques", "pos": [0.26, 0.15999999999999998], "caixa": [0.4, 0.28], "posV": [0.28, 0.2], "caixaV": [0.44, 0.12], "chao": true, "em": 0.05, "entra": "nenhum"},
+      {"fx": "microbio", "n": 3, "humor": "comendo", "pos": [0.1, 0.25], "caixa": [0.24, 0.08], "posV": [0.2, 0.08], "caixaV": [0.44, 0.05], "em": "micróbios"},
+      {"fx": "bolhas", "pos": [0.2, -0.02], "caixa": [0.12, 0.3], "posV": [0.2, 0.0], "caixaV": [0.2, 0.12], "n": 6, "tinta": "ceu", "em": "produzem"}
     ]},
-    { "fala": "L05", "arranjo": "palco", "itens": [
-      { "p": "tanques", "id": "t", "em": 0.05, "s": 1.05 },
-      { "fx": "bolhas", "sobre": "t", "rel": [0.18, -0.45], "tam": 0.45, "em": "segunda", "n": 9, "tinta": "lima" },
-      { "txt": "etapa 2", "tipo": "etiqueta", "sobre": "t", "rel": [0.18, 0.45], "tam": 0.3, "em": "segunda" },
-      { "p": "arqueia_eng:valvula", "lugar": "narrador", "em": "outros" },
-      { "fx": "molecula", "tipo": "CH4", "n": 1, "lugar": "canto", "em": "metano" }
+    {"fala": "L05", "itens": [
+      {"p": "@h2", "pos": [-0.42, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.36, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "e-0.2", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "feliz", "olhar": [0.6, 0], "trocas": []}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}, "muda": [{"em": "produzem", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "produzem+0.20", "dy": 0, "d": 0.25}]},
+      {"p": "mascote:em_pe", "pos": [-0.29, 0.15], "caixa": [0.1, 0.3], "posV": [-0.14, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "e-0.10", "entra": "cai", "z": 12, "poses": [{"em": "metano", "p": "pula"}], "muda": [{"em": "produzem+0.06", "dy": -1.2, "d": 0.2}, {"em": "produzem+0.26", "dy": 0, "d": 0.25}]},
+      {"txt": "etapa 2: metano", "pos": [0.06, -0.33], "caixa": [0.36, 0.09], "posV": [0.06, -0.245], "caixaV": [0.66, 0.045], "tipo": "etiqueta", "em": "segunda", "papel": "lima"},
+      {"p": "@bloco", "pos": [-0.29, -0.08], "caixa": [0.07, 0.12], "posV": [-0.14, -0.04], "caixaV": [0.15, 0.08], "em": 0.05, "entra": "pop", "poses": [{"em": "produzem", "p": "@bloco_vazio"}]},
+      {"p": "arqueia:em_pe", "pos": [0.12, 0.10999999999999999], "caixa": [0.12, 0.38], "posV": [0.28, 0.17], "caixaV": [0.22, 0.18], "chao": true, "em": "outros", "entra": "cai", "poses": [{"em": "produzem", "p": "sopra"}, {"em": "metano", "p": "feliz"}], "z": 6},
+      {"txt": "é comigo!", "tipo": "balao", "pos": [0.25, -0.12], "caixa": [0.14, 0.14], "posV": [0.28, -0.1], "caixaV": [0.28, 0.07], "em": "micróbios", "cauda": [-0.4, 0.9], "z": 8},
+      {"fx": "molecula", "tipo": "CH4", "n": 3, "humor": "feliz", "sobe": true, "vel": 55, "pos": [0.36, -0.06], "caixa": [0.2, 0.3], "posV": [0.02, -0.12], "caixaV": [0.5, 0.1], "em": "metano"},
+      {"txt": "+100", "pos": [-0.29, -0.3], "caixa": [0.1, 0.08], "posV": [-0.14, -0.17], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "produzem", "z": 20},
+      {"txt": "+200", "pos": [0.36, -0.3], "caixa": [0.1, 0.08], "posV": [0.3, -0.17], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "metano", "z": 20}
     ]},
-    { "fala": "L06", "arranjo": "palco", "itens": [
-      { "p": "baloes", "em": "Misturados", "entra": "cresce" },
-      { "txt": "POW!", "tipo": "pow", "lugar": "canto", "em": "formam" },
-      { "fx": "brilho", "de": "baloes", "em": "combustível", "n": 6 },
-      { "txt": "BIOHITANO!", "tipo": "letras", "lugar": "titulo", "em": "renovável" }
+    {"fala": "L06", "itens": [
+      {"p": "baloes", "pos": [0.0, -0.1], "caixa": [0.18, 0.5], "posV": [0.0, -0.06], "caixaV": [0.32, 0.22], "id": "bal", "em": "dois", "entra": "cresce", "anima": "flutua", "brilha": "formam", "z": 8},
+      {"p": "@h2", "pos": [-0.34, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.3, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "Misturados-0.3", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "feliz", "olhar": [0.6, 0], "trocas": [{"em": "formam", "humor": "alegre"}]}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}, "muda": [{"em": "Misturados", "para": "bal", "rel": [-0.32, 0.25], "arco": 1.0, "d": 0.6, "s": 0.8, "som": "pulo"}]},
+      {"p": "mascote:em_pe", "pos": [0.34, 0.15], "caixa": [0.1, 0.3], "posV": [0.3, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "Misturados-0.2", "entra": "cai", "z": 12, "poses": [{"em": "Misturados", "p": "pula"}, {"em": "biohitano", "p": "acena"}], "muda": [{"em": "Misturados+0.05", "para": "bal", "rel": [0.3, 0.3], "arco": 1.0, "d": 0.6, "s": 0.8}]},
+      {"txt": "FUSÃO!", "pos": [-0.26, -0.28], "caixa": [0.2, 0.14], "posV": [-0.22, -0.2], "caixaV": [0.4, 0.08], "tipo": "pow", "em": "formam", "batida": true, "fundo": "amarelo", "som": "powerup", "z": 14},
+      {"txt": "BIOHITANO", "pos": [0.0, 0.22], "caixa": [0.44, 0.12], "posV": [0, 0.14], "caixaV": [0.7, 0.05], "tipo": "letras", "em": "biohitano"},
+      {"txt": "combustível renovável", "pos": [0.26, -0.28], "caixa": [0.3, 0.08], "posV": [0.2, -0.21], "caixaV": [0.5, 0.04], "tipo": "etiqueta", "em": "combustível", "papel": "lima"},
+      {"fx": "brilho", "de": "bal", "sobre": "bal", "rel": [0, 0], "tam": 0.9, "em": "renovável", "n": 6, "z": 9},
+      {"txt": "+1000", "pos": [0.16, -0.3], "caixa": [0.1, 0.08], "posV": [0.26, -0.12], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "formam", "z": 20}
     ]},
-    { "fala": "L07", "arranjo": "fila", "itens": [
-      { "p": "vinhaca", "em": "vinhaça" },
-      { "p": "torta", "em": "torta" },
-      { "p": "bandeja", "em": "comida-0.4" },
-      { "txt": "vinhaça · torta de filtro · restos de comida", "tipo": "etiqueta", "lugar": "rodape", "em": "testam" }
+    {"fala": "L07", "itens": [
+      {"p": "@h2", "pos": [-0.42, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.34, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "Os-0.2", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "feliz", "olhar": [0.6, 0], "trocas": []}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}, "muda": [{"em": "vinhaça", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "vinhaça+0.20", "dy": 0, "d": 0.25}, {"em": "torta", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "torta+0.20", "dy": 0, "d": 0.25}, {"em": "restos", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "restos+0.20", "dy": 0, "d": 0.25}]},
+      {"p": "mascote:em_pe", "pos": [-0.31, 0.15], "caixa": [0.1, 0.3], "posV": [-0.1, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "Os-0.10", "entra": "cai", "z": 12, "poses": [{"em": "vinhaça", "p": "pula"}, {"em": "comida", "p": "acena"}], "muda": [{"em": "vinhaça+0.06", "dy": -1.2, "d": 0.2}, {"em": "vinhaça+0.26", "dy": 0, "d": 0.25}, {"em": "torta+0.06", "dy": -1.2, "d": 0.2}, {"em": "torta+0.26", "dy": 0, "d": 0.25}, {"em": "restos+0.06", "dy": -1.2, "d": 0.2}, {"em": "restos+0.26", "dy": 0, "d": 0.25}]},
+      {"p": "@bloco", "pos": [-0.2, -0.14], "caixa": [0.07, 0.12], "posV": [-0.28, -0.18], "caixaV": [0.14, 0.07], "em": 0.1, "entra": "pop", "poses": [{"em": "vinhaça", "p": "@bloco_vazio"}]},
+      {"p": "vinhaca", "pos": [-0.2, 0.04], "caixa": [0.12, 0.18], "posV": [-0.28, -0.06], "caixaV": [0.22, 0.08], "em": "vinhaça", "entra": "sobe", "z": 6},
+      {"txt": "vinhaça", "pos": [-0.2, 0.19], "caixa": [0.16, 0.07], "posV": [-0.28, 0.02], "caixaV": [0.26, 0.035], "tipo": "etiqueta", "em": "vinhaça+0.15", "papel": "amarelo", "max": 60},
+      {"txt": "+100", "pos": [-0.2, -0.26], "caixa": [0.1, 0.08], "posV": [-0.28, -0.24], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "vinhaça", "z": 20},
+      {"p": "@bloco", "pos": [0.04, -0.14], "caixa": [0.07, 0.12], "posV": [0.0, -0.18], "caixaV": [0.14, 0.07], "em": 0.1, "entra": "pop", "poses": [{"em": "torta", "p": "@bloco_vazio"}]},
+      {"p": "torta", "pos": [0.04, 0.04], "caixa": [0.12, 0.18], "posV": [0.0, -0.06], "caixaV": [0.22, 0.08], "em": "torta", "entra": "sobe", "z": 6},
+      {"txt": "torta de filtro", "pos": [0.04, 0.19], "caixa": [0.16, 0.07], "posV": [0.0, 0.02], "caixaV": [0.26, 0.035], "tipo": "etiqueta", "em": "torta+0.15", "papel": "amarelo", "max": 60},
+      {"txt": "+100", "pos": [0.04, -0.26], "caixa": [0.1, 0.08], "posV": [0.0, -0.24], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "torta", "z": 20},
+      {"p": "@bloco", "pos": [0.28, -0.14], "caixa": [0.07, 0.12], "posV": [0.28, -0.18], "caixaV": [0.14, 0.07], "em": 0.1, "entra": "pop", "poses": [{"em": "restos", "p": "@bloco_vazio"}]},
+      {"p": "bandeja", "pos": [0.28, 0.04], "caixa": [0.12, 0.18], "posV": [0.28, -0.06], "caixaV": [0.22, 0.08], "em": "restos", "entra": "sobe", "z": 6},
+      {"txt": "restos de comida", "pos": [0.28, 0.19], "caixa": [0.16, 0.07], "posV": [0.28, 0.02], "caixaV": [0.26, 0.035], "tipo": "etiqueta", "em": "restos+0.15", "papel": "amarelo", "max": 60},
+      {"txt": "+100", "pos": [0.28, -0.26], "caixa": [0.1, 0.08], "posV": [0.28, -0.24], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "restos", "z": 20},
+      {"p": "pesquisadora", "pos": [0.44, 0.12999999999999998], "caixa": [0.1, 0.34], "posV": [0.38, 0.175], "caixaV": [0.18, 0.17], "chao": true, "em": "pesquisadores", "entra": "desliza_dir", "z": 7},
+      {"txt": "testando!", "pos": [0.42, -0.1], "caixa": [0.16, 0.08], "posV": [0.3, 0.075], "caixaV": [0.34, 0.035], "tipo": "mao", "em": "testam", "cor": "petrol"}
     ]},
-    { "fala": "L08", "arranjo": "palco", "itens": [
-      { "p": "onibus_campus", "em": "combustível", "entra": "desliza_esq", "s": 1.05 },
-      { "fx": "estrada", "lugar": "base", "em": "rodando", "fundo": true },
-      { "txt": "campus da Unicamp", "tipo": "etiqueta", "lugar": "titulo", "em": "campus" },
-      { "txt": "VRUUM!", "tipo": "pow", "lugar": "canto", "em": "ônibus" }
+    {"fala": "L08", "itens": [
+      {"p": "onibus", "pos": [-0.26, 0.15], "caixa": [0.26, 0.3], "posV": [-0.28, 0.19], "caixaV": [0.4, 0.14], "chao": true, "id": "bus", "em": "combustível", "entra": "desliza_esq", "z": 6, "anima": "treme", "muda": [{"em": "rodando", "dx": 1.05, "d": 1.5, "som": "motor"}]},
+      {"p": "@h2", "sobre": "bus", "rel": [-0.2, -0.72], "tam": 0.26, "em": "combustível+0.1", "entra": "cai", "segue": true, "z": 8, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "alegre", "olhar": [0.6, 0]}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}},
+      {"p": "mascote:acena", "sobre": "bus", "rel": [0.16, -0.8], "tam": 0.34, "em": "combustível+0.2", "entra": "cai", "segue": true, "z": 8},
+      {"p": "@bandeira", "id": "flag", "sobre": "bus", "rel": [1.75, -0.765], "tam": 1.1, "chao": true, "em": "objetivo", "entra": "cresce", "z": 4},
+      {"p": "unicamp", "sobre": "flag", "rel": [0.62, 0.3], "tam": 0.34, "em": "campus", "entra": "pop", "z": 6},
+      {"txt": "CAMPUS", "tipo": "etiqueta", "sobre": "flag", "rel": [-0.3, -0.62], "tam": 0.3, "em": "ônibus", "papel": "lima", "z": 6},
+      {"txt": "ônibus do campus", "pos": [-0.12, -0.33], "caixa": [0.34, 0.08], "posV": [-0.06, -0.22], "caixaV": [0.6, 0.04], "tipo": "mao", "em": "ônibus", "cor": "petrol"},
+      {"txt": "o objetivo", "pos": [-0.12, -0.24], "caixa": [0.22, 0.07], "posV": [-0.06, -0.15], "caixaV": [0.4, 0.035], "tipo": "etiqueta", "em": "objetivo", "papel": "amarelo"},
+      {"fx": "confete", "sobre": "flag", "rel": [0, -0.3], "tam": 1.5, "em": "Unicamp+0.1"},
+      {"txt": "+500", "pos": [0.38, -0.2], "caixa": [0.1, 0.08], "posV": [0.3, -0.1], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "Unicamp", "z": 20}
     ]},
-    { "fala": "L09", "arranjo": "palco", "recua": "energia", "itens": [
-      { "p": "baloes", "em": 0.1, "muda": [{ "em": "gases", "dy": -0.12, "d": 1.2 }] },
-      { "txt": "DOIS GASES, UMA ENERGIA!", "tipo": "letras", "lugar": "titulo", "em": "Biohitano" },
-      { "fx": "confete", "lugar": "centro", "em": "uma" }
+    {"fala": "L09", "itens": [
+      {"p": "@h2", "pos": [-0.1, 0.22499999999999998], "caixa": [0.15, 0.15], "posV": [-0.16, 0.2175], "caixaV": [0.27, 0.085], "chao": true, "id": "hidro", "em": "Biohitano-0.5", "entra": "cai", "z": 12, "rosto": {"pos": [0.2, -0.06], "tam": 0.16, "humor": "alegre", "olhar": [0.6, 0], "trocas": []}, "capa": {"em": 0.02, "cor": "coral", "pos": [-0.02, -0.12], "larg": 0.42, "comp": 0.75}, "muda": [{"em": "dois", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "dois+0.20", "dy": 0, "d": 0.25}, {"em": "uma", "dy": -1.2, "d": 0.2, "som": "pulo"}, {"em": "uma+0.20", "dy": 0, "d": 0.25}]},
+      {"p": "mascote:em_pe", "pos": [0.1, 0.15], "caixa": [0.1, 0.3], "posV": [0.14, 0.1775], "caixaV": [0.18, 0.165], "chao": true, "id": "met", "em": "Biohitano-0.40", "entra": "cai", "z": 12, "poses": [{"em": "dois", "p": "pula"}, {"em": "só", "p": "acena"}], "muda": [{"em": "dois+0.06", "dy": -1.2, "d": 0.2}, {"em": "dois+0.26", "dy": 0, "d": 0.25}, {"em": "uma+0.06", "dy": -1.2, "d": 0.2}, {"em": "uma+0.26", "dy": 0, "d": 0.25}]},
+      {"txt": "FASE CONCLUÍDA!", "pos": [0, -0.3], "caixa": [0.56, 0.14], "posV": [0, -0.2], "caixaV": [0.86, 0.06], "tipo": "letras", "em": "Biohitano", "papeis": ["amarelo", "lima", "coral", "ceu"]},
+      {"txt": "2 gases · 1 energia", "pos": [0, -0.13], "caixa": [0.36, 0.1], "posV": [0, -0.1], "caixaV": [0.7, 0.05], "tipo": "etiqueta", "em": "dois", "papel": "lima"},
+      {"p": "baloes", "pos": [-0.34, -0.1], "caixa": [0.1, 0.3], "posV": [-0.34, 0.0], "caixaV": [0.18, 0.14], "em": "gases", "entra": "sobe", "anima": "flutua"},
+      {"p": "baloes", "pos": [0.34, -0.1], "caixa": [0.1, 0.3], "posV": [0.34, 0.0], "caixaV": [0.18, 0.14], "em": "energia", "entra": "sobe", "anima": "flutua", "flip": true},
+      {"fx": "estrela", "n": 5, "pos": [0, 0.02], "caixa": [0.6, 0.1], "posV": [0, -0.02], "caixaV": [0.6, 0.05], "em": "uma"},
+      {"fx": "confete", "lugar": "centro", "em": "só"},
+      {"txt": "+5000", "pos": [0, -0.02], "caixa": [0.1, 0.08], "posV": [0, 0.02], "caixaV": [0.2, 0.05], "tipo": "pontos", "em": "só", "z": 20}
     ]}
   ]
 }

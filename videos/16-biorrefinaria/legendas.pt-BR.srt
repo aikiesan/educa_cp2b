@@ -1,51 +1,51 @@
 1
-00:00:03,786 --> 00:00:08,526
+00:00:06,094 --> 00:00:10,454
 Sabe a refinaria de petróleo,
 que tira vários produtos de uma coisa só?
 
 2
-00:00:08,932 --> 00:00:13,132
+00:00:11,053 --> 00:00:15,143
 A biorrefinaria faz o mesmo…
 mas com biomassa e resíduos!
 
 3
-00:00:13,538 --> 00:00:16,418
+00:00:15,742 --> 00:00:18,582
 Pega a cana: dela saem
 o açúcar e o etanol.
 
 4
-00:00:16,824 --> 00:00:19,564
+00:00:19,181 --> 00:00:21,721
 O bagaço vira calor e eletricidade…
 
 5
-00:00:19,970 --> 00:00:23,730
+00:00:22,320 --> 00:00:25,880
 a vinhaça e a torta de filtro
 viram biogás e biometano…
 
 6
-00:00:24,136 --> 00:00:27,296
+00:00:26,479 --> 00:00:29,199
 e o que sobra ainda volta
 pro canavial como adubo.
 
 7
-00:00:27,702 --> 00:00:31,782
+00:00:29,798 --> 00:00:33,578
 E dá pra ir além, juntando
 a usina com a pecuária da região:
 
 8
-00:00:31,822 --> 00:00:34,222
+00:00:33,618 --> 00:00:36,048
 mais resíduo, mais biometano!
 
 9
-00:00:34,628 --> 00:00:37,048
+00:00:36,647 --> 00:00:39,007
 Nada se perde, tudo se aproveita.
 
 10
-00:00:37,454 --> 00:00:40,614
+00:00:39,606 --> 00:00:42,916
 Biorrefinaria: um resíduo,
 vários produtos!
 
 11
-00:00:41,461 --> 00:00:45,681
+00:00:43,769 --> 00:00:47,899
 CP2B: energia viva,
 ciência que transforma!
