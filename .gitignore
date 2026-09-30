@@ -10,3 +10,7 @@ videos/**/audio/_*
 __pycache__/
 # recortes intermediários das folhas (refeitos por tools/preparar_ativos.py <ep> <folha>)
 assets/recortes/*/_folha/
+# mixagens: os vídeos finais ficam no Drive
+videos/**/audio/*.m4a
+# insumos locais (inclui arquivos pessoais)
+entrada/
